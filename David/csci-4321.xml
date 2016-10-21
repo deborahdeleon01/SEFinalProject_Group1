@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4321</Number>
+<Name>E-Commerce</Name>
+<Description>
+This course covers e-commerce implementation including e-commerce security and prevention, 
+e-commerce scalable architecture design, Internet infrastructure, web server administration, 
+e-payment, mobile commerce systems, and business to business systems. 
+Prerequisites: CSCI 3333 or CMPE 3333 or consent of instructor. 
+3.000 Credit hours 
+3.000 Lecture hours 
+</Description>
+<Credit-hours>3.00</Credit-hours>
+<Lecture-hours>3.00</Lecture-hours>
+<Lab-hours>0.00</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Cross-listed>NA</Cross-listed>
+<Legacy>NA</Legacy>
+<Restrictions>NA</Restrictions>
+<Prerequisite>CSCI-3333 or CMPE-3333</Prerequisite>
+<Co-requisite>None</Co-requisite>
+<Course-attributes>NA</Course-attributes>
+</Course>

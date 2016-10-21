@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1105</Number>
+	<Name>Digital Tech in Modern World</Name>
+	<Description>
+		The course will consider the power and limitations of modern day technology, what technology can and cannot do, and personal responsibility related to digital technology. The course emphasizes active learning to enhance critical thinking, critical analysis of information gained from technical sources, and life-long learning competencies. Students use digital technology to support and enhance communication, using current productivity technologies and exploring emerging technologies. 
+	</Description>
+	<Credit-hours>1.000</Credit-hours>
+	<Lecture-hours>1.000</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+</Course>
+
+

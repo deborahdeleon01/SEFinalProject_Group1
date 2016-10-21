@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1170</Number>
+	<Name>Engineer Comp Sci I Lab</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level object oriented programming language applying the principles taught in the CSCI 1370 lecture course. Equivalence course: CMPE 1170. A student may receive credit in only one course. Corequisite: CSCI 1370 (or CSCI 1378).
+	</Description>
+	<Credit-hours>1.000</Credit-hours>
+	<Lecture-hours>0.000</Lecture-hours>
+	<Lab-hours>3.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>CSCI 1370 (or CSCI 1378)</Co-requisite>
+	<Legacy-number>COSC 1336</Legacy-number>
+	<Cross-listed>CSCI 1370</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Degree Elective, Course fee - Computer Science, CS Instruction Fee - LU</Course-attributes>
+</Course>
+
+
