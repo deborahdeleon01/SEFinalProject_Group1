@@ -2,8 +2,8 @@
 This repo contains the information for the final project due on December 5, 2016 <br>
 <h3>Members:</h3>
 <ul style="list-style-type:none">
+	<li>Debbie (Project Leader)</li>
 	<li>Jesus</li> 
-	<li>Debbie</li>
 	<li>Jose</li>  
 	<li>Felix</li>  
 	<li>David</li> 
@@ -11,6 +11,6 @@ This repo contains the information for the final project due on December 5, 2016
 <dl>
   <dt>Assigments</dt>
    <ul>
-      <li>Create XML files (3 classes for each member)</li>
+      <li>Create XML files (3 classes for each member) - Due: 9/19/2016</li>
     </ul>
 </dl>
