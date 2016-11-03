@@ -1,14 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package htmlviewer;
 
+import javafx.scene.Scene;
+import javafx.scene.web.WebView;
+
 /**
- *
  * @author Jesus
+ *
+ * @version 1.0
  */
 public class showHTML {
+    showHTML(){
+        HTMLloader();
+    }
+    WebView HTMLload = new WebView();    
     
+    public void HTMLloader(){
+        try{
+        HTMLload.getEngine().load("test.html");
+    }
+       catch(Exception e)  {
+        }
+    }
+
+    private void HTMLpreviewer() {
+        try {
+            Scene HTMLpreview = new Scene(HTMLload, 400,400);
+        } catch(Exception e)  {
+        }
+
+    }
 }
