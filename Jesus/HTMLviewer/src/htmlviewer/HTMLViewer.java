@@ -6,20 +6,13 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
- * @author Jesus This class will load an HTML class from a predetermined
- * source(local or database) and add it to a scene
  *
- * @version 1.0.1
+ * @author Jesus
  */
-public class showHTML {
+public class HTMLViewer extends Application {
 
-    WebView HTMLload = new WebView();
-
-    /*
-     * @param htmlpane precreates the stage 
-     * This class will use exception handling to compensate in case that the file does not exist 
-     */
-    public void HTMLloader(Stage htmlpane) {
+    @Override
+    public void start(Stage htmlpane) {
         try {
             WebView HTMLload = new WebView();
 //            String path = System.getProperty("user.dir");  
@@ -33,4 +26,9 @@ public class showHTML {
             e.printStackTrace();
         }
     }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
 }
