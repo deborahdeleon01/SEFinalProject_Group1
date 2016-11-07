@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package firstgui;
+package Main;
+import gpawidget.GPAWidget;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
@@ -15,6 +16,8 @@ import javafx.scene.control.TabPane.TabClosingPolicy;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
  
 
@@ -39,17 +42,17 @@ public class FirstGUI extends Application {
       //First Tab
       Tab tabA = new Tab();
       tabA.setText("Program of Study:");
-      //Add something in Tab
-      StackPane tabA_stack = new StackPane();
-      tabA_stack.setAlignment(Pos.CENTER);
-      tabA_stack.getChildren().add(new Label("Displays some stuff:"));
-      tabA.setContent(tabA_stack);
+      //Add WebView in TabA
+      WebView browser = new WebView();
+      WebEngine webEngine = browser.getEngine();
+      webEngine.load("http://klayden.com/");
+      tabA.setContent(browser);
       tabPane.getTabs().add(tabA);
      
       //Second Tab
       Tab tabB = new Tab();
       tabB.setText("Reporting");
-      //Add something in Tab
+      //Add something in TabB
       StackPane tabB_stack = new StackPane();
       tabB_stack.setAlignment(Pos.CENTER);
       tabB_stack.getChildren().add(new Label("Displays some stuff:"));
@@ -59,7 +62,7 @@ public class FirstGUI extends Application {
       //Third Tab
       Tab tabC = new Tab();
       tabC.setText("GPA Widget:");
-      //Add Something in Tab
+      //Add GPA Widget in TabC
       StackPane tabC_stack = new StackPane();
       tabC_stack.setAlignment(Pos.CENTER);
       tabC_stack.getChildren().add(gpaWidget.getPane());
