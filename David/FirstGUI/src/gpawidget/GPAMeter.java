@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package firstgui;
+package gpawidget;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
