@@ -5,7 +5,6 @@ This repo contains the information for the final project due on December 5, 2016
 	<li>Debbie (Project Leader)</li>
 	<li>Jesus</li> 
 	<li>Jose</li>  
-	<li>Felix</li>  
 	<li>David</li> 
 </ul>
 <dl>
@@ -14,5 +13,6 @@ This repo contains the information for the final project due on December 5, 2016
       <li>Create XML files (3 classes for each member) - Due: 9/19/2016</li>
       <li>Presentation layer - Due: 11/3/2016</li>
       <li>15 minute spring presentation and demo - Due: 11/8/2016</li>
+      <li>SRS Document - Due: 11/8/2016</li>
     </ul>
 </dl>
