@@ -14,7 +14,6 @@ This repo contains the information for the final project due on December 5, 2016
       <li>GPA widget on corner</li>
       <li>Program of study focus</li>
       <li>Opening links on the program</li>
-      <li></li>
     </ul>
 
   <dt>Assigments</dt>
