@@ -8,6 +8,14 @@ This repo contains the information for the final project due on December 5, 2016
 	<li>David</li> 
 </ul>
 <dl>
+
+  <dt>To do:</dt>
+   <ul>
+      <li>GPA widget on corner</li>
+      <li>Program of study focus</li>
+      <li>Opening links on the program</li>
+    </ul>
+
   <dt>Assigments</dt>
    <ul>
       <li>Create XML files (3 classes for each member) - Due: 9/19/2016</li>
