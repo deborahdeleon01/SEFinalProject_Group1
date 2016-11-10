@@ -1,0 +1,43 @@
+#eff{
+    .root{
+    -fx-font-size: 20pt;
+    -fx-font-family: "Arial";
+/*    -fx-base: rgb(132, 145, 47);
+    -fx-background: rgb(225, 228, 203);*/
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:150px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: rgb(0,42,92);
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: rgb(0,123,83);
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #FFFFFF;
+}
+}
