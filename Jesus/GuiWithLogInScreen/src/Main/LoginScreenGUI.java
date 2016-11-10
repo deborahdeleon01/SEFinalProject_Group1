@@ -13,8 +13,11 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.util.Observable;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
 
 /**
  * This class creates the GUI for the log in screen
@@ -23,7 +26,9 @@ import javafx.application.Platform;
  * @version 1.0
  */
 public class LoginScreenGUI extends Application {
+
     GridPane mainLogIn = new GridPane();
+
     @Override
     public void start(Stage primaryLogIn) throws Exception {
         mainLogIn.setAlignment(Pos.CENTER);
@@ -60,10 +65,10 @@ public class LoginScreenGUI extends Application {
         logInfield.getChildren().add(logInButton);
         mainLogIn.add(logInfield, 1, 4);
 
-        logInButton.setOnAction((event) -> {
-            Platform.runLater(() -> {
-            new FirstGUI().start(new Stage());
-        });
+        logInButton.setOnAction((ActionEvent event) -> {
+            while(userNameText.getText() != "admin" && passwordBox.getText() != "1234"){
+                popup("Incorrect");
+            }
         });
     }
 
@@ -71,7 +76,19 @@ public class LoginScreenGUI extends Application {
         launch(args);
     }
 
-    public void switchScenes(Observable o, Object arg) {
-        
+    void popup(String messege) {
+        Stage popupStage = null;
+        Button popupButton = new Button();
+        popupButton.setText("Open Dialog");
+        popupButton.setOnAction((ActionEvent event) -> {
+            final Stage dialog = new Stage();
+            dialog.initModality(Modality.APPLICATION_MODAL);
+            dialog.initOwner(popupStage);
+            VBox dialogVbox = new VBox(20);
+            dialogVbox.getChildren().add(new Text(messege));
+            Scene dialogScene = new Scene(dialogVbox, 300, 200);
+            dialog.setScene(dialogScene);
+            dialog.show();
+        });
     }
 }

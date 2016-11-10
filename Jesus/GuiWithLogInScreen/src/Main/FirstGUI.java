@@ -82,7 +82,7 @@ public class FirstGUI extends Application {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-      launch(args);
+      LoginScreenGUI.launch(LoginScreenGUI.class, args);
   }
 }
 
