@@ -15,3 +15,5 @@ nb-configuration.xml
 *.war
 *.ear
 *.xml
+/Jesus/LoginUI/nbproject/private/
+/Jesus/GuiWithLogInScreen/nbproject/private/
