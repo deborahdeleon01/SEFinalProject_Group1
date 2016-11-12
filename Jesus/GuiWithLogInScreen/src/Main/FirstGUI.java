@@ -41,13 +41,21 @@ public class FirstGUI extends Application {
       
       //First Tab
       Tab tabA = new Tab();
-      tabA.setText("Program of Study");
-      //Add WebView in TabA
-      WebView browser = new WebView();
-      WebEngine webEngine = browser.getEngine();
-      webEngine.load("http://klayden.com/");
-      tabA.setContent(browser);
+       tabA.setText("GPA Widget");
+      //Add GPA Widget in TabC
+      StackPane tabA_stack = new StackPane();
+      tabA_stack.setAlignment(Pos.CENTER);
+      tabA_stack.getChildren().add(gpaWidget.getPane());
+      tabA.setContent(tabA_stack);
       tabPane.getTabs().add(tabA);
+
+      mainPane.setCenter(tabPane);
+      mainPane.prefHeightProperty().bind(scene.heightProperty());
+      mainPane.prefWidthProperty().bind(scene.widthProperty());
+      root.getChildren().add(mainPane);
+      primaryStage.setMaximized(true);
+      primaryStage.setScene(scene);
+      primaryStage.show();
      
       //Second Tab
       Tab tabB = new Tab();
