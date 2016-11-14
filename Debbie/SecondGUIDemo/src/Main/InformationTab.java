@@ -5,14 +5,12 @@
  */
 package Main;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
@@ -24,24 +22,30 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-import javafx.util.StringConverter;
+import javax.imageio.ImageIO;
 
 /**
  *
  * @author MQ0162246
  */
-public class Info extends Application {
+public class InformationTab extends Application {
 
+        
+    public static final String DEFAULT_FORMAT = "jpg";
+    public static final Color DEFAULT_COLOR = Color.LIGHTGREY;
     BorderPane pane = new BorderPane();
+    ReminderWidget box = new ReminderWidget();
+    HBox borders = new HBox();
 
-    public Info() {
+    public InformationTab() {
 
         HBox hbox = addHBox();
         pane.setTop(hbox);
 
         HBox hbox1 = addHBox1();
-        Text centerText = new Text(" ");
-        
+
+        Text centerText = new Text("More Information Goes here");
+
         pane.setCenter(centerText);
         pane.setBottom(hbox1);
         pane.setLeft(getLeftSide());
@@ -110,6 +114,32 @@ public class Info extends Application {
         emailField.setText(eml + em);
 
         vbox.getChildren().add(emailField);
+        
+    
+        vbox.setPadding(new Insets(20, 20, 20, 20));
+        Text title3 = new Text("\n\nImportant Upcoming Dates\n");
+        title3.setFont(Font.font("Arial", FontWeight.BOLD, 20));
+
+        vbox.getChildren().add(title3);
+        
+        String s1 = String.format("%-20s %10s ", "Nov 17","Last day to drop");
+        String s2 = String.format("%-20s %14s ", "Nov 24-26","Thanksgiving");
+      String s3 = String.format("%-20s %18s", "Dec 8","No Classes");
+      String s4 = String.format("%-20s %20s", "Dec 9-15","Finals");
+        
+        Text options2[] = new Text[]{
+            new Text(s1),
+            new Text(s2),
+            new Text(s3),
+            new Text(s4)};
+
+        for (int i = 0; i < 4; i++) {
+            // Add offset to left side to indent from title
+            VBox.setMargin(options[i], new Insets(0, 0, 5, 5));
+            vbox.getChildren().add(options2[i]);
+        }
+        
+        
         pane.add(cs, 0, 1);
         pane.add(vbox, 0, 2);
 
@@ -125,49 +155,10 @@ public class Info extends Application {
         pane.setHgap(5.5);
         pane.setVgap(5.5);
 
-        String pattern = "MM-dd-yyyy";
+        Text text = new Text("ttttt");
+//        pane.add(box.reminderWidget(), 0, 3);
+        pane.add(box.reminderWidget(), 0, 3);
 
-        DatePicker datePicker = new DatePicker();
-        datePicker.setValue(LocalDate.now());
-        StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
-            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
-
-            @Override
-            public String toString(LocalDate date) {
-                if (date != null) {
-                    return dateFormatter.format(date);
-                } else {
-                    return "";
-                }
-            }
-
-            @Override
-            public LocalDate fromString(String string) {
-                if (string != null && !string.isEmpty()) {
-                    return LocalDate.parse(string, dateFormatter);
-                } else {
-                    return null;
-                }
-            }
-        };
-
-        Text text = new Text();
-
-        datePicker.setConverter(converter);
-        datePicker.setPromptText(pattern.toLowerCase());
-        datePicker.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-
-                String date = datePicker.getValue().format(DateTimeFormatter.ofPattern(pattern));
-
-                text.setText(date);
-                datePicker.setValue(null);
-            }
-        });
-
-        pane.add(datePicker, 0, 3);
-        pane.add(text, 0, 4);
         return pane;
     }
 
@@ -198,7 +189,7 @@ public class Info extends Application {
 
         Text topText = new Text();
         topText.setWrappingWidth(800);
-        topText.setFont(Font.font("Verdana", 10));
+        topText.setFont(Font.font("Verdana", 20));
         topText.setFill(Color.WHITE);
 
         topText.setText("UTRGV Computer Science Program of Study");
@@ -216,6 +207,8 @@ public class Info extends Application {
         return pane;
     }
 
+    
+    
     /**
      * @param pane the pane to set
      */
@@ -227,8 +220,4 @@ public class Info extends Application {
     public void start(Stage primaryStage) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    /**
-     * @param args the command line arguments
-     */
 }
