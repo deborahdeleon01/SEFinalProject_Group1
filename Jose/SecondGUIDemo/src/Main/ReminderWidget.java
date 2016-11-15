@@ -192,7 +192,7 @@ public class ReminderWidget extends Application {
         reminder = new HBox();
         // Status message text
         reminderText = new Text();
-        reminderText.setFont(Font.font("Calibri", FontWeight.NORMAL, 40));
+        reminderText.setFont(Font.font("Calibri", FontWeight.NORMAL, 20));
         reminderText.setFill(Color.BLUE);
         reminder.getChildren().addAll(reminderText);
 
