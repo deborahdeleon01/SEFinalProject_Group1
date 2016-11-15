@@ -8,15 +8,28 @@
 
 .tab-pane .tab-header-area .tab-header-background {
     -fx-opacity: 0;
+    
 }
 
 .tab-pane
 {
     -fx-tab-min-width:150px;
+
 }
 
+.tab-content-area
+{
+    -fx-background-image: url("/tab_bg.jpg");
+    -fx-background-repeat: no-repeat;   
+    -fx-background-size: 1000 800;
+    -fx-background-position: center center;
+    -fx-background-opacity: 0.5;
+}
 .tab{
     -fx-background-insets: 0 1 0 1,0,0;
+    
+    
+    
 }
 .tab-pane .tab
 {
@@ -45,12 +58,14 @@
     -fx-background-color: rgb(0,123,83);
     -fx-padding: 15;
     -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
 }
 
 .hbox1 {
     -fx-background-color: rgb(0,123,83);
     -fx-padding: 5;
     -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0, 0, 0);
 }
 
 #hbox-custom {
@@ -60,4 +75,5 @@
     -fx-padding: 8;
     -fx-background-radius: 5.0; 
 }
+
 }
