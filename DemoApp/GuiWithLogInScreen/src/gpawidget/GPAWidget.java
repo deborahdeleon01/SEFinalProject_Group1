@@ -5,7 +5,9 @@
  */
 package gpawidget;
 
+import java.io.IOException;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
@@ -85,7 +87,7 @@ public class GPAWidget {
                 transcript.readCourses();
                 //should clear current semester fields
 
-            } catch (Exception e) {
+            } catch (IOException e) {
             }
             meter.paintMeter(GPAUtility.calcGPA(transcript.getMyCourses()));
         });
@@ -95,8 +97,8 @@ public class GPAWidget {
             try {
                 transcript.readCourses("transcript.txt");
                 //should clear current semester fields
-
-            } catch (Exception e) {
+                
+            } catch (IOException e) {
             }
             meter.paintMeter(GPAUtility.calcGPA(transcript.getMyCourses()));
         });
@@ -123,7 +125,7 @@ public class GPAWidget {
         try {
             semester.readCourses("fall2016semester.txt");
 
-        } catch (Exception e) {
+        } catch (IOException e) {
         }
 
         gradeFields = null;
@@ -182,16 +184,11 @@ public class GPAWidget {
     {
         if (grade==null)
                 return false;
-        if(
-                grade.toUpperCase().equals("A") ||
+        return grade.toUpperCase().equals("A") ||
                 grade.toUpperCase().equals("B") ||
                 grade.toUpperCase().equals("C") ||
                 grade.toUpperCase().equals("D") ||
-                grade.toUpperCase().equals("F")
-          )
-            return true;
-        else
-            return false;
+                grade.toUpperCase().equals("F");
 
     }
 

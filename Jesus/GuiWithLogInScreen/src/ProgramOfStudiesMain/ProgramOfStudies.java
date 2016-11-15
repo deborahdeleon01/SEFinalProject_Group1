@@ -14,7 +14,7 @@ import jfxtras.scene.control.ListView;
 
 public class ProgramOfStudies extends JFXtrasSampleBase {
 
-    public ProgramOfStudies() throws IOException {
+    public ProgramOfStudies() {
         ObservableList<String> items = FXCollections.observableArrayList();
 
         String dirPath = "C:";

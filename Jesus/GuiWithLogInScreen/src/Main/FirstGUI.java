@@ -19,11 +19,12 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import ProgramOfStudiesMain.ProgramOfStudies;
  
 
 public class FirstGUI extends Application {
     GPAWidget gpaWidget = new GPAWidget(600,600,0,4,0,0.2);
-
+    ProgramOfStudies POS = new ProgramOfStudies();
   @Override
   public void start(Stage primaryStage) {
       primaryStage.setTitle("VaqPack -- Computer Science Program of Study");
@@ -45,7 +46,7 @@ public class FirstGUI extends Application {
       //Add GPA Widget in TabC
       StackPane tabA_stack = new StackPane();
       tabA_stack.setAlignment(Pos.CENTER);
-      tabA_stack.getChildren().add(gpaWidget.getPane());
+      tabA_stack.getChildren().add(POS.getPanel(primaryStage));
       tabA.setContent(tabA_stack);
       tabPane.getTabs().add(tabA);
 

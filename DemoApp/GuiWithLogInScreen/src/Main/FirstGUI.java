@@ -16,15 +16,13 @@ import javafx.scene.control.TabPane.TabClosingPolicy;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import ProgramOfStudiesMain.ProgramOfStudies;
  
 
 public class FirstGUI extends Application {
     GPAWidget gpaWidget = new GPAWidget(600,600,0,4,0,0.2);
-    ProgramOfStudies POS = new ProgramOfStudies();
+   // ProgramOfStudies POS = new ProgramOfStudies();
   @Override
   public void start(Stage primaryStage) {
       primaryStage.setTitle("VaqPack -- Computer Science Program of Study");
@@ -42,11 +40,11 @@ public class FirstGUI extends Application {
       
       //First Tab
       Tab tabA = new Tab();
-       tabA.setText("GPA Widget");
+       tabA.setText("Program of Studies");
       //Add GPA Widget in TabC
       StackPane tabA_stack = new StackPane();
       tabA_stack.setAlignment(Pos.CENTER);
-      tabA_stack.getChildren().add(POS.getPanel(primaryStage));
+      //tabA_stack.getChildren().add(POS.getPane());
       tabA.setContent(tabA_stack);
       tabPane.getTabs().add(tabA);
 
@@ -91,7 +89,8 @@ public class FirstGUI extends Application {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-      LoginScreenGUI.launch(LoginScreenGUI.class, args);
+      //LoginScreenGUI.launch(LoginScreenGUI.class, args);
+      launch(args);
   }
 }
 
