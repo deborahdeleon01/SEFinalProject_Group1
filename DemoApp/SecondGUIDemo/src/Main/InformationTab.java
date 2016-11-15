@@ -46,7 +46,82 @@ public class InformationTab extends Application {
 
         Text centerText = new Text("More Information Goes here");
 
-        pane.setCenter(centerText);
+        /***Jose Started Here***/
+        /*Tab 3 Select and View*/
+        GridPane grid = new GridPane();
+        grid.setPadding(new Insets(10, 10, 10, 10));
+        grid.setMinSize(300, 300);
+        grid.setVgap(5);
+        grid.setHgap(5);
+        
+        Text pftitle = new Text("Professor Information");
+        Text name = new Text("");
+        Text position = new Text("");
+        Text email = new Text("");
+        Text phone = new Text("");
+        
+        
+        ObservableList<String> options = 
+        FXCollections.observableArrayList(
+            "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
+        );
+        ComboBox comboBox = new ComboBox(options);
+        comboBox.setPromptText("Select a Professor");
+
+        // Update the message Label when the selected item changes
+        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>()
+        {
+            public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+                System.out.print(newvalue);
+                pf =  newvalue;
+                
+                if(pf == "Hansheng Lei") {
+                    name.setText(pf);
+                    position.setText("Associate Professor");
+                    email.setText("hansheng.lei@utrgv.edu");
+                    phone.setText("956-882-6585");
+                }
+                else if(pf == "Bari Siddique") {
+                    name.setText(pf);
+                    position.setText("Lecturer");
+                    email.setText("bari.siddique@utrgv.edu");
+                    phone.setText("956-882-6602");
+                }
+                else if(pf == "Liyu Zhang") {
+                    name.setText(pf);
+                    position.setText("Associate Professor");
+                    email.setText("liyu.zhang@utrgv.edu");
+                    phone.setText("956-882-6631");
+                }
+                else if(pf == "Mahmoud Quweider") {
+                    name.setText(pf);
+                    position.setText("Professor");
+                    email.setText("mahmoud.quweider@utrgv.edu");
+                    phone.setText("956-882-6630");
+                }
+                else if(pf == "Domingo Molina") {
+                    name.setText(pf);
+                    position.setText("Lecturer");
+                    email.setText("956-882-6607");
+                    phone.setText("domingo.molina@utrgv.edu");
+                }
+            }
+        });
+        
+        grid.setStyle("-fx-font: 14 arial;");
+        pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
+                
+        grid.add(comboBox, 70, 5);
+        grid.add(pftitle, 70, 10);
+        
+        grid.add(name, 70, 12);
+        grid.add(position, 70, 13);
+        grid.add(email, 70, 14);
+        grid.add(phone, 70, 15);
+        
+
+        pane.setCenter(grid);
+        /***Jose Ended Here***/
         pane.setBottom(hbox1);
         pane.setLeft(getLeftSide());
         pane.setRight(getRightSide());
