@@ -1,0 +1,4 @@
+CSCI,3340,Software Engineering,awesome course,3
+CSCI,4301,DIP,awesome course,3
+CSCI,4345,Networking,awesome course,3
+CSCI,1110,CS!,awesome course,3

@@ -20,6 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -53,7 +54,8 @@ public class InformationTab extends Application {
         HBox hbox1 = addHBox1();
 
         Text centerText = new Text("More Information Goes here");
-
+        
+        
         /***Jose Started Here***/
         /*Tab 3 Select and View*/
         GridPane grid = new GridPane();
@@ -135,8 +137,8 @@ public class InformationTab extends Application {
         pane.setRight(getRightSide());
 
         BorderPane.setAlignment(hbox, Pos.CENTER);
-        BorderPane.setAlignment(centerText, Pos.CENTER);
-
+        BorderPane.setAlignment(grid, Pos.CENTER);
+     
     }
 
     private GridPane getLeftSide() {
@@ -207,8 +209,8 @@ public class InformationTab extends Application {
         
         String s1 = String.format("%-20s %10s ", "Nov 17","Last day to drop");
         String s2 = String.format("%-20s %14s ", "Nov 24-26","Thanksgiving");
-      String s3 = String.format("%-20s %18s", "Dec 8","No Classes");
-      String s4 = String.format("%-20s %20s", "Dec 9-15","Finals");
+        String s3 = String.format("%-20s %18s", "Dec 8","No Classes");
+        String s4 = String.format("%-20s %20s", "Dec 9-15","Finals");
         
         Text options2[] = new Text[]{
             new Text(s1),
