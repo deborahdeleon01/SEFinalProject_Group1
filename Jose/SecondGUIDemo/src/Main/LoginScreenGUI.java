@@ -1,5 +1,5 @@
 package Main;
-import java.net.MalformedURLException;
+
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.geometry.Insets;
@@ -14,8 +14,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.util.Observable;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -66,11 +64,7 @@ public class LoginScreenGUI extends Application {
 
         logInButton.setOnAction((ActionEvent event) -> {
                 Platform.runLater(() -> {
-                    try {
-                        new FirstGUI().start(new Stage());
-                    } catch (MalformedURLException ex) {
-                        Logger.getLogger(LoginScreenGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+                    new FirstGUI().start(new Stage());
                 });
         });
     }
