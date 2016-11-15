@@ -61,7 +61,8 @@ public class MainXML {
 
         configureDisplay();
 
-        configureListeners();
+        //Removed Back and Forward Button
+        //configureListeners();
 
         generateFiles();
 
@@ -79,9 +80,9 @@ public class MainXML {
     
     //Creat HBox for left border pane with drop box list of courses
     private HBox addHBox() {
-        HBox hbox = new HBox();
-        hbox.setPadding(new Insets(30, 200, 30, 200));
-        hbox.setSpacing(10);   // Gap between nodes
+        HBox hboxx = new HBox();
+        hboxx.setPadding(new Insets(30, 50, 30, 50));
+        hboxx.setSpacing(10);   // Gap between nodes
        // hbox.setStyle("-fx-background-color: #336699
         Button go = new Button("GO");
         final ComboBox listOfCourses = new ComboBox();
@@ -93,66 +94,79 @@ public class MainXML {
         go.setPrefSize(50, 20);
         listOfCourses.setValue("Choose a Course");
         index = listOfCourses.getSelectionModel().getSelectedIndex();
-        hbox.getChildren().addAll(listOfCourses,go);
-        go.setOnAction(new EventHandler<ActionEvent>(){
-            @Override
-            public void handle (ActionEvent event){
-                index = listOfCourses.getSelectionModel().getSelectedIndex();
-        XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[index].getAbsolutePath(), xslFile, htmlFile);
-        xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
-        try {
+        hboxx.getChildren().addAll(listOfCourses,go);
+        go.setOnAction((ActionEvent event) -> {
+            index = listOfCourses.getSelectionModel().getSelectedIndex();
+            XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[index].getAbsolutePath(), xslFile, htmlFile);
+            xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
+            try {
                 configureDisplay();
             } catch (MalformedURLException ex) {
                 Logger.getLogger(MainXML.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
-    });
+        });
         
-        return hbox;
-    }
-     //Configuering Event Listener
-    private void configureListeners () throws MalformedURLException {
-
-        /**
-         * Forward click. Count increases to go to next XML file and merges said
-         * file.
-         */
-        forward.setOnAction((ActionEvent event) -> {
-            count++;
-            XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[count].getAbsolutePath(), xslFile, htmlFile);
-            xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
-            try {
-                configureDisplay();
-            } catch (MalformedURLException ex) {
-                Logger.getLogger(MainXML.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        });
-
-        /**
-         * Back button click, Count decreases in array to go to said XML file
-         * and converts it again to output.htm
-         */
-        back.setOnAction((ActionEvent event) -> {
-            count--;
-            XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[count].getAbsolutePath(), xslFile, htmlFile);
-            xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
-            try {
-                configureDisplay();
-            } catch (MalformedURLException ex) {
-                Logger.getLogger(MainXML.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        });
+        return hboxx;
     }
     
+    private HBox addHBox2() throws MalformedURLException{
+        HBox hbox2 = new HBox();
+        hbox2.setPadding(new Insets(0, 50, 0, 0));
+        Path currentPath02 = Paths.get("");
+        String path02 = currentPath02.toAbsolutePath().toString();
+        File f = new File(path02+"/src/ProgramOfStudy.html");
+        WebView browser = new WebView();
+        browser.getEngine().load(f.toURI().toURL().toString());
+        hbox2.getChildren().addAll(browser);
+     
+        
+        return hbox2;
+    }
+     //Configuering Event Listener... Removed Back and Forward Buttons
+//    private void configureListeners () throws MalformedURLException {
+//
+//        /**
+//         * Forward click. Count increases to go to next XML file and merges said
+//         * file.
+//         */
+//        forward.setOnAction((ActionEvent event) -> {
+//            count++;
+//            XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[count].getAbsolutePath(), xslFile, htmlFile);
+//            xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
+//            try {
+//                configureDisplay();
+//            } catch (MalformedURLException ex) {
+//                Logger.getLogger(MainXML.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        });
+//
+//        /**
+//         * Back button click, Count decreases in array to go to said XML file
+//         * and converts it again to output.htm
+//         */
+//        back.setOnAction((ActionEvent event) -> {
+//            count--;
+//            XML2HTML xml2htmlObject = new XML2HTML(listOfFiles[count].getAbsolutePath(), xslFile, htmlFile);
+//            xml2htmlObject.convert2Html(xml2htmlObject.getXmlFileName(), xml2htmlObject.getXslFileName(), xml2htmlObject.getHtmlFileName());
+//            try {
+//                configureDisplay();
+//            } catch (MalformedURLException ex) {
+//                Logger.getLogger(MainXML.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        });
+//    }
+    
     private void configureDisplay() throws MalformedURLException {
-        HBox hbox = addHBox();
-        controls.getChildren().removeAll(back, forward);
-        mainXMLPane.setLeft(hbox);
+//        controls.getChildren().removeAll(back, forward);
+        HBox hboxx = addHBox();
+        mainXMLPane.setRight(hboxx);
+        HBox hbox2 = addHBox2();
+        mainXMLPane.setLeft(hbox2);
         myBrowser = new MyBrowser();
         mainXMLPane.setCenter(myBrowser);
-        controls.setAlignment(Pos.CENTER);
-        controls.getChildren().addAll(back, forward);
-        mainXMLPane.setBottom(controls);
+//        controls.setAlignment(Pos.CENTER);
+//        controls.getChildren().addAll(back, forward);
+//        mainXMLPane.setBottom(controls);
     }
 
     private void generateFiles() {
