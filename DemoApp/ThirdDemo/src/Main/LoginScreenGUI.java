@@ -2,7 +2,6 @@ package Main;
 
 import java.net.MalformedURLException;
 import javafx.application.Application;
-import static javafx.application.Application.launch;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -16,18 +15,24 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import static javafx.application.Application.launch;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 
 /**
  * This class creates the GUI for the log in screen
  *
  * @author Jesus
- * @version 1.0
  */
 public class LoginScreenGUI extends Application {
+
     GridPane mainLogIn = new GridPane();
+    Stage primaryStage = null;
+    TextField userNameText = new TextField();
+    PasswordField passwordBox = new PasswordField();
+
     @Override
     public void start(Stage primaryLogIn) throws Exception {
         mainLogIn.setAlignment(Pos.CENTER);
@@ -35,47 +40,88 @@ public class LoginScreenGUI extends Application {
         mainLogIn.setHgap(10);
         mainLogIn.setPadding(new Insets(25, 25, 25, 25));
 
-        Scene sceneLogIn = new Scene(mainLogIn, 600, 600);
+        Scene sceneLogIn = new Scene(mainLogIn, 400, 300);
 
         primaryLogIn.setScene(sceneLogIn);
         primaryLogIn.show();
 
-        Text LogInTitle = new Text();
-        LogInTitle.setText("Welcome to Vaq-Paq \n"
-                + "Login to continue");
-
-        mainLogIn.add(LogInTitle, 0, 0, 2, 1);
+        mainLogIn.add(loginText(), 0, 0, 2, 1);
 
         Label Username = new Label("User Name:");
         mainLogIn.add(Username, 0, 1);
 
-        TextField userNameText = new TextField();
         mainLogIn.add(userNameText, 1, 1);
 
         Label password = new Label("Password");
         mainLogIn.add(password, 0, 2);
 
-        PasswordField passwordBox = new PasswordField();
         mainLogIn.add(passwordBox, 1, 2);
 
-        Button logInButton = new Button("Log into Vaq-Paq");
         HBox logInfield = new HBox(10);
         logInfield.setAlignment(Pos.BOTTOM_RIGHT);
-        logInfield.getChildren().add(logInButton);
+        logInfield.getChildren().add(logInButton());
         mainLogIn.add(logInfield, 1, 4);
 
-        logInButton.setOnAction((ActionEvent event) -> {
-                Platform.runLater(() -> {
-                    try {
-                        new Main().start(new Stage());
-                    } catch (MalformedURLException ex) {
-                        Logger.getLogger(LoginScreenGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                });
-        });
+        String css = this.getClass().getResource("style.css").toExternalForm();
+        mainLogIn.getStylesheets().add(css);
+        primaryLogIn.getIcons().addAll(new Image("vaq.png"));
+
+    }
+
+    void incorrectInformation() {
+
+        final Stage dialog = new Stage();
+        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initOwner(primaryStage);
+        BorderPane dialogVbox = new BorderPane();
+        Text popupText = new Text("Incorrect username or password!");
+        dialogVbox.setCenter(popupText);
+        Scene dialogScene = new Scene(dialogVbox, 200, 100);
+        dialog.setScene(dialogScene);
+        dialog.setTitle("Incorrect");
+        dialog.getIcons().addAll(new Image("vaq.png"));
+        dialog.centerOnScreen();
+        dialog.show();
+    }
+
+    void LogInMethod() {
+        String Password = passwordBox.getText();
+        String Username = userNameText.getText();
+        final Stage stage;
+
+        if (Password.equalsIgnoreCase("admin") && Username.equalsIgnoreCase("admin")) {
+            try {
+                new Main().start(new Stage());
+                stage = (Stage) mainLogIn.getScene().getWindow();
+                stage.close();
+
+            } catch (MalformedURLException ex) {
+                Logger.getLogger(LoginScreenGUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        } else {
+            System.out.print(Password + "\b" + Username);
+            incorrectInformation();
+        }
     }
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    Button logInButton() {
+        Button logInButton = new Button("Log into Vaq-Paq");
+
+        logInButton.setOnAction((ActionEvent e) -> {
+            LogInMethod();
+        });
+
+        return logInButton;
+    }
+
+    Text loginText() {
+        Text LogInTitle = new Text();
+        LogInTitle.setText("Welcome to Vaq-Paq \n"
+                + "Login to continue");
+        return LogInTitle;
     }
 }

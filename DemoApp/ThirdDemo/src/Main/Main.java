@@ -7,10 +7,7 @@ package Main;
 
 import Team02_Scrum2.POSPrototypeDriver;
 import gpawidget.GPAWidget;
-import java.io.File;
 import java.net.MalformedURLException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
@@ -21,8 +18,6 @@ import javafx.scene.control.TabPane.TabClosingPolicy;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
 import javafx.stage.Stage;
  
 
@@ -97,7 +92,8 @@ public class Main extends Application {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-      launch(args);
+      Application.launch(LoginScreenGUI.class, args);
+      //launch(args); //in case the other does not work
   }
 }
 
