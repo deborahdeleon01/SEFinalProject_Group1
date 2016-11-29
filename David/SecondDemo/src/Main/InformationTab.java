@@ -69,8 +69,7 @@ public class InformationTab extends Application {
         Text position = new Text("");
         Text email = new Text("");
         Text phone = new Text("");
-        
-        
+
         ObservableList<String> options = 
         FXCollections.observableArrayList(
             "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
@@ -243,6 +242,7 @@ public class InformationTab extends Application {
         Text text = new Text("ttttt");
 //        pane.add(box.reminderWidget(), 0, 3);
         pane.add(box.reminderWidget(), 0, 3);
+        pane.setId("reminders");
 
         return pane;
     }

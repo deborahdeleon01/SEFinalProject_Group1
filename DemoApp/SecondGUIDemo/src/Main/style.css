@@ -76,4 +76,11 @@
     -fx-background-radius: 5.0; 
 }
 
+.button {
+        -fx-background-color: rgb(0,42,92);
+        -fx-border-radius: 5px;
+        -fx-text-fill: white;
+        -fx-font-size: 1.5em;
+    }
+
 }
