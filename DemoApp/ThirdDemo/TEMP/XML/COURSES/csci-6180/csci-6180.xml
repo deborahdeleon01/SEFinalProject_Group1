@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../CoursesTemplet.xsl"?>
+<Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6180</Number>
+	<Name>Problems in Computer Science</Name>
+	<Description>
+		An area of computer science is examined under the direction of a faculty member.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Independent Study</Schedule-type>
+	<Prerequisite>
+		<item>Consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Exempt from 3peat processing</item>
+	<item>Exempt/Waive 6 drop process</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>

@@ -1,0 +1,33 @@
+<Learning-outcomes>
+  <item>Understanding of database technology.</item>
+  <item>Understand databases, DBMS’s, transactions, OLAP, and OLTP.</item>
+  <item>Know the history and key players in the modern database world.</item>
+  <item>Understand common database models, including relational, object, object-relational, hierarchical, network, etc.</item>
+  <item>Understanding of the relational data model.</item>
+  <item>Understand main concepts of the relational model: relations/tables, tuples/rows, attributes/columns, database and relation schemas.</item>
+  <item>Understand constraints: integrity, key, foreign-key, syntactic, semantic, and reactive.</item>
+  <item>Have a basic understanding of data management (schema creation, data population, querying, administrative activities) using a relational database.</item>
+  <item>Proficiency with conceptual modeling of databases using Entity-Relationship (ER) Diagrams.</item>
+  <item>Understand the E-R approach.</item>
+  <item>Understand entities and entity types, relationships and relationship types.</item>
+  <item>Understand entity type hierarchies, participation constraints, and part-of relationships.</item>
+  <item>Model enterprise data with ER Diagrams.</item>
+  <item>Translate ER Diagrams into relational database schemas.</item>
+  <item>Familiarity with database design and normalization theory.</item>
+  <item>Understand the gap between ER Diagram generated schemas and a “good” database.</item>
+  <item>Understand the problems with set-valued attributes, data redundancy, and various data anomalies.</item>
+  <item>Understand basics of the relational normalization theory: decompositions, functional dependencies, and normal forms.</item>
+  <item>Proficiency with relational algebra and Structured Query Language (SQL).</item>
+  <item>Understand relational algebra and construct queries using it.</item>
+  <item>Understand SQL and construct queries using it.</item>
+  <item>Understand the relationship and interactions of relational algebra and SQL.</item>
+  <item>Familiarity with database implementation issues.</item>
+  <item>Understand the general architecture of an RDBMS.</item>
+  <item>Understand the elements of a system catalog.</item>
+  <item>Understand database physical storage organization: heap and sorted files, main memory and disk interactions.</item>
+  <item>Understand indexes: clustered/unclustered, primary/secondary, sparse/dense, ISAM, B+ trees, hash indexes, etc.</item>
+  <item>Understanding of the basics of query processing and query optimization.</item>
+  <item>Understand external sorting.</item>
+  <item>Understand evaluation methods for projection, selection, and set operators.</item>
+  <item>Understand basic join algorithms: nested-loops, sort-merge, and hash joins.</item>
+</Learning-outcomes>

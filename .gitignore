@@ -14,10 +14,16 @@ nb-configuration.xml
 *.jar
 *.war
 *.ear
-*.xml
+
+
 /Jesus/LoginUI/nbproject/private/
 /Jesus/GuiWithLogInScreen/nbproject/private/
 /David/FirstGUI/FirstGUI/nbproject/private/
 /Debbie/SecondGUIDemo/nbproject/private/
 /DemoApp/SecondGUIDemo/SecondGUIDemo/nbproject/private/
 /DemoApp/SecondGUIDemo/nbproject/private/
+/DemoApp/SecondGUIDemo/CoursesXML/*
+/David/SecondDemo/CoursesXML/*
+/David/SecondDemo/build/*
+/David/SecondDemo/nbproject/*
+David/SecondDemo/build.xml
