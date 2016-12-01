@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS>
+     <Course>
+	<Divide>Other</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1105</Number>
+	<Name>Digital Tech in Modern World</Name>
+	<Description>
+		The course will consider the power and limitations of modern day technology, what technology can and cannot do, and 
+		personal responsibility related to digital technology. The course emphasizes active learning to enhance critical thinking, 
+		critical analysis of information gained from technical sources, and life-long learning competencies. Students use digital 
+		technology to support and enhance communication, using current productivity technologies and exploring emerging 
+		technologies.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+	<Divide>Computer_Science_Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1170</Number>
+	<Name>Engineer Comp Sci I Lab</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level 
+		object oriented programming language applying the principles taught in the CSCI 1370 lecture course. 
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>CSCI 1370 or CSCI 1378</item>
+          </Co-requisite>
+	<Legacy-number>COSC-1336</Legacy-number>
+	<Cross-listed>CSCI-1170 (A student may receive credit in only one course)</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course fee - Computer Science</item>
+		<item>CS Instruction Fee - LU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer_Science_Core_HON</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1178</Number>
+	<Name>Engineer Comp Sci I Lab HON</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level 
+		object oriented programming language applying the principles taught in the CSCI 1378 lecture course. Equivalence course: CSCI 1170. 
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>CSCI 1378 (Honors)</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Computer Science</item>
+		<item>CS Instruction Fee - LU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+    <Category>General_Core_Integrative_HON</Category>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1378</Number>
+    <Name>Engineering Comp Sci I HON</Name>
+    <Description>
+        An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized.. Societal and social issues related to computer science/engineering will be introduced.
+    </Description>
+    	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+      <item>Grade of 'C' or better in MATH 1314 or placement in a higher level Math course</item>
+      <item>CSCI-1101</item>
+      <item>Admission to the honors program</item>
+    </Prerequisite>
+    <Co-requisite>
+               <item>CSCI-1178</item>
+          </Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>CMPE 1378</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>CS Instruction Fee -LU</item>
+    </Course-attributes>
+</Course>
+     <Course>
+    <Divide>Other</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1380</Number>
+    <Name>Computer Science I</Name>
+    <Description>
+        An introduction to computer science and computer programming is given, in which the fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of structured object-oriented programming will be emphasized. For degree programs requiring a three hour course in computer science. Two hours will fulfill Computer Literacy Core requirement.
+    </Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+               <item>Concurrent enrollment or credit for MATH 1314 or higher level mathematics course.</item>
+          </Prerequisite>
+    <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+    <Legacy-number>COSC-1336</Legacy-number>
+    <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+    <Course-attributes>
+	    <item>Core Int/Exp Lrng-090</item>
+	    <item>Degree Elective</item>
+	    <item>CS Instruction Fee - LU</item>
+    </Course-attributes>
+</Course>
+     <Course>
+    <Divide>Other_HON</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1387</Number>
+    <Name>Computer Science I HON</Name>
+    <Description>
+        An introduction to computer science and computer programming is given, in which the fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of structured object-oriented programming will be emphasized.
+    </Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+               <item>Concurrent enrollment or credit for MATH 1314 or higher level mathematics course.</item>
+          </Prerequisite>
+    <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+    <Course-attributes>
+	    <item>Degree Elective</item> 
+	    <item>CS Instruction Fee - LU</item>
+    </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2333</Number>
+<Name>Computer Org and Assembly Lang</Name>
+<Description>An introduction to computer organization, use of assembly language programming, basic instruction sets, arithmetic and logical operations, addressing modes and macro definition. Several computer programming projects are included.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  <item>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378</item>
+</Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>COSC-2325</Legacy-number>
+<Cross-listed>CMPE-2333</Cross-listed>
+<Restrictions1>
+  	<item>dnu-MED in Educational Admin</item>
+  	<item>MPA in Public Administration</item>
+  	<item>Bus. Admin -Accelerated online.</item> 
+</Restrictions1>
+<Restrictions2> 
+  	<item>English Language Institute</item>
+</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+	<item>Degree Elective</item> 
+	<item>CS Instruction Fee - LU</item>
+</Course-attributes>
+</Course>
+     <Course>
+  <Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2344</Number>
+<Name>Programming in a UNIX/Linux Envr</Name>
+<Description>The course presents the UNIX file system, the commonly used utilities, editors, shell programming and scripting. It includes instruction in software development in the UNIX/Linux environment. In addition, a brief overview of the internal components of the operating system will be covered.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+<item>CSCI-1370/CMPE-1370, CSCI-1378/CMPE-1378 or consent of instructor</item>
+  </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+  		<item>dnu-MED in Educational Admin</item>
+  		<item>MPA in Public Administration</item>
+  		<item>Bus. Admin -Accelerated online.</item> 
+	</Restrictions1>
+	<Restrictions2> 
+  		<item>English Language Institute</item>
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item> 
+		<item>CS Instruction Fee - LU</item>
+</Course-attributes>
+</Course>
+     <Course>
+<Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2380</Number>
+<Name>Computer Science II</Name>
+<Description> A second programming course includes problem solving by structured design; provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+<item>CSCI-1370/CMPE-1370, CSCI-1378/CMPE-1378 or consent of instructor</item>
+ </Prerequisite>
+<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>COSC-2336</Legacy-number>
+<Cross-listed>CMPE-2380</Cross-listed>
+	<Restrictions1>
+  <item>dnu-MED in Educational Admin</item>
+  <item>MPA in Public Administration</item>
+  <item>Bus. Admin -Accelerated online</item> 
+	</Restrictions1>
+	<Restrictions2> 
+  <item>English Language Institute</item>
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - LU</item>
+</Course-attributes>
+</Course>
+     <Course>
+<Divide>Computer_Science_Core_HON</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2388</Number>
+<Name>Computer Science II HON</Name>
+<Description>
+A second programming course includes problem solving by structured design. Provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  <item>Undergraduate level CSCI 1378, CSCI 1370, or CMPE 1370 with a minimum grade of D</item>
+</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>CMPE 2388</Cross-listed>
+	<Restrictions1>
+  		<item>dnu-MED in Educational Admin</item>
+  		<item>MPA in Public Administration</item>
+  		<item>Bus. Admin -Accelerated online.</item> 
+	</Restrictions1>
+	<Restrictions2> 
+  		<item>English Language Institute</item>
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+		<Course-attributes>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee -LU</item>
+</Course-attributes>
+</Course>
+     <Course>
+<Category>Technical_Electives</Category>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3300</Number>
+<Name>Internship in Computer Science</Name>
+<Description>
+This course is designed to give students an opportunity to gain practical experience in the computer science career field by 
+	working with a participating employing firm or organization. The student will be supervised by a faculty member 
+	acting as a liaison between the University and the employing organization to ensure compliance with specific 
+	learning and experience requirements. The employment can be either paid or unpaid, and normally would include 
+	practical experience spread over one academic term or summer. May be repeated once. A maximum of three hours of 
+	credit from CSCI 3300 can be used toward the computer science major.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Practicum</Schedule-type>
+<Prerequisite>
+	<item>Junior standing</item>
+	<item>Minimum 12 hours of Computer Science (CSCI) completed and approved by both the department and employer 
+		providing the practicum/internship experience.</item>
+</Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>COSC-4386</Legacy-number>
+<Cross-listed>CMPE-3300</Cross-listed>
+	<Restrictions1>
+  <item>dnu-MED in Educational Admin</item>
+  <item>MPA in Public Administration</item>
+  <item>Bus. Admin -Accelerated online.</item> 
+	</Restrictions1>
+	<Restrictions2> 
+       <item>English Language Institute</item>
+	</Restrictions2>
+<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+	<item>Exempt from 3peat processing</item>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Mathematics_and_Engineering</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>3310</Number>
+	<Name>Discrete Data Structures</Name>
+	<Description>
+	An introduction to some of the more important concepts, techniques, and structures of discrete mathematics. It provides a 
+		bridge between computer science and mathematics. Topics include functions and relations, sets, countability, 
+		groups, graphs, propositional and predicate calculus, and permutations and combinations. Students will be expected 
+		to develop simple proofs for problems drawn primarily from computer science and applied mathematics.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+	<item>Undergraduate level MATH 2413 or MATH 1460 Minimum Grade of C</item>
+	<item>Undergraduate level CSCI 1370/CMPE 1370 or CSCI 1378/CMPE 1378 with a Minimum Grade of D</item>
+	</Prerequisite>
+ 	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>COSC 2310</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+		<Restrictions1>
+	  		<item>dnu-MED in Educational Admin</item>
+	  		<item>MPA in Public Administration</item>
+	  		<item>Bus. Admin -Accelerated online.</item> 
+		</Restrictions1>
+		<Restrictions2> 
+	  		<item>English Language Institute</item>
+		</Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3333</Number>
+  <Name>Algorithms and Data Structures</Name>
+  <Description>
+    This course is a continuation of data structures topics covered in CSCI 2380. Content includes theoretical topics in 
+    algorithmic efficiency and complexity, along with abstract data types, including graphs, networks, trees, and priority 
+    queues. Search topics, including hashing, trees, external search trees (B-trees), and sorting algorithms including 
+    external sorting are introduced and compared. Computational complexity topics include the class P and NP, NP-completeness 
+    and reducibility, NP-completeness proofs, and NP-complete problems.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+   <Prerequisite>
+               <item>CSCI/CMPE 2380 or CSCI/CMPE 2388</item>
+          </Prerequisite>
+   <Co-requisite>
+               <item>Credit/registration for MATH 2346, CSCI 3310, or MATH 2305</item>
+          </Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+    <item>Degree Elective</item> 
+    <item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+   <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3334</Number>
+  <Name>Systems Programming</Name>
+  <Description>
+    This course covers the design and implementation of system software. It investigates the relationship between software 
+    design and machine architecture. Topics may include assemblers, macro-processors, compilers, loaders, debugging environments, 
+    program development and archival tools, command language interpreters (shells), file systems, I/O support, processes, threads, 
+    and inter-process communication.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI/CMPE 2380</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>CSCI/CMPE 2333, ELEE 3435, or CMPE 3437</item>
+          </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+    </Course>
+     <Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3336</Number>
+  <Name>Organization of Program Lang</Name>
+  <Description>
+    This course describes the fundamental concepts of programming languages by discussing the design of the various language 
+    constructs, examining the design choices for these constructs, critically comparing design alternatives and discussing 
+    implementation techniques. The underlying theory and formal modes of describing the syntax and semantics including finite 
+    automata and regular expressions, context-free grammars, context-sensitive languages and the Chomsky Hierarchy are included.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI 2380/CSCI 2388 or CMPE 2380/CMPE 2388</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3340</Number>
+  <Name>Software Engineering</Name>
+  <Description>
+    A formal approach to the state of the art techniques in software design and development. Emphasis will
+    be on Project Planning Requirements, Specification, and System Desing and includes object design, testing,
+    and implementation. Provides the student with the opportunity to work on large projects in a group situation.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>3.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-2388 or CSCI-2830</item>
+    <item>CMPE-2380 or CMPE-2388</item>
+    <item>3 Advance Hours in CSCI</item>
+  </Prerequisite>
+  <Co-requisite>
+    <item>CMPE-3340</item>
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>CMPE-3340</Cross-listed>
+  <Restrictions1>
+	  <item>dnu-MED in Educational Admin</item>
+	  <item>MPA in Public Administration</item>
+	  <item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+  <Restrictions2>
+	<item>English Language Institute</item>
+  </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+    <item>Degree Elective</item>
+    <item>Course fee - Computer Science</item>
+    <item>CS Instruction Fee – LU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3341</Number>
+  <Name>Software Engineering II</Name>
+  <Description>
+    The course will cover the analysis of requirements and software architecture with a major
+    emphasis on object design, implementation, testing and validation, maintenance and software engineering. Methods for evaluating software for correctness, and reliability, system testing
+    techniques, testing tools and limitations of testing, Advance Software Engineering topics such
+    as Design Patterns, Aspect Oriented Engineering, Interactive Design Methods, and Formal
+    Specification and included. Students will work on large group projects.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-3340 or CMPE-3340</item>
+  </Prerequisite>
+  <Co-requisite>
+    <item>CMPE-3341</item>
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    <item>CMPE-3341</item>
+  </Cross-listed>
+  <Restrictions1>
+	  <item>dnu-MED in Educational Admin</item>
+	  <item>MPA in Public Administration</item>
+	  <item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+  <Restrictions2>
+		  <item>English Language Institute</item>
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3342</Number>
+  <Name>Internet Programming</Name>
+  <Description>
+    Introduction to web application programming. Covers the fundamentals of developing
+    applications for web browsers, within the dominant HTTP-based client/server model.
+    A wide range of technologies and development methodologies are covered, including database
+    and server architectures, serer-side frameworks, client-side languages/libraries, remote
+    invocation models and web application security. Specific topics in web development change
+    rapidly, but some examples include SQL, HTML, TLS, PHP, Java EE (servllets, JSP, etc),
+    ASP.NET.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-2380/CSCI-2388 or CMPE-2380/CMPE-2388</item>
+    <item>CSCI-3327 or CSCI-3328</item>
+  </Prerequisite>
+  <Co-requisite>
+    <item>CMPE-3341</item>
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    <item>CMPE-3342</item>
+  </Cross-listed>
+  <Restrictions1>
+    <item>dnu-MED in Educational Admin </item>
+    <item>MPA in Public Administration </item>
+    <item>Bus. Admin -Accelerated online </item>
+  </Restrictions1>
+  <Restrictions2>
+     <item>May not be enrolled in English Language Institute </item>
+  </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+    <item>Degree Elective </item>
+    <item>CS Instruction Fee – HU </item>
+  </Course-attributes>
+</Course>
+     <Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3350</Number>
+<Name>Numerical Methods</Name>
+<Description>
+This course studies the numerical solutions to various problems occurring in engineering, science and mathematics. These problems include finding solutions to nonlinear equations, solutions to linear and nonlinear systems of equations, interpolation of data, approximation of functions, numerical integration and solutions to differential equations. It also studies the influence of data representation and computer architecture on the choice and development of algorithms.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>MATH 2413 or MATH 2487</item>
+    <item>CSCI 1380/CSCI 1387, CSCI 1370/CSCI 1378, or CMPE 1370/CMPE 1378</item>
+  </Prerequisite>
+<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+<item>Degree Elective</item>
+<item>CS Instruction Fee - HU</item>
+</Course-attributes>
+</Course>
+     <Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3370 </Number>
+<Name>Intro Game Develop</Name>
+<Description>
+This is a project based course in which programmers and designers collaborate to create a video game. The course investigates theory and practice of developing computer games from a variety of perspectives. 
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+ <Prerequisite>
+  <item>CSCI-3333/CMPE-3333</item>
+  <item>CSCI-3326/CMPE 3326, CSCI-3327/CMPE 3327, CSCI-3328/CMPE-3328 or consent of instructor</item>
+ </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4185 </Number>
+<Name>Research Seminar</Name>
+<Description>
+Students will have the opportunity to conduct faculty-sponsored research in the area of mutual interest resulting in oral and written presentation of their work to other students and faculty. May be repeated up to 6 credit hours. Up to three credit hours can be used to meet CSCI degree requirements.
+</Description>
+<Credit-hours>1.000 Credit Hours</Credit-hours>
+<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Independent Study</Schedule-type>
+  <Prerequisite>
+               <item>Consent of instructor</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>CMPE 4185</Cross-listed>
+  <Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	  <Course-attributes>
+               <item>Exempt from 3peat processing</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4301</Number>
+	<Name>Digital Image Processing</Name>
+	<Description>
+		The course presents fundamental concepts and applications of digital image processing. Topics include basic 
+		color, image perception and transformation, image enhancement and compression, and image analysis, and computer vision.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333 or CMPE 3333 with a minimum grade of D</item>
+	</Prerequisite>
+		<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+		<Legacy-number>None</Legacy-number>
+	<Cross-listed>
+	<item>CMPE-4301 (A student may receive credit in only one course)</item>
+	</Cross-listed>
+	<Restrictions1>
+		<item>dnu-MED in Educational Admin</item>
+		<item>MPA in Public Administration</item>
+		<item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item>
+	</Restrictions2>
+<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4302</Number>
+	<Name>Multimedia Systems</Name>
+	<Description>
+		This course presents the broad field of multimedia systems. Topics include the digital interactive 
+		multimedia, creation of multimedia, and various issues involving technology, design and effectiveness of multimedia 
+		applications. Students will have the opportunity to learn programming techniques for integrating video, sound, animation
+		and graphics for multimedia systems. 
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+		<item>dnu-MED in Educational Admin</item>
+		<item>MPA in Public Administration</item>
+		<item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item>
+	</Restrictions2>
+<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4303</Number>
+	<Name>Computer Vision</Name>
+	<Description>
+		This course covers the fundamental and advanced ideas of developing computerized procedures to extract 
+		numeric and symbolic information from images.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+		<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4310</Number>
+	<Name>Design and Analysis of Algorithm</Name>
+	<Description>The course presents elements of the design and analysis of computer algorithms. Topics include in-depth study of algorithms' design strategies such as dynamic programming, divide-and-conquer and greedy methods; algorithms for graph problems, geometric problems and other selected problems; and computational complexity.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CSCI-3333 or consent of instructor</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+               <item>CS Instruction Fee - HU</item>
+               <item>Degree Elective</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4318</Number>
+	<Name>Cyber Security</Name>
+	<Description>This course explores cyber security fundamentals, standards of good practice, and basic theory in depth. Topics will include privacy, confidentiality, integrity, and encryption. Key areas include network attacks and defenses, operating systems flaws, malware, social engineering and digital rights management.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CSCI-2344</item>
+               <item>CSCI-3333 or CMPE-3333</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4319</Number>
+	<Name>Digital Forensics</Name>
+	<Description>This course explores the science, technology, procedures and laws of acquiring and analyzing evidence from digital media and computing devices. Current forensic tools will be surveyed. Topics include volatile and nonvolatile data analysis, network based evidence collection, forensic analysis techniques, web, email, and registry activity reconstruction and study of available tools.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CSCI-2344</item>
+               <item>CSCI-2380 or CMPE-2380</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4321</Number>
+  <Name>E-Commerce</Name>
+  <Description>
+  This course covers e-commerce implementation including e-commerce security and prevention, 
+  e-commerce scalable architecture design, Internet infrastructure, web server administration, 
+  e-payment, mobile commerce systems, and business to business systems. 
+  </Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI-3333 or CMPE-3333</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+  <Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+  <Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes/>
+</Course>
+     <Course>
+<Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4325</Number>
+<Name>Automata, Formal Lang, and Comp</Name>
+<Description>
+The course presents formal computation models. Topics include finite state machine,
+pushdown state machine, Turing machine, halting problem, definition and properties of
+formal grammars and their languages as well as theory of computability and complexity
+including the complexity of optimization and approximation problems.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+               <item>CSCI-3333/CMPE-3333 or CSCI-3336</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+<Restrictions1>
+  <item>dnu-MED in Educational Admin</item> 
+  <item>MPA in Public Administration Bus.</item> 
+  <item>Admin -Accelerated online.</item>
+</Restrictions1>
+<Restrictions2>
+    <item>English Language Institute</item>  
+</Restrictions2>
+<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4327</Number>
+<Name>Compiler Construction</Name>
+<Description>
+Syntax analysis and semantic processing for a block-structured language. Compilation vs. interpretation; 
+lexical analysis based on finite automata; syntax-directed translation; symbol tables; run-time storage allocation; 
+error detection and recovery; code generation and optimization. Students are required to write a compiler. 
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+               <item>CSCI-3334/CMPE-3334</item>
+          </Prerequisite>
+<Co-requisite>
+               <item>CMPE-4327</item>
+          </Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+<Restrictions1>
+  <item>dnu-MED in Educational Admin</item> 
+  <item>MPA in Public Administration</item> 
+  <item>Bus. Admin -Accelerated online</item>
+ </Restrictions1>
+<Restrictions2>
+  <item>English Language Institute</item>  
+</Restrictions2>
+<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Databases</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4333</Number>
+	<Name>Database Design and Implement</Name>
+	<Description>
+   Study of logical (hierarchical, network, relational) and physical (sequential, indexed, relative)
+   organization of databases. Database management systems and their features, querying databases,
+   distributed databases, and data compression.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-3334</item>
+		<item>CMPE-3333</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+		<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+  <Category>Databases</Category>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4334</Number>
+<Name>Operating Systems</Name>
+<Description>
+This course provides a study of the basic concepts of operating systems: process management, memory management, file systems, resource 
+  allocation, and protection.
+</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  <item>CSCI-3333</item>
+  <item>CMPE-3333</item>
+</Prerequisite>	
+<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+<Course-attributes>
+<item>Degree Elective</item>
+<item> CS Instruction Fee - HU </item>
+</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Databases</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4335</Number>
+	<Name>Computer Architecture</Name>
+	<Description>
+  A study of the operational units and their interconnections of a modern computer as well as the theory behind the design of the
+		instruction set, control unit, registers, memory hierarchy and addressing modes, bus structures, input/output, and
+		storage units. Similarities between CISC and RISC architectures and related issues such as instruction level parallelism 
+		and superscalar processors are discussed.
+	</Description>	
+        <Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4336</Number>
+	<Name>Parallel and Distributed Comp</Name>
+	<Description>
+	Presents principles and practices of parallel and distributed computing. Topics include parallel and distributed computation models and architectures; design, analysis and implementation of parallel algorithms; and methods of parallel and distributed programming. 
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+	<item>CSCI-4335</item>
+	<item>CMPE-4335</item>
+	<item>CMPE-4380</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4336</Cross-listed>
+	<Restrictions1>
+		<item>dnu-MED in Educational Admin</item>
+		<item>MPA in Public Administration</item> 
+		<item>Bus. Admin -Accelerated online</item>     
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item>
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4341</Number>
+	<Name>Topics in Computer Science</Name>
+	<Description>
+	Topics or problems in computer science; subject matter changes from semester to semester. May be repeated for credit as topic varies. 
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>Consent of instructor</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>COSC-4380</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Exempt from 3peat processing</item> 
+		<item>Degree Elective</item> 
+		<item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4343</Number>
+	<Name>Data Mining</Name>
+	<Description>
+	This course gives the fundamentals of applying artificial intelligence techniques for analysis, learning and prediction of information using data extracted from databases. Topics include data mining system architecture and data processing, pattern recognition, attribute relevance analysis, class discrimination, rule association, correlation analysis, classification, prediction, cluster analysis and query languages.
+	</Description>
+	<Credit-hours>1.000 Credit Hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CSCI-4333</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>COSC-4343</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>   
+		<item>dnu-MED in Educational Admin</item> 
+		<item>MPA in Public Administration</item> 
+		<item>Bus. Admin -Accelerated online</item> 
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item> 
+	</Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+		<item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4344</Number>
+<Name>Bioinformatics</Name>
+<Description>
+This course will provide and introduction to the rapidly evolving field of bioinformatics with the overarching goal of understanding how computer science plays an integral part both in application and algorithmic aspects.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+               <item>CSCI-3333 or CMPE 3333 or consent of instructor</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>
+                    <item>None</item>
+               </item>
+          </Co-requisite>
+<Legacy-number>COSC-4381</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+<Restrictions1>
+               <item>Senior or Junior standing</item>
+          </Restrictions1>
+<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4345</item>
+		<item>CMPE-4345</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4350</Number>
+  <Name>Artificial Intelligence</Name>
+  <Description>
+  Study of intelligent machines and machine learning. Includes problem solving and heuristic search, natural language understanding, 
+    game playing, database and expert systems. Artificial Intelligence projects will be implemented using an AI language such as LISP, 
+    Prolog, C++ or Ada.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI-3333/CMPE-3333</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+  <Legacy-number>COSC-4350</Legacy-number>
+  <Cross-listed>CMPE-4350</Cross-listed>
+  <Restrictions1>
+               <item>Senior or Junior standing</item>
+          </Restrictions1>
+  <Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Attributes>Course Attributes: </Attributes>
+  <Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+    <Divide>Technical_Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4352</Number>
+    <Name>Machine Learning</Name>
+    <Description>This course provides an introduction to machine learning, data mining, and statistical pattern recognition. Topics include: supervised learning, unsupervised learning, reinforcement learning and best practices in machine learning.</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+        <item>CSCI-3333</item>
+        <item>CMPE-3333</item>
+        <item>Consent of instructor</item>
+    </Prerequisite>
+     <Co-requisite>
+         <item>None</item>
+     </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Attributes/>
+  <Course-attributes/>
+</Course>
+     <Course>
+    <Divide>Technical_Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4355</Number>
+    <Name>Expert Systems</Name>
+    <Description>This course covers the theoretical and practical principles of modern expert systems.</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+        <item>CSCI-3333</item>
+        <item>CMPE-3333</item>
+        <item>Consent of instructor.</item>
+    </Prerequisite>
+     <Co-requisite>
+         <item>None</item>
+     </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+ 	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Attributes/>
+  <Course-attributes/>
+</Course>
+     <Course>
+    <Divide>Technical_Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4360</Number>
+    <Name>Comp Graphics and Interactive Systems</Name>
+    <Description>
+		Presents fundamental concepts of computer graphics. Topics include display hardware, transformations, geometric 
+	    modeling, shading two- and three-dimensional display algorithms and graphics software systems.
+	</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+		<item>CSCI-3333</item>
+		<item>CMPE-3333</item>
+		<item>Consent of instructor</item>
+	</Prerequisite>
+     <Co-requisite>
+    <item>None</item>
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+  <Restrictions1>
+	  <item>dnu-MED in Educational Admin</item>
+	  <item>MPA in Public Administration</item>
+	  <item>Bus. Admin -Accelerated online</item>
+	  <item>English Language Institute</item>
+	</Restrictions1>
+  <Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Attributes>Course Attributes:</Attributes>
+  <Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4363</Number>
+	<Name>Adv Databases</Name>
+	<Description>
+		This course will cover a number of advanced topics in modern data intensive systems. Topics may include 
+		non-relational databases (nosql), spatial databases and data warehousing.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4333</item>
+		<item>Consent of Instructor</item>
+	</Prerequisite>
+  <Co-requisite>
+    <item>None</item>
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Attributes>Course Attributes:</Attributes>
+  <Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4345</item>
+		<item>CMPE-4345</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes/>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4370</Number>
+	<Name>Adv Game Development</Name>
+	<Description>
+		This course in advanced game development covers core techniques in 3D game development. Students explore industry-standard engines and middleware, and develop independent engine components using low-level technologies. Topics include: real-time 3D pipelines, collision detection and response, animation, particle effects, scripting and networking.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-3370</item>
+		<item>Consent of Instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes/>
+	<Course-attributes/>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4381</Number>
+	<Name>Interactive Systems and User Interface Design</Name>
+	<Description>
+		Presents principles and practice of information communication between user and system. The course examines 
+		results of past research, as well as evolving trends in interface design and implementation.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>COSC-4332</Legacy-number>
+	<Cross-listed>CMPE-4381</Cross-listed> 
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Degree elective</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4382</Number>
+	<Name>Computer Visualization</Name>
+	<Description>
+		Focuses on design and implementation of computer graphics systems to provide visual representation of 
+		large data sets. Presents current theory and practice of computer visualization systems and advanced 
+		display techniques.
+	</Description>
+	<Credit-hours>3.000</Credit-hours>
+	<Lecture-hours>3.000</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed> 
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Degree elective</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4383</Number>
+	<Name>Bioinformatics Imaging</Name>
+	<Description>
+		This course provides an introduction to the physical and computational principles of medical imaging systems. 
+		Topics covered include fundamentals of x-ray radiography, x-ray computed tomography, ultrasound imaging and 
+		magnetic resonance imaging. Current techniques for visualization, segmentation, and analysis of medical image 
+		data will be discussed.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Credit hours</Lecture-hours>
+	<Lab-hours>0.000 Credit hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>COSC-4382</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes/>
+	<Course-attributes/>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6180</Number>
+	<Name>Problems in Computer Science</Name>
+	<Description>
+		An area of computer science is examined under the direction of a faculty member.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Independent Study</Schedule-type>
+	<Prerequisite>
+		<item>Consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Exempt from 3peat processing</item>
+	<item>Exempt/Waive 6 drop process</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6302</Number>
+	<Name>Foundations of Software</Name>
+	<Description>
+		Focusing on a high level object oriented language (e.g., Java, C++), provides foundational study of algorithms, data structures, and programming systems in the context of information technology systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Knowledge of a high level programming language and consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Exempt from 3peat processing</item>
+	<item>Exempt/Waive 6 drop process</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6303</Number>
+	<Name>Principles Info Tech Sys</Name>
+	<Description>
+		An introduction to information technology and computer systems. Specific topics provide an overview of databases, knowledge-based systems, e-commerce, software engineering, software tools, programming, and Internet.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Knowledge of a high level programming language</item>
+		<item>Consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+		<Course-attributes>
+		<item>Exempt from 3peat processing</item>
+		<item>Exempt/Waive 6 drop process</item>
+		<item>CS Instruction Fee - G</item>
+		</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6305</Number>
+	<Name>Found Algs Data Structs</Name>
+	<Description>
+		In-depth analysis of computing algorithms and data structures for implementation in the context of software engineering design using structured programming languages.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-6302</item>
+		<item>CSCI-6382</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>N/A</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+	<Course-attributes>
+	<item>Exempt from 3peat processing</item>
+	<item>Exempt/Waive 6 drop process</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+</POS>
