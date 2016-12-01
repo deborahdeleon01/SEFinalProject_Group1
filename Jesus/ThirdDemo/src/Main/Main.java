@@ -5,8 +5,6 @@
  */
 package Main;
 
-import Team02_Scrum2.POSPrototypeDriver;
-import gpawidget.GPAWidget;
 import java.net.MalformedURLException;
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -22,15 +20,9 @@ import javafx.stage.Stage;
  
 
 public class Main extends Application {
-    GPAWidget gpaWidget = new GPAWidget(600,600,0,4,0,0.2);
     InformationTab info = new InformationTab();
     Stage kstage = new Stage();
-    POSPrototypeDriver posLinks;
  
-    public Main() throws MalformedURLException {
-        this.posLinks = new POSPrototypeDriver(kstage);
-    }
-
   @Override
   public void start(Stage primaryStage) throws MalformedURLException {
       primaryStage.setTitle("VaqPack -- Computer Science Program of Study");
@@ -61,7 +53,6 @@ public class Main extends Application {
   {
       Tab tabA = new Tab();
       tabA.setText("Program Of Study");
-      tabA.setContent(posLinks.getRootPane());
       return tabA;
   }
   
@@ -84,7 +75,6 @@ public class Main extends Application {
       //Add GPA Widget in TabC
       StackPane tabC_stack = new StackPane();
       tabC_stack.setAlignment(Pos.CENTER);
-      tabC_stack.getChildren().add(gpaWidget.getPane());
       tabC.setContent(tabC_stack);
       return tabC;
   }

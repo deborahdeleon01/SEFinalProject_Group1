@@ -3,7 +3,6 @@ package Main;
 import LogInMVC.LogInController;
 import LogInMVC.LogInView;
 import javafx.application.Application;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 import static javafx.application.Application.launch;
 import javafx.scene.Scene;

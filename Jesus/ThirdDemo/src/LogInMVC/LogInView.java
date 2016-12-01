@@ -16,6 +16,8 @@ import javafx.scene.text.Text;
 public class LogInView extends GridPane {
 
     TextField userNameText = new TextField();
+    TextField FirstName = new TextField();
+    TextField LastName = new TextField();
     PasswordField passwordBox = new PasswordField();
     String PasswordLocal = passwordBox.getText();
     PasswordField ConfirmPasswordLocal = new PasswordField();
@@ -23,7 +25,10 @@ public class LogInView extends GridPane {
     Button Register = new Button("Register");
     Button ConfirmRegister = new Button("Register");
     Button SignIn = new Button("Sign in");
+    Button BackSignIn = new Button("Sign in");
     Label UsernameLable = new Label("User Name:");
+    Label FirstNameLable = new Label("First Name:");
+    Label LastNameLable = new Label("Last Name:");
     Label PasswordLable = new Label("Password");
     Label ConfirmPasswordLable = new Label("Confirm Password");
     Text LogInTitle = new Text("Welcome to Vaq-Paq \n"
@@ -52,11 +57,61 @@ public class LogInView extends GridPane {
         this.add(LogInTitle, 0, 0, 2, 1);
         this.add(UsernameLable, 0, 1);
         this.add(userNameText, 1, 1);
+        this.add(FirstNameLable, 0, 2);
+        this.add(FirstName, 1, 2);
+        this.add(LastNameLable, 0, 3);
+        this.add(LastName, 1, 3);
+        this.add(PasswordLable, 0, 4);
+        this.add(passwordBox, 1, 4);
+        this.add(ConfirmPasswordLable, 0, 5);
+        this.add(ConfirmPasswordLocal, 1, 5);
+        this.add(ConfirmRegister, 1, 6);
+        this.add(BackSignIn, 1, 7);
+    }
+
+    public void changeToLogin() {
+        this.getChildren().clear();
+
+        this.add(LogInTitle, 0, 0, 2, 1);
+        this.add(UsernameLable, 0, 1);
+        this.add(userNameText, 1, 1);
         this.add(PasswordLable, 0, 2);
         this.add(passwordBox, 1, 2);
-        this.add(ConfirmPasswordLable, 0, 3);
-        this.add(ConfirmPasswordLocal, 1, 3);
-        this.add(ConfirmRegister, 1, 4);
+        this.add(SignIn, 1, 3);
+        this.add(Register, 1, 4);
+
+    }
+
+    public TextField getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(TextField FirstName) {
+        this.FirstName = FirstName;
+    }
+
+    public TextField getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(TextField LastName) {
+        this.LastName = LastName;
+    }
+
+    public Label getFirstNameLable() {
+        return FirstNameLable;
+    }
+
+    public void setFirstNameLable(Label FirstNameLable) {
+        this.FirstNameLable = FirstNameLable;
+    }
+
+    public Label getLastNameLable() {
+        return LastNameLable;
+    }
+
+    public void setLastNameLable(Label LastNameLable) {
+        this.LastNameLable = LastNameLable;
     }
 
     public TextField getUserNameText() {
