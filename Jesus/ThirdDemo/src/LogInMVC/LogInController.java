@@ -2,14 +2,23 @@ package LogInMVC;
 
 import database.User;
 import javafx.event.ActionEvent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 /**
  *
- * @author Jesus Controls the link between the database and the view. It updates
+ * @author Jesus 
+ * Controls the link between the database and the view. It updates
  * the log in screen as necessary depending on log in or register
  *
  */
 public class LogInController {
+
+    Stage primaryStage;
 
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
@@ -40,12 +49,14 @@ public class LogInController {
         });
 
         logInView.SignIn.setOnAction((ActionEvent event) -> {
-            User u = new User();
+            User u;
             String Password = logInView.getPasswordBox().getText();
             String Username = logInView.getUsernameLocal();
             u = database.Db.theDatabase().login(Password, Username);
             if (u != null) {
                 System.out.println("logged in!");
+            } else {
+                incorrectInformation();
             }
         });
 
@@ -60,4 +71,19 @@ public class LogInController {
         logInView.getUsernameLable().setText("E-Mail");
     }
 
+    void incorrectInformation() {
+
+        final Stage dialog = new Stage();
+        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initOwner(primaryStage);
+        BorderPane dialogVbox = new BorderPane();
+        Text popupText = new Text("Incorrect username or password!");
+        dialogVbox.setCenter(popupText);
+        Scene dialogScene = new Scene(dialogVbox, 200, 100);
+        dialog.setScene(dialogScene);
+        dialog.setTitle("Incorrect");
+        dialog.getIcons().addAll(new Image("vaq.png"));
+        dialog.centerOnScreen();
+        dialog.show();
+    }
 }

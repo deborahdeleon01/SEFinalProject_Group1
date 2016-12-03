@@ -25,43 +25,14 @@ public class LoginScreenGUI extends Application {
         
         String css = this.getClass().getResource("style.css").toExternalForm();
         login.getStylesheets().add(css);
-        primaryLogIn.getIcons().addAll(new Image("vaq.png"));
+       // primaryLogIn.getIcons().addAll(new Image("vaq.png"));
         primaryLogIn.setTitle("test");
         primaryLogIn.setScene(scene);
         primaryLogIn.show();
 
     }
 
-//    void incorrectInformation() {
-//
-//        final Stage dialog = new Stage();
-//        dialog.initModality(Modality.APPLICATION_MODAL);
-//        dialog.initOwner(primaryStage);
-//        BorderPane dialogVbox = new BorderPane();
-//        Text popupText = new Text("Incorrect username or password!");
-//        dialogVbox.setCenter(popupText);
-//        Scene dialogScene = new Scene(dialogVbox, 200, 100);
-//        dialog.setScene(dialogScene);
-//        dialog.setTitle("Incorrect");
-//        dialog.getIcons().addAll(new Image("vaq.png"));
-//        dialog.centerOnScreen();
-//        dialog.show();
-//    }
-
-
-
     public static void main(String[] args) {
         launch(args);
     }
-
-//    Button logInButton() {
-//        Button logInButton = new Button("Log into Vaq-Paq");
-//
-//        logInButton.setOnAction((ActionEvent e) -> {
-//            LogInMethod();
-//        });
-//
-//        return logInButton;
-//    }
-
 }

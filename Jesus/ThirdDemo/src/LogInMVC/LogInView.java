@@ -12,6 +12,7 @@ import javafx.scene.text.Text;
 /**
  *
  * @author Jesus
+ * Creates the design of the application
  */
 public class LogInView extends GridPane {
 
