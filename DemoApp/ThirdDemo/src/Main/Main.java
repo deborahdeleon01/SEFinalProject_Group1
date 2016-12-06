@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Main;
-
+import email.*;
 import POS.POS;
 import XMLGEN.FormView;
 import gpawidget.GPAWidget;
@@ -28,7 +28,9 @@ public class Main extends Application {
     Stage kstage = new Stage();
     Stage POSstage = new Stage();
     POS posLinks;
-    
+    EmailView root = new EmailView();
+    EmailModel model = new EmailModel("@utrgv.edu", "", "", "VacPak POS Email", "Dear Student, ");
+    EmailController emailController = new EmailController(model, root);
     Stage FormXMLstage = new Stage();
     FormView fView;
  
@@ -52,7 +54,7 @@ public class Main extends Application {
        root.setId("eff");
        scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 
-      tabPane.getTabs().addAll(tabA(),tabB(),tabC(), tabD());
+      tabPane.getTabs().addAll(tabA(),tabB(),tabC(), tabD(), tabE());
 
       mainPane.setCenter(tabPane);
       mainPane.prefHeightProperty().bind(scene.heightProperty());
@@ -102,6 +104,12 @@ public class Main extends Application {
       tabD.setContent(fView.getFormPane());
       return tabD;
   }
+   private Tab tabE(){
+        Tab tabE = new Tab();
+        tabE.setText("Email");
+        tabE.setContent(root);
+        return tabE;
+    }
     /**
    * @param args the command line arguments
    */
