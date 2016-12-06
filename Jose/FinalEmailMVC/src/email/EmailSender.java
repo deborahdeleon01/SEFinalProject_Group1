@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gitEmail;
+package email;
 
 import java.util.Properties;
 import java.util.logging.Level;
@@ -21,9 +21,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+
 /**
  *
- * @author Alex
+ * @author Jose_Balle
  */
 public class EmailSender {
     // Constructors
@@ -35,53 +36,48 @@ public class EmailSender {
         
     }
     
-    public static void EmailSender(String fromEmail, String username, String password, String toEmail, String subject, String textMessage, String attachment) {
+    public static void EmailSender(String email, String password, String toEmail, String subject, String message, String attachment) {
         try {
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.office365.com");
             props.put("mail.smtp.port","587");
-//            props.put("mail.smtp.auth", "true");  //If this is enabled, the program would send email as soon as it's run (no need for authentication)
             props.put("mail.smtp.starttls.enable", "true");
-
-//            props.put("mail.smtp.socketFactory.class", "java.net.ssl.SSLSocketFactory");
-//            props.put("mail.smtp.socketFactory.port", "587");
-//            props.put("mail.smtp.socketFactory.fallback", "false");
 
             Session mailSession = Session.getInstance(props, null);
             mailSession.setDebug(true);
 
             Message emailMessage = new MimeMessage(mailSession);
 
-            emailMessage.setFrom(new InternetAddress(fromEmail));
+            emailMessage.setFrom(new InternetAddress(email));
             emailMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail)); // Mail multiple recipients using a comma ( , ) as parse
             emailMessage.setSubject(subject);
 
-            // Create body part for the text message 
+            //Create body part for the text message 
             BodyPart messageBodyPart = new MimeBodyPart();
-            messageBodyPart.setText(textMessage);
+            messageBodyPart.setText(message);
 
-            // Create bodypart for attachment
+            //Create bodypart for attachment
             messageBodyPart = new MimeBodyPart();
             DataSource source = new FileDataSource(attachment); 
             messageBodyPart.setDataHandler(new DataHandler(source));
             messageBodyPart.setFileName(attachment);
 
-            // Add bodyparts
+            //Add bodyparts
             Multipart multipart = new MimeMultipart();
-            multipart.addBodyPart(messageBodyPart);
             multipart.addBodyPart(messageBodyPart);
 
             emailMessage.setContent(multipart);
 
-            // Helps Sends Message through smtp protocol
+            //Helps Sends Message through smtp protocol
             Transport transport =  mailSession.getTransport("smtp");
-            transport.connect("smtp.office365.com", username, password);
+            transport.connect("smtp.office365.com", email, password);
 
             transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
 
             transport.send(emailMessage);
-        } catch (MessagingException ex) {
+        } 
+        catch (MessagingException ex) {
             Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    }   
 }
