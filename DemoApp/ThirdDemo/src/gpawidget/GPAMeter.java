@@ -125,7 +125,7 @@ public class GPAMeter extends Pane
         meter.setType(ArcType.ROUND); // Set arc type
 
         // Draw zones
-        Color[]  mycolors1={Color.rgb(220,0,0),Color.rgb(255,0,0), Color.LIGHTGREEN, Color.GREEN};
+        Color[]  mycolors1={Color.RED,Color.YELLOW, Color.LIGHTGREEN, Color.GREEN};
         double[] myvalues={0.25,0.25,0.25,0.25};
         
         // Draw value

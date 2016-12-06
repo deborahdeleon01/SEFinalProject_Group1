@@ -38,7 +38,7 @@ public class InformationTab extends Application {
     ReminderWidget box = new ReminderWidget();
     HBox borders = new HBox();
     
-    /*Temp Information Dropdown*/
+    
     private String pf;
 
     public InformationTab() {
@@ -47,11 +47,20 @@ public class InformationTab extends Application {
         pane.setTop(hbox);
 
         HBox hbox1 = addHBox1();
+        
 
-        Text centerText = new Text("More Information Goes here");
-        
-        
-        /***Jose Started Here***/
+        pane.setCenter(getCenter());
+        pane.setBottom(hbox1);
+        pane.setLeft(getLeftSide());
+        pane.setRight(getRightSide());
+
+        BorderPane.setAlignment(hbox, Pos.CENTER);
+     
+    }
+
+    
+    private GridPane getCenter() {
+                /***Jose Started Here***/
         /*Tab 3 Select and View*/
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(10, 10, 10, 10));
@@ -124,18 +133,10 @@ public class InformationTab extends Application {
         grid.add(email, 70, 14);
         grid.add(phone, 70, 15);
         
-
-        pane.setCenter(grid);
-        /***Jose Ended Here***/
-        pane.setBottom(hbox1);
-        pane.setLeft(getLeftSide());
-        pane.setRight(getRightSide());
-
-        BorderPane.setAlignment(hbox, Pos.CENTER);
-        BorderPane.setAlignment(grid, Pos.CENTER);
-     
+        return grid;
+        
     }
-
+    
     private GridPane getLeftSide() {
         GridPane pane = new GridPane();
 
