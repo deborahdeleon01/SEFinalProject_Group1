@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
+    <Divide>Other</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1380</Number>
+    <Name>Computer Science I</Name>
+    <Description>
+        An introduction to computer science and computer programming is given, in which the fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of structured object-oriented programming will be emphasized. For degree programs requiring a three hour course in computer science. Two hours will fulfill Computer Literacy Core requirement.
+    </Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>Concurrent enrollment or credit for MATH 1314 or higher level mathematics course.</Prerequisite>
+    <Co-requisite>None</Co-requisite>
+    <Legacy-number>COSC-1336</Legacy-number>
+    <Cross-listed>None</Cross-listed>
+	<Restrictions1>None</Restrictions1>
+    <Course-attributes>
+	    Core Int/Exp Lrng-090,
+	    Degree Elective,
+	    CS Instruction Fee - LU
+    </Course-attributes>
+</Course>

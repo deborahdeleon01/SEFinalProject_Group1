@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3341</Number>
+  <Name>Software Engineering II</Name>
+  <Description>
+    The course will cover the analysis of requirements and software architecture with a major
+    emphasis on object design, implementation, testing and validation, maintenance and software engineering. Methods for evaluating software for correctness, and reliability, system testing
+    techniques, testing tools and limitations of testing, Advance Software Engineering topics such
+    as Design Patterns, Aspect Oriented Engineering, Interactive Design Methods, and Formal
+    Specification and included. Students will work on large group projects.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-3340 or CMPE-3340
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3341
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    CMPE-3341
+  </Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin, MPA in Public Administration, Bus. Admin -Accelerated online, May not be enrolled in English Language Institute
+	</Restrictions>
+  <Course-attributes>Degree Elective,CS Instruction Fee - HU </Course-attributes>
+</Course>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3340</Number>
+  <Name>Software Engineering</Name>
+  <Description>
+    A formal approach to the state of the art techniques in software design and development. Emphasis will
+    be on Project Planning Requirements, Specification, and System Desing and includes object design, testing,
+    and implementation. Provides the student with the opportunity to work on large projects in a group situation.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>3.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-2388 or CSCI-2830,
+    CMPE-2380 or CMPE-2388,
+    3 Advance Hours in CSCI
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3340
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>CMPE-3340</Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin,
+	  MPA in Public Administration,
+	  Bus. Admin -Accelerated online
+	</Restrictions>
+  <Course-attributes>
+    Degree Elective,
+    Course fee - Computer Science,
+    CS Instruction Fee – LU
+  </Course-attributes>
+</Course>

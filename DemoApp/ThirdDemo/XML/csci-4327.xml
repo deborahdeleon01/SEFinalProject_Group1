@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4327</Number>
+<Name>Compiler Construction</Name>
+<Description>
+Syntax analysis and semantic processing for a block-structured language. Compilation vs. interpretation;
+lexical analysis based on finite automata; syntax-directed translation; symbol tables; run-time storage allocation;
+error detection and recovery; code generation and optimization. Students are required to write a compiler.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>CSCI-3334/CMPE-3334</Prerequisite>
+<Co-requisite>CMPE-4327</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+<Co-requisite>None</Co-requisite>
+<Restrictions>
+dnu-MED in Educational Admin,
+MPA in Public Administration Bus.,
+Admin -Accelerated online.
+</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+</Course>

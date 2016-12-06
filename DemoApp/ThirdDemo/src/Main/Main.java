@@ -5,7 +5,8 @@
  */
 package Main;
 
-import Team02_Scrum2.POSPrototypeDriver;
+import POS.POS;
+import XMLGEN.FormView;
 import gpawidget.GPAWidget;
 import java.net.MalformedURLException;
 import javafx.application.Application;
@@ -25,10 +26,15 @@ public class Main extends Application {
     GPAWidget gpaWidget = new GPAWidget(600,600,0,4,0,0.2);
     InformationTab info = new InformationTab();
     Stage kstage = new Stage();
-    POSPrototypeDriver posLinks;
+    Stage POSstage = new Stage();
+    POS posLinks;
+    
+    Stage FormXMLstage = new Stage();
+    FormView fView;
  
     public Main() throws MalformedURLException {
-        this.posLinks = new POSPrototypeDriver(kstage);
+        this.posLinks = new POS(POSstage);
+        this.fView = new FormView(FormXMLstage);
     }
 
   @Override
@@ -46,7 +52,7 @@ public class Main extends Application {
        root.setId("eff");
        scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 
-      tabPane.getTabs().addAll(tabA(),tabB(),tabC());
+      tabPane.getTabs().addAll(tabA(),tabB(),tabC(), tabD());
 
       mainPane.setCenter(tabPane);
       mainPane.prefHeightProperty().bind(scene.heightProperty());
@@ -87,6 +93,14 @@ public class Main extends Application {
       tabC_stack.getChildren().add(gpaWidget.getPane());
       tabC.setContent(tabC_stack);
       return tabC;
+  }
+    
+    private Tab tabD() 
+  {
+      Tab tabD = new Tab();
+      tabD.setText("XML Generator");
+      tabD.setContent(fView.getFormPane());
+      return tabD;
   }
     /**
    * @param args the command line arguments

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Mathematics</Department>
+	<Prefix>MATH</Prefix>
+	<Number>3331</Number>
+	<Name>Applied Statistics</Name>
+	<Description>
+    This course concerns itself with probabilistic models, regression analysis,
+    nonparametric statistics, and the basics of experimental design. Computer laboratory
+    experience will be an important part of the course.
+  </Description>
+	<Credit-hours>4.000 Credit hours</Credit-hours>
+	<Lecture-hours>4.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>Junior Standing</item>
+  <item>MATH-1340 or MATH-1341</item>
+  </Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes><item>CS Instruction Fee - HU</item><item>Degree Elective</item></Course-attributes>
+</Course>
