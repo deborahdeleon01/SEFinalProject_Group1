@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3336</Number>
+  <Name>Organization of Program Lang</Name>
+  <Description>
+    This course describes the fundamental concepts of programming languages by discussing the design of the various language
+    constructs, examining the design choices for these constructs, critically comparing design alternatives and discussing
+    implementation techniques. The underlying theory and formal modes of describing the syntax and semantics including finite
+    automata and regular expressions, context-free grammars, context-sensitive languages and the Chomsky Hierarchy are included.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI 2380/CSCI 2388 or CMPE 2380/CMPE 2388</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+	Degree Elective,
+	CS Instruction Fee - HU
+  </Course-attributes>
+</Course>

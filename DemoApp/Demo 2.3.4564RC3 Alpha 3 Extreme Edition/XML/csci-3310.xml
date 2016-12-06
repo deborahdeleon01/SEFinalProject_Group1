@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Mathematics_and_Engineering</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>3310</Number>
+	<Name>Discrete Data Structures</Name>
+	<Description>
+	An introduction to some of the more important concepts, techniques, and structures of discrete mathematics. It provides a
+		bridge between computer science and mathematics. Topics include functions and relations, sets, countability,
+		groups, graphs, propositional and predicate calculus, and permutations and combinations. Students will be expected
+		to develop simple proofs for problems drawn primarily from computer science and applied mathematics.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Undergraduate level MATH 2413 or MATH 1460 Minimum Grade of C,
+		Undergraduate level CSCI 1370/CMPE 1370 or CSCI 1378/CMPE 1378 with a Minimum Grade of D
+	</Prerequisite>
+ 	<Co-requisite>None</Co-requisite>
+	<Legacy-number>COSC 2310</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+		<Restrictions>
+	  		dnu-MED in Educational Admin,
+	  		MPA in Public Administration,
+	  		Bus. Admin -Accelerated online.
+		</Restrictions>
+	<Course-attributes>None</Course-attributes>
+</Course>

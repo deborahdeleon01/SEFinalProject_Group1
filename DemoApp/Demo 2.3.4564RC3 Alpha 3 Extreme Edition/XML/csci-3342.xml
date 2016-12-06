@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+  <Divide>Technical_Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3342</Number>
+  <Name>Internet Programming</Name>
+  <Description>
+    Introduction to web application programming. Covers the fundamentals of developing
+    applications for web browsers, within the dominant HTTP-based client/server model.
+    A wide range of technologies and development methodologies are covered, including database
+    and server architectures, serer-side frameworks, client-side languages/libraries, remote
+    invocation models and web application security. Specific topics in web development change
+    rapidly, but some examples include SQL, HTML, TLS, PHP, Java EE (servllets, JSP, etc),
+    ASP.NET.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-2380/CSCI-2388 or CMPE-2380/CMPE-2388,
+    CSCI-3327 or CSCI-3328
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3341
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    CMPE-3342
+  </Cross-listed>
+  <Restrictions>
+    dnu-MED in Educational Admin,
+    MPA in Public Administration ,
+    Bus. Admin -Accelerated online,
+    May not be enrolled in English Language Institute
+  </Restrictions>
+  <Course-attributes>Degree Elective, CS Instruction Fee – HU
+  </Course-attributes>
+</Course>

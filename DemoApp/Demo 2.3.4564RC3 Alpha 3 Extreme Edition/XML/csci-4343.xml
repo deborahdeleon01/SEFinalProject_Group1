@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4343</Number>
+	<Name>Data Mining</Name>
+	<Description>
+		This course gives the fundamentals of applying artificial intelligence techniques for analysis, learning and prediction of information using data extracted from databases. Topics include data mining system architecture and data processing, pattern recognition, attribute relevance analysis, class discrimination, rule association, correlation analysis, classification, prediction, cluster analysis and query languages.
+	</Description>
+	<Credit-hours>1.000 Credit Hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>CSCI-4333</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>COSC-4343</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+		dnu-MED in Educational Admin,
+		MPA in Public Administration,
+		Bus. Admin -Accelerated online,
+		May not be English Language Institute level
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee - HU,
+	</Course-attributes>
+</Course>

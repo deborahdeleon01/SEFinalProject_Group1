@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Other</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1101</Number>
+	<Name>Introduction to Computer Science</Name>
+	<Description>
+		This course presents an introduction to the breadth of the field of computer
+		science. Topics include an introduction to computer science as a career, overviews of
+		various computer science areas and topics, and foundations of computational problem
+		solving.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lab</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Degree Elective, Course fee - Comp Sci, CS Instruction Fee - LU</Course-attributes>
+</Course>

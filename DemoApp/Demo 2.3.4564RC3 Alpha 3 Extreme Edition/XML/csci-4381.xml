@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+
+<Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4381</Number>
+	<Name>Interactive Systems and User Interface Design</Name>
+	<Description>
+		Presents principles and practice of information communication between user and system. The course examines
+		results of past research, as well as evolving trends in interface design and implementation.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI 3333 or
+		CMPE 3333,
+		Consent of the instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>COSC-4332</Legacy-number>
+	<Cross-listed>CMPE-4381</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Degree elective,
+	CS Instruction Fee - G
+	</Course-attributes>
+</Course>

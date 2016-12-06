@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Databases</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4335</Number>
+	<Name>Computer Architecture</Name>
+	<Description>
+  A study of the operational units and their interconnections of a modern computer as well as the theory behind the design of the
+		instruction set, control unit, registers, memory hierarchy and addressing modes, bus structures, input/output, and
+		storage units. Similarities between CISC and RISC architectures and related issues such as instruction level parallelism
+		and superscalar processors are discussed.
+	</Description>
+        <Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		None
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+		None
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee - HU
+	</Course-attributes>
+</Course>
