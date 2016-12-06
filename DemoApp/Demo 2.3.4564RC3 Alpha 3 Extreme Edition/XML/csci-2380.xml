@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+<Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2380</Number>
+<Name>Computer Science II</Name>
+<Description> A second programming course includes problem solving by structured design; provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378 or consent of instructor
+ </Prerequisite>
+<Co-requisite>None</Co-requisite>
+<Legacy-number>COSC-2336</Legacy-number>
+<Cross-listed>CMPE-2380</Cross-listed>
+	<Restrictions>
+  dnu-MED in Educational Admin,
+  MPA in Public Administration,
+  Bus. Admin -Accelerated online,
+  May not be enrolled in English Language Institute
+	</Restrictions>
+<Course-attributes>
+	Degree Elective
+	CS Instruction Fee - LU
+</Course-attributes>
+</Course>

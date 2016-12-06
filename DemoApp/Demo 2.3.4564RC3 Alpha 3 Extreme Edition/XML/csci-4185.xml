@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4185 </Number>
+<Name>Research Seminar</Name>
+<Description>
+Students will have the opportunity to conduct faculty-sponsored research in the area of mutual interest resulting in oral and written presentation of their work to other students and faculty. May be repeated up to 6 credit hours. Up to three credit hours can be used to meet CSCI degree requirements.
+</Description>
+<Credit-hours>1.000 Credit Hours</Credit-hours>
+<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Independent Study</Schedule-type>
+  <Prerequisite>Consent of instructor</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>CMPE 4185</Cross-listed>
+  <Restrictions>None</Restrictions>
+	  <Course-attributes>Exempt from 3peat processing, CS Instruction Fee - HU</Course-attributes>
+</Course>

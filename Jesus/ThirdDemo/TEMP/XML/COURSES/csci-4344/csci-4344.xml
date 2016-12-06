@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../CoursesTemplet.xsl"?>
+<Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4344</Number>
+<Name>Bioinformatics</Name>
+<Description>
+This course will provide and introduction to the rapidly evolving field of bioinformatics with the overarching goal of understanding how computer science plays an integral part both in application and algorithmic aspects.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite><item>CSCI-3333 or CMPE 3333 or consent of instructor</item></Prerequisite>
+  <Co-requisite><item><item>None</item></item></Co-requisite>
+<Legacy-number>COSC-4381</Legacy-number>
+<Cross-listed>N/A</Cross-listed>
+<Restrictions1><item>Senior or Junior standing</item></Restrictions1>
+<Restrictions2><item>None</item></Restrictions2>
+	<Attributes>Course Attributes: </Attributes>
+  <Course-attributes><item>Degree Elective</item><item>CS Instruction Fee - HU</item></Course-attributes>
+</Course>
+
+

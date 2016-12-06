@@ -1,0 +1,30 @@
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+/Jesus/LoginUI/nbproject/private/
+/Jesus/GuiWithLogInScreen/nbproject/private/
+/David/FirstGUI/FirstGUI/nbproject/private/
+/Debbie/SecondGUIDemo/nbproject/private/
+/DemoApp/SecondGUIDemo/SecondGUIDemo/nbproject/private/
+/DemoApp/SecondGUIDemo/nbproject/private/
+/DemoApp/SecondGUIDemo/CoursesXML/*
+/David/SecondDemo/CoursesXML/*
+/David/SecondDemo/build/*
+/David/SecondDemo/nbproject/*
+David/SecondDemo/build.xml
+/DemoApp/MVCPractice/nbproject/private/
