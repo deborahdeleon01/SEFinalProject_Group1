@@ -52,19 +52,35 @@ public class EmailSender {
             emailMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail)); // Mail multiple recipients using a comma ( , ) as parse
             emailMessage.setSubject(subject);
 
-            //Create body part for the text message 
+            // Create body part for the text message and attatchment
             BodyPart messageBodyPart = new MimeBodyPart();
-            messageBodyPart.setText(message);
-
-            //Create bodypart for attachment
-            messageBodyPart = new MimeBodyPart();
+            BodyPart attatchmentBodyPart = new MimeBodyPart();
+            
+            // set contnets for text message and attatchment bodyparts
+            messageBodyPart.setText(message); 
+            
             DataSource source = new FileDataSource(attachment); 
-            messageBodyPart.setDataHandler(new DataHandler(source));
-            messageBodyPart.setFileName(attachment);
+            attatchmentBodyPart.setDataHandler(new DataHandler(source));
+            attatchmentBodyPart.setFileName(attachment);
 
-            //Add bodyparts
+            // Add bodyparts
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(messageBodyPart);
+            multipart.addBodyPart(attatchmentBodyPart);
+            
+//            //Create body part for the text message 
+//            BodyPart messageBodyPart = new MimeBodyPart();
+//            messageBodyPart.setText(message);
+//
+//            //Create bodypart for attachment
+//            messageBodyPart = new MimeBodyPart();
+//            DataSource source = new FileDataSource(attachment); 
+//            messageBodyPart.setDataHandler(new DataHandler(source));
+//            messageBodyPart.setFileName(attachment);
+//
+//            //Add bodyparts
+//            Multipart multipart = new MimeMultipart();
+//            multipart.addBodyPart(messageBodyPart);
 
             emailMessage.setContent(multipart);
 
