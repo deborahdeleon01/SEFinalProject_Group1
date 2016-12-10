@@ -5,13 +5,12 @@
  */
 package Main;
 
-import email.*;
 import POS.POS;
 import XMLGEN.FormView;
+import email.EmailController;
+import email.EmailModel;
+import email.EmailView;
 import gpawidget.GPAWidget;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
@@ -23,6 +22,10 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
 
 public class Main extends Application {
 
@@ -42,6 +45,54 @@ public class Main extends Application {
     public Main() throws MalformedURLException {
         this.posLinks = new POS(POSstage);
         this.fView = new FormView(FormXMLstage);
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Application.launch(LoginScreenGUI.class, args);
+        //launch(args); //in case the other does not work
+    }
+
+    public static void delete(File file)
+            throws IOException {
+
+        if (file.isDirectory()) {
+
+            //directory is empty, then delete it
+            if (file.list().length == 0) {
+
+                file.delete();
+                System.out.println("Directory is deleted : "
+                        + file.getAbsolutePath());
+
+            } else {
+
+                //list all the directory contents
+                String files[] = file.list();
+
+                for (String temp : files) {
+                    //construct the file structure
+                    File fileDelete = new File(file, temp);
+
+                    //recursive delete
+                    delete(fileDelete);
+                }
+
+                //check the directory again, if empty then delete it
+                if (file.list().length == 0) {
+                    file.delete();
+                    System.out.println("Directory is deleted : "
+                            + file.getAbsolutePath());
+                }
+            }
+
+        } else {
+            //if file, then delete it
+            file.delete();
+            System.out.println("File is deleted : " + file.getAbsolutePath());
+        }
     }
 
     @Override
@@ -132,53 +183,5 @@ public class Main extends Application {
         tabE.setText("Email");
         tabE.setContent(root);
         return tabE;
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Application.launch(LoginScreenGUI.class, args);
-        //launch(args); //in case the other does not work
-    }
-
-    public static void delete(File file)
-            throws IOException {
-
-        if (file.isDirectory()) {
-
-            //directory is empty, then delete it
-            if (file.list().length == 0) {
-
-                file.delete();
-                System.out.println("Directory is deleted : "
-                        + file.getAbsolutePath());
-
-            } else {
-
-                //list all the directory contents
-                String files[] = file.list();
-
-                for (String temp : files) {
-                    //construct the file structure
-                    File fileDelete = new File(file, temp);
-
-                    //recursive delete
-                    delete(fileDelete);
-                }
-
-                //check the directory again, if empty then delete it
-                if (file.list().length == 0) {
-                    file.delete();
-                    System.out.println("Directory is deleted : "
-                            + file.getAbsolutePath());
-                }
-            }
-
-        } else {
-            //if file, then delete it
-            file.delete();
-            System.out.println("File is deleted : " + file.getAbsolutePath());
-        }
     }
 }

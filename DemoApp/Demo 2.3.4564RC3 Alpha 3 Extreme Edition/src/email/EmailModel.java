@@ -6,7 +6,6 @@
 package email;
 
 /**
- *
  * @author Jose_Balle
  */
 public class EmailModel {
@@ -22,7 +21,7 @@ public class EmailModel {
         this.mailTo = mailTo;
         this.subject = subject;
         this.message = message;
-    }       
+    }
 
     public String getEmail() {
         return email;
@@ -63,7 +62,6 @@ public class EmailModel {
     public void setMessage(String message) {
         this.message = message;
     }
-        
-    
-    
+
+
 }

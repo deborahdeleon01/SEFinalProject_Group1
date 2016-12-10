@@ -7,46 +7,41 @@ package email;
 
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 
 /**
- *
  * @author Jose_Balle
  */
 public class EmailView extends GridPane {
-    
+
     private Text scenetitle = new Text("UTRGV Email");
-    
+
     private Label emailLabel = new Label("Email:");
     private TextField emailText = new TextField("@utrgv.edu");
-    
+
     private Label passLabel = new Label("Password:");
     private PasswordField passText = new PasswordField();
-    
+
     private Label toLabel = new Label("Send Email To:");
     private TextField toText = new TextField();
-    
+
     private Label subjectLabel = new Label("Email Subject:");
     private TextField subjectText = new TextField("VacPak POS Email");
-    
+
     private Label messageLabel = new Label("Message:");
     private TextArea messageText = new TextArea("Dear Student, ");
-    
+
     private Button sendEmail = new Button("Send Email");
-    
+
     public EmailView() {
         //Set GridPane        
         this.setAlignment(Pos.CENTER);
         this.setHgap(10);
         this.setVgap(10);
         this.setPadding(new Insets(25, 25, 25, 25));
-        
+
         //Add Fields
         this.add(scenetitle, 0, 0, 2, 1);
         this.add(emailLabel, 0, 1);
@@ -61,7 +56,7 @@ public class EmailView extends GridPane {
         this.add(messageText, 1, 5);
         this.add(sendEmail, 1, 7);
     }
-    
+
     public void updateEmailView() {
         this.getChildren().clear();
 
@@ -220,6 +215,6 @@ public class EmailView extends GridPane {
     public void setSendEmail(Button sendEmail) {
         this.sendEmail = sendEmail;
     }
-    
-    
+
+
 }

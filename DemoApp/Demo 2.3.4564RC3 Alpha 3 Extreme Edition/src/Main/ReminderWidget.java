@@ -1,48 +1,43 @@
 package Main;
 
 import com.sun.javafx.scene.control.skin.DatePickerSkin;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.GridPane;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.Text;
-import javafx.scene.paint.Color;
-import javafx.scene.control.Label;
-import javafx.scene.control.Dialog;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ButtonBar.ButtonData;
-import javafx.geometry.Pos;
-import javafx.geometry.Insets;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import java.util.Optional;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.ScrollPane;
+import javafx.scene.control.ButtonBar.ButtonData;
+import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 public class ReminderWidget extends Application {
 
 
-    private Text reminderText;
-    private ObservableList<ReminderInfo> data;
+    private final String pattern = "MM-dd-yyyy";
     HBox reminder;
-    private VBox remWidget = new VBox();
     ComboBox comboBox;
     ScrollPane scrollPane;
-    private final String pattern = "MM-dd-yyyy";
+    private Text reminderText;
+    private ObservableList<ReminderInfo> data;
+    private VBox remWidget = new VBox();
     private DatePicker datePicker;
 
     public VBox reminderWidget() {

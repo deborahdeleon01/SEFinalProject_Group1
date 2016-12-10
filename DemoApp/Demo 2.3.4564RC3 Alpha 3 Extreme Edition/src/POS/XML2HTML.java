@@ -5,15 +5,14 @@
  */
 package POS;
 
-import java.io.*;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
+import java.io.FileOutputStream;
 
 /**
- *
  * @author MQ0162246
  */
 public class XML2HTML {
@@ -42,7 +41,7 @@ public class XML2HTML {
 
             //xml
             StreamSource xmlStreamSourceObject = new StreamSource(xmlFileName);
-            
+
             //html
             FileOutputStream fos = new FileOutputStream(htmlFileName);
             StreamResult htmlStreamSourceObject = new StreamResult(fos);

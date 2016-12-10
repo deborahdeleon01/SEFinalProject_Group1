@@ -1,6 +1,5 @@
 package XMLGEN;
 
-import java.util.ArrayList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -12,22 +11,23 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 
 /**
- *
  * @author DR3
  */
-public class FormView  {
-    
+public class FormView {
+
     BorderPane gridPane = new BorderPane();
-    
+
     public FormView(Stage primaryStage4) {
-       GridPane grid = addGridPane();
-       gridPane.setLeft(grid);
+        GridPane grid = addGridPane();
+        gridPane.setLeft(grid);
     }
 
 
-       private GridPane addGridPane(){
+    private GridPane addGridPane() {
         ArrayList<String> list = new ArrayList<>();
         ArrayList<String> list2 = new ArrayList<>();
         GridPane grid = new GridPane();
@@ -50,7 +50,7 @@ public class FormView  {
         Label legacynumberlabel = new Label("Legacy-Number");
         Label crosslistedlabel = new Label("Cross-Listed");
         Label restrictionslabel = new Label("Restrictions");
-             
+
         //Creating TextFields 
         TextField departmentfield = new TextField();
         TextField prefixfield = new TextField();
@@ -68,7 +68,7 @@ public class FormView  {
         TextField legacynumberfield = new TextField();
         TextField crosslistedfield = new TextField();
         TextField restrictionsfield = new TextField();
-        
+
         //TextField Fonts
         departmentfield.setFont(new Font("Arial", 16));
         prefixfield.setFont(new Font("Arial", 16));
@@ -86,66 +86,65 @@ public class FormView  {
         legacynumberfield.setFont(new Font("Arial", 16));
         crosslistedfield.setFont(new Font("Arial", 16));
         restrictionsfield.setFont(new Font("Arial", 16));
-        
-        
+
+
         //Adding Lables and TextFields
         grid.add(departmentlabel, 0, 0);
-        grid.add(departmentfield, 2, 0);     
+        grid.add(departmentfield, 2, 0);
 
         grid.add(prefixlabel, 0, 1);
-        grid.add(prefixfield, 2, 1);       
+        grid.add(prefixfield, 2, 1);
 
         grid.add(numberlabel, 0, 2);
-        grid.add(numberfield, 2, 2);      
+        grid.add(numberfield, 2, 2);
 
         grid.add(namelabel, 0, 3);
         grid.add(namefield, 2, 3);
-        
+
         grid.add(descriptionlabel, 0, 4);
         grid.add(descriptionfield, 2, 4);
-        
+
         grid.add(credithourslabel, 0, 5);
-        grid.add(credithoursfield, 2, 5);     
+        grid.add(credithoursfield, 2, 5);
 
         grid.add(lecturehourslabel, 0, 6);
-        grid.add(lecturehoursfield, 2, 6);       
+        grid.add(lecturehoursfield, 2, 6);
 
         grid.add(labhourslabel, 0, 7);
         grid.add(labhoursfield, 2, 7);
-        
+
         grid.add(levellabel, 0, 8);
         grid.add(levelfield, 2, 8);
-        
+
         grid.add(schedulelabel, 0, 9);
-        grid.add(schedulefield, 2, 9);       
+        grid.add(schedulefield, 2, 9);
 
         grid.add(prerequisitelabel, 0, 10);
-        grid.add(prerequisitefield, 2, 10);       
+        grid.add(prerequisitefield, 2, 10);
 
         grid.add(corequisitelabel, 0, 11);
-        grid.add(corequisitefield, 2, 11);        
+        grid.add(corequisitefield, 2, 11);
 
         grid.add(courseattributeslabel, 0, 12);
         grid.add(courseattributesfield, 2, 12);
 
         grid.add(legacynumberlabel, 0, 13);
         grid.add(legacynumberfield, 2, 13);
-        
+
         grid.add(crosslistedlabel, 0, 14);
         grid.add(crosslistedfield, 2, 14);
-        
+
         grid.add(restrictionslabel, 0, 15);
         grid.add(restrictionsfield, 2, 15);
-        
-        
-        
+
+
         Button btn = new Button();
         btn.setText("Submit");
         btn.setOnAction(new EventHandler<ActionEvent>() {
-            
+
             @Override
             public void handle(ActionEvent event) {
-                
+
                 list2.add(departmentlabel.getText());
                 list2.add(prefixlabel.getText());
                 list2.add(numberlabel.getText());
@@ -176,9 +175,9 @@ public class FormView  {
                 list.add(courseattributesfield.getText());
                 list.add(crosslistedfield.getText());
                 list.add(restrictionsfield.getText());
-                 
-               XMLGEN x = new XMLGEN();
-               x.generateXMLWithArrayLists(list2, list, prefixfield.getText()+ "-"+numberfield.getText() );
+
+                XMLGEN x = new XMLGEN();
+                x.generateXMLWithArrayLists(list2, list, prefixfield.getText() + "-" + numberfield.getText());
 
                 departmentfield.clear();
                 prefixfield.clear();
@@ -197,15 +196,14 @@ public class FormView  {
                 restrictionsfield.clear();
                 legacynumberfield.clear();
                 list.clear();
-                
-                
-                
+
+
             }
         });
-        
+
         grid.add(btn, 0, 16);
-      return grid;
-        } 
+        return grid;
+    }
 
     public BorderPane getFormPane() {
         return gridPane;
@@ -214,5 +212,5 @@ public class FormView  {
     public void setFormPane(BorderPane gridPane) {
         this.gridPane = gridPane;
     }
-    
+
 }

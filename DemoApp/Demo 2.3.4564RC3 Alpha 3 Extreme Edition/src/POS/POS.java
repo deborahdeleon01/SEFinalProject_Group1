@@ -1,10 +1,5 @@
-
 package POS;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import javafx.geometry.Insets;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
@@ -13,11 +8,15 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 /**
- *
  * @DR3
  */
-public class POS  {
+public class POS {
 
     MyBrowser myBrowser;
     MyBrowser myBrowser2;
@@ -25,7 +24,7 @@ public class POS  {
     Path currentPath = Paths.get("");
     String path = currentPath.toAbsolutePath().toString();
 
-    
+
     public POS(Stage primaryStage3) throws MalformedURLException {
         configureWebView();
         HBox hboxx = addHBox();
@@ -34,22 +33,22 @@ public class POS  {
         rootPane.setCenter(myBrowser2);
 
     }
-    
+
     //Configures the Webview
     private void configureWebView() throws MalformedURLException {
         myBrowser2 = new MyBrowser();
         rootPane.setCenter(myBrowser2);
     }
-    
+
     //HBox
     private HBox addHBox() {
         HBox hboxx = new HBox();
         hboxx.setPadding(new Insets(50, 275, 50, 275));
         hboxx.setSpacing(10);
-        return hboxx; 
+        return hboxx;
     }
-    
-     public BorderPane getRootPane() {
+
+    public BorderPane getRootPane() {
         return rootPane;
     }
 
@@ -65,13 +64,13 @@ class MyBrowser extends Region {
     WebEngine webEngine2 = webView2.getEngine();
     Path currentPath3 = Paths.get("");
     String path03 = currentPath3.toAbsolutePath().toString();
-    
+
     public MyBrowser() throws MalformedURLException {
         String path3 = path03 + "/TEMP/output06.html";
         URL url = new URL("file:///" + path3);
         webEngine2.load(url.toExternalForm());
         getChildren().add(webView2);
-    } 
+    }
 }
 
 

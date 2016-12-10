@@ -1,10 +1,8 @@
 package LogInMVC;
 
 import Main.Main;
+import database.Db;
 import database.User;
-import java.net.MalformedURLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -13,22 +11,26 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.net.MalformedURLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
- * @author Jesus 
- * Controls the link between the database and the view. It updates
- * the log in screen as necessary depending on log in or register
- *
+ * @author Jesus
+ *         Controls the link between the database and the view. It updates
+ *         the log in screen as necessary depending on log in or register
  */
 public class LogInController {
 
     Stage primaryStage;
+    LogInView logInView;
+    User u;
+
 
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
         setupMethods();
     }
-
-    LogInView logInView;
 
     //sets up the methods for the buttons.
     private void setupMethods() {
@@ -36,14 +38,14 @@ public class LogInController {
             updateToregister();
             logInView.changeToRegistration();
         });
-
         logInView.ConfirmRegister.setOnAction((ActionEvent event) -> {
             String Password = logInView.getPasswordBox().getText();
             String Password2 = logInView.getConfirmPasswordLocal().getText();
-            String Email = logInView.getUsernameLocal();
+            String Email = logInView.getUserNameText().getText();
             String FirstName = logInView.getFirstName().getText();
             String LastName = logInView.getLastName().getText();
-            User u = new User(Email, FirstName, LastName, Password, "1234", "Computer Science");
+
+            User u= new User(Email,FirstName,LastName,Password,"CSCI",1);
             if (Password.equals(Password2)) {
                 System.out.println("Passowrds are the same");
                 if (database.Db.theDatabase().register(u)) {
@@ -57,12 +59,10 @@ public class LogInController {
 
         logInView.SignIn.setOnAction((ActionEvent event) -> {
             String Password = logInView.getPasswordBox().getText();
-            String Username = logInView.getUsernameLocal();
-            User u = database.Db.theDatabase().login(Username, Password);
-            if (u != null) {
-                
-                System.out.println(u);
-                System.out.println("logged in!");
+            String Email = logInView.getUserNameText().getText();
+
+            User u = null;
+            if (database.Db.theDatabase().login(Email,Password,u)==true) {
                 try {
                     new Main().start(new Stage());
                     Stage stage = (Stage) logInView.getScene().getWindow();
