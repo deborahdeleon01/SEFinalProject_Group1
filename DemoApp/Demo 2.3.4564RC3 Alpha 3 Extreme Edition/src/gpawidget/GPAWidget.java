@@ -5,7 +5,6 @@
  */
 package gpawidget;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
@@ -26,7 +25,6 @@ import javafx.scene.transform.Rotate;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -40,6 +38,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 
 /**
  * @author MQ0162246
@@ -50,7 +50,11 @@ public class GPAWidget {
     public int index = 0;
     GPAMeter meter;
     BorderPane pane = new BorderPane();
-    ComboBox coursesComboBox;
+//    ComboBox coursesComboBox;
+    ComboBox cb1;
+    ComboBox cb2;
+    ComboBox cb3;
+    ComboBox cb4;
     TextField[] gradeFields = new TextField[fields];
     TextField[] hourFields = new TextField[fields];
     //    Label[] hourFields = new Label[fields];
@@ -89,14 +93,12 @@ public class GPAWidget {
         Rotate r = new Rotate(meter.getMeterRotationAngleinDegrees(), 300, 300);
         meter.getTransforms().addAll(r);
 
-
         panevbox.getChildren().addAll(meter, getSemesterPane());
         pane.setCenter(panevbox);
 
         BorderPane.setAlignment(topText, Pos.CENTER);
         BorderPane.setAlignment(meter, Pos.CENTER);
     }
-
 
     private VBox getSemesterPane() {
 
@@ -118,6 +120,17 @@ public class GPAWidget {
         vpane.getChildren().add(currentSemesterLabel);
         VBox vbox = new VBox();
 
+        VBox cboxes = new VBox();
+        cboxes.setAlignment(Pos.CENTER);
+        cboxes.setAlignment(Pos.TOP_CENTER);
+        cboxes.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
+        cboxes.setSpacing(27);
+
+        cb1 = coursesComboBox();
+        cb2 = coursesComboBox();
+        cb3 = coursesComboBox();
+        cb4 = coursesComboBox();
+        cboxes.getChildren().addAll(cb1, cb2, cb3, cb4);
 
         for (int i = 0; i < gradeFields.length; i++) {
 
@@ -127,25 +140,44 @@ public class GPAWidget {
             hbox1.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
             hbox1.setSpacing(10);
 
-
             gradeFields[i] = new TextField();
             gradeFields[i].setPromptText("Grade");
             gradeFields[i].setPrefWidth(65);
             hourFields[i] = new TextField();
 //        hourFields[i] = new Label();
-            ComboBox cb = coursesComboBox();
+//            ComboBox cb = coursesComboBox();
             hourFields[i].setPromptText("Hours");
             hourFields[i].setPrefWidth(65);
 
-            hbox1.getChildren().addAll(cb, gradeFields[i], hourFields[i]);
+//            hbox1.getChildren().addAll(cb, gradeFields[i], hourFields[i]);
+            hbox1.getChildren().addAll(gradeFields[i], hourFields[i]);
             vbox.getChildren().add(hbox1);
         }
 
-        vpane.getChildren().addAll(vbox);
+        hbox.getChildren().addAll(cboxes, vbox);
+
+        vpane.getChildren().addAll(hbox);
 
         Button btAdd = new Button("Update Meter");
-//        btAdd.setMaxWidth(Double.MAX_VALUE);
-
+        Button clear = new Button("Clear");
+        
+        clear.setOnAction((ActionEvent event) -> {
+          for (int i = 0; i < gradeFields.length; i++) {
+              gradeFields[i].clear();
+              hourFields[i].clear();
+          }
+          
+          cb1.valueProperty().set("Choose a Course");
+          cb2.valueProperty().set("Choose a Course");
+          cb3.valueProperty().set("Choose a Course");
+          cb4.valueProperty().set("Choose a Course");
+          
+          meter.setCurrentValue(0);
+          
+        }
+        
+        );
+        
         btAdd.setOnAction((ActionEvent event) -> {
 
             int hours;
@@ -155,7 +187,6 @@ public class GPAWidget {
             for (int i = 0; i < gradeFields.length; i++) {
 
                 if (isValidGrade(gradeFields[i].getText())) {
-
 
                     if (gradeFields[i].getText().toUpperCase().equals("A")) {
                         hours = Integer.parseInt(hourFields[i].getText());
@@ -186,33 +217,50 @@ public class GPAWidget {
             // update the meter!
             meter.paintMeter(gpa);
         });
+        
+        HBox buttons = new HBox();
+        buttons.setAlignment(Pos.CENTER);
+        buttons.setAlignment(Pos.TOP_CENTER);
+        buttons.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
+        buttons.setSpacing(10);
+            
+        buttons.getChildren().addAll(btAdd,clear);
 
-        vpane.getChildren().add(btAdd);
+        vpane.getChildren().add(buttons);
         return vpane;
     }
 
     private boolean isValidGrade(String grade) {
-        if (grade == null)
+        if (grade == null) {
             return false;
-        if (
-                grade.toUpperCase().equals("A") ||
-                        grade.toUpperCase().equals("B") ||
-                        grade.toUpperCase().equals("C") ||
-                        grade.toUpperCase().equals("D") ||
-                        grade.toUpperCase().equals("F")
-                )
+        }
+        if (grade.toUpperCase().equals("A")
+                || grade.toUpperCase().equals("B")
+                || grade.toUpperCase().equals("C")
+                || grade.toUpperCase().equals("D")
+                || grade.toUpperCase().equals("F")) {
             return true;
-        else
+        } else {
             return false;
+        }
 
     }
 
     private ComboBox coursesComboBox() {
 
-        options = FXCollections.observableArrayList();
+        ComboBox coursesComboBox = new ComboBox();
 
-        coursesComboBox = new ComboBox();
+        cb1 = new ComboBox();
+        cb2 = new ComboBox();
+        cb3 = new ComboBox();
+        cb4 = new ComboBox();
+
         coursesComboBox.setValue("Choose a Course");
+        cb1.setValue("Choose a Course");
+        cb2.setValue("Choose a Course");
+        cb3.setValue("Choose a Course");
+        cb4.setValue("Choose a Course");
+
         String path3 = path03;
 
         try {
@@ -226,24 +274,85 @@ public class GPAWidget {
             String expression1 = "/POS/Course/Prefix";
             String expression2 = "/POS/Course/Number";
             String expression3 = "/POS/Course/Name";
-//                        String expression4 = "/POS/Course/Credit-hours";
-
+            String expression4 = "/POS/Course/Credit-hours";
 
             NodeList nodeList1 = (NodeList) xPath.compile(expression1).evaluate(xmlDocument, XPathConstants.NODESET);
             NodeList nodeList2 = (NodeList) xPath.compile(expression2).evaluate(xmlDocument, XPathConstants.NODESET);
             NodeList nodeList3 = (NodeList) xPath.compile(expression3).evaluate(xmlDocument, XPathConstants.NODESET);
-//                        NodeList nodeList4 = (NodeList) xPath.compile(expression4).evaluate(xmlDocument, XPathConstants.NODESET);
-
+            NodeList nodeList4 = (NodeList) xPath.compile(expression4).evaluate(xmlDocument, XPathConstants.NODESET);
 
             for (int i = 0; i < nodeList1.getLength(); i++) {
+
                 String prfx = nodeList1.item(i).getFirstChild().getNodeValue();
                 String num = nodeList2.item(i).getFirstChild().getNodeValue();
                 String name = nodeList3.item(i).getFirstChild().getNodeValue();
-
+                String ch = nodeList4.item(i).getFirstChild().getNodeValue();
+                
+                char c[] = ch.toCharArray();
+                String hrs = Character.toString(c[0]);
 
                 String exp = prfx + " " + num + " " + name;
-                coursesComboBox.getItems().addAll(exp);
 
+                coursesComboBox.getItems().addAll(exp);
+                cb1.getItems().addAll(exp);
+                cb2.getItems().addAll(exp);
+                cb3.getItems().addAll(exp);
+                cb4.getItems().addAll(exp);
+
+                coursesComboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+
+                        String selected = newvalue;
+
+                        if (exp == selected) {
+                            hourFields[3].setText(hrs);
+                        }
+                    }
+                });
+
+                cb1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+
+                        String selected = newvalue;
+
+                        if (exp == selected) {
+                            hourFields[0].setText(hrs);
+                        }
+                    }
+                });
+
+                cb2.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+
+                        String selected = newvalue;
+
+                        if (exp == selected) {
+                            hourFields[1].setText(hrs);
+                        }
+                    }
+                });
+
+                cb3.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+
+                        String selected = newvalue;
+
+                        if (exp == selected) {
+                            hourFields[2].setText(hrs);
+                        }
+                    }
+                });
+
+                cb4.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+
+                        String selected = newvalue;
+
+                        if (exp == selected) {
+                            hourFields[3].setText(hrs);
+                        }
+                    }
+                });
             }
 
         } catch (FileNotFoundException e) {

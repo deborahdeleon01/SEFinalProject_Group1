@@ -5,6 +5,13 @@
  */
 package Main;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.net.MalformedURLException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -23,6 +30,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 /**
@@ -49,88 +58,64 @@ public class InformationTab extends Application {
 
         Text centerText = new Text("More Information Goes here");
 
+        pane.setCenter(getCenter());
+        pane.setBottom(hbox1);
+        pane.setLeft(getLeftSide());
+        pane.setRight(getRightSide());
 
-        /***Jose Started Here***/
-        /*Tab 3 Select and View*/
+        BorderPane.setAlignment(hbox, Pos.CENTER);
+
+    }
+
+    private GridPane getCenter()
+    {
+        
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(10, 10, 10, 10));
         grid.setMinSize(300, 300);
         grid.setVgap(5);
         grid.setHgap(5);
 
-        Text pftitle = new Text("Professor Information");
-        Text name = new Text("");
-        Text position = new Text("");
-        Text email = new Text("");
-        Text phone = new Text("");
+        Label trans = new Label("Parking & Transportation");
+        trans.setTextFill(Color.DARKBLUE);
+        trans.setFont(Font.font("Calibri", FontWeight.BOLD, 30));
+        trans.setMaxWidth(Double.MAX_VALUE);
+        trans.setAlignment(Pos.CENTER);
+        trans.setPadding(new Insets(20,0,20,0));
 
 
-        ObservableList<String> options =
-                FXCollections.observableArrayList(
-                        "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
-                );
-        ComboBox comboBox = new ComboBox(options);
-        comboBox.setPromptText("Select a Professor");
+        Path currentPath3 = Paths.get("");
+        String path03 = currentPath3.toAbsolutePath().toString();
+        String path3 = path03;
+        File t = new File(path3 + "/utrgv_twitter_feed.html");
+        File p = new File(path3 + "/parking.html");
+      
 
-        // Update the message Label when the selected item changes
-        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-                System.out.print(newvalue);
-                pf = newvalue;
-
-                if (pf == "Hansheng Lei") {
-                    name.setText(pf);
-                    position.setText("Associate Professor");
-                    email.setText("hansheng.lei@utrgv.edu");
-                    phone.setText("956-882-6585");
-                } else if (pf == "Bari Siddique") {
-                    name.setText(pf);
-                    position.setText("Lecturer");
-                    email.setText("bari.siddique@utrgv.edu");
-                    phone.setText("956-882-6602");
-                } else if (pf == "Liyu Zhang") {
-                    name.setText(pf);
-                    position.setText("Associate Professor");
-                    email.setText("liyu.zhang@utrgv.edu");
-                    phone.setText("956-882-6631");
-                } else if (pf == "Mahmoud Quweider") {
-                    name.setText(pf);
-                    position.setText("Professor");
-                    email.setText("mahmoud.quweider@utrgv.edu");
-                    phone.setText("956-882-6630");
-                } else if (pf == "Domingo Molina") {
-                    name.setText(pf);
-                    position.setText("Lecturer");
-                    email.setText("956-882-6607");
-                    phone.setText("domingo.molina@utrgv.edu");
-                }
-            }
-        });
-
-        grid.setStyle("-fx-font: 14 arial;");
-        pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
-
-        grid.add(comboBox, 70, 5);
-        grid.add(pftitle, 70, 10);
-
-        grid.add(name, 70, 12);
-        grid.add(position, 70, 13);
-        grid.add(email, 70, 14);
-        grid.add(phone, 70, 15);
-
-
-        pane.setCenter(grid);
-        /***Jose Ended Here***/
-        pane.setBottom(hbox1);
-        pane.setLeft(getLeftSide());
-        pane.setRight(getRightSide());
-
-        BorderPane.setAlignment(hbox, Pos.CENTER);
-        BorderPane.setAlignment(grid, Pos.CENTER);
-
+        WebView twitterFeed = new WebView();
+        twitterFeed.setPrefSize(500, 400);
+        try {
+            twitterFeed.getEngine().load(t.toURI().toURL().toString());
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(InformationTab.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        WebView parkingMap = new WebView();
+        parkingMap.setPrefSize(660, 620);
+        try {
+            parkingMap.getEngine().load(p.toURI().toURL().toString());
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(InformationTab.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        grid.add(trans,0,0);
+        grid.add(twitterFeed, 0, 1);
+        grid.add(parkingMap,0,2);
+        
+        return grid;
     }
-
+    
     private GridPane getLeftSide() {
+        
         GridPane pane = new GridPane();
 
         pane.setAlignment(Pos.TOP_CENTER);
@@ -138,8 +123,11 @@ public class InformationTab extends Application {
         pane.setHgap(5);
         pane.setVgap(5);
 
-        Label cs = new Label("CONTACT INFORMATION");
-        cs.setStyle("-fx-alignment:center;-fx-text-alignment:center;-fx-text-fill:blue;-fx-font-size:25px;-fx-label-padding:20px 20px 20px 20px;-font-weight:bold");
+        Label cs = new Label("Contact Information");
+        cs.setTextFill(Color.DARKBLUE);
+        cs.setFont(Font.font("Calibri", FontWeight.BOLD, 30));
+        cs.setPadding(new Insets(20,20,20,20));
+        
 
         VBox vbox = new VBox();
         vbox.setPadding(new Insets(20, 20, 20, 20));
@@ -212,6 +200,13 @@ public class InformationTab extends Application {
             VBox.setMargin(options[i], new Insets(0, 0, 5, 5));
             vbox.getChildren().add(options2[i]);
         }
+        
+        
+       
+       VBox.setMargin(addCombobox(), new Insets(0,0,5,5));
+       vbox.getChildren().add(addCombobox());
+        
+     
 
 
         pane.add(cs, 0, 1);
@@ -228,9 +223,6 @@ public class InformationTab extends Application {
         pane.setPadding(new Insets(25, 25, 25, 25));
         pane.setHgap(5.5);
         pane.setVgap(5.5);
-
-        Text text = new Text("ttttt");
-//        pane.add(box.reminderWidget(), 0, 3);
         pane.add(box.reminderWidget(), 0, 3);
 
         return pane;
@@ -271,6 +263,70 @@ public class InformationTab extends Application {
 
         hbox.getChildren().add(topText);
 
+        return hbox;
+    }
+    
+    private VBox addCombobox()
+    {
+        VBox hbox = new VBox();
+        hbox.setPadding(new Insets(20, 20, 0, 0));
+        hbox.setAlignment(Pos.CENTER_LEFT);
+        
+        Text pftitle = new Text("Professor Information");
+        Text name = new Text("");
+        Text position = new Text("");
+        Text email = new Text("");
+        Text phone = new Text("");
+
+
+        ObservableList<String> options =
+                FXCollections.observableArrayList(
+                        "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
+                );
+        ComboBox comboBox = new ComboBox(options);
+        comboBox.setPromptText("Select a Professor");
+
+        // Update the message Label when the selected item changes
+        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+            public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
+                System.out.print(newvalue);
+                pf = newvalue;
+
+                if (pf == "Hansheng Lei") {
+                    name.setText(pf);
+                    position.setText("Associate Professor");
+                    email.setText("hansheng.lei@utrgv.edu");
+                    phone.setText("956-882-6585");
+                } else if (pf == "Bari Siddique") {
+                    name.setText(pf);
+                    position.setText("Lecturer");
+                    email.setText("bari.siddique@utrgv.edu");
+                    phone.setText("956-882-6602");
+                } else if (pf == "Liyu Zhang") {
+                    name.setText(pf);
+                    position.setText("Associate Professor");
+                    email.setText("liyu.zhang@utrgv.edu");
+                    phone.setText("956-882-6631");
+                } else if (pf == "Mahmoud Quweider") {
+                    name.setText(pf);
+                    position.setText("Professor");
+                    email.setText("mahmoud.quweider@utrgv.edu");
+                    phone.setText("956-882-6630");
+                } else if (pf == "Domingo Molina") {
+                    name.setText(pf);
+                    position.setText("Lecturer");
+                    email.setText("956-882-6607");
+                    phone.setText("domingo.molina@utrgv.edu");
+                }
+            }
+        });
+
+        hbox.setStyle("-fx-font: 16 arial;");
+        pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
+        
+        hbox.getChildren().addAll(pftitle, comboBox, name, position, email, phone);
+
+//        
         return hbox;
     }
 
