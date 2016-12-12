@@ -5,6 +5,7 @@
  */
 package email;
 
+import com.sun.mail.smtp.SMTPSenderFailedException;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -16,21 +17,27 @@ import javax.mail.internet.MimeMultipart;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.scene.control.Label;
+import javax.mail.internet.AddressException;
+
 
 /**
  * @author Jose_Balle
  */
 public class EmailSender {
+    //Added EmailView to update email status label.
+    EmailView emailView = new EmailView();
+
     // Constructors
     EmailSender() {
 
     }
 
-    EmailSender(String fromEmail, String username, String password, String toEmail, String subject, String textMessage, String attachment) {
+    EmailSender(String fromEmail, String username, String password, String toEmail, String subject, String textMessage, String attachment, Label output) {
 
     }
 
-    public static void EmailSender(String email, String password, String toEmail, String subject, String message, String attachment) {
+    public static void EmailSender(String email, String password, String toEmail, String subject, String message, String attachment, Label output) {
         try {
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.office365.com");
@@ -46,19 +53,23 @@ public class EmailSender {
             emailMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail)); // Mail multiple recipients using a comma ( , ) as parse
             emailMessage.setSubject(subject);
 
-            //Create body part for the text message 
+            // Create body part for the text message and attatchment
             BodyPart messageBodyPart = new MimeBodyPart();
-            messageBodyPart.setText(message);
+            BodyPart attatchmentBodyPart = new MimeBodyPart();
+            
+            // set contnets for text message and attatchment bodyparts
+            messageBodyPart.setText(message); 
 
             //Create bodypart for attachment
             messageBodyPart = new MimeBodyPart();
             DataSource source = new FileDataSource(attachment);
-            messageBodyPart.setDataHandler(new DataHandler(source));
-            messageBodyPart.setFileName(attachment);
+            attatchmentBodyPart.setDataHandler(new DataHandler(source));
+            attatchmentBodyPart.setFileName(attachment);
 
             //Add bodyparts
             Multipart multipart = new MimeMultipart();
             multipart.addBodyPart(messageBodyPart);
+            multipart.addBodyPart(attatchmentBodyPart);
 
             emailMessage.setContent(multipart);
 
@@ -69,8 +80,16 @@ public class EmailSender {
             transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
 
             transport.send(emailMessage);
-        } catch (MessagingException ex) {
-            Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, ex);
+            
+            //Email Status
+            output.setText("Email Sent!");            
+            
+        } catch (AddressException e) {
+            e.printStackTrace();
+            output.setText("Username or Password Mispelled or Missing!");
+        } catch (MessagingException e) {
+            e.printStackTrace();
+            output.setText("Email Not Sent!");
         }
     }
 }

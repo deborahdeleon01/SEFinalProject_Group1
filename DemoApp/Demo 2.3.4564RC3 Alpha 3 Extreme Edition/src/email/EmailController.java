@@ -35,11 +35,24 @@ public class EmailController {
                 String toEmail = getSendTo();
                 String subject = getSubject();
                 String message = getMessage();
-
-                //Send Email
-                sendEmail.EmailSender(email, password, toEmail, subject, message, attachment);
-
-                //emailView.updateEmailView();
+                
+                           
+                if(email.equals("@utrgv.edu") || email.isEmpty()) {
+                    emailView.getEmailStatus().setText("Email Input is empty!");   
+                }
+                else if(password.isEmpty()) {
+                    emailView.getEmailStatus().setText("Password Input is empty!");
+                }
+                else if(toEmail.isEmpty()) {
+                    emailView.getEmailStatus().setText("Send Email To Input is empty!");
+                }
+                else {
+                    //Update label.
+                    emailView.getEmailStatus().setText("Email Sending.....");
+                    
+                    //Send Email
+                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment, emailView.getEmailStatus());                    
+                }
             }
         });
     }

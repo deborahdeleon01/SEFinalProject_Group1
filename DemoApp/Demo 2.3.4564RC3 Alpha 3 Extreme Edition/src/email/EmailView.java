@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 /**
@@ -33,6 +34,8 @@ public class EmailView extends GridPane {
     private Label messageLabel = new Label("Message:");
     private TextArea messageText = new TextArea("Dear Student, ");
 
+    private Label emailStatus = new Label("");
+    
     private Button sendEmail = new Button("Send Email");
 
     public EmailView() {
@@ -55,6 +58,11 @@ public class EmailView extends GridPane {
         this.add(messageLabel, 0, 5);
         this.add(messageText, 1, 5);
         this.add(sendEmail, 1, 7);
+        this.add(emailStatus, 1, 8);
+        
+        //SetFont
+        scenetitle.setFont(new Font(40));
+        emailStatus.setFont(new Font(30));
     }
 
     public void updateEmailView() {
@@ -214,6 +222,20 @@ public class EmailView extends GridPane {
      */
     public void setSendEmail(Button sendEmail) {
         this.sendEmail = sendEmail;
+    }
+
+    /**
+     * @return the emailStatus
+     */
+    public Label getEmailStatus() {
+        return emailStatus;
+    }
+
+    /**
+     * @param emailStatus the emailStatus to set
+     */
+    public void setEmailStatus(Label emailStatus) {
+        this.emailStatus = emailStatus;
     }
 
 
