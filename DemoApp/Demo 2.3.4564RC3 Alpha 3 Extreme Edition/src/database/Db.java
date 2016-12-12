@@ -21,14 +21,19 @@ import java.util.logging.Logger;
 */
 public class Db {
 
+    private static Db databaseSingleton = new Db();
+    
     // JDBC driver name and database URL
     protected static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     protected static final String DB_URL = "jdbc:mysql://localhost/";
+
     //  Database credentials
     protected static final String USER = "root";
-    protected static final String PASS = "";
-    protected static final String DB_NAME = "Vaqpack";
-    private static Db databaseSingleton = new Db();
+
+    protected static final String PASS = "Skyl@r5106";
+
+    protected static final String DB_NAME = "vaqpack";
+
     //Fields required for queries
     private Connection conn;
     private Statement stmt;

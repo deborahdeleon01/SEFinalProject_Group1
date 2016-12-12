@@ -51,7 +51,7 @@ public class Main extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Application.launch(LoginScreenGUI.class, args);
+        launch(args);
         //launch(args); //in case the other does not work
     }
 

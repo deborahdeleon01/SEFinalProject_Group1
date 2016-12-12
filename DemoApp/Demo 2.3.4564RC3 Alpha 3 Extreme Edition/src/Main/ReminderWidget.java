@@ -46,7 +46,7 @@ public class ReminderWidget extends Application {
         // Window label
         Label label = new Label("Set Reminders");
         label.setTextFill(Color.DARKBLUE);
-        label.setFont(Font.font("Calibri", FontWeight.BOLD, 50));
+        label.setFont(Font.font("Calibri", FontWeight.BOLD, 30));
         HBox labelHb = new HBox();
         labelHb.setAlignment(Pos.CENTER);
         labelHb.getChildren().add(label);

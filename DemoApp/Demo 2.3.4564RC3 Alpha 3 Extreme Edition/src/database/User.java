@@ -7,8 +7,6 @@ package database;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import database.Course;
 import javafx.scene.image.Image;
 
 /**
@@ -28,9 +26,9 @@ public class User {
     Image pic;
     ArrayList<Course> currentCourses;
     ArrayList<Course> pastCourses;
-    ArrayList<Course> reminders;
-
-    public User(String email, String first, String last, String pos, int permission) {
+    ArrayList<Reminder> reminders;
+    
+public User(String email, String first, String last, String pos, int permission) {
         this.email = email;
         this.first = first;
         this.last = last;
@@ -169,10 +167,6 @@ public class User {
         this.pos = pos;
     }
 
-    public void setReminders(ArrayList<Course> reminders) {
-        this.reminders = reminders;
-    }
-
     public void setPic(Image pic) {
         this.pic = pic;
     }
@@ -180,7 +174,7 @@ public class User {
     public void addCurrentCourse(Course courseToAdd) {
         if (currentCourses != null) {
             currentCourses.add(new Course(courseToAdd));
-        }
+        } 
         else {
             currentCourses = new ArrayList<>();
             currentCourses.add(new Course(courseToAdd));
@@ -189,22 +183,48 @@ public class User {
     public void addPastCourse(Course courseToAdd) {
         if (pastCourses != null) {
             pastCourses.add(new Course(courseToAdd));
-        }
+        } 
         else {
             pastCourses = new ArrayList<>();
             pastCourses.add(new Course(courseToAdd));
         }
     }
-    protected void addPastCourses(ArrayList<Course> pastCourses){
+    public void addPastCourses(ArrayList<Course> pastCourses){
         this.pastCourses = new ArrayList<>(pastCourses.size());
         for (int i = 0; i < currentCourses.size(); i++) {
             this.pastCourses.add(new Course(pastCourses.get(i)));
         }
     }
-    protected void addCurrentCourses(ArrayList<Course> currentCourses){
+    public void addCurrentCourses(ArrayList<Course> currentCourses){
         this.currentCourses = new ArrayList<>(currentCourses.size());
         for (int i = 0; i < currentCourses.size(); i++) {
             this.currentCourses.add(new Course(currentCourses.get(i)));
         }
     }
+    public void removeCourse(String prefix){
+        if(currentCourses.size() > 0 && currentCourses != null){
+            for(int i = 0; i < currentCourses.size(); i++) {
+                if(currentCourses.get(i).getCoursePrefix().equalsIgnoreCase(prefix)){
+                    currentCourses.remove(i);
+                    break;
+                }
+            }
+        }
+    }
+    public void editCourse(String prefix, char grade){
+        if(currentCourses.size() > 0 && currentCourses != null){
+            for(int i = 0; i < currentCourses.size(); i++) {
+                if(currentCourses.get(i).getCoursePrefix().equalsIgnoreCase(prefix)){
+                    currentCourses.get(i).setGrade(grade);
+                    break;
+                }
+            }
+        }
+    }
+    public void addReminder(Reminder r){
+        if(reminders == null)
+            reminders = new ArrayList<>();
+        reminders.add(new Reminder(r));
+    }
+    
 }
