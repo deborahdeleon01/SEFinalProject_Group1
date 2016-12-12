@@ -10,9 +10,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 
 /**
- *
  * @author Jesus
- * Creates the design of the application
+ *         Creates the design of the application
  */
 public class LogInView extends GridPane {
 
@@ -22,7 +21,6 @@ public class LogInView extends GridPane {
     PasswordField passwordBox = new PasswordField();
     String PasswordLocal = passwordBox.getText();
     PasswordField ConfirmPasswordLocal = new PasswordField();
-    String UsernameLocal = userNameText.getText();
     Button Register = new Button("Register");
     Button ConfirmRegister = new Button("Register");
     Button SignIn = new Button("Sign in");
@@ -36,6 +34,7 @@ public class LogInView extends GridPane {
             + "Login to continue");
 
     public LogInView() {
+        database.DirectoryStructure.createDirectoriesIfNotExists();
         this.ConfirmPasswordLocal = new PasswordField();
         this.setAlignment(Pos.CENTER);
         this.setVgap(10);
@@ -137,14 +136,6 @@ public class LogInView extends GridPane {
 
     public void setPasswordLocal(String PasswordLocal) {
         this.PasswordLocal = PasswordLocal;
-    }
-
-    public String getUsernameLocal() {
-        return UsernameLocal;
-    }
-
-    public void setUsernameLocal(String UsernameLocal) {
-        this.UsernameLocal = UsernameLocal;
     }
 
     public Button getRegister() {

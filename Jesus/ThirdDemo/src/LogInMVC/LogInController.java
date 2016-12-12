@@ -1,5 +1,10 @@
 package LogInMVC;
 
+import java.net.MalformedURLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import Main.Main;
 import database.User;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
@@ -10,22 +15,19 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- *
- * @author Jesus 
- * Controls the link between the database and the view. It updates
- * the log in screen as necessary depending on log in or register
- *
+ * @author Jesus
+ *         Controls the link between the database and the view. It updates
+ *         the log in screen as necessary depending on log in or register
  */
 public class LogInController {
 
     Stage primaryStage;
+    LogInView logInView;
 
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
         setupMethods();
     }
-
-    LogInView logInView;
 
     //sets up the methods for the buttons.
     private void setupMethods() {
@@ -33,15 +35,19 @@ public class LogInController {
             updateToregister();
             logInView.changeToRegistration();
         });
-
         logInView.ConfirmRegister.setOnAction((ActionEvent event) -> {
             String Password = logInView.getPasswordBox().getText();
             String Password2 = logInView.getConfirmPasswordLocal().getText();
-            String Email = logInView.getUsernameLocal();
+            String Email = logInView.getUserNameText().getText();
             String FirstName = logInView.getFirstName().getText();
             String LastName = logInView.getLastName().getText();
+
+            User u= new User(Email,FirstName,LastName,Password,"CSCI",1);
             if (Password.equals(Password2)) {
                 System.out.println("Passowrds are the same");
+                if (database.Db.theDatabase().register(u)) {
+                    System.out.println("Success!");
+                }
 
             } else {
                 System.out.println("Passwords do not match");
@@ -49,12 +55,20 @@ public class LogInController {
         });
 
         logInView.SignIn.setOnAction((ActionEvent event) -> {
-            User u;
             String Password = logInView.getPasswordBox().getText();
-            String Username = logInView.getUsernameLocal();
-            u = database.Db.theDatabase().login(Password, Username);
-            if (u != null) {
-                System.out.println("logged in!");
+            String Email = logInView.getUserNameText().getText();
+
+            User u = null;
+            if (database.Db.theDatabase().login(Email,Password,u)==true) {
+                try {
+                    new Main().start(new Stage());
+                    Stage stage = (Stage) logInView.getScene().getWindow();
+                    stage.close();
+
+                } catch (MalformedURLException ex) {
+                    Logger.getLogger(LogInController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
             } else {
                 incorrectInformation();
             }

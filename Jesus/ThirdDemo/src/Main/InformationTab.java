@@ -1,5 +1,12 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Main;
 
+import LogInMVC.LogInView;
+import database.User;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -21,18 +28,19 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
- *
  * @author MQ0162246
  */
 public class InformationTab extends Application {
 
-        
+
     public static final String DEFAULT_FORMAT = "jpg";
     public static final Color DEFAULT_COLOR = Color.LIGHTGREY;
     BorderPane pane = new BorderPane();
     ReminderWidget box = new ReminderWidget();
     HBox borders = new HBox();
-    
+    LogInView view = new LogInView();
+    User user;
+
     /*Temp Information Dropdown*/
     private String pf;
 
@@ -44,8 +52,8 @@ public class InformationTab extends Application {
         HBox hbox1 = addHBox1();
 
         Text centerText = new Text("More Information Goes here");
-        
-        
+
+
         /***Jose Started Here***/
         /*Tab 3 Select and View*/
         GridPane grid = new GridPane();
@@ -53,53 +61,50 @@ public class InformationTab extends Application {
         grid.setMinSize(300, 300);
         grid.setVgap(5);
         grid.setHgap(5);
-        
-        Text pftitle = new Text("Professor Information");
-        Text name = new Text("");
-        Text position = new Text("");
-        Text email = new Text("");
-        Text phone = new Text("");
-        
-        
-        ObservableList<String> options = 
-        FXCollections.observableArrayList(
-            "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
-        );
+        String emailInfo = view.getUserNameText().getText();
+        user = database.Db.theDatabase().retrieveUserInfo(emailInfo);
+
+        Text pftitle = new Text(user.getEmail());
+        Text name = new Text(user.getFirst()+" "+user.getLast());
+        Text position = new Text("Unavailable");
+        Text email = new Text(user.getEmail());
+        Text phone = new Text(user.getPos());
+
+
+        ObservableList<String> options =
+                FXCollections.observableArrayList(
+                        "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
+                );
         ComboBox comboBox = new ComboBox(options);
         comboBox.setPromptText("Select a Professor");
 
         // Update the message Label when the selected item changes
-        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>()
-        {
+        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
                 System.out.print(newvalue);
-                pf =  newvalue;
-                
-                if(pf == "Hansheng Lei") {
+                pf = newvalue;
+
+                if (pf == "Hansheng Lei") {
                     name.setText(pf);
                     position.setText("Associate Professor");
                     email.setText("hansheng.lei@utrgv.edu");
                     phone.setText("956-882-6585");
-                }
-                else if(pf == "Bari Siddique") {
+                } else if (pf == "Bari Siddique") {
                     name.setText(pf);
                     position.setText("Lecturer");
                     email.setText("bari.siddique@utrgv.edu");
                     phone.setText("956-882-6602");
-                }
-                else if(pf == "Liyu Zhang") {
+                } else if (pf == "Liyu Zhang") {
                     name.setText(pf);
                     position.setText("Associate Professor");
                     email.setText("liyu.zhang@utrgv.edu");
                     phone.setText("956-882-6631");
-                }
-                else if(pf == "Mahmoud Quweider") {
+                } else if (pf == "Mahmoud Quweider") {
                     name.setText(pf);
                     position.setText("Professor");
                     email.setText("mahmoud.quweider@utrgv.edu");
                     phone.setText("956-882-6630");
-                }
-                else if(pf == "Domingo Molina") {
+                } else if (pf == "Domingo Molina") {
                     name.setText(pf);
                     position.setText("Lecturer");
                     email.setText("956-882-6607");
@@ -107,18 +112,18 @@ public class InformationTab extends Application {
                 }
             }
         });
-        
+
         grid.setStyle("-fx-font: 14 arial;");
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
-                
+
         grid.add(comboBox, 70, 5);
         grid.add(pftitle, 70, 10);
-        
+
         grid.add(name, 70, 12);
         grid.add(position, 70, 13);
         grid.add(email, 70, 14);
         grid.add(phone, 70, 15);
-        
+
 
         pane.setCenter(grid);
         /***Jose Ended Here***/
@@ -128,7 +133,7 @@ public class InformationTab extends Application {
 
         BorderPane.setAlignment(hbox, Pos.CENTER);
         BorderPane.setAlignment(grid, Pos.CENTER);
-     
+
     }
 
     private GridPane getLeftSide() {
@@ -150,10 +155,10 @@ public class InformationTab extends Application {
         vbox.getChildren().add(title);
 
         Text options[] = new Text[]{
-            new Text("\nENGR 1.294"),
-            new Text("1201 West University Drive"),
-            new Text("Edinburg, TX 78539-2999"),
-            new Text("(956)665-3510\n\n")};
+                new Text("\nENGR 1.294"),
+                new Text("1201 West University Drive"),
+                new Text("Edinburg, TX 78539-2999"),
+                new Text("(956)665-3510\n\n")};
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
@@ -166,10 +171,10 @@ public class InformationTab extends Application {
         vbox.getChildren().add(title2);
 
         Text options1[] = new Text[]{
-            new Text("\nLHSB 2.720"),
-            new Text("One West University Boulevard"),
-            new Text("Brownsville, TX 78520"),
-            new Text("(956)882-6605\n\n")};
+                new Text("\nLHSB 2.720"),
+                new Text("One West University Boulevard"),
+                new Text("Brownsville, TX 78520"),
+                new Text("(956)882-6605\n\n")};
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
@@ -189,32 +194,32 @@ public class InformationTab extends Application {
         emailField.setText(eml + em);
 
         vbox.getChildren().add(emailField);
-        
-    
+
+
         vbox.setPadding(new Insets(20, 20, 20, 20));
         Text title3 = new Text("\n\nImportant Upcoming Dates\n");
         title3.setFont(Font.font("Arial", FontWeight.BOLD, 20));
 
         vbox.getChildren().add(title3);
-        
-        String s1 = String.format("%-20s %10s ", "Nov 17","Last day to drop");
-        String s2 = String.format("%-20s %14s ", "Nov 24-26","Thanksgiving");
-        String s3 = String.format("%-20s %18s", "Dec 8","No Classes");
-        String s4 = String.format("%-20s %20s", "Dec 9-15","Finals");
-        
+
+        String s1 = String.format("%-20s %10s ", "Nov 17", "Last day to drop");
+        String s2 = String.format("%-20s %14s ", "Nov 24-26", "Thanksgiving");
+        String s3 = String.format("%-20s %18s", "Dec 8", "No Classes");
+        String s4 = String.format("%-20s %20s", "Dec 9-15", "Finals");
+
         Text options2[] = new Text[]{
-            new Text(s1),
-            new Text(s2),
-            new Text(s3),
-            new Text(s4)};
+                new Text(s1),
+                new Text(s2),
+                new Text(s3),
+                new Text(s4)};
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
             VBox.setMargin(options[i], new Insets(0, 0, 5, 5));
             vbox.getChildren().add(options2[i]);
         }
-        
-        
+
+
         pane.add(cs, 0, 1);
         pane.add(vbox, 0, 2);
 
@@ -282,8 +287,7 @@ public class InformationTab extends Application {
         return pane;
     }
 
-    
-    
+
     /**
      * @param pane the pane to set
      */
