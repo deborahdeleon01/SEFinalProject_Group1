@@ -63,5 +63,4 @@ public class EmailModel {
         this.message = message;
     }
 
-
 }

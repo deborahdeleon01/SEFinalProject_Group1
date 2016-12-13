@@ -33,8 +33,8 @@ public class EmailController {
                 String email = getEmail();
                 String password = getPassword();
                 String toEmail = getSendTo();
-                String subject = getSubject();
-                String message = getMessage();
+                String subject = getEmailSubject();
+                String message = getEmailMessage();
                 
                            
                 if(email.equals("@utrgv.edu") || email.isEmpty()) {
@@ -72,12 +72,12 @@ public class EmailController {
         return sendTo;
     }
 
-    public String getSubject() {
+    public String getEmailSubject() {
         String subject = emailModel.getSubject();
         return subject;
     }
 
-    public String getMessage() {
+    public String getEmailMessage() {
         String message = emailModel.getMessage();
         return message;
     }
