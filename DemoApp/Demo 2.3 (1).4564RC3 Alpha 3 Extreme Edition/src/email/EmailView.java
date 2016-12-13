@@ -16,28 +16,30 @@ import javafx.scene.text.Text;
  * @author Jose_Balle
  */
 public class EmailView extends GridPane {
-
     private Text scenetitle = new Text("UTRGV Email");
 
     private Label emailLabel = new Label("Email:");
-    private TextField emailText = new TextField("Jose.Ballesteros01@utrgv.edu");
+    private TextField emailText = new TextField("@utrgv.edu");
 
     private Label passLabel = new Label("Password:");
     private PasswordField passText = new PasswordField();
 
     private Label toLabel = new Label("Send Email To:");
-    private TextField toText = new TextField("Jose_Balle@hotmail.com");
+    private TextField toText = new TextField("");
 
     private Label subjectLabel = new Label("Email Subject:");
     private TextField subjectText = new TextField("VacPak POS Email");
 
     private Label messageLabel = new Label("Message:");
-    private TextArea messageText = new TextArea("Dear Student, ");
+    private TextArea messageText = new TextArea("Dear Student, \n\n\n");
 
     private Label emailStatus = new Label("");
     
     private Button sendEmail = new Button("Send Email");
-
+    
+    /**
+     *  Sets GridPane.
+     */
     public EmailView() {
         //Set GridPane        
         this.setAlignment(Pos.CENTER);
@@ -64,10 +66,20 @@ public class EmailView extends GridPane {
         scenetitle.setFont(new Font(40));
         emailStatus.setFont(new Font(30));
     }
-
+    
+    /**
+     * Resets text fields.
+     */
     public void updateEmailView() {
         //this.getChildren().clear();
-        emailStatus.setText("Email Sending...");      
+        emailStatus.setText("Email Sending...");
+        
+        emailText.setText("@utrgv.edu");
+        passText.setText("");
+        toText.setText("");
+        subjectText.setText("VacPak POS Email");
+        messageText.setText("Dear Student, \n\n\n");
+        emailStatus.setText("");
     }
 
     /**
@@ -237,6 +249,5 @@ public class EmailView extends GridPane {
     public void setEmailStatus(Label emailStatus) {
         this.emailStatus = emailStatus;
     }
-
 
 }

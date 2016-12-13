@@ -19,6 +19,7 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TabPane.TabClosingPolicy;
@@ -41,7 +42,11 @@ public class Main extends Application {
     File directoryPDF = new File("./VacPac/pdf/");
     File directoryHTML = new File("./VacPac/html");
     FormView fView;
-
+    
+    /**
+     * 
+     * @throws MalformedURLException 
+     */
     public Main() throws MalformedURLException {
         this.posLinks = new POS(POSstage);
         this.fView = new FormView(FormXMLstage);
@@ -54,21 +59,23 @@ public class Main extends Application {
         Application.launch(LoginScreenGUI.class, args);
         //launch(args); //in case the other does not work
     }
-
+    
+    /**
+     * 
+     * @param file delete
+     * @throws IOException 
+     */
     public static void delete(File file)
-            throws IOException {
+        throws IOException {
 
         if (file.isDirectory()) {
-
             //directory is empty, then delete it
             if (file.list().length == 0) {
 
                 file.delete();
                 System.out.println("Directory is deleted : "
                         + file.getAbsolutePath());
-
             } else {
-
                 //list all the directory contents
                 String files[] = file.list();
 
@@ -87,14 +94,18 @@ public class Main extends Application {
                             + file.getAbsolutePath());
                 }
             }
-
         } else {
             //if file, then delete it
             file.delete();
             System.out.println("File is deleted : " + file.getAbsolutePath());
         }
     }
-
+    
+    /**
+     * 
+     * @param primaryStage
+     * @throws MalformedURLException 
+     */
     @Override
     public void start(Stage primaryStage) throws MalformedURLException {
         primaryStage.setTitle("VaqPack -- Computer Science Program of Study");
@@ -106,7 +117,7 @@ public class Main extends Application {
         BorderPane mainPane = new BorderPane();
         tabPane.setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
 
-//Basic CSS
+        //Basic CSS
         root.setId("eff");
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
 
@@ -122,7 +133,6 @@ public class Main extends Application {
 
             //make sure directory exists
             if (!directoryHTML.exists() || directoryPDF.exists()) {
-
                 System.out.println("Directory does not exist.");
                 System.exit(0);
 
@@ -137,18 +147,26 @@ public class Main extends Application {
                     System.exit(0);
                 }
             }
-
         });
         primaryStage.show();
     }
-
+    
+    /**
+     * 
+     * @return Program of Study Tab
+     * @throws MalformedURLException 
+     */
     private Tab tabA() throws MalformedURLException {
         Tab tabA = new Tab();
         tabA.setText("Program Of Study");
         tabA.setContent(posLinks.getRootPane());
         return tabA;
     }
-
+    
+    /**
+     * 
+     * @return Information Tab
+     */
     private Tab tabB() {
         Tab tabB = new Tab();
         tabB.setText("Information");
@@ -156,10 +174,20 @@ public class Main extends Application {
         StackPane tabB_stack = new StackPane();
         tabB_stack.setAlignment(Pos.CENTER);
         tabB_stack.getChildren().add(info.getPane());
-        tabB.setContent(tabB_stack);
+        
+        //Set ScrollPane
+        ScrollPane scrollPane = new ScrollPane(tabB_stack);
+        scrollPane.setFitToHeight(true);
+        scrollPane.setFitToWidth(true);
+        
+        tabB.setContent(scrollPane);
         return tabB;
     }
-
+    
+    /**
+     * 
+     * @return GPA Widget Tab
+     */
     private Tab tabC() {
         Tab tabC = new Tab();
         tabC.setText("Reporting");
@@ -170,14 +198,22 @@ public class Main extends Application {
         tabC.setContent(tabC_stack);
         return tabC;
     }
-
+    
+    /**
+     * 
+     * @return XML Generator Tab
+     */
     private Tab tabD() {
         Tab tabD = new Tab();
         tabD.setText("XML Generator");
         tabD.setContent(fView.getFormPane());
         return tabD;
     }
-
+    
+    /**
+     * 
+     * @return Email Tab
+     */
     private Tab tabE() {
         Tab tabE = new Tab();
         tabE.setText("Email");

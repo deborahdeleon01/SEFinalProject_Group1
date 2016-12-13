@@ -15,13 +15,21 @@ public class EmailController {
     EmailModel emailModel;
     EmailView emailView;
     EmailSender sendEmail = new EmailSender();
-
+    
+    /**
+     * 
+     * @param emailModel
+     * @param emailView 
+     */
     public EmailController(EmailModel emailModel, EmailView emailView) {
         this.emailModel = emailModel;
         this.emailView = emailView;
         setupHandlers();
     }
-
+    
+    /**
+     * SetupHandlers for send email button. It validates inputs as well as updating email label and sending info.
+     */
     public void setupHandlers() {
         emailView.getSendEmail().setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -36,7 +44,6 @@ public class EmailController {
                 String subject = getEmailSubject();
                 String message = getEmailMessage();
                 
-                           
                 if(email.equals("@utrgv.edu") || email.isEmpty()) {
                     emailView.getEmailStatus().setText("Email Input is empty!");   
                 }
@@ -49,36 +56,56 @@ public class EmailController {
                 else {
                     //Update label.
                     emailView.updateEmailView();
-                    
+                
                     //Send Email
-                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment);                    
+                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment, emailView.getEmailStatus());                    
                 }
             }
         });
     }
-
+    
+    /**
+     * 
+     * @return email
+     */
     public String getEmail() {
         String email = emailView.getEmailText().getText();
         return email;
     }
-
+    
+    /**
+     * 
+     * @return password
+     */
     public String getPassword() {
         String password = emailView.getPassText().getText();
         return password;
     }
-
+    
+    /**
+     * 
+     * @return sendTo
+     */
     public String getSendTo() {
         String sendTo = emailView.getToText().getText();
         return sendTo;
     }
-
+    
+    /**
+     * 
+     * @return subject
+     */
     public String getEmailSubject() {
-        String subject = emailModel.getSubject();
+        String subject = emailView.getSubjectText().getText();
         return subject;
     }
-
+    
+    /**
+     * 
+     * @return message
+     */
     public String getEmailMessage() {
-        String message = emailModel.getMessage();
+        String message = emailView.getMessageText().getText();
         return message;
     }
 }

@@ -37,20 +37,19 @@ import javafx.stage.Stage;
  */
 public class InformationTab extends Application {
 
-
     public static final String DEFAULT_FORMAT = "jpg";
     public static final Color DEFAULT_COLOR = Color.LIGHTGREY;
     BorderPane pane = new BorderPane();
     ReminderWidget box = new ReminderWidget();
     HBox borders = new HBox();
-	    LogInView view = new LogInView();
+    LogInView view = new LogInView();
     User user = LogInController.u;
 
-    /*Temp Information Dropdown*/
-    private String pf;
-
+ 
+    /**
+     * Set Information Tab BorderPane
+     */
     public InformationTab() {
-
         HBox hbox = addHBox();
         pane.setTop(hbox);
 
@@ -64,12 +63,13 @@ public class InformationTab extends Application {
         pane.setRight(getRightSide());
 
         BorderPane.setAlignment(hbox, Pos.CENTER);
-
     }
 
-    private GridPane getCenter()
-    {
-        
+    /**
+     * 
+     * @return GridPane for center of BorderPane.
+     */
+    private GridPane getCenter() {
         GridPane grid = new GridPane();
         grid.setPadding(new Insets(10, 10, 10, 10));
         grid.setMinSize(300, 300);
@@ -83,14 +83,12 @@ public class InformationTab extends Application {
         trans.setAlignment(Pos.CENTER);
         trans.setPadding(new Insets(20,0,20,0));
 
-
         Path currentPath3 = Paths.get("");
         String path03 = currentPath3.toAbsolutePath().toString();
         String path3 = path03;
         File t = new File(path3 + "/utrgv_twitter_feed.html");
         File p = new File(path3 + "/parking.html");
       
-
         WebView twitterFeed = new WebView();
         twitterFeed.setPrefSize(500, 400);
         try {
@@ -114,10 +112,12 @@ public class InformationTab extends Application {
         return grid;
     }
     
+    /**
+     * 
+     * @return GridPane for left side of BorderPane.
+     */
     private GridPane getLeftSide() {
-        
         GridPane pane = new GridPane();
-
 
         pane.setAlignment(Pos.TOP_CENTER);
         pane.setPadding(new Insets(0, 0, 0, 0));
@@ -129,7 +129,6 @@ public class InformationTab extends Application {
         cs.setFont(Font.font("Calibri", FontWeight.BOLD, 30));
         cs.setPadding(new Insets(20,20,20,20));
         
-
         VBox vbox = new VBox();
         VBox.setMargin(addCombobox(), new Insets(0,0,5,5));
         vbox.getChildren().add(addCombobox());
@@ -141,10 +140,11 @@ public class InformationTab extends Application {
         vbox.getChildren().add(title);
 
         Text options[] = new Text[]{
-                new Text("\nENGR 1.294"),
-                new Text("1201 West University Drive"),
-                new Text("Edinburg, TX 78539-2999"),
-                new Text("(956)665-3510\n\n")};
+            new Text("\nENGR 1.294"),
+            new Text("1201 West University Drive"),
+            new Text("Edinburg, TX 78539-2999"),
+            new Text("(956)665-3510\n\n")
+        };
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
@@ -157,10 +157,11 @@ public class InformationTab extends Application {
         vbox.getChildren().add(title2);
 
         Text options1[] = new Text[]{
-                new Text("\nLHSB 2.720"),
-                new Text("One West University Boulevard"),
-                new Text("Brownsville, TX 78520"),
-                new Text("(956)882-6605\n\n")};
+            new Text("\nLHSB 2.720"),
+            new Text("One West University Boulevard"),
+            new Text("Brownsville, TX 78520"),
+            new Text("(956)882-6605\n\n")
+        };
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
@@ -181,7 +182,6 @@ public class InformationTab extends Application {
 
         vbox.getChildren().add(emailField);
 
-
         vbox.setPadding(new Insets(20, 20, 20, 20));
         Text title3 = new Text("\n\nImportant Upcoming Dates\n");
         title3.setFont(Font.font("Arial", FontWeight.BOLD, 20));
@@ -194,10 +194,11 @@ public class InformationTab extends Application {
         String s4 = String.format("%-20s %20s", "Dec 9-15", "Finals");
 
         Text options2[] = new Text[]{
-                new Text(s1),
-                new Text(s2),
-                new Text(s3),
-                new Text(s4)};
+            new Text(s1),
+            new Text(s2),
+            new Text(s3),
+            new Text(s4)
+        };
 
         for (int i = 0; i < 4; i++) {
             // Add offset to left side to indent from title
@@ -210,7 +211,11 @@ public class InformationTab extends Application {
 
         return pane;
     }
-
+    
+    /**
+     * 
+     * @return GridPane for right side of BorderPane.
+     */
     private GridPane getRightSide() {
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
@@ -223,9 +228,12 @@ public class InformationTab extends Application {
 
         return pane;
     }
-
+    
+    /**
+     * 
+     * @return HBox
+     */
     private HBox addHBox() {
-
         HBox hbox = new HBox();
         hbox.setAlignment(Pos.CENTER);
         hbox.getStyleClass().add("hbox");
@@ -242,9 +250,12 @@ public class InformationTab extends Application {
 
         return hbox;
     }
-
+    
+    /**
+     * 
+     * @return HBox 1 - It is the title of the information page tab.
+     */
     private HBox addHBox1() {
-
         HBox hbox = new HBox();
         hbox.setAlignment(Pos.CENTER);
         hbox.getStyleClass().add("hbox1");
@@ -262,6 +273,10 @@ public class InformationTab extends Application {
         return hbox;
     }
     
+    /**
+     * 
+     * @return ComboBox with User Account Information
+     */
     private VBox addCombobox()
     {
         VBox hbox = new VBox();
@@ -278,13 +293,11 @@ public class InformationTab extends Application {
         Text phone = new Text(user.getPos());
         Text ID = new Text(id);
 
-
         hbox.setStyle("-fx-font: 16 arial;");
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
 
-        hbox.getChildren().addAll(pftitle,profile, name,ID, position, email, phone);
-
-//        
+        hbox.getChildren().addAll(pftitle, profile, name,ID, position, email, phone);
+      
         return hbox;
     }
 
@@ -295,14 +308,18 @@ public class InformationTab extends Application {
         return pane;
     }
 
-
     /**
      * @param pane the pane to set
      */
     public void setPane(BorderPane pane) {
         this.pane = pane;
     }
-
+    
+    /**
+     * 
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
