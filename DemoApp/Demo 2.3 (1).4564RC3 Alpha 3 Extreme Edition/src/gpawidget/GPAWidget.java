@@ -36,7 +36,8 @@ public class GPAWidget {
     
     Course course = new Course();
     User user = new User();
-    TextField[] gradeFields = null;
+    TextField[] gradeFields = new TextField[4];
+    TextField[] hourFields = new TextField[4];
     BorderPane pane = new BorderPane();
 
     public GPAWidget(double width, double height, double v1, double v2, double v3, double delta) 
@@ -79,29 +80,31 @@ public class GPAWidget {
         vpane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
         vpane.setSpacing(10);
         
-                  //testing courses
+//                  testing courses
 //        user.addPastCourse(new Course("csci","2501","class5",1,'c',3));
 //        user.addPastCourse(new Course("csci","2601","class6",1,'c',4));
 //        user.addPastCourse(new Course("csci","2701","class7",1,'f',3));
 //        user.addPastCourse(new Course("csci","2801","class8",1,'d',4));
 
         // Place nodes in the pane
-        Button btAdd1  = new Button("Calculate Old GPA");
+//        Button btAdd1  = new Button("Calculate Old GPA");
         
 
-        
-        btAdd1.setOnAction((ActionEvent event) -> {
-            try {
-                
-                user.getPastCourses();
-                //should clear current semester fields
+//        
+//        btAdd1.setOnAction((ActionEvent event) -> {
+//            try {
+//                
+//                user.getPastCourses();
+//
+//            } catch (Exception e) {
+//               String s = e.getMessage();
+//               System.out.println(s);
+//            }
+//            
+//            meter.paintMeter(GPAUtility.calcGPA(user.getPastCourses()));
+//        });
 
-            } catch (Exception e) {
-            }
-            meter.paintMeter(GPAUtility.calcGPA(user.getPastCourses()));
-        });
-
-        // Place nodes in the pane
+//         Place nodes in the pane
         Label currentSemesterLabel = new Label("Current Semester Courses");
         currentSemesterLabel.setStyle("-fx-text-fill:black;-fx-font-size: 20px;-fx-font-weight: bold;");
         vpane.getChildren().add(currentSemesterLabel);
@@ -112,31 +115,16 @@ public class GPAWidget {
 //        user.addCurrentCourse(new Course("csci","1401","class3",1,'a',3));
 //        user.addCurrentCourse(new Course("csci","1501","class4",1,'c',4));
 
-        //get current semester courses
-        try {
+
+        for (int i = 0; i < gradeFields.length; i++) {
             
-            user.getCurrentCourses();
-
-        } catch (Exception e) {
-        }
-
-        gradeFields = null;
-        try {
-            gradeFields = new TextField[user.getCurrentCourses().size()];
-
-        } catch (Exception e) {
-        }
-
-        for (int i = 0; i < user.getCurrentCourses().size(); i++) {
-            
-            HBox hbox = new HBox();
+             HBox hbox = new HBox();
             hbox.setAlignment(Pos.CENTER);
             hbox.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
             hbox.setSpacing(10);
             
-            Label currentCourseLabel = new Label();
-            currentCourseLabel.setStyle("-fx-text-fill:red;-fx-font-size: 16px;-fx-font-weight: bold;");
-            currentCourseLabel.setText(user.getCurrentCourses().get(i).getCourseName());
+            TextField currentCourse = new TextField();
+            currentCourse.setPromptText("Enter COURSE NAME");
             
             Separator separator1 = new Separator();
             separator1.setOrientation(Orientation.HORIZONTAL);
@@ -147,7 +135,11 @@ public class GPAWidget {
             gradeFields[i].setPromptText("ENTER GRADE");
             gradeFields[i].setPrefWidth(150);
             
-            hbox.getChildren().addAll(currentCourseLabel,gradeFields[i]);
+            hourFields[i] = new TextField();
+            hourFields[i].setPromptText("ENTER HOURS");
+            hourFields[i].setPrefWidth(150);
+            
+            hbox.getChildren().addAll(currentCourse,gradeFields[i],hourFields[i]);
             
             vpane.getChildren().addAll(hbox,separator1);
         }
@@ -155,35 +147,59 @@ public class GPAWidget {
         Button btAdd2 = new Button("Calculate New GPA");
 
         btAdd2.setOnAction((ActionEvent event) -> {
-            for (int i = 0; i < gradeFields.length; i++) {
-                System.out.println("for course: " + user.getCurrentCourses().get(i).getCourseName());
-                if(isValidGrade(gradeFields[i].getText().trim()))
-                {
-                    
-                  user.getCurrentCourses().get(i).setGrade(gradeFields[i].getText().charAt(0));
-                }
-                else
-                {
-                    System.out.println("Invalid grade was entered!");
-                }
-                System.out.println("grade is : " + user.getCurrentCourses().get(i).getGrade());
+            
+         int hours;
+        int totalHours = 0;
+        double gpa = 0.0;
+            
+         for (int i = 0; i < gradeFields.length; i++) {
+            
+             if (isValidGrade(gradeFields[i].getText()))
+             {
+                 
+             
+             
+            if (gradeFields[i].getText().toUpperCase().equals("A")) {
+                hours = Integer.parseInt(hourFields[i].getText());
+                totalHours += hours;
+                gpa += 4.00 * hours;
+            } else if (gradeFields[i].getText().toUpperCase().equals("B")) {
+                hours = Integer.parseInt(hourFields[i].getText());
+                totalHours += hours;
+                gpa += 3.00 * hours;
+            } else if (gradeFields[i].getText().toUpperCase().equals("C")) {
+                hours = Integer.parseInt(hourFields[i].getText());
+                totalHours += hours;
+                gpa += 2.00 * hours;
+            } else if (gradeFields[i].getText().toUpperCase().equals("D")) {
+                hours = Integer.parseInt(hourFields[i].getText());
+                totalHours += hours;
+                gpa += 1.00 * hours;
             }
+           else if (gradeFields[i].getText().toUpperCase().equals("F")) {
+                hours = Integer.parseInt(hourFields[i].getText());
+                totalHours += hours;
+            }            
+        }
+         }
+
+        gpa = gpa/totalHours;
+        System.out.println("Your GPA from the Transcript/Semester  is: " + gpa);
             
-            // pass semester with grades & courses to grade calculator!
-            
-            double transcript_gpa = GPAUtility.calcGPA(user.getPastCourses());
-            double total_gpa = GPAUtility.calcGPA(user.getPastCourses(), user.getCurrentCourses());
-            
-            //double gpa = GPAUtility.calcGPA(transcript.getMyCourses(), semester.getMyCourses());
-            
+//            double transcript_gpa = GPAUtility.calcGPA(user.getPastCourses());
             // update the meter!
-            meter.paintMeter(transcript_gpa,total_gpa);
+           
+            meter.paintMeter(gpa);
+            
+            
         });
+        
+        
         
         HBox buttons = new HBox();
         buttons.setAlignment(Pos.CENTER);
         buttons.setSpacing(10);
-        buttons.getChildren().addAll(btAdd1,btAdd2);
+        buttons.getChildren().addAll(btAdd2);
 
         vpane.getChildren().addAll(buttons);
         return vpane;
