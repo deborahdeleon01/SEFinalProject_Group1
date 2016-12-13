@@ -48,10 +48,10 @@ public class EmailController {
                 }
                 else {
                     //Update label.
-                    emailView.getEmailStatus().setText("Email Sending.....");
+                    emailView.updateEmailView();
                     
                     //Send Email
-                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment, emailView.getEmailStatus());                    
+                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment);                    
                 }
             }
         });

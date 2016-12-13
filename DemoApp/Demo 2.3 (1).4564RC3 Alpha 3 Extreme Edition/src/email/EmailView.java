@@ -20,13 +20,13 @@ public class EmailView extends GridPane {
     private Text scenetitle = new Text("UTRGV Email");
 
     private Label emailLabel = new Label("Email:");
-    private TextField emailText = new TextField("@utrgv.edu");
+    private TextField emailText = new TextField("Jose.Ballesteros01@utrgv.edu");
 
     private Label passLabel = new Label("Password:");
     private PasswordField passText = new PasswordField();
 
     private Label toLabel = new Label("Send Email To:");
-    private TextField toText = new TextField();
+    private TextField toText = new TextField("Jose_Balle@hotmail.com");
 
     private Label subjectLabel = new Label("Email Subject:");
     private TextField subjectText = new TextField("VacPak POS Email");
@@ -66,8 +66,8 @@ public class EmailView extends GridPane {
     }
 
     public void updateEmailView() {
-        this.getChildren().clear();
-
+        //this.getChildren().clear();
+        emailStatus.setText("Email Sending...");      
     }
 
     /**
