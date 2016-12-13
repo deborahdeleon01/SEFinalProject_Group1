@@ -34,31 +34,37 @@ public class EmailController {
         emailView.getSendEmail().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-
-                //Variables
-                String attachment = "test.txt";
-
-                String email = getEmail();
-                String password = getPassword();
-                String toEmail = getSendTo();
-                String subject = getEmailSubject();
-                String message = getEmailMessage();
+                try {
+                    String current = new java.io.File( "." ).getCanonicalPath();
+                    System.out.println("\n\n\n\n\n==========Current dir:" + current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.txt\n\n\n\n\n");
                 
-                if(email.equals("@utrgv.edu") || email.isEmpty()) {
-                    emailView.getEmailStatus().setText("Email Input is empty!");   
-                }
-                else if(password.isEmpty()) {
-                    emailView.getEmailStatus().setText("Password Input is empty!");
-                }
-                else if(toEmail.isEmpty()) {
-                    emailView.getEmailStatus().setText("Send Email To Input is empty!");
-                }
-                else {
-                    //Update label.
-                    emailView.updateEmailView();
-                
-                    //Send Email
-                    sendEmail.EmailSender(email, password, toEmail, subject, message, attachment, emailView.getEmailStatus());                    
+                    //Variables
+                    String attachment = current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.txt";
+
+                    String email = getEmail();
+                    String password = getPassword();
+                    String toEmail = getSendTo();
+                    String subject = getEmailSubject();
+                    String message = getEmailMessage();
+
+                    if(email.equals("@utrgv.edu") || email.isEmpty()) {
+                        emailView.getEmailStatus().setText("Email Input is empty!");   
+                    }
+                    else if(password.isEmpty()) {
+                        emailView.getEmailStatus().setText("Password Input is empty!");
+                    }
+                    else if(toEmail.isEmpty()) {
+                        emailView.getEmailStatus().setText("Send Email To Input is empty!");
+                    }
+                    else {
+                        //Update label.
+                        emailView.updateEmailView();
+
+                        //Send Email
+                        sendEmail.EmailSender(email, password, toEmail, subject, message, attachment, emailView.getEmailStatus());                    
+                    }
+                } catch (Exception e) {            
+                    /*Stuff*/
                 }
             }
         });
