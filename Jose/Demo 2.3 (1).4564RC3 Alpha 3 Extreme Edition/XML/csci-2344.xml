@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
+  <Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2344</Number>
+<Name>Programming in a UNIX/Linux Envr</Name>
+<Description>The course presents the UNIX file system, the commonly used utilities, editors, shell programming and scripting. It includes instruction in software development in the UNIX/Linux environment. In addition, a brief overview of the internal components of the operating system will be covered.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378 or consent of instructor
+  </Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+	<Restrictions>
+  		dnu-MED in Educational Admin,
+  		MPA in Public Administration,
+  		Bus. Admin -Accelerated online
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+	  CS Instruction Fee - LU
+</Course-attributes>
+</Course>

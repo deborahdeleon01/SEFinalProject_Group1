@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+
+<Course>
+    <Divide>Technical_Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4360</Number>
+    <Name>Comp Graphics and Interactive Systems</Name>
+    <Description>
+		Presents fundamental concepts of computer graphics. Topics include display hardware, transformations, geometric
+	    modeling, shading two- and three-dimensional display algorithms and graphics software systems.
+	</Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+		CSCI-3333 or
+		CMPE-3333,
+		Consent of instructor
+	</Prerequisite>
+  <Co-requisite>
+    None
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin,
+	  MPA in Public Administration,
+	  Bus. Admin -Accelerated online,
+    Can not be in the English Institute level
+	</Restrictions>
+  <Course-attributes>
+	  Degree Elective,
+	  CS Instruction Fee - HU
+  </Course-attributes>
+</Course>

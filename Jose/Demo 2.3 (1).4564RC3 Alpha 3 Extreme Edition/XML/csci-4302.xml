@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Technical_Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4302</Number>
+	<Name>Multimedia Systems</Name>
+	<Description>
+		This course presents the broad field of multimedia systems. Topics include the digital interactive
+		multimedia, creation of multimedia, and various issues involving technology, design and effectiveness of multimedia
+		applications. Students will have the opportunity to learn programming techniques for integrating video, sound, animation
+		and graphics for multimedia systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite> Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor.
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>dnu-MED in Educational Admin, MPA in Public Administration, Bus. Admin -Accelerated online, and not in English Language Institute level
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective, CS Instruction Fee - HU
+	</Course-attributes>
+</Course>

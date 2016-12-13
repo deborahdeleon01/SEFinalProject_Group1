@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
+	<Divide>Labratory</Divide>
+	<Department>Biology</Department>
+	<Prefix>BIOL</Prefix>
+	<Number>1407</Number>
+	<Name>General Biology II</Name>
+	<Description>A continuation of Biology 1406. Topics include evolution and
+	diversity of invertebrate and vertebrate animals; mechanism of support and
+	movement, digestion and nutrition, respiration, circulation homeostasis,
+	hormonal control, nervous control, sexual reproduction, development, behavior
+	and ecology. Credit Restriction: Credit may be received in only one of
+	BIOL 1407 or BIOL 1488.
+	</Description>
+	<Credit-hours>4.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Core Life and Phys Sciences-030, Lab fee - Biology</Course-attributes>
+</Course>
