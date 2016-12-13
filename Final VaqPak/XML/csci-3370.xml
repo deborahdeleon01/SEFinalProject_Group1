@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+<Divide>Technical_Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3370 </Number>
+<Name>Intro Game Develop</Name>
+<Description>
+This is a project based course in which programmers and designers collaborate to create a video game. The course investigates theory and practice of developing computer games from a variety of perspectives.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+ <Prerequisite>
+  CSCI-3333/CMPE-3333, CSCI-3326/CMPE 3326 or CSCI-3327/CMPE 3327 or CSCI-3328/CMPE-3328 or consent of instructor
+ </Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+</Course>

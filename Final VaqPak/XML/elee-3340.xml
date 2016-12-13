@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+	<Divide>Mathematics_and_Engineering</Divide>
+	<Department>Engineering</Department>
+	<Prefix>ELEE</Prefix>
+	<Number>3340</Number>
+	<Name>Probability and Statistics for Electrical Engineers</Name>
+	<Description>
+    Probability, random variables, distribution and density functions, statistical estimators,
+  correlation, regression techniques, system response to random inputs.
+  </Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+  ELEE-2321 or CMPE-2322
+  </Prerequisite>
+	<Co-requisite>CMPE-3342</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>CS Instruction Fee - HU, Degree Elective</Course-attributes>
+</Course>

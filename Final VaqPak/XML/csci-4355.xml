@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+    <Divide>Technical_Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4355</Number>
+    <Name>Expert Systems</Name>
+    <Description>This course covers the theoretical and practical principles of modern expert systems.</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+        CSCI-3333 or
+        CMPE-3333 or
+        Consent of instructor or
+    </Prerequisite>
+     <Co-requisite>
+         None
+     </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+ 	<Restrictions>None</Restrictions>
+  <Course-attributes>None</Course-attributes>
+</Course>

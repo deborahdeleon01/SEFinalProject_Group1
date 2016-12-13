@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+
+<Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6303</Number>
+	<Name>Principles Info Tech Sys</Name>
+	<Description>
+		An introduction to information technology and computer systems. Specific topics provide an overview of databases, knowledge-based systems, e-commerce, software engineering, software tools, programming, and Internet.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Knowledge of a high level programming language
+		Consent of instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+		<Course-attributes>
+		Exempt from 3peat processing,
+		Exempt/Waive 6 drop process,
+		S Instruction Fee - G
+		</Course-attributes>
+</Course>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
+<Course>
+<Divide>Computer_Science_Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4325</Number>
+<Name>Automata, Formal Lang, and Comp</Name>
+<Description>
+The course presents formal computation models. Topics include finite state machine,
+pushdown state machine, Turing machine, halting problem, definition and properties of
+formal grammars and their languages as well as theory of computability and complexity
+including the complexity of optimization and approximation problems.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>CSCI-3333/CMPE-3333 or CSCI-3336</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+<Restrictions>
+  dnu-MED in Educational Admin,
+  MPA in Public Administration Bus.,
+  Admin -Accelerated online.
+</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+</Course>

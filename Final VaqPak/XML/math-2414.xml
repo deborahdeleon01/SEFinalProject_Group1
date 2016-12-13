@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Mathematics</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2414</Number>
+	<Name>Calculus II</Name>
+	<Description>
+    Topics include derivatives and integrals of transcendental functions, methods of
+integration, parameterized curves, integration in polar coordinates, and infinite
+sequences and series.
+  </Description>
+	<Credit-hours>4.000 Credit hours</Credit-hours>
+	<Lecture-hours>4.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>MATH-1460 or appropriate high school background and placement scores</item></Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes><item>CS Instruction Fee - HU</item><item>Degree Elective</item></Course-attributes>
+</Course>

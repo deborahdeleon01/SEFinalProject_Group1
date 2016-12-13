@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+	<Divide>Computer_Science_Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>2333</Number>
+	<Name>Computer Org and Assembly Lang</Name>
+	<Description>
+		An introduction to computer organization, use of assembly language programming, basic instruction sets, arithmetic and logical operations, addressing modes and macro definition. Several computer programming projects are included.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+  	<item>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378</item>
+	</Prerequisite>
+  <Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>COSC-2325</Legacy-number>
+	<Cross-listed>CMPE-2333</Cross-listed>
+	<Restrictions>
+  	dnu-MED in Educational Admin,
+  	MPA in Public Administration,
+  	Bus. Admin -Accelerated online.
+	</Restrictions>
+	<Course-attributes>
+	  Degree Elective,
+		CS Instruction Fee - LU
+	</Course-attributes>
+</Course>

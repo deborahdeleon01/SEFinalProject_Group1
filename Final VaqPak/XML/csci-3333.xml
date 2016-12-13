@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+<Course>
+  <Divide>Computer_Science_Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3333</Number>
+  <Name>Algorithms and Data Structures</Name>
+  <Description>
+    This course is a continuation of data structures topics covered in CSCI 2380. Content includes theoretical topics in
+    algorithmic efficiency and complexity, along with abstract data types, including graphs, networks, trees, and priority
+    queues. Search topics, including hashing, trees, external search trees (B-trees), and sorting algorithms including
+    external sorting are introduced and compared. Computational complexity topics include the class P and NP, NP-completeness
+    and reducibility, NP-completeness proofs, and NP-complete problems.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+   <Prerequisite>CSCI/CMPE 2380 or CSCI/CMPE 2388</Prerequisite>
+   <Co-requisite>Credit/registration for MATH 2346, CSCI 3310, or MATH 2305</Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+    Degree Elective,
+    CS Instruction Fee - HU
+  </Course-attributes>
+</Course>
