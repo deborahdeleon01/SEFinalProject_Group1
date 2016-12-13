@@ -80,10 +80,10 @@ public class GPAWidget {
         vpane.setSpacing(10);
         
                   //testing courses
-        user.addPastCourse(new Course("csci","2501","class5",1,'c',3));
-        user.addPastCourse(new Course("csci","2601","class6",1,'c',4));
-        user.addPastCourse(new Course("csci","2701","class7",1,'f',3));
-        user.addPastCourse(new Course("csci","2801","class8",1,'d',4));
+//        user.addPastCourse(new Course("csci","2501","class5",1,'c',3));
+//        user.addPastCourse(new Course("csci","2601","class6",1,'c',4));
+//        user.addPastCourse(new Course("csci","2701","class7",1,'f',3));
+//        user.addPastCourse(new Course("csci","2801","class8",1,'d',4));
 
         // Place nodes in the pane
         Button btAdd1  = new Button("Calculate Old GPA");
@@ -107,10 +107,10 @@ public class GPAWidget {
         vpane.getChildren().add(currentSemesterLabel);
         
         //testing courses
-        user.addCurrentCourse(new Course("csci","1101","class1",1,'a',3));
-        user.addCurrentCourse(new Course("csci","1301","class2",1,'c',4));
-        user.addCurrentCourse(new Course("csci","1401","class3",1,'a',3));
-        user.addCurrentCourse(new Course("csci","1501","class4",1,'c',4));
+//        user.addCurrentCourse(new Course("csci","1101","class1",1,'a',3));
+//        user.addCurrentCourse(new Course("csci","1301","class2",1,'c',4));
+//        user.addCurrentCourse(new Course("csci","1401","class3",1,'a',3));
+//        user.addCurrentCourse(new Course("csci","1501","class4",1,'c',4));
 
         //get current semester courses
         try {
