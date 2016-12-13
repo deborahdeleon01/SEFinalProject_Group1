@@ -31,7 +31,6 @@ import javafx.util.StringConverter;
 
 public class ReminderWidget extends Application {
 
-
     private final String pattern = "MM-dd-yyyy";
     HBox reminder;
     ComboBox comboBox;
@@ -40,7 +39,11 @@ public class ReminderWidget extends Application {
     private ObservableList<ReminderInfo> data;
     private VBox remWidget = new VBox();
     private DatePicker datePicker;
-
+    
+    /**
+     * 
+     * @return reminderWidget VBox
+     */
     public VBox reminderWidget() {
 
         data = getInitData();
@@ -67,6 +70,10 @@ public class ReminderWidget extends Application {
         return remWidget;
     }
 
+    /**
+     * 
+     * @return ScrollPane
+     */
     private ScrollPane scrollPane() {
         scrollPane = new ScrollPane();
         HBox reminderArea = reminderText();
@@ -76,6 +83,10 @@ public class ReminderWidget extends Application {
         return scrollPane;
     }
 
+    /**
+     * 
+     * @return displayCalendar
+     */
     private Node displayCalendar() {
 
         datePicker = new DatePicker();
@@ -116,7 +127,10 @@ public class ReminderWidget extends Application {
 
         return popupContent;
     }
-
+    
+    /**
+     * displayDialog show
+     */
     private void displayDialog() {
 
         Dialog<ReminderInfo> dialog = new Dialog<>();
@@ -175,7 +189,11 @@ public class ReminderWidget extends Application {
             reminderText.setText(data.toString().replaceAll("[\\[\\]]", "").replaceAll(",", " "));
         }
     }
-
+    
+    /**
+     * 
+     * @return ObservableList ReminderInfo
+     */
     private ObservableList<ReminderInfo> getInitData() {
 
         List<ReminderInfo> list = new ArrayList<>();
@@ -183,7 +201,11 @@ public class ReminderWidget extends Application {
         list.add(new ReminderInfo(" ", " ", " "));
         return data1;
     }
-
+    
+    /**
+     * 
+     * @return reminderText HBox
+     */
     private HBox reminderText() {
         reminder = new HBox();
         // Status message text
@@ -194,7 +216,11 @@ public class ReminderWidget extends Application {
 
         return reminder;
     }
-
+    
+    /**
+     * 
+     * @return comboBox
+     */
     private ComboBox comboBox() {
         comboBox = new ComboBox();
         comboBox.setPromptText("Select Time");
@@ -243,35 +269,61 @@ public class ReminderWidget extends Application {
     public void setRemWidget(VBox remWidget) {
         this.remWidget = remWidget;
     }
-
+    
+    /**
+     * 
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
+    /**
+     * 
+     */
     private class ReminderInfo {
 
         private String date;
         private String time;
         private String desc;
-
+        
+        /**
+         * 
+         * @param s1
+         * @param s2
+         * @param s3 
+         */
         ReminderInfo(String s1, String s2, String s3) {
 
             date = s1;
             time = s2;
             desc = s3;
         }
-
+        
+        /**
+         * 
+         * @return value
+         */
         @Override
         public String toString() {
             String value = String.format("%1$-20s %2$10s", date, time + "\n" + desc + "\n\n");
             return value;
         }
-
+        
+        /**
+         * 
+         * @return desc
+         */
         public String getDesc() {
             return desc;
         }
-
+        
+        /**
+         * 
+         * @param desc set
+         */
         public void setDesc(String desc) {
             this.desc = desc;
         }
@@ -305,8 +357,10 @@ public class ReminderWidget extends Application {
         }
     }
 
+    /**
+     * 
+     */
     private class DialogButtonListener implements EventHandler<ActionEvent> {
-
         @Override
         public void handle(ActionEvent e) {
 

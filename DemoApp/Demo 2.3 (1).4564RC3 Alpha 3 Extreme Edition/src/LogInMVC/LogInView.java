@@ -31,8 +31,11 @@ public class LogInView extends GridPane {
     Label PasswordLable = new Label("Password");
     Label ConfirmPasswordLable = new Label("Confirm Password");
     Text LogInTitle = new Text("Welcome to Vaq-Paq \n"
-            + "Login to continue");
-
+            + "Login to continue.");
+    
+    /**
+     * LoginView Set Pane
+     */
     public LogInView() {
         database.DirectoryStructure.createDirectoriesIfNotExists();
         this.ConfirmPasswordLocal = new PasswordField();
@@ -50,7 +53,10 @@ public class LogInView extends GridPane {
         this.add(Register, 1, 4);
 
     }
-
+    
+    /**
+     * Changes pane to register.
+     */
     public void changeToRegistration() {
         this.getChildren().clear();
 
@@ -68,7 +74,10 @@ public class LogInView extends GridPane {
         this.add(ConfirmRegister, 1, 6);
         this.add(BackSignIn, 1, 7);
     }
-
+    
+    /**
+     * Changes pane back to login.
+     */
     public void changeToLogin() {
         this.getChildren().clear();
 
@@ -81,123 +90,244 @@ public class LogInView extends GridPane {
         this.add(Register, 1, 4);
 
     }
-
+    
+    /**
+     * 
+     * @return FirstName
+     */
     public TextField getFirstName() {
         return FirstName;
     }
-
+    
+    /**
+     * 
+     * @param FirstName set
+     */
     public void setFirstName(TextField FirstName) {
         this.FirstName = FirstName;
     }
-
+    
+    /**
+     * 
+     * @return LastName
+     */
     public TextField getLastName() {
         return LastName;
     }
-
+    
+    /**
+     * 
+     * @param LastName set
+     */
     public void setLastName(TextField LastName) {
         this.LastName = LastName;
     }
-
+    
+    /**
+     * 
+     * @return FirstNameLable
+     */
     public Label getFirstNameLable() {
         return FirstNameLable;
     }
-
+    
+    /**
+     * 
+     * @param FirstNameLable set
+     */
     public void setFirstNameLable(Label FirstNameLable) {
         this.FirstNameLable = FirstNameLable;
     }
-
+    
+    /**
+     * 
+     * @return LastNameLable
+     */
     public Label getLastNameLable() {
         return LastNameLable;
     }
-
+    
+    /**
+     * 
+     * @param LastNameLable set
+     */
     public void setLastNameLable(Label LastNameLable) {
         this.LastNameLable = LastNameLable;
     }
-
+    
+    
+    /**
+     * 
+     * @return userNameText
+     */
     public TextField getUserNameText() {
         return userNameText;
     }
-
+    
+    /**
+     * 
+     * @param userNameText set
+     */
     public void setUserNameText(TextField userNameText) {
         this.userNameText = userNameText;
     }
-
+    
+    /**
+     * 
+     * @return passwordBox
+     */
     public PasswordField getPasswordBox() {
         return passwordBox;
     }
-
+    
+    /**
+     * 
+     * @param passwordBox set
+     */
     public void setPasswordBox(PasswordField passwordBox) {
         this.passwordBox = passwordBox;
     }
-
+    
+    /**
+     * 
+     * @return PasswordLocal
+     */
     public String getPasswordLocal() {
         return PasswordLocal;
     }
-
+    
+    /**
+     * 
+     * @param PasswordLocal set
+     */
     public void setPasswordLocal(String PasswordLocal) {
         this.PasswordLocal = PasswordLocal;
     }
-
+    
+    /**
+     * 
+     * @return Register
+     */
     public Button getRegister() {
         return Register;
     }
-
+    
+    /**
+     * 
+     * @param Register set
+     */
     public void setRegister(Button Register) {
         this.Register = Register;
     }
-
+    
+    /**
+     * 
+     * @return SignIn
+     */
     public Button getSignIn() {
         return SignIn;
     }
-
+    
+    /**
+     * 
+     * @param SignIn set
+     */
     public void setSignIn(Button SignIn) {
         this.SignIn = SignIn;
     }
-
+    
+    /**
+     * 
+     * @return UsernameLable
+     */
     public Label getUsernameLable() {
         return UsernameLable;
     }
-
+    
+    /**
+     * 
+     * @param UsernameLable set
+     */
     public void setUsernameLable(Label UsernameLable) {
         this.UsernameLable = UsernameLable;
     }
-
+    
+    /**
+     * 
+     * @return PasswordLable
+     */
     public Label getPasswordLable() {
         return PasswordLable;
     }
-
+    
+    /**
+     * 
+     * @param PasswordLable set
+     */
     public void setPasswordLable(Label PasswordLable) {
         this.PasswordLable = PasswordLable;
     }
-
+    
+    /**
+     * 
+     * @return ConfirmPasswordLocal
+     */
     public PasswordField getConfirmPasswordLocal() {
         return ConfirmPasswordLocal;
     }
-
+    
+    /**
+     * 
+     * @param ConfirmPasswordLocal set
+     */
     public void setConfirmPasswordLocal(PasswordField ConfirmPasswordLocal) {
         this.ConfirmPasswordLocal = ConfirmPasswordLocal;
     }
-
+    
+    /**
+     * 
+     * @return ConfirmRegister
+     */
     public Button getConfirmRegister() {
         return ConfirmRegister;
     }
-
+    
+    /**
+     * 
+     * @param ConfirmRegister set
+     */
     public void setConfirmRegister(Button ConfirmRegister) {
         this.ConfirmRegister = ConfirmRegister;
     }
-
+    
+    /**
+     * 
+     * @return ConfirmPasswordLable
+     */
     public Label getConfirmPasswordLable() {
         return ConfirmPasswordLable;
     }
-
+    
+    /**
+     * 
+     * @param ConfirmPasswordLable set
+     */
     public void setConfirmPasswordLable(Label ConfirmPasswordLable) {
         this.ConfirmPasswordLable = ConfirmPasswordLable;
     }
-
+    
+    /**
+     * 
+     * @return LogInTitle
+     */
     public Text getLogInTitle() {
         return LogInTitle;
     }
-
+    
+    /**
+     * 
+     * @param LogInTitle set
+     */
     public void setLogInTitle(Text LogInTitle) {
         this.LogInTitle = LogInTitle;
     }

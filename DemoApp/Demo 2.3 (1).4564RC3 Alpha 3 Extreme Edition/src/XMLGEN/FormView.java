@@ -20,13 +20,20 @@ import java.util.ArrayList;
 public class FormView {
 
     BorderPane gridPane = new BorderPane();
-
+    
+    /**
+     * 
+     * @param primaryStage4 
+     */
     public FormView(Stage primaryStage4) {
         GridPane grid = addGridPane();
         gridPane.setLeft(grid);
     }
 
-
+    /**
+     * 
+     * @return GridPane
+     */
     private GridPane addGridPane() {
         ArrayList<String> list = new ArrayList<>();
         ArrayList<String> list2 = new ArrayList<>();
@@ -204,11 +211,19 @@ public class FormView {
         grid.add(btn, 0, 16);
         return grid;
     }
-
+    
+    /**
+     * 
+     * @return gridPane pane
+     */
     public BorderPane getFormPane() {
         return gridPane;
     }
-
+    
+    /**
+     * 
+     * @param gridPane set pane
+     */
     public void setFormPane(BorderPane gridPane) {
         this.gridPane = gridPane;
     }

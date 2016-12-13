@@ -23,7 +23,14 @@ public class Util
     *
     * @author Michelle
     */
-
+    
+    /**
+     * 
+     * @param pass
+     * @param dbKey
+     * @return
+     * @throws Exception 
+     */
     public String []  encrypt(String pass, String dbKey) throws Exception
     {   
         String passSalt[] = new String[2]; 
@@ -59,6 +66,11 @@ public class Util
         return passSalt;
     }
     
+    /**
+     * 
+     * @return generateKey
+     * @throws NoSuchAlgorithmException 
+     */
     private static SecretKey generateKey() throws NoSuchAlgorithmException
     {
         KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");

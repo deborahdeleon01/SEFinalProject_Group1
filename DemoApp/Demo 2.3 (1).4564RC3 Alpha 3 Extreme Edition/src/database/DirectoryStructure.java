@@ -26,26 +26,51 @@ public final class DirectoryStructure {
     private DirectoryStructure (){
         
     }
-
+    
+    /**
+     * 
+     * @return VACPAC_XML
+     */
     public static String getVACPAC_XML() {
         return VACPAC_XML;
     }
+    
+    /**
+     * 
+     * @return VACPAC_CSS
+     */
     public static String getVACPAC_CSS() {
         return VACPAC_CSS;
     }
-
+    
+    /**
+     * 
+     * @return VACPAC_PDF
+     */
     public static String getVACPAC_PDF() {
         return VACPAC_PDF;
     }
-
+    
+    /**
+     * 
+     * @return VACPAC_HTML
+     */
     public static String getVACPAC_HTML() {
         return VACPAC_HTML;
     }
-
+    
+    /**
+     * 
+     * @return VACPAC_ROOT
+     */
     public static String getVACPAC_ROOT() {
         return VACPAC_ROOT;
     }
-
+    
+    /**
+     * 
+     * @return VACPAC_PDF_EMAIL
+     */
     public static String getVACPAC_PDF_EMAIL() {
         return VACPAC_PDF_EMAIL;
     }

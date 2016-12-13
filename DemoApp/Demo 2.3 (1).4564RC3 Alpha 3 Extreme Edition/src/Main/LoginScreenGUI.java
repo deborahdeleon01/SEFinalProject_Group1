@@ -4,6 +4,7 @@ import LogInMVC.LogInController;
 import LogInMVC.LogInView;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -13,11 +14,20 @@ import javafx.stage.Stage;
  * @author Jesus
  */
 public class LoginScreenGUI extends Application {
-
+    
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         launch(args);
     }
-
+    
+    /**
+     * 
+     * @param primaryLogIn
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryLogIn) throws Exception {
         LogInView login = new LogInView();
@@ -27,8 +37,8 @@ public class LoginScreenGUI extends Application {
 
         String css = this.getClass().getResource("style.css").toExternalForm();
         login.getStylesheets().add(css);
-        // primaryLogIn.getIcons().addAll(new Image("vaq.png"));
-        primaryLogIn.setTitle("test");
+        primaryLogIn.getIcons().addAll(new Image("vaq.png"));
+        primaryLogIn.setTitle("VaqPack -- Computer Science Program of Study");
         primaryLogIn.setScene(scene);
         primaryLogIn.show();
 

@@ -130,7 +130,7 @@ public class InformationTab extends Application {
         cs.setPadding(new Insets(20,20,20,20));
         
         VBox vbox = new VBox();
-        VBox.setMargin(addCombobox(), new Insets(0,0,5,5));
+        VBox.setMargin(addCombobox(), new Insets(20, 20, 20, 20));
         vbox.getChildren().add(addCombobox());
 
         vbox.setPadding(new Insets(20, 20, 20, 20));
@@ -280,23 +280,26 @@ public class InformationTab extends Application {
     private VBox addCombobox()
     {
         VBox hbox = new VBox();
-        hbox.setPadding(new Insets(20, 20, 0, 0));
+        hbox.setPadding(new Insets(20, 20, 20, 0));
         hbox.setAlignment(Pos.CENTER_LEFT);
 
         String id = String.valueOf(user.getId());
-        Text pftitle = new Text("User information");
+        Text pftitle = new Text("User Information");
         ImageView profile = new ImageView();
         profile.setImage(user.getPic());
-        Text name = new Text(user.getFirst()+" "+user.getLast());
-        Text position = new Text("Not on database");
+        
+        String first = Character.toUpperCase(user.getFirst().charAt(0)) + user.getFirst().substring(1);
+        String last = Character.toUpperCase(user.getLast().charAt(0)) + user.getLast().substring(1);
+
+        Text name = new Text(first + " " + last);
+        Text position = new Text(user.getPos());
         Text email = new Text(user.getEmail());
-        Text phone = new Text(user.getPos());
         Text ID = new Text(id);
 
         hbox.setStyle("-fx-font: 16 arial;");
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
 
-        hbox.getChildren().addAll(pftitle, profile, name,ID, position, email, phone);
+        hbox.getChildren().addAll(pftitle, profile, name, position, email, ID);
       
         return hbox;
     }

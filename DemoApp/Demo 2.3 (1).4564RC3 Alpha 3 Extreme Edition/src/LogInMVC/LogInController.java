@@ -24,7 +24,11 @@ public class LogInController {
     Stage primaryStage;
     LogInView logInView;
     public static User u;
-
+    
+    /**
+     * 
+     * @param logInView 
+     */
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
         database.DirectoryStructure.createDirectoriesIfNotExists();
@@ -32,8 +36,11 @@ public class LogInController {
         database.Db.theDatabase().populateXMLFiles();
         setupMethods();
     }
-
-    //sets up the methods for the buttons.
+    
+    //sets up the methods for the buttons
+    /**
+     * 
+     */
     private void setupMethods() {
 
         logInView.Register.setOnAction((event) -> {
@@ -49,13 +56,13 @@ public class LogInController {
 
             User u= new User(Email,FirstName,LastName,Password,"CSCI",1);
             if (Password.equals(Password2)) {
-                System.out.println("Passowrds are the same");
+                System.out.println("Passowrds are the same.");
                 if (database.Db.theDatabase().register(u)) {
                     System.out.println("Success!");
                 }
 
             } else {
-                System.out.println("Passwords do not match");
+                System.out.println("Passwords do not match.");
             }
         });
 
@@ -85,18 +92,24 @@ public class LogInController {
 
     }
 
+    /**
+     * 
+     */
     private void updateToregister() {
-        logInView.getLogInTitle().setText("Welcome to VaqPaq!\nPlease register below");
+        logInView.getLogInTitle().setText("Welcome to VaqPaq!\nPlease register below.");
         logInView.getUsernameLable().setText("E-Mail");
     }
-
+    
+    /**
+     * 
+     */
     void incorrectInformation() {
 
         final Stage dialog = new Stage();
         dialog.initModality(Modality.APPLICATION_MODAL);
         dialog.initOwner(primaryStage);
         BorderPane dialogVbox = new BorderPane();
-        Text popupText = new Text("Incorrect username or password!");
+        Text popupText = new Text("Incorrect Username or Password!");
         dialogVbox.setCenter(popupText);
         Scene dialogScene = new Scene(dialogVbox, 200, 100);
         dialog.setScene(dialogScene);

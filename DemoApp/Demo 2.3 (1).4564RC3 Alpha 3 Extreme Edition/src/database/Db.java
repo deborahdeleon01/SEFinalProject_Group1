@@ -126,12 +126,12 @@ public class Db
             closeConnection(connectionTest);
         }
     }
+    
     /**
      * @author Juan Delgado
      * initializes the Database for the VaqPaq project.
      * @param connect
      */
-
     private void dbInit(){
         Connection connect  = null;
         try {
@@ -151,6 +151,7 @@ public class Db
         }
 
     }
+    
     /**
      * @author Juan Delgado
      * Takes a connection object and closes it.
@@ -165,6 +166,7 @@ public class Db
             e.printStackTrace();
         }
     }
+    
     /**
      * @author Juan Delgado
      * Closes either a statement or prepared statement.
@@ -179,7 +181,11 @@ public class Db
             e.printStackTrace();
         }
     }
+    
     /* @author eli */
+    /**
+     * 
+     */
     private void dbInitTables() {
         try {
 
@@ -227,6 +233,13 @@ public class Db
 
 
     /*@author eli */
+    /**
+     * 
+     * @param email
+     * @param password
+     * @param u
+     * @return 
+     */
     public boolean login(String email, String password, User u) {
         String sql;
         String dbPass = null;
@@ -284,6 +297,11 @@ public class Db
     }
 
     /* @author Eli */
+    /**
+     * 
+     * @param u
+     * @return 
+     */
     public boolean register(User u) {
         String sql;
         int rowCount = 0;
@@ -362,6 +380,7 @@ public class Db
             closeStatement(pstmt);
         }
     }
+    
     /**
      * @author Juan Delgado
      * Automatically populates the xml files contained in the database.
@@ -405,6 +424,7 @@ public class Db
             closeStatement(stmt);
         }
     }
+    
     /**
      * @author Juan Delgado
      * This function will upload all the XML files to the database.
@@ -436,6 +456,7 @@ public class Db
             e.getMessage();
         }
     }
+    
     /**
      * @author Juan Delgado
      * Function to retrieve the css files from the database.
@@ -476,6 +497,10 @@ public class Db
             closeStatement(stmt);
         }
     }
+    
+    /**
+     * 
+     */
     public void uploadStyleFiles() {
         String[] fileNames;
         File dir;
@@ -510,6 +535,7 @@ public class Db
             closeConnection(conn);
         }
     }
+    
     /**
      * @author Juan Delgado will add the specified course to the user_courses tables that corresponds to the user id.
      * @param user
@@ -533,6 +559,12 @@ public class Db
             e.printStackTrace();
         }
     }
+    
+    /**
+     * 
+     * @param email
+     * @return 
+     */
     public User retrieveUserInfo(String email){
         User retrievedUser = null;
         ArrayList<Course> pastCourses = new ArrayList<>();
@@ -571,7 +603,13 @@ public class Db
 
         return retrievedUser;
     }
-
+    
+    /**
+     * 
+     * @param user
+     * @param grade
+     * @param prefix 
+     */
     public void editCourse(User user, char grade, String prefix) {
         String sql = "UPDATE user_courses SET grade = ? WHERE user_id = ? AND course_prefix = ?";
         try {
@@ -590,7 +628,12 @@ public class Db
             closeStatement(pstmt);
         }
     }
-
+    
+    /**
+     * 
+     * @param user
+     * @param prefix 
+     */
     public void removemCourse(User user, String prefix) {
         String sql = "SELECT * FROM user_courses WHERE user_id = " + user.getId();
         try {
@@ -613,7 +656,15 @@ public class Db
             closeStatement(stmt);
         }
     }
-
+    
+    /**
+     * 
+     * @param start
+     * @param end
+     * @param message
+     * @param u
+     * @return 
+     */
     public Reminder addRem(String start, String end, String message, User u) {
         int id;
         String sql;

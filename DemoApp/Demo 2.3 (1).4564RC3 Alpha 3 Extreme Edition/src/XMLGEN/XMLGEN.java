@@ -31,18 +31,37 @@ public class XMLGEN {
     private ArrayList<String> NodeTextList = null;
     private String newfilename;
 
+    /**
+     * 
+     */
     public XMLGEN() {
+    
     }
-
+    
+    /**
+     * 
+     * @param NewNodeNameList
+     * @param NewNodeTextList 
+     */
     public XMLGEN(ArrayList<String> NewNodeNameList, ArrayList<String> NewNodeTextList) {
         generateWithArraylists(NodeNameList, NodeTextList, newfilename);
     }
-
+    
+    /**
+     * 
+     * @param NewNodeName
+     * @param NewNodeText 
+     */
     public XMLGEN(String[] NewNodeName, String[] NewNodeText) {
         generateWithArrays(NodeName, NodeText, newfilename);
     }
 
-
+    /**
+     * 
+     * @param NodeNameList
+     * @param NodeTextList
+     * @param filename 
+     */
     private void generateWithArraylists(ArrayList<String> NodeNameList, ArrayList<String> NodeTextList, String filename) {
         try {
 
@@ -77,7 +96,12 @@ public class XMLGEN {
         }
     }
 
-
+    /**
+     * 
+     * @param NodeName
+     * @param NodeText
+     * @param filename 
+     */
     private void generateWithArrays(String[] NodeName, String[] NodeText, String filename) {
         try {
 
@@ -111,44 +135,87 @@ public class XMLGEN {
             tfe.printStackTrace();
         }
     }
-
+    
+    /**
+     * 
+     * @param NewNodeNamesList
+     * @param NewNodeTextstList
+     * @param FileName 
+     */
     public void generateXMLWithArrayLists(ArrayList<String> NewNodeNamesList, ArrayList<String> NewNodeTextstList, String FileName) {
         generateWithArraylists(NewNodeNamesList, NewNodeTextstList, FileName);
     }
-
+    
+    /**
+     * 
+     * @param NodeNames
+     * @param NodeTexts
+     * @param FileName 
+     */
     public void generateXMLWithArrays(String[] NodeNames, String[] NodeTexts, String FileName) {
         generateWithArrays(NodeNames, NodeTexts, FileName);
     }
 
-
+    /**
+     * 
+     * @return NodeName
+     */
     public String[] getNodeName() {
         return NodeName;
     }
-
+    
+    /**
+     * 
+     * @param NodeName set
+     */
     public void setNodeName(String[] NodeName) {
         this.NodeName = NodeName;
     }
-
+    
+    /**
+     * 
+     * @return NodeText
+     */
     public String[] getNodeText() {
         return NodeText;
     }
-
+    
+    /**
+     * 
+     * @param NodeText set
+     */
     public void setNodeText(String[] NodeText) {
         this.NodeText = NodeText;
     }
-
+    
+    /**
+     * 
+     * @return NodeNameList ArrayList
+     */
     public ArrayList<String> getNodeNameList() {
         return NodeNameList;
     }
-
+    
+    /**
+     * 
+     * @param NodeNameList set ArrayList 
+     */
     public void setNodeNameList(ArrayList<String> NodeNameList) {
         this.NodeNameList = NodeNameList;
     }
-
+    
+    /**
+     * 
+     * @return NodeTextList ArrayList
+     */
     public ArrayList<String> getNodeTextList() {
         return NodeTextList;
     }
-
+    
+    /**
+     * 
+     * @param NodeTextList set ArrayList
+     */
     public void setNodeTextList(ArrayList<String> NodeTextList) {
         this.NodeTextList = NodeTextList;
     }
