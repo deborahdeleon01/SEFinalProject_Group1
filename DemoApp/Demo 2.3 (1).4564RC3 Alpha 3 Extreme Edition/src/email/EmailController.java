@@ -36,10 +36,10 @@ public class EmailController {
             public void handle(ActionEvent event) {
                 try {
                     String current = new java.io.File( "." ).getCanonicalPath();
-                    System.out.println("\n\n\n\n\n==========Current dir:" + current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.txt\n\n\n\n\n");
+                    System.out.println("\n\n\n\n\n==========Current dir:" + current + "\\pdf\\CombinedPDFFiles.pdf\n\n\n\n\n");
                 
                     //Variables
-                    String attachment = current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.pdf";
+                    String attachment = current + "\\pdf\\CombinedPDFFiles.pdf";
 
                     String email = getEmail();
                     String password = getPassword();
