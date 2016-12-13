@@ -19,7 +19,7 @@ public class EmailView extends GridPane {
     private Text scenetitle = new Text("UTRGV Email");
 
     private Label emailLabel = new Label("Email:");
-    private TextField emailText = new TextField("@utrgv.edu");
+    private TextField emailText = new TextField(LogInMVC.LogInController.emailInfo);
 
     private Label passLabel = new Label("Password:");
     private PasswordField passText = new PasswordField();
@@ -74,7 +74,7 @@ public class EmailView extends GridPane {
         //this.getChildren().clear();
         emailStatus.setText("Email Sending...");
         
-        emailText.setText("@utrgv.edu");
+        emailText.setText(LogInMVC.LogInController.emailInfo);
         passText.setText("");
         toText.setText("");
         subjectText.setText("VacPak POS Email");

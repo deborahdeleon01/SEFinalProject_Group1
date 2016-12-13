@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>2312</Number>
+    <Name>Test</Name>
+    <Description>Super Test!</Description>
+    <Credit-Hours>3</Credit-Hours>
+    <Lecture-Hours>1</Lecture-Hours>
+    <Lab-Hours>0</Lab-Hours>
+    <Level>1</Level>
+    <Schedule-Type>MW</Schedule-Type>
+    <Pre-requisite>None</Pre-requisite>
+    <Co-requisite>None</Co-requisite>
+    <Course-Atributes>None</Course-Atributes>
+    <Cross-Listed>None</Cross-Listed>
+    <Restrictions>None</Restrictions>
+</Course>

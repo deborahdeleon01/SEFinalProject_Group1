@@ -15,19 +15,19 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- * @author Jesus
- *         Controls the link between the database and the view. It updates
- *         the log in screen as necessary depending on log in or register
+ * @author Jesus Controls the link between the database and the view. It updates
+ * the log in screen as necessary depending on log in or register
  */
 public class LogInController {
 
     Stage primaryStage;
     LogInView logInView;
     public static User u;
-    
+    public static String emailInfo;
+
     /**
-     * 
-     * @param logInView 
+     *
+     * @param logInView
      */
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
@@ -36,10 +36,10 @@ public class LogInController {
         database.Db.theDatabase().populateXMLFiles();
         setupMethods();
     }
-    
+
     //sets up the methods for the buttons
     /**
-     * 
+     *
      */
     private void setupMethods() {
 
@@ -54,24 +54,27 @@ public class LogInController {
             String FirstName = logInView.getFirstName().getText();
             String LastName = logInView.getLastName().getText();
 
-            User u= new User(Email,FirstName,LastName,Password,"CSCI",1);
+            User u = new User(Email, FirstName, LastName, Password, "CSCI", 1);
             if (Password.equals(Password2)) {
                 System.out.println("Passowrds are the same.");
                 if (database.Db.theDatabase().register(u)) {
-                    System.out.println("Success!");
+                    regiSuccess();
                 }
 
             } else {
-                System.out.println("Passwords do not match.");
+                incorrectPasswords();
             }
         });
 
         logInView.SignIn.setOnAction((ActionEvent event) -> {
             String Password = logInView.getPasswordBox().getText();
             String Email = logInView.getUserNameText().getText();
+            emailInfo = logInView.getUserNameText().getText();
+                    
+            
 
             u = database.Db.theDatabase().retrieveUserInfo(Email);
-            if (database.Db.theDatabase().login(Email,Password,u)) {
+            if (database.Db.theDatabase().login(Email, Password, u)) {
                 try {
                     new Main().start(new Stage());
                     Stage stage = (Stage) logInView.getScene().getWindow();
@@ -93,15 +96,15 @@ public class LogInController {
     }
 
     /**
-     * 
+     *
      */
     private void updateToregister() {
         logInView.getLogInTitle().setText("Welcome to VaqPaq!\nPlease register below.");
         logInView.getUsernameLable().setText("E-Mail");
     }
-    
+
     /**
-     * 
+     *
      */
     void incorrectInformation() {
 
@@ -110,6 +113,38 @@ public class LogInController {
         dialog.initOwner(primaryStage);
         BorderPane dialogVbox = new BorderPane();
         Text popupText = new Text("Incorrect Username or Password!");
+        dialogVbox.setCenter(popupText);
+        Scene dialogScene = new Scene(dialogVbox, 200, 100);
+        dialog.setScene(dialogScene);
+        dialog.setTitle("Incorrect");
+        dialog.getIcons().addAll(new Image("vaq.png"));
+        dialog.centerOnScreen();
+        dialog.show();
+    }
+
+    void regiSuccess() {
+
+        final Stage dialog = new Stage();
+        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initOwner(primaryStage);
+        BorderPane dialogVbox = new BorderPane();
+        Text popupText = new Text("Registration Successful");
+        dialogVbox.setCenter(popupText);
+        Scene dialogScene = new Scene(dialogVbox, 200, 100);
+        dialog.setScene(dialogScene);
+        dialog.setTitle("Success");
+        dialog.getIcons().addAll(new Image("vaq.png"));
+        dialog.centerOnScreen();
+        dialog.show();
+    }
+
+    void incorrectPasswords() {
+
+        final Stage dialog = new Stage();
+        dialog.initModality(Modality.APPLICATION_MODAL);
+        dialog.initOwner(primaryStage);
+        BorderPane dialogVbox = new BorderPane();
+        Text popupText = new Text("Passwords do not match");
         dialogVbox.setCenter(popupText);
         Scene dialogScene = new Scene(dialogVbox, 200, 100);
         dialog.setScene(dialogScene);
