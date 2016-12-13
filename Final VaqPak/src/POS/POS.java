@@ -39,15 +39,22 @@ public class POS {
     public int count = 0;
     HBox hbx;
 
-
+    /**
+     * 
+     * @param primaryStage3
+     * @throws MalformedURLException 
+     */
     public POS(Stage primaryStage3) throws MalformedURLException {
         configureWebView();
 
-          rootPane.setPadding(new Insets(100, 30, 100, 30));
-   
+        rootPane.setPadding(new Insets(100, 30, 100, 30));
     }
 
     //Configures the Webview
+    /**
+     * 
+     * @throws MalformedURLException 
+     */
     private void configureWebView() throws MalformedURLException {
         HBox hboxx = addHBox();
         rootPane.setLeft(hboxx);
@@ -57,15 +64,20 @@ public class POS {
     }
 
     //HBox
+    /**
+     * 
+     * @return addHBox 
+     */
     private HBox addHBox() {
         HBox hboxx = new HBox();
         hboxx.setPadding(new Insets(50, 75, 50, 75));
         hboxx.setSpacing(10);
         ObservableList<String> ProgOfStudy = 
-    FXCollections.observableArrayList(
-        "ComputerScienceProgramOfStudy",
-        "ComputerEngineeringProgramOfStudy"  
-    );
+        FXCollections.observableArrayList(
+            "ComputerScienceProgramOfStudy",
+            "ComputerEngineeringProgramOfStudy"  
+        );
+        
         ComboBox listOfPOS = new ComboBox(ProgOfStudy);
         listOfPOS.setValue("Choose a Program Of Study");
         //posf = String.valueOf(listOfPOS.get.toString());
@@ -75,28 +87,32 @@ public class POS {
         //      Creating POS... Merge files together
             if ("ComputerEngineeringProgramOfStudy".equals(t1)) {
                 XMLMerger.mergeFilesFromDirectory("XML", "POS",  "STYLES/CMPE-POS.xml");
-        XML2HTML.convert2Html("CMPE-POS.xml", "STYLES/CMPE-POS.xsl", "TEMP/output.html");
+                XML2HTML.convert2Html("CMPE-POS.xml", "STYLES/CMPE-POS.xsl", "TEMP/output.html");
         
         
             }
             else if ("ComputerScienceProgramOfStudy".equals(t1)){
-        XMLMerger.mergeFilesFromDirectory("XML", "POS",  "STYLES/CSCI-POS.xml");
-        XML2HTML.convert2Html("CSCI-POS.xml", "STYLES/CSCI-POS.xsl", "TEMP/output.html");
-        
+                XMLMerger.mergeFilesFromDirectory("XML", "POS",  "STYLES/CSCI-POS.xml");
+                XML2HTML.convert2Html("CSCI-POS.xml", "STYLES/CSCI-POS.xsl", "TEMP/output.html");
             }
-       
         }    
     });
-       
-       
-        return hboxx;
-        
-    }
 
+        return hboxx;    
+    }
+    
+    /**
+     * 
+     * @return BorderPane pane/
+     */
     public BorderPane getRootPane() {
         return rootPane;
     }
-
+    
+    /**
+     * 
+     * @param root set BorderPane pane
+     */
     public void setRootPane(BorderPane root) {
         this.rootPane = root;
     }
@@ -110,17 +126,19 @@ class MyBrowser extends Region {
     Path currentPath2 = Paths.get("");
     String path02 = currentPath2.toAbsolutePath().toString();
     String pos = "output.html";
-
+    
+    /**
+     * 
+     * @throws MalformedURLException 
+     */
     public MyBrowser() throws MalformedURLException {
         String path2 = path02 + "/TEMP/"+ pos;
         URL url = new URL("file:///" + path2);
      
         
         webEngine2.load(url.toExternalForm());
-        getChildren().add(webView2);
-        
+        getChildren().add(webView2); 
     }
-
 }
 
 

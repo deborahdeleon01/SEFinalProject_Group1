@@ -62,7 +62,13 @@ public class GPAUtility {
         // hard coded!
         return gpa;
     }
-
+    
+    /**
+     * 
+     * @param myCourses
+     * @param mySemester
+     * @return 
+     */
     public static double calcGPA(ArrayList<Course> myCourses, ArrayList<Course> mySemester) {
         int hours;
         int totalHours = 0;

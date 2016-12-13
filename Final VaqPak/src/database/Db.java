@@ -45,7 +45,7 @@ public class Db
     //  Database credentials
     protected static final String USER = "root";
 
-    protected static final String PASS = "dr3100575!";
+    protected static final String PASS = "";
 
     protected static final String DB_NAME = "vaqpack";
 

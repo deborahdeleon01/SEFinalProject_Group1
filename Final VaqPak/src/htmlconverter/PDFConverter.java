@@ -38,7 +38,11 @@ public class PDFConverter {
      * @return
      */
   
-    
+    /**
+     * 
+     * @param htmlFileName
+     * @param pdfFileName 
+     */
     public static void convert2Pdf(String htmlFileName, String pdfFileName) {
         try {
             String url = new File(htmlFileName).toURI().toURL().toString();
@@ -58,7 +62,9 @@ public class PDFConverter {
         }
     }
 
-    
+    /**
+     * 
+     */
      public static void testConvert2Pdf() {
         System.out.println("convert2Pdf");
         String htmlFileName = "HTML/csci-1170.html";
@@ -115,6 +121,11 @@ public class PDFConverter {
         }
 
     }
+    
+    /**
+     * 
+     * @throws Exception 
+     */
     public void testCombinePDFFiles() throws Exception {
         System.out.println("combinePDFFiles");
         List<String> list = new ArrayList<>();

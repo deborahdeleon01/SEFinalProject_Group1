@@ -49,7 +49,15 @@ public class GPAMeter extends Pane {
         this.h = height;
     }
 
-
+    /**
+     * 
+     * @param width
+     * @param height
+     * @param v1
+     * @param v2
+     * @param v3
+     * @param delta 
+     */
     public GPAMeter(double width, double height, double v1, double v2, double v3, double delta) {
         this.w = width;
         this.h = height;
@@ -62,13 +70,25 @@ public class GPAMeter extends Pane {
 
         setCurrentValues(v1, v2, v3, delta);
     }
-
+    
+    /**
+     * 
+     * @param v1
+     * @param v2 
+     */
     public void setMinMaxValues(double v1, double v2) {
         setMinvalue(v1);
         setMaxValue(v2);
         paintMeter(currentValue_1);
     }
-
+    
+    /**
+     * 
+     * @param v1
+     * @param v2
+     * @param v3
+     * @param delta 
+     */
     public void setCurrentValues(double v1, double v2, double v3, double delta) {
 
         setMinvalue(v1);
