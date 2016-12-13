@@ -5,12 +5,16 @@
  */
 package Main;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+
 import POS.POS;
 import XMLGEN.FormView;
 import email.EmailController;
 import email.EmailModel;
 import email.EmailView;
-import gpawidget.GPAWidget;
+//import gpawidget.GPAWidget;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
@@ -23,13 +27,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-
 public class Main extends Application {
 
-    GPAWidget gpaWidget = new GPAWidget(600, 600, 0, 4, 0, 0.2);
+    //GPAWidget gpaWidget = new GPAWidget(600, 600, 0, 4, 0, 0.2);
     InformationTab info = new InformationTab();
     Stage kstage = new Stage();
     Stage POSstage = new Stage();
@@ -166,7 +166,7 @@ public class Main extends Application {
         //Add GPA Widget in TabC
         StackPane tabC_stack = new StackPane();
         tabC_stack.setAlignment(Pos.CENTER);
-        tabC_stack.getChildren().add(gpaWidget.getPane());
+        //tabC_stack.getChildren().add(gpaWidget.getPane());
         tabC.setContent(tabC_stack);
         return tabC;
     }

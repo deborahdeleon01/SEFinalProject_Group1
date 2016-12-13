@@ -6,7 +6,6 @@
 package Main;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.net.MalformedURLException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -17,14 +16,10 @@ import LogInMVC.LogInController;
 import LogInMVC.LogInView;
 import database.User;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -34,7 +29,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
-import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
@@ -124,6 +118,7 @@ public class InformationTab extends Application {
         
         GridPane pane = new GridPane();
 
+
         pane.setAlignment(Pos.TOP_CENTER);
         pane.setPadding(new Insets(0, 0, 0, 0));
         pane.setHgap(5);
@@ -136,6 +131,9 @@ public class InformationTab extends Application {
         
 
         VBox vbox = new VBox();
+        VBox.setMargin(addCombobox(), new Insets(0,0,5,5));
+        vbox.getChildren().add(addCombobox());
+
         vbox.setPadding(new Insets(20, 20, 20, 20));
         Text title = new Text("Edinburg Campus");
         title.setFont(Font.font("Arial", FontWeight.BOLD, 20));
@@ -206,14 +204,6 @@ public class InformationTab extends Application {
             VBox.setMargin(options[i], new Insets(0, 0, 5, 5));
             vbox.getChildren().add(options2[i]);
         }
-        
-        
-       
-       VBox.setMargin(addCombobox(), new Insets(0,0,5,5));
-       vbox.getChildren().add(addCombobox());
-        
-     
-
 
         pane.add(cs, 0, 1);
         pane.add(vbox, 0, 2);
@@ -277,18 +267,22 @@ public class InformationTab extends Application {
         VBox hbox = new VBox();
         hbox.setPadding(new Insets(20, 20, 0, 0));
         hbox.setAlignment(Pos.CENTER_LEFT);
-        
-         Text pftitle = new Text(user.getEmail());
+
+        String id = String.valueOf(user.getId());
+        Text pftitle = new Text("User information");
+        ImageView profile = new ImageView();
+        profile.setImage(user.getPic());
         Text name = new Text(user.getFirst()+" "+user.getLast());
         Text position = new Text("Not on database");
         Text email = new Text(user.getEmail());
         Text phone = new Text(user.getPos());
+        Text ID = new Text(id);
 
 
         hbox.setStyle("-fx-font: 16 arial;");
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
-        
-        hbox.getChildren().addAll(pftitle, name, position, email, phone);
+
+        hbox.getChildren().addAll(pftitle,profile, name,ID, position, email, phone);
 
 //        
         return hbox;
