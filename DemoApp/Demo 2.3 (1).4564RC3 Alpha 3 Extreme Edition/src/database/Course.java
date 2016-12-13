@@ -2,7 +2,7 @@
 package database;
 /**
  *
- * @author juand This class will hold all the course information needed by the user.
+ * @author juand This class will hold all the course information needed by the user. 
  */
 public class Course {
     // Course fields
@@ -12,7 +12,7 @@ public class Course {
     private int active;
     private char grade;
     private double hours;
-
+    
     public Course(){
         coursePrefix = " ";
         courseNumber = " ";

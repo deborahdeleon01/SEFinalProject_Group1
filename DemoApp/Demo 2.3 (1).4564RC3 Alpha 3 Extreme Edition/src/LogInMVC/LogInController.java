@@ -1,7 +1,10 @@
 package LogInMVC;
 
+import java.net.MalformedURLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import Main.Main;
-import database.Db;
 import database.User;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
@@ -10,10 +13,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-
-import java.net.MalformedURLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * @author Jesus
@@ -24,16 +23,19 @@ public class LogInController {
 
     Stage primaryStage;
     LogInView logInView;
-    User u;
-
+    public static User u;
 
     public LogInController(LogInView logInView) {
         this.logInView = logInView;
+        database.DirectoryStructure.createDirectoriesIfNotExists();
+        database.Db.theDatabase().populateCSSFiles();
+        database.Db.theDatabase().populateXMLFiles();
         setupMethods();
     }
 
     //sets up the methods for the buttons.
     private void setupMethods() {
+
         logInView.Register.setOnAction((event) -> {
             updateToregister();
             logInView.changeToRegistration();
@@ -61,8 +63,8 @@ public class LogInController {
             String Password = logInView.getPasswordBox().getText();
             String Email = logInView.getUserNameText().getText();
 
-            User u = null;
-            if (database.Db.theDatabase().login(Email,Password,u)==true) {
+            u = database.Db.theDatabase().retrieveUserInfo(Email);
+            if (database.Db.theDatabase().login(Email,Password,u)) {
                 try {
                     new Main().start(new Stage());
                     Stage stage = (Stage) logInView.getScene().getWindow();

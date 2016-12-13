@@ -6,23 +6,38 @@
 package database;
 
 //import static Database.DB.JDBC_DRIVER;
-
-import java.io.*;
-import java.sql.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.ResultSet;
+//import java.sql.DatabaseMetaData;
+import java.sql.PreparedStatement;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-//import java.sql.DatabaseMetaData;
 
 
 /*
 * @author Eli function protoyping
 */
-public class Db {
+public class Db
+{
 
     private static Db databaseSingleton = new Db();
-    
+
     // JDBC driver name and database URL
     protected static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     protected static final String DB_URL = "jdbc:mysql://localhost/";
@@ -30,7 +45,7 @@ public class Db {
     //  Database credentials
     protected static final String USER = "root";
 
-    protected static final String PASS = "Skyl@r5106";
+    protected static final String PASS = "";
 
     protected static final String DB_NAME = "vaqpack";
 
@@ -46,21 +61,26 @@ public class Db {
      * This constructor will automatically connect to the database and check the
      * server and check if the database exist. If not it will create it.
      */
-    private Db() {
-        try {
+    private Db()
+    {
+        try
+        {
             Class.forName(JDBC_DRIVER); // Load the driver
             dbCheck(); // Check to see if the database exists
-        } catch (ClassNotFoundException e) {
+        }
+        catch (ClassNotFoundException e)
+        {
             System.out.println("Please ensure you have mysql connector jar linked to the project.");
         }
     }
 
     /**
-     * @return
      * @author Juan Delgado
      * returns the database object. Which is a singleton.
+     * @return
      */
-    public static Db theDatabase() {
+    public static Db theDatabase()
+    {
         return databaseSingleton;
     }
 
@@ -68,23 +88,26 @@ public class Db {
      * @author Juan Delgado
      * This function will check if the database exist. If not it will call another
      * function to create it.
+     * @param Connection
      */
-    private void dbCheck() {
+    private void dbCheck(){
         Connection connectionTest = null;
-        try {
-            connectionTest = DriverManager.getConnection(DB_URL, USER, PASS);
+        try
+        {
+            connectionTest = DriverManager.getConnection(DB_URL,USER,PASS);
             // Bool variable that will change depending if the database is there. We assume the database does not exist.
             Boolean exist = false;
             rs = connectionTest.getMetaData().getCatalogs();
-            if (!rs.first()) //Check if database is empty.
+            if(!rs.first()) //Check if database is empty.
             {
                 System.out.println("NO DB!!!!!!!!!!!!!!!!!");
                 dbInit();
                 return; //Exit the function since we have just created the database.No need for iteration of the rest of the rows.
             }
             rs.beforeFirst(); //Moves the cursor to the front of this ResultSet object, just before the first row to prepare for iteration.
-            while (rs.next()) {
-                if (rs.getString(1).equalsIgnoreCase(DB_NAME))
+            while(rs.next())
+            {
+                if(rs.getString(1).equalsIgnoreCase(DB_NAME))
 
                 {
                     exist = true;
@@ -92,65 +115,71 @@ public class Db {
                 }
 
             }
-            if (!exist)
+            if(!exist)
                 dbInit();
-        } catch (SQLException e) {
+        }
+        catch (SQLException e)
+        {
             System.out.println("Error could not access the database.");
-        } finally {
+        }
+        finally {
             closeConnection(connectionTest);
         }
     }
-
     /**
      * @author Juan Delgado
      * initializes the Database for the VaqPaq project.
+     * @param connect
      */
 
-    private void dbInit() {
-        Connection connect = null;
+    private void dbInit(){
+        Connection connect  = null;
         try {
-            connect = DriverManager.getConnection(DB_URL, USER, PASS);
-            String sql = "CREATE DATABASE " + DB_NAME;
+            connect = DriverManager.getConnection(DB_URL,USER,PASS);
+            String sql = "CREATE DATABASE "+DB_NAME;
             stmt = connect.createStatement();
             int holder = stmt.executeUpdate(sql);
             dbInitTables();
 
-        } catch (SQLException e) {
+        }
+        catch (SQLException e)
+        {
             System.out.println("ERROR Could not access the database");
-        } finally {
+        }
+        finally {
             closeConnection(connect);
         }
 
     }
-
     /**
-     * @param cn
-     * @authore Juan Delgado
+     * @author Juan Delgado
      * Takes a connection object and closes it.
+     * @param cn
      */
-    private void closeConnection(Connection cn) {
+    private void closeConnection(Connection cn){
         try {
             cn.close();
             cn = null;
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
     /**
-     * @param st
      * @author Juan Delgado
      * Closes either a statement or prepared statement.
+     * @param st
      */
-    private void closeStatement(Statement st) {
+    private void closeStatement(Statement st){
         try {
             st.close();
             st = null;
-        } catch (SQLException e) {
+        }
+        catch (SQLException e){
             e.printStackTrace();
         }
     }
-
+    /* @author eli */
     private void dbInitTables() {
         try {
 
@@ -163,9 +192,8 @@ public class Db {
             pstmt = conn.prepareStatement(sql);
             pstmt.executeUpdate();
 
-            sql = "CREATE TABLE Courses (prefix varchar(4), courseNumber varchar(4), name varchar(30), course_xml LONGBLOB,"
-                    + " abet_xml LONGBLOB, outcomes_xml LONGBLOB"
-                    + ",PRIMARY KEY (courseNumber) )";
+            sql = "CREATE TABLE Courses (prefix varchar(4), course_number varchar(4), name varchar(30), course_xml LONGBLOB,"
+                    + "PRIMARY KEY (course_number) )";
 
             pstmt = conn.prepareStatement(sql);
             pstmt.executeUpdate();
@@ -187,7 +215,7 @@ public class Db {
             pstmt.executeUpdate();
            /*
            sql="CREATE TABLE Xml ( name varchar(56), cat(56) "+" PRIMARY KEY name, FOREIGN KEY name)";
-           
+
            pstmt.executeUpdate(sql); */
 
             pstmt.close();
@@ -303,182 +331,384 @@ public class Db {
             return false;
     }
 
-
     /**
-     * @param prefix
-     * @param courseNumber
-     * @param courseName
      * @author Juan Delgado
      * Create a new entry in the courses table with the specified prefix, number,
      * and name. It will also store the xml files that have been generated. Note that the
      * xml files must exist already in order for this function to work.
+     * @param prefix
+     * @param courseNumber
      */
-    public void newXml(String prefix, String courseNumber, String courseName) {
+    public void newXml(String prefix, String courseNumber) {
         String courseXMLPath = DirectoryStructure.getVACPAC_XML() + prefix + "-" + courseNumber + ".xml";
-        String abetXMLPath = DirectoryStructure.getVACPAC_XML() + prefix + "-" + courseNumber + "-abet.xml";
-        String outcomesXMLPath = DirectoryStructure.getVACPAC_XML() + prefix + "-" + courseNumber + "-outcomes.xml";
-        String sql = "INSERT INTO Courses(prefix, course_number, name, course_xml, abet_xml, outcomes_xml)"
-                + "VALUES(?, ?, ?, ?, ?, ?)";
-        try {
-            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS); //Connect to the database.
+        String sql = "INSERT INTO Courses(prefix, course_number, course_xml)"
+                + "VALUES(?, ?, ?)";
+        try{
+            conn = DriverManager.getConnection(DB_URL + DB_NAME,USER,PASS); //Connect to the database.
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, prefix);
             pstmt.setString(2, courseNumber);
-            pstmt.setString(3, courseName);
-            pstmt.setBinaryStream(4, new FileInputStream(new File(courseXMLPath)));
-            pstmt.setBinaryStream(5, new FileInputStream(new File(abetXMLPath)));
-            pstmt.setBinaryStream(6, new FileInputStream(new File(outcomesXMLPath)));
+            pstmt.setBinaryStream(3, new BufferedInputStream(new FileInputStream( new File(courseXMLPath))));
             pstmt.executeUpdate();
-        } catch (SQLException e) {
+        }
+        catch(SQLException e){
             e.printStackTrace();
-        } catch (FileNotFoundException e) {
+        }
+        catch (FileNotFoundException e){
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             closeConnection(conn);
             closeStatement(pstmt);
         }
     }
-
     /**
      * @author Juan Delgado
      * Automatically populates the xml files contained in the database.
      */
-    public void populateXMLFiles() {
+    public void populateXMLFiles()
+    {
         String sql = "SELECT * FROM Courses";
         File xmlFile;
         InputStream is;
-        FileOutputStream fs;
+        BufferedOutputStream fs;
         byte[] buffer; //Buffer to write the file.
         try {
-            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS); //Connect to the database
+            conn = DriverManager.getConnection(DB_URL + DB_NAME,USER,PASS); //Connect to the database
             stmt = conn.createStatement();
             rs = stmt.executeQuery(sql);
-            while (rs.next()) {
+            while(rs.next()) {
                 //Read the course XML file
                 xmlFile = new File(DirectoryStructure.getVACPAC_XML() + rs.getString(1) + "-" + rs.getString(2) + ".xml");
                 xmlFile.createNewFile(); // Create the file if it does not exist;
-                fs = new FileOutputStream(xmlFile);
-                is = rs.getBinaryStream(4);
-                buffer = rs.getBytes(4); //Get size of the file in bytes
-                while (is.read(buffer) > 0) {
-                    fs.write(buffer);
-                }
-                fs.close();
-                is.close();
-
-                //Read the abet XML file
-                xmlFile = new File(DirectoryStructure.getVACPAC_XML() + rs.getString(1) + "-" + rs.getString(2) + "-abet.xml");
-                xmlFile.createNewFile(); // Create the file if it does not exist;
-                fs = new FileOutputStream(xmlFile);
-                is = rs.getBinaryStream(5);
-                buffer = rs.getBytes(5); //Get size of the file in bytes
-                while (is.read(buffer) > 0) {
-                    fs.write(buffer);
-                }
-                fs.close();
-                is.close();
-
-                //Read the outcome xml file
-                xmlFile = new File(DirectoryStructure.getVACPAC_XML() + rs.getString(1) + "-" + rs.getString(2) + "-outcomes.xml");
-                xmlFile.createNewFile(); // Create the file if it does not exist;
-                fs = new FileOutputStream(xmlFile);
-                is = rs.getBinaryStream(6);
-                buffer = rs.getBytes(6); //Get size of the file in bytes
-                while (is.read(buffer) > 0) {
+                fs = new BufferedOutputStream(new FileOutputStream(xmlFile));
+                is = rs.getBinaryStream(3);
+                buffer = rs.getBytes(3); //Get size of the file in bytes
+                while(is.read(buffer) > 0){
                     fs.write(buffer);
                 }
                 fs.close();
                 is.close();
             }
-        } catch (SQLException e) {
+        }
+        catch (SQLException e){
             e.printStackTrace();
-        } catch (FileNotFoundException e) {
+        }
+        catch (FileNotFoundException e){
             e.printStackTrace();
-        } catch (IOException e) {
+        }
+        catch (IOException e){
             e.printStackTrace();
-        } finally {
+        }
+        finally {
+            closeConnection(conn);
+            closeStatement(stmt);
+        }
+    }
+    /**
+     * @author Juan Delgado
+     * This function will upload all the XML files to the database.
+     */
+    public void uploadXMLFromDirectoryToTheDatabase(){
+        String[] fileNames;
+        String[] currentFile;
+        String sql;
+        File dir;
+        try {
+            dir = new File(DirectoryStructure.getVACPAC_XML());
+            fileNames = dir.list();
+            System.out.println(fileNames.length);
+            for(int i = 0; i < fileNames.length; i+=3)
+            {
+                conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+                currentFile = fileNames[i].split("-");
+                sql = "SELECT course_number FROM Courses WHERE "
+                        + "course_number = " + currentFile[1].split("\\.")[0]; //Use split to ensure the .xml part is left out of the prefix.
+                stmt = conn.createStatement();
+                rs = stmt.executeQuery(sql);
+                if(!rs.first())
+                    newXml(currentFile[0], currentFile[1].split("\\.")[0]); //Use split to ensure the .xml part is left out of the prefix.
+                rs.close();
+                stmt.close();
+            }
+        }
+        catch (SQLException e) {
+            e.getMessage();
+        }
+    }
+    /**
+     * @author Juan Delgado
+     * Function to retrieve the css files from the database.
+     */
+    public void populateCSSFiles(){
+        String sql = "SELECT * FROM Style";
+        File styleFile;
+        InputStream is;
+        BufferedOutputStream fs;
+        byte[] buffer;
+
+        try {
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sql);
+
+            while(rs.next()) {
+                styleFile = new File(DirectoryStructure.getVACPAC_CSS()); //Get path to file.
+                styleFile.createNewFile(); //Create file if it does not exist.
+                fs = new BufferedOutputStream(new FileOutputStream(styleFile));
+                is = rs.getBinaryStream(2);
+                buffer = rs.getBytes(2);
+                while(is.read(buffer) > 0) {
+                    fs.write(buffer);
+                }
+                fs.close();
+                is.close();
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection(conn);
+            closeStatement(stmt);
+        }
+    }
+    public void uploadStyleFiles() {
+        String[] fileNames;
+        File dir;
+        File styleFile;
+        InputStream is;
+        BufferedInputStream fs;
+        try {
+            dir = new File(DirectoryStructure.getVACPAC_CSS());
+            fileNames = dir.list();
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            for(int i = 0; i < fileNames.length; i++){
+                String sql = "SELECT name FROM Style WHERE name = " + fileNames[i];
+                stmt = conn.createStatement();
+                rs = stmt.executeQuery(sql);
+                if(!rs.first()) {
+                    sql = "INSERT INTO Style(name, style_sheet)VALUES(?,?)";
+                    pstmt.setString(1, fileNames[i]);
+                    pstmt.setBinaryStream(2,fs = new BufferedInputStream(new FileInputStream(DirectoryStructure.getVACPAC_CSS() + fileNames[i])));
+                    pstmt.close();
+                    fs.close();
+                }
+                stmt.close();
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection(conn);
+        }
+    }
+    /**
+     * @author Juan Delgado will add the specified course to the user_courses tables that corresponds to the user id.
+     * @param user
+     * @param courseToAdd
+     */
+    public void addCourse(User user, Course courseToAdd) {
+        String sql = "INSERT INTO User_Courses(user_id, course_prefix, course_number, coursse_name, grade, active, hours)Values"
+                + "((SELECT user_id FROM Users WHERE user_id = ?), ?, ?, ?";
+        try {
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, user.getId());
+            pstmt.setString(2, courseToAdd.getCoursePrefix());
+            pstmt.setString(3, courseToAdd.getCourseNumber());
+            pstmt.setString(4, courseToAdd.getCourseName());
+            pstmt.setString(5, String.valueOf(courseToAdd.getGrade()));
+            pstmt.setInt(6, courseToAdd.getActive());
+            pstmt.setDouble(7, courseToAdd.getHours());
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
+    public User retrieveUserInfo(String email){
+        User retrievedUser = null;
+        ArrayList<Course> pastCourses = new ArrayList<>();
+        ArrayList<Course> currentCourses = new ArrayList<>();
+        try {
+            String sql = "SELECT * FROM Users WHERE email = ?";
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,email);
+            rs = pstmt.executeQuery();
+            while(rs.next()){
+                retrievedUser = new User(rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
+                        rs.getString(6),rs.getString(7),rs.getInt(8),rs.getInt(1));
+            }
+            stmt.close();
+            sql = "SELECT * FROM User_Courses WHERE user_id = " + retrievedUser.getId();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sql);
+            while(rs.next()){
+                if(rs.getInt(6) == 0)
+                    pastCourses.add( new Course(rs.getString(2), rs.getString(3),rs.getString(4),rs.getInt(6),rs.getString(5).charAt(0),rs.getDouble(7)));
+                else
+                    currentCourses.add( new Course(rs.getString(2), rs.getString(3),rs.getString(4),rs.getInt(6),rs.getString(5).charAt(0),rs.getDouble(7)));
+            }
+            retrievedUser.addCurrentCourses(currentCourses);
+            retrievedUser.addPastCourses(pastCourses);
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        finally{
+            closeConnection(conn);
+            closeStatement(stmt);
+            closeStatement(pstmt);
+        }
+
+        return retrievedUser;
+    }
+
+    public void editCourse(User user, char grade, String prefix) {
+        String sql = "UPDATE user_courses SET grade = ? WHERE user_id = ? AND course_prefix = ?";
+        try {
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, Character.toString(grade));
+            pstmt.setInt(2, user.getId());
+            pstmt.setString(3, prefix);
+            pstmt.executeUpdate();
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection(conn);
+            closeStatement(pstmt);
+        }
+    }
+
+    public void removemCourse(User user, String prefix) {
+        String sql = "SELECT * FROM user_courses WHERE user_id = " + user.getId();
+        try {
+            conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                if(rs.getString(3).equalsIgnoreCase(prefix)) {
+                    sql = "DELETE FROM user_courses WHERE user_id = " + user.getId()
+                            + " AND course_prefix = " + prefix;
+                    stmt.executeUpdate(sql);
+                }
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
             closeConnection(conn);
             closeStatement(stmt);
         }
     }
 
-    /**
-     * @author Juan Delgado
-     * Function to retrieve the css files from the database.
-     */
-    public void populateCSSFiles() {
-        String sql = "SELECT * FROM Style";
-        File xmlFile;
-        InputStream is;
-        FileOutputStream fs;
-        byte[] buffer = new byte[1096];
+    public Reminder addRem(String start, String end, String message, User u) {
+        int id;
+        String sql;
+        String name;
+
+        Timestamp startTime = Timestamp.valueOf(start);
+        Timestamp endTime = Timestamp.valueOf(end);
+        name = UUID.randomUUID().toString();
+
+        Reminder r = new Reminder(startTime, endTime, message, name, "");
+
+        sql = "SELECT * FROM Users WHERE email = ? ";
+
+        try{
+            conn = DriverManager.getConnection(DB_URL + DB_NAME,USER,PASS); //Connect to the database.
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, u.getEmail());
+            rs = pstmt.executeQuery();
+
+            if(rs.first()){
+                id = rs.getInt(1);
+                rs = pstmt.executeQuery();
+
+                sql = "INSERT INTO Reminders () SELECT * FROM (SELECT ?,?,?,?,?) AS tmp WHERE NOT EXISTS ("
+                        + "SELECT reminder_id,StartTime,EndTime FROM Reminders WHERE reminder_id = ? "
+                        + "AND ((StartTime = ?) OR (StartTime < ? AND EndTime > ?))"
+                        + "OR ((EndTime = ?) OR (StartTime < ? AND EndTime > ?))"
+                        + "OR (StartTime > ? AND EndTime < ?)) LIMIT 1";
+
+                pstmt = conn.prepareStatement(sql);
+                pstmt.setInt(1, id);
+                pstmt.setString(2, name);
+                pstmt.setString(3, message);
+                pstmt.setTimestamp(4, startTime);
+                pstmt.setTimestamp(5, endTime);
+                pstmt.setInt(6, id);
+                pstmt.setTimestamp(7, startTime);
+                pstmt.setTimestamp(8, startTime);
+                pstmt.setTimestamp(9, startTime);
+                pstmt.setTimestamp(10, endTime);
+                pstmt.setTimestamp(11, endTime);
+                pstmt.setTimestamp(12, endTime);
+                pstmt.setTimestamp(13, startTime);
+                pstmt.setTimestamp(14, endTime);
+                int i = pstmt.executeUpdate();
+                if(i == 1){
+                    System.out.println("Reminder added");
+                }
+                else{
+                    System.out.println("Time frame for reminder already occupied");
+                    r = null;
+                }
+            }
+        }
+
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection(conn);
+            closeStatement(pstmt);
+
+        }
+        return r;
     }
 
     /**
-     * @param user
-     * @param courseToAdd
-     * @author Juan Delgado will add the specified course to the user_courses tables that corresponds to the user id.
+     * @author Josue Rodriguez
+     * Remove the reminder from the user in the database
+     * @param r Reminder to remove
      */
-    public void addCourse(User user, Course courseToAdd) {
-        String sql = "INSERT INTO User_Courses(user_id, course_prefix";
-    }
+    public void rmRem(Reminder r) {
+        String sql;
 
-    public void edCourse(/*OBJECT containing xml info like PREFIX, COURSE NUMBER, something unique*/) {
-        /*
-            Our COURSES table only keeps track of vital details of a course. LIke prefix, number, hours, type of class...lecture or lab
-            EXTRACT the info from the object, WHERE "INFO" is PREFIX, COURSES NUMBER, HOURS...
-            OPEN DB CONNECTION
-            TRY
-            SELECT ROW form TABLE WHERE PREFIX is object.PREFIX
-            IF FAIL->reurn false, COURSE is not in DATABASE
-            ELSE INSERT into SELECTED ROW the updated info
-            CLOSE DB CONNECITON
-            
-        
-         */
+        sql = "DELETE FROM Reminders WHERE reminderName = ?";
 
-    }
+        try{
+            conn = DriverManager.getConnection(DB_URL + DB_NAME,USER,PASS); //Connect to the database.
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, r.getReminderName());
+            int i = pstmt.executeUpdate();
 
-    public void rmCourse(/* OBJECT contaiing USER credentials, COURSE to be removed. WHERE COURSE CAN be a string wtth course prefix or maybe a OBJECT itself*/) {
-        /* 
-            EXTRACT USER credentials
-            Open DB connection
-            TRY SELECT FROM USER "user crednetial"
-            FROM selected USER row, remove the above listed course from the COURSES COLUMN of the USER row
-            This will probably be done via "remove foreign key", seperate the link from the COURSES column of the specified USER and the specific course WITHIN THE COURSES TABLE.
-            Sever the link.
-            RETURN TRUE FOR SUCCESS, FALSE FOR FAILURE
-        
-         */
-    }
-
-    public void addRem(/*object/container with details concerning the reminder to be added, USER OBJ */) {
-        /*
-                TRY OPEN connection to DB
-                TRY INSERT INTO "REMINDER" TABLE, NEW ROW, contating detials from reminder object passed.
-                CHECK that the "reminder" to be added doesnt exist.
-                IF DOES NOT EXIST-> insert into table new row containing details from reminder object
-                
-                extract crednetials from USER OBJ
-                SELECT FROM USER TABLE, row THAT CONTAINS USER crednetials
-                
-                FROM that row, go to COLUMN "reminder". 
-                Check that there is no link to the new reminder to be added.
-                return false if there is.
-                else
-                Create a link from "reminder" column to the correct row in REMINDER TABLE containg the USERS reminder item.
-                return true
-        
-                * make sure the "reminder name" in the REMINDER TABLE CLOUMN "reminer_name" is unique. Extract from USER obj the email, extract from REMINDER obj the reminder name.
-                  combinde like <email@>_<reminder_name>
-        
-                 
-                
-                
-         */
-    }
-
-    public void rmRem(/*object/container with details concerning the reminder to be removed */) {
-        /* same as addRem, just the delte version, prety much*/
+            if(i ==1){
+                System.out.println("Reminder deleted");
+            }
+            else{
+                System.out.println("Reminder could not be deleted");
+            }
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }
+        finally {
+            closeConnection(conn);
+            closeStatement(pstmt);
+        }
     }
 }

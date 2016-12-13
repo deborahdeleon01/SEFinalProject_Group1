@@ -12,6 +12,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import LogInMVC.LogInController;
+import LogInMVC.LogInView;
+import database.User;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -45,6 +49,8 @@ public class InformationTab extends Application {
     BorderPane pane = new BorderPane();
     ReminderWidget box = new ReminderWidget();
     HBox borders = new HBox();
+	    LogInView view = new LogInView();
+    User user = LogInController.u;
 
     /*Temp Information Dropdown*/
     private String pf;
@@ -272,59 +278,17 @@ public class InformationTab extends Application {
         hbox.setPadding(new Insets(20, 20, 0, 0));
         hbox.setAlignment(Pos.CENTER_LEFT);
         
-        Text pftitle = new Text("Professor Information");
-        Text name = new Text("");
-        Text position = new Text("");
-        Text email = new Text("");
-        Text phone = new Text("");
+         Text pftitle = new Text(user.getEmail());
+        Text name = new Text(user.getFirst()+" "+user.getLast());
+        Text position = new Text("Not on database");
+        Text email = new Text(user.getEmail());
+        Text phone = new Text(user.getPos());
 
-
-        ObservableList<String> options =
-                FXCollections.observableArrayList(
-                        "Bari Siddique", "Hansheng Lei", "Domingo Molina", "Liyu Zhang", "Mahmoud Quweider"
-                );
-        ComboBox comboBox = new ComboBox(options);
-        comboBox.setPromptText("Select a Professor");
-
-        // Update the message Label when the selected item changes
-        comboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-                System.out.print(newvalue);
-                pf = newvalue;
-
-                if (pf == "Hansheng Lei") {
-                    name.setText(pf);
-                    position.setText("Associate Professor");
-                    email.setText("hansheng.lei@utrgv.edu");
-                    phone.setText("956-882-6585");
-                } else if (pf == "Bari Siddique") {
-                    name.setText(pf);
-                    position.setText("Lecturer");
-                    email.setText("bari.siddique@utrgv.edu");
-                    phone.setText("956-882-6602");
-                } else if (pf == "Liyu Zhang") {
-                    name.setText(pf);
-                    position.setText("Associate Professor");
-                    email.setText("liyu.zhang@utrgv.edu");
-                    phone.setText("956-882-6631");
-                } else if (pf == "Mahmoud Quweider") {
-                    name.setText(pf);
-                    position.setText("Professor");
-                    email.setText("mahmoud.quweider@utrgv.edu");
-                    phone.setText("956-882-6630");
-                } else if (pf == "Domingo Molina") {
-                    name.setText(pf);
-                    position.setText("Lecturer");
-                    email.setText("956-882-6607");
-                    phone.setText("domingo.molina@utrgv.edu");
-                }
-            }
-        });
 
         hbox.setStyle("-fx-font: 16 arial;");
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
         
-        hbox.getChildren().addAll(pftitle, comboBox, name, position, email, phone);
+        hbox.getChildren().addAll(pftitle, name, position, email, phone);
 
 //        
         return hbox;

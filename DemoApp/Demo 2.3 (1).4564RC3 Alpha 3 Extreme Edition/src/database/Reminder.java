@@ -1,12 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package database;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 /**
  *
@@ -14,16 +8,16 @@ import java.util.Date;
  */
 public class Reminder{
 
-    public Reminder(String StartTIME, String message, String reminderName, String ReminderID) {
+    public Reminder(Timestamp StartTIME, Timestamp EndTIME, String message, String reminderName, String ReminderID) {
         this.StartTIME = StartTIME;
-//        this.EndTIME = EndTIME;
+        this.EndTIME = EndTIME;
         this.message = message;
         this.reminderName = reminderName;
         this.ReminderID = ReminderID;
     }
     
-    private String StartTIME;
-    private String EndTIME;
+    private Timestamp StartTIME;
+    private Timestamp EndTIME;
     private String message;
     private String reminderName;
     private String ReminderID;
@@ -32,25 +26,25 @@ public class Reminder{
     }
     public Reminder(Reminder r) {
         this.StartTIME = r.StartTIME;
-//        this.EndTIME = r.EndTIME;
+        this.EndTIME = r.EndTIME;
         this.message = r.message;
         this.reminderName = r.reminderName;
         this.ReminderID = r.ReminderID;
     }
 
-    public String getStartTIME() {
+    public Timestamp getStartTIME() {
         return StartTIME;
     }
 
-    public void setStartTIME(String StartTIME) {
+    public void setStartTIME(Timestamp StartTIME) {
         this.StartTIME = StartTIME;
     }
 
-    public String getEndTIME() {
+    public Timestamp getEndTIME() {
         return EndTIME;
     }
 
-    public void setEndTIME(String EndTIME) {
+    public void setEndTIME(Timestamp EndTIME) {
         this.EndTIME = EndTIME;
     }
 
@@ -80,3 +74,5 @@ public class Reminder{
 
 
 }
+
+

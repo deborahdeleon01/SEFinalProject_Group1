@@ -20,27 +20,24 @@ public class EmailView extends GridPane {
     private Text scenetitle = new Text("UTRGV Email");
 
     private Label emailLabel = new Label("Email:");
-    private TextField emailText = new TextField("");
+    private TextField emailText = new TextField("Jose.Ballesteros01@utrgv.edu");
 
     private Label passLabel = new Label("Password:");
     private PasswordField passText = new PasswordField();
 
     private Label toLabel = new Label("Send Email To:");
-    private TextField toText = new TextField("");
+    private TextField toText = new TextField("Jose_Balle@hotmail.com");
 
     private Label subjectLabel = new Label("Email Subject:");
     private TextField subjectText = new TextField("VacPak POS Email");
 
     private Label messageLabel = new Label("Message:");
-    private TextArea messageText = new TextArea("Dear Student, \n\n\n");
+    private TextArea messageText = new TextArea("Dear Student, ");
 
     private Label emailStatus = new Label("");
     
     private Button sendEmail = new Button("Send Email");
-    
-    /**
-     * Sets GridPane and all the labels and inputs.
-     */
+
     public EmailView() {
         //Set GridPane        
         this.setAlignment(Pos.CENTER);
@@ -67,17 +64,10 @@ public class EmailView extends GridPane {
         scenetitle.setFont(new Font(40));
         emailStatus.setFont(new Font(30));
     }
-    
-    /**
-     * Clears all the inputs and resets them.
-     */
+
     public void updateEmailView() {
         //this.getChildren().clear();
-        emailText.setText("@utrgv.edu");
-        passText.setText("");
-        toText.setText("");
-        subjectText.setText("VacPak POS Email");
-        messageText.setText("Dear Student, \n\n\n");     
+        emailStatus.setText("Email Sending...");      
     }
 
     /**
