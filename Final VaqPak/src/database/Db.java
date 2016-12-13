@@ -88,7 +88,6 @@ public class Db
      * @author Juan Delgado
      * This function will check if the database exist. If not it will call another
      * function to create it.
-     * @param Connection
      */
     private void dbCheck(){
         Connection connectionTest = null;
@@ -130,7 +129,6 @@ public class Db
     /**
      * @author Juan Delgado
      * initializes the Database for the VaqPaq project.
-     * @param connect
      */
     private void dbInit(){
         Connection connect  = null;
@@ -543,7 +541,7 @@ public class Db
      */
     public void addCourse(User user, Course courseToAdd) {
         String sql = "INSERT INTO User_Courses(user_id, course_prefix, course_number, coursse_name, grade, active, hours)Values"
-                + "((SELECT user_id FROM Users WHERE user_id = ?), ?, ?, ?";
+                + "((SELECT user_id FROM Users WHERE user_id = ?), ?, ?, ?,?,?,?";
         try {
             conn = DriverManager.getConnection(DB_URL + DB_NAME, USER, PASS);
             pstmt = conn.prepareStatement(sql);
