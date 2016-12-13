@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-  <Divide>Technical_Electives</Divide>
+  <Divide>Technical Electives</Divide>
   <Department>Computer Science</Department>
   <Prefix>CSCI</Prefix>
   <Number>4350</Number>
@@ -26,4 +25,64 @@
       Degree Elective,
       CS Instruction Fee - HU
  </Course-attributes>
+ <ABET-outcomes>
+   (a) An ability to apply knowledge of computing and mathematics appropriate to
+   the program's student outcomes and to the discipline.
+   (b) An ability to analyze a problem, and identify and define the computing
+   requirements appropriate to its solution.
+   (c) An Ability to design, implement, and evaluate a computer-based system, process,
+   component, or program to meet desired needs.
+   (d) An ability to function effectively on teams to accomplish a common goal.
+   (e) An understanding of professional, ethical, legal, security and social issues
+   and responsibilities.
+   (f) An ability to communicate effectively with a range of audiences.
+   (g) An ability to analyze the local and global impact of computing on individuals,
+   organizations, and society.
+   (i) An ability to use current techniques, skills, and tools necesary for computing
+   practice
+   (k) An ability to apply design and development principles in the construction of
+   software systems of varifying complexity.
+ </ABET-outcomes>
+ <Learning-outcomes>
+     <item>Introduction
+         <item2>Evaluate AI techniques and synthesize solutions to practical examples.</item2>
+         <item2>Develop a range of typical applications using artificial intelligence methods.</item2>
+         <item2>Demonstrate problem-solving skills.</item2>
+     </item>
+     <item>History and philosophy of artificial intelligence
+         <item2>Define weak and strong AI and provide some arguments for and against each hypothesis.</item2>
+         <item2>Discuss accomplishments of artificial intelligence research in historical context.</item2>
+         <item2>Discuss the concept of rationality.</item2>
+     </item>
+     <item>Problem solving in artificial intelligence
+         <item2>Explain classical search algorithms, including breadth-first, depth-first, A*, and heuristic search.</item2>
+         <item2>Implement classical search algorithms.</item2>
+         <item2>Discuss local search algorithms and their applications to finding goals and in optimization problems.</item2>
+     </item>
+     <item>Knowledge and reasoning
+         <item2>Understand key concepts related to Knowledge representation.</item2>
+     </item>
+     <item>Uncertain Knowledge and reasoning
+         <item2>Discuss the influence of uncertainty on decision-making.</item2>
+         <item2>Understand and apply the terminology and notation of basic probability.</item2>
+         <item2>Understand and apply Bayes' rule.</item2>
+         <item2>Solve simple probability problems.</item2>
+     </item>
+     <item>Machine Learning
+         <item2>Define supervised and unsupervised learning.</item2>
+         <item2>Discuss learning decision trees.</item2>
+         <item2>Understand the principles of neural networks.</item2>
+         <item2>Understand statistical learning methods, including Naive Bayes.</item2>
+         <item2>Understand reinforcement learning methods and selected algorithms.</item2>
+         <item2>Discuss the applications of machine learning to domains such as game playing.</item2>
+         <item2>Implement selected machine learning algorithms.</item2>
+     </item>
+     <item>Evolutionary computation
+         <item2>Discuss the key elements of evolutionary computation methods.</item2>
+         <item2>Compare and contrast different evolutionary methods, such as genetic algorithms and digital evolution.</item2>
+     </item>
+ </Learning-outcomes>
+
+
+
 </Course>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-  <Divide>Technical_Electives</Divide>
+  <Divide>Technical Electives</Divide>
   <Department>Computer Science</Department>
   <Prefix>CSCI</Prefix>
   <Number>3341</Number>
@@ -32,4 +31,40 @@
 	  dnu-MED in Educational Admin, MPA in Public Administration, Bus. Admin -Accelerated online, May not be enrolled in English Language Institute
 	</Restrictions>
   <Course-attributes>Degree Elective,CS Instruction Fee - HU </Course-attributes>
+  <ABET-outcomes>
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (g) An ability to analyze the local and global impact of computing on individuals,
+    organizations, and society.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for compuing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	 1. Software validation and verification:
+  		Distinguish between program validation and verification,
+  		Distinguish between functional and structural testing,
+  		Distinguish between the different types and levels of testing (unit, integration, systems, and acceptance) for medium-size software products).
+     2. Understand the following test strategies:
+  		Graph coverage,
+  		Logic coverage,
+  		Input-Space Coverage,
+  		Syntax-Base Coverage,
+  	3. Risks and liabilities of computer-based systems:
+  		Explain the limitations of testing as a means to ensure correctness,
+  		Describe the differences between correctness, reliability, and safety,
+  		Discuss the potential for hidden problems in reuse of existing components
+  </Learning-outcomes>
 </Course>

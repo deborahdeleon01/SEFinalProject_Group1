@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-<Divide>Computer_Science_Core_HON</Divide>
+<Divide>Computer Science Core HON</Divide>
 <Department>Computer Science</Department>
 <Prefix>CSCI</Prefix>
 <Number>2388</Number>
@@ -31,4 +30,7 @@ A second programming course includes problem solving by structured design. Provi
 		Degree Elective,
 		CS Instruction Fee -LU
 </Course-attributes>
+<ABET-outcomes></ABET-outcomes>
+<Learning-outcomes>
+</Learning-outcomes>
 </Course>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-	<Divide>Technical_Electives</Divide>
+	<Divide>Technical Electives</Divide>
 	<Department>Computer Science</Department>
 	<Prefix>CSCI</Prefix>
 	<Number>4310</Number>
@@ -18,4 +17,25 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>CS Instruction Fee - HU, Degree Elective</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Understand some important methods in developing algorithms.
+		2. Understand how to analyze the computational time of algorithms.
+		3. Build solid skills for designing efficient algorithms.
+		4. Use approximate way in algorithm design.
+		5. Think algorithm from randomized point of view.
+		6. Develop the skills to determine the hardness of a computational problem.
+	</Learning-outcomes>
+
+
 </Course>

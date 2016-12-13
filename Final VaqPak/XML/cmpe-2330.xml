@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2330</Number>
+	<Name>Digital Systems Engineering I</Name>
+	<Description>
+		Boolean algebra; analysis and synthesis of combinational and sequential switching network; applications to computer design. Credit or registration in MATH 1460 is recommended but not required.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>None</item></Prerequisite>
+	<Prerequisite><item></item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-2330</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

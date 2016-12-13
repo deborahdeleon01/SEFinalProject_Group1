@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
 <Course>
 	<Divide>Databases</Divide>
 	<Department>Computer Science</Department>
@@ -30,4 +29,52 @@
 		Degree Elective,
 		CS Instruction Fee - HU
 	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to aply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  1. Understanding of database technology.
+	  2. Understand databases, DBMS’s, transactions, OLAP, and OLTP.
+	  3. Know the history and key players in the modern database world.
+	  4. Understand common database models, including relational, object, object-relational, hierarchical, network, etc.
+	  5. Understanding of the relational data model.
+	  6. Understand main concepts of the relational model: relations/tables, tuples/rows, attributes/columns, database and relation schemas.
+	  7. Understand constraints: integrity, key, foreign-key, syntactic, semantic, and reactive.
+	  8. Have a basic understanding of data management (schema creation, data population, querying, administrative activities) using a relational database.
+	  9. Proficiency with conceptual modeling of databases using Entity-Relationship (ER) Diagrams.
+	  10. Understand the E-R approach.
+	  11. Understand entities and entity types, relationships and relationship types.
+	  12. Understand entity type hierarchies, participation constraints, and part-of relationships.
+	  13. Model enterprise data with ER Diagrams.
+	  14. Translate ER Diagrams into relational database schemas.
+	  15. Familiarity with database design and normalization theory.
+	  16. Understand the gap between ER Diagram generated schemas and a “good” database.
+	  17. Understand the problems with set-valued attributes, data redundancy, and various data anomalies.
+	  18. Understand basics of the relational normalization theory: decompositions, functional dependencies, and normal forms.
+	  19. Proficiency with relational algebra and Structured Query Language (SQL).
+	  20. Understand relational algebra and construct queries using it
+	  21. Understand SQL and construct queries using it.
+
+	</Learning-outcomes>
+
+
 </Course>

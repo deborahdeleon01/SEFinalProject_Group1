@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Philosophy</Divide>
+	<Department>Philosophy Department</Department>
+	<Prefix>PHIL</Prefix>
+	<Number>2326</Number>
+	<Name>Professional Ethics: Engineering</Name>
+	<Description>
+		This course will address the application of moral theories, ethical principles, and professional codes to ethical dilemmas faced by business professionals, employers, and employees. Topics covered may include, but are not limited to, whistleblowing, integrity, honesty, liability, and the impact of theories like moral relativism and psychological egoism on the application of ethical theory.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>None</item></Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed></Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Core Lang</item>
+		<item>Phil and Cltr-040</item>
+	</Course-attributes>
+</Course>

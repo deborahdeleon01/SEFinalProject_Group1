@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4303</Number>
+	<Name>Computer Vision</Name>
+	<Description>
+		This course covers the fundamental and advanced ideas of developing computerized procedures to extract
+		numeric and symbolic information from images.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number>None</Legacy-number>
+		<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes><item>None</item></Course-attributes>
+</Course>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
+<Course>
 	<Divide>Other</Divide>
 	<Department>Computer Science</Department>
 	<Prefix>CSCI</Prefix>
@@ -23,4 +23,8 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions1>None</Restrictions1>
 	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	</ABET-outcomes>
+	<Learning-outcomes>
+	</Learning-outcomes>
 </Course>

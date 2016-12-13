@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4345</item>
+		<item>CMPE-4345</item>
+	</Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes><item>None</item></Course-attributes>
+</Course>

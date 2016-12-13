@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4372</Number>
+	<Name>Senior Design II Software</Name>
+	<Description>
+		Continuation of CMPE 4371. Team project activities include software and hardware design reviews, implementation, quality assurance, software and hardware testing, integration, project documentation, presentations and demonstration. Also covers social and ethical implications of the computer engineering profession. Cannot receive credit for both CMPE 4372 and CMPE 4374.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>6.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite><item>Consent of instructor</item></Prerequisite>
+	<Prerequisite><item>CMPE-4371</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item></item>
+	</Course-attributes>
+</Course>

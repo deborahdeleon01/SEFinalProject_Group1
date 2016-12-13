@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2320</Number>
+	<Name>Electric Circuits I</Name>
+	<Description>
+		This course covers fundamentals of electrical circuits, including basic definitions, Kirchhoff's laws, nodal and loop analysis, superposition, Thevenin and Norton equivalents, time-varying circuits, simple transient response, sinusoidal steady-state analysis using phasors and power in sinusoidal steady-state circuits. 
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>MATH-2314</item></Prerequisite>
+	<Prerequisite><item>PHYS-2426</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-2305</Cross-listed>
+	<Restrictions1><item></item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technology Free - CMPE U</item>
+	</Course-attributes>
+</Course>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-  <Divide>Computer_Science_Core</Divide>
+  <Divide>Computer Science Core</Divide>
   <Department>Computer Science</Department>
   <Prefix>CSCI</Prefix>
   <Number>3336</Number>
@@ -26,4 +25,22 @@
 	Degree Elective,
 	CS Instruction Fee - HU
   </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (f) An ability to communicate effectively with a range of audiences.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Upon successful completion of this course, students will be enable to evaluate the inherent strengths
+  	and weaknesses of a programming language and the best ways to exploit a given language.
+  </Learning-outcomes>
 </Course>

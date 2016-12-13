@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 
 <Course>
-  <Divide>Computer_Science_Core</Divide>
+  <Divide>Computer Science Core</Divide>
   <Department>Computer Science</Department>
   <Prefix>CSCI</Prefix>
   <Number>3340</Number>
@@ -37,4 +36,34 @@
     Course fee - Computer Science,
     CS Instruction Fee – LU
   </Course-attributes>
+  <ABET-outcomes>
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (g) An ability to analyze the local and global impact of computing on individuals,
+    organizations, and society.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+    1. Understand the principles of software engineering.
+    2. Understand and be fluent in the use of software engineering terminology and nomenclature.
+    3. Be capable of intelligently communicating with most members in a software development organization (management, analysts, architects, developers, ...)
+    4. Be able to create and use planning, requirements analysis, domain analysis and design artifacts.
+    5. Be able to document all phases of the software development processes.
+  </Learning-outcomes>
+
+
 </Course>

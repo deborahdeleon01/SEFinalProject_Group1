@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2130</Number>
+	<Name>Digital Systems Engineering I Lab</Name>
+	<Description>
+		Basics of digital logic and hardware combinational circuits, flip-flops, resistors, sequential circuits and state machines. Cross listed with ELEE 2130.
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite><item>CMPE-2330</item></Prerequisite>
+	<Prerequisite><item></item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-2130</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

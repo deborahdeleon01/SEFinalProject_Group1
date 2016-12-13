@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>1370</Number>
+	<Name>Engineering Computer Science I</Name>
+	<Description>
+		An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized. Societal and social issues related to computer science/engineering will be introduced. 
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>MATH-1314</item></Prerequisite>
+	<Prerequisite><item>CMPE-1101</item></Prerequisite>
+	<Co-requisite><item>CMPE-1170</item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>CSCI 1370</Cross-listed>
+	<Restrictions1><item></item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technology Free - CMPE U</item>
+	</Course-attributes>
+</Course>

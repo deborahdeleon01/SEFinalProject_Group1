@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<?xml version="1.0"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+version="1.0">
+<xsl:output method="xml" indent="yes"/>
 <xsl:template match="/">
 <html>
-<head>
+<head><title>Vaq-pack Course</title>
 <style>
 
   .table-title h3 {
@@ -20,7 +21,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     background: white;
     border-radius:3px;
     border-collapse: collapse;
-    height: 600px;
+    height: 100%;
     margin: auto;
     max-width: 600px;
     padding:5px;
@@ -94,8 +95,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     text-align: right;
   }
 
-</style>
-</head>
+</style></head>
 <body style="background:#D3D3D3">
 <center>
 <img src="../STYLES/smt.png" alt="SMT College" style="width:100;height:100;"> </img>
@@ -154,12 +154,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <td class="text-left">Course-attributes</td>
 <td class="text-left"><xsl:value-of select="Course/Course-attributes"/></td>
 </tr>
-
 <tr>
 <td class="text-left">ABET-outcomes</td>
 <td class="text-left"><xsl:value-of select="Course/ABET-outcomes"/></td>
 </tr>
-
+<tr>
+<td class="text-left">Learning-outcomes</td>
+<td class="text-left"><xsl:value-of select="Course/Learning-outcomes"/></td>
+</tr>
 </table>
 
  </center>

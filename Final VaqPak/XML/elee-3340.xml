@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 
 <Course>
-	<Divide>Mathematics_and_Engineering</Divide>
+	<Divide>Mathematics and Engineering</Divide>
 	<Department>Engineering</Department>
 	<Prefix>ELEE</Prefix>
 	<Number>3340</Number>
@@ -24,4 +23,6 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>CS Instruction Fee - HU, Degree Elective</Course-attributes>
+	<ABET-outcomes></ABET-outcomes>
+	<Learning-outcomes></Learning-outcomes>
 </Course>

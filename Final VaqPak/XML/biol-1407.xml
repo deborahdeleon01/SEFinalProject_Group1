@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
+<Course>
 	<Divide>Labratory</Divide>
 	<Department>Biology</Department>
 	<Prefix>BIOL</Prefix>
 	<Number>1407</Number>
 	<Name>General Biology II</Name>
-	<Description>A continuation of Biology 1406. Topics include evolution and
+	<Description>
+	A continuation of Biology 1406. Topics include evolution and
 	diversity of invertebrate and vertebrate animals; mechanism of support and
 	movement, digestion and nutrition, respiration, circulation homeostasis,
 	hormonal control, nervous control, sexual reproduction, development, behavior
@@ -23,4 +24,30 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>Core Life and Phys Sciences-030, Lab fee - Biology</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics
+		appropriate to the discipline.
+		(b) An ability to analyze a problem, and identify and define the
+		computing requirements appropriate to its solution.
+		(c) An ability to design, implement, and evaluate a computer-based
+		system, process, component, or program to meet desired needs.
+		(i) An ability to use current techniques, skills, and tools necessary
+		for computing practice.
+		(j) An ability to apply mathematical foundations, algorithmic principles,
+		and computer Science theory in the modeling and design of computer-based systems
+		in a way that demonstrates comprehension of the tradeoffs involved in design choices.
+		(k) An ability to apply design and development principles in the construction
+		of software systems of varying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1). To understand and apply method and appropriate technology to the study of natural sciences.
+		2). To recognize scientific and quantitative methods and the differences between these
+		approaches and other methods of inquiry and to communicate findings, analyses, and interpretation 
+		both orally and in writing.
+		3). To identify and recognize the differences among competing scientific theories.
+		4). To demonstrate knowledge of the major issues and problems facing modern
+		science, including issues that touch upon ethics, values, and public policies.
+		5). To demonstrate knowledge of the interdependence of science and technology and
+		their influence on, and contribution to, modern culture.
+	</Learning-outcomes>
 </Course>

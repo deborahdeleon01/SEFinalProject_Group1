@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>1101</Number>
+	<Name>Intro to Computer Engineering</Name>
+	<Description>
+		This course is an introduction to computer engineering concepts and vision, the history of computer systems, societal and ethical issues, binary values and number systems, analog and digital data representation, gates and circuits, Boolean algebra and circuit simplification, basic computer architecture, low-level, high-level programming languages and pseudo code, and communications skills. 
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite><item>None</item></Prerequisite>
+	<Prerequisite><item>None</item></Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed></Cross-listed>
+	<Restrictions1><item></item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Course Fee - Computer Engr</item>
+	</Course-attributes>
+</Course>

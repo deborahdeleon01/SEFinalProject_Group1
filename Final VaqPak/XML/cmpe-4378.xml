@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4378</Number>
+	<Name>Signal Integrity and Electric Compatibility</Name>
+	<Description>
+		Distortion of digital signals analyzed via lumped element and transmission line models, power distribution in electronic systems, printed circuit layout guidelines, basic electromagnetic principles as applied to shielding and grounding, EMI regulations.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>CMPE-3322</item></Prerequisite>
+	<Prerequisite><item>PHYS-2425</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

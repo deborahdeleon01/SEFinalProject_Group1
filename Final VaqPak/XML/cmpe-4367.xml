@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4367</Number>
+	<Name>Fiber Optic Communications</Name>
+	<Description>
+		Introduction to optics, photonics, and optoelectronics; fiber optic devices; and communication systems. Topics include ray optics, electromagnetic optics, resonator optics, dielectric waveguides and filters, semiconductor and laser light sources and detectors, modulators, amplifiers, connectors and optical fiber communication systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>2.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>CMPE-3322</item></Prerequisite>
+	<Prerequisite><item></item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>CSCI-4367</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Physics</Divide>
+	<Department>Physics Department</Department>
+	<Prefix>PHYS</Prefix>
+	<Number>2425</Number>
+	<Name>Physics for Science and Engineering I</Name>
+	<Description>
+		At the calculus-based level, this course introduces the student to the principles of mechanics, fluids, heat, waves and sound for majors in physics and engineering. The course includes three laboratory hours per week for reinforcing, through experiment, the concepts taught in the lecture.
+	</Description>
+	<Credit-hours>4.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Lab</Schedule-type>
+	<Prerequisite><item>MATH-2413</item></Prerequisite>
+	<Co-requisite><item>MATH-2414</item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed></Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Core Life</item>
+		<item>Phys Sciences</item>
+	</Course-attributes>
+</Course>

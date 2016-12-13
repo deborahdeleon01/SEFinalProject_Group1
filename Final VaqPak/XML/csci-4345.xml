@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 
 <Course>
-	<Divide>Technical_Electives</Divide>
+	<Divide>Technical Electives</Divide>
 	<Department>Computer Science</Department>
 	<Prefix>CSCI</Prefix>
 	<Number>4365</Number>
@@ -24,4 +23,37 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computin
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  1 Demonstrate understanding of the fundamental concepts of data communications
+	  2 Understand signals and signal encoding methods to communications and data transmission modes.
+	  3 Describe, compare and contrast the five (TCP/IP) or seven layers (OSI) models of networking and their functionalities
+	  4 Explain an implement application layer protocols in a high level language such as C/C++ or Java.
+	  5 Explain the basic concepts of reliable transport.
+	  6 Explain the basic concepts of the network, link and physical layers and be able to configure routers,
+	    switches, hubs and repeaters.
+	  7 Design and build a network application including client-server and peer-to-peer.
+	  8 Setup networking specific software such as Routing tables, DNS, Mail servers, DHCP, and wireless
+	    network
+	  9 Describe emerging technologies in the net-centric computing area and assess their current capabilities,
+	    limitations, and near-term potential
+	</Learning-outcomes>
+
 </Course>

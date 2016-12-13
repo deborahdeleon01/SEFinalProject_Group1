@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Course>
+    <Category>Computer Engineering Core</Category>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1378</Number>
+    <Name>Engineering Comp Sci I HON</Name>
+    <Description>
+        An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized.. Societal and social issues related to computer science/engineering will be introduced.
+    </Description>
+    	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+      <item>Grade of 'C' or better in MATH 1314 or placement in a higher level Math course</item>
+      <item>CSCI-1101</item>
+      <item>Admission to the honors program</item>
+    </Prerequisite>
+    <Co-requisite><item>CSCI-1178</item></Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>CMPE 1378</Cross-listed>
+	  <Restrictions1><item>None</item></Restrictions1>
+	  <Restrictions2><item>None</item></Restrictions2>
+	  <Course-attributes>
+		    <item>CS Instruction Fee -LU</item>
+    </Course-attributes>
+</Course>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
-  <Divide>Computer_Science_Core</Divide>
+<Course>
+  <Divide>Computer Science Core</Divide>
 <Department>Computer Science</Department>
 <Prefix>CSCI</Prefix>
 <Number>2344</Number>
@@ -25,4 +25,27 @@
 		Degree Elective,
 	  CS Instruction Fee - LU
 </Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+  component, or program to meet desired needs.
+  (d) An ability to function effectively on teams to accomplish a common goal.
+  (i) An ability to use current techniques, skills, and tools necesary for computing
+  practice.
+</ABET-outcomes>
+<Learning-outcomes>
+	1. Understand the objectives and functions of Unix/Linux operating systems
+	2. Understand how operating systems have evolved over time from primitive batch systems to sophisticated multi-user systems
+	3. Understand Unix/Linux file system, file processing, and file security
+	4. Use basic and advance Unix commands
+	5. Use Unix/Linux utilities
+	6. Use basic editors, such as vi or emacs, on Unix/Linux environment
+	7. Program with shell script languages
+	8. Develop Unix/Linux applications in C/C++
+</Learning-outcomes>
+
+
 </Course>

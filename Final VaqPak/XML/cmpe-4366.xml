@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4366</Number>
+	<Name>Image Processing</Name>
+	<Description>
+		This course provides an introduction to image processing topics and design of image processing software. It covers methods for computer analysis of images, and processing of images including image formation, spatial resolution, preprocessing techniques, image filtering, image enhancement and image segmentation methods.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>CMPE-1170</item></Prerequisite>
+	<Prerequisite><item>CMPE-1370</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-4366</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

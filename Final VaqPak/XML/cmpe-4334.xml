@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+  <Category>Computer Engineering Core</Category>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4334</Number>
+  <Name>Operating Systems</Name>
+  <Description>
+  This course provides a study of the basic concepts of operating systems: process management, memory management, file systems, resource
+  allocation, and protection.
+  </Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-3333</item>
+    <item>CMPE-3333</item>
+  </Prerequisite>
+  <Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+  <Course-attributes>
+    <item>Degree Elective</item>
+    <item>CS Instruction Fee - HU </item>
+  </Course-attributes>
+</Course>

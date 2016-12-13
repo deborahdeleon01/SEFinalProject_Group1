@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4363</Number>
+	<Name>Adv Databases</Name>
+	<Description>
+		This course will cover a number of advanced topics in modern data intensive systems. Topics may include
+		non-relational databases (nosql), spatial databases and data warehousing.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4333</item>
+		<item>Consent of Instructor</item>
+	</Prerequisite>
+  <Co-requisite>
+    <item>None</item>
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+  <Course-attributes>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>

@@ -1,6 +1,6 @@
 <?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-  <Divide>Computer_Science_Core</Divide>
+  <Divide>Computer Science Core</Divide>
   <Department>Computer Science</Department>
   <Prefix>CSCI</Prefix>
   <Number>3333</Number>
@@ -26,4 +26,29 @@
     Degree Elective,
     CS Instruction Fee - HU
   </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Understand basic data structures and abstract data types.
+  	2. Gain an appreciation of the variety, theoretical nature, and practical uses of data structures.
+  	3. Select appropriate data structures for uses in computer programs.
+  	4. Understand the basic techniques of algorithm design and analysis.
+  	5. Understand the basic concepts of computational complexity
+  	6. Design and implement efficient algorithms based on the selected data structures.
+  </Learning-outcomes>
 </Course>

@@ -1,0 +1,4263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<POS>
+     <Course>
+	<Divide>Labratory</Divide>
+	<Department>Biology</Department>
+	<Prefix>BIOL</Prefix>
+	<Number>1406</Number>
+	<Name>General Biology I</Name>
+	<Description>
+		A study of the basic principles of Biology. Topics will include biological chemistry,
+		cell structure and function, photosynthesis and respiration, DNA structure and
+		function, mitosis, meiosis, Mendelian genetics, evolution and the structure and
+		function of bacteria, viruses, protozoan, algae, fungi and plants. Credit Restriction:
+		Credit may be received in only one of BIOL 1406 or BIOL 1487.
+	</Description>
+	<Credit-hours>4.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Core Life and Phys Sciences-030, Lab fee - Biology</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics
+    appropriate to the discipline. &#13;
+    (b) An ability to analyze a problem, and identify and define the
+    computing requirements appropriate to its solution. &#13;
+    (c) An ability to design, implement, and evaluate a computer-based
+    system, process, component, or program to meet desired needs. &#13;
+    (i) An ability to use current techniques, skills, and tools necessary
+    for computing practice. &#13;
+    (j) An ability to apply mathematical foundations, algorithmic principles,
+    and computer Science theory in the modeling and design of computer-based systems
+    in a way that demonstrates comprehension of the tradeoffs involved in design choices. &#13;
+    (k) An ability to apply design and development principles in the construction
+    of software systems of varying complexity. &#13;
+	</ABET-outcomes>
+	<Learning-outcomes>
+	    1. Student should know chemical building blocks in life.
+	    2. Student should be able to identify cellular structures and
+	    connect structures with their roles on living systems.
+	    3. Students should be able to connect energy production with energy uses.
+	    4. Student should be able to connect cell division with growth and reproduction.
+	    5. Students should be able to analysis genetic relatedness based on pattern of inheritance.
+	    6. Students should be able to connect the role of DNA in inheritance with phenotype.
+	    7. Students should be able to value how evolution provides a framework to study organisms.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Labratory</Divide>
+	<Department>Biology</Department>
+	<Prefix>BIOL</Prefix>
+	<Number>1407</Number>
+	<Name>General Biology II</Name>
+	<Description>
+	A continuation of Biology 1406. Topics include evolution and
+	diversity of invertebrate and vertebrate animals; mechanism of support and
+	movement, digestion and nutrition, respiration, circulation homeostasis,
+	hormonal control, nervous control, sexual reproduction, development, behavior
+	and ecology. Credit Restriction: Credit may be received in only one of
+	BIOL 1407 or BIOL 1488.
+	</Description>
+	<Credit-hours>4.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Core Life and Phys Sciences-030, Lab fee - Biology</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics
+		appropriate to the discipline.
+		(b) An ability to analyze a problem, and identify and define the
+		computing requirements appropriate to its solution.
+		(c) An ability to design, implement, and evaluate a computer-based
+		system, process, component, or program to meet desired needs.
+		(i) An ability to use current techniques, skills, and tools necessary
+		for computing practice.
+		(j) An ability to apply mathematical foundations, algorithmic principles,
+		and computer Science theory in the modeling and design of computer-based systems
+		in a way that demonstrates comprehension of the tradeoffs involved in design choices.
+		(k) An ability to apply design and development principles in the construction
+		of software systems of varying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1). To understand and apply method and appropriate technology to the study of natural sciences.
+		2). To recognize scientific and quantitative methods and the differences between these
+		approaches and other methods of inquiry and to communicate findings, analyses, and interpretation 
+		both orally and in writing.
+		3). To identify and recognize the differences among competing scientific theories.
+		4). To demonstrate knowledge of the major issues and problems facing modern
+		science, including issues that touch upon ethics, values, and public policies.
+		5). To demonstrate knowledge of the interdependence of science and technology and
+		their influence on, and contribution to, modern culture.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Chemistry</Divide>
+	<Department>Chemistry Department</Department>
+	<Prefix>CHEM</Prefix>
+	<Number>1301</Number>
+	<Name>General Chemistry I</Name>
+	<Description>
+		This course will cover stoichiometry, structure, bonding, thermodynamics, and kinetics plus a brief survey of organic chemistry, biochemistry, and analytical chemistry.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-1314</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-1315</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-2412</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item>May not be enrolled in:
+							dnu-MED
+							MPA in Public Administration
+							Bus. Admin -Accelerated online</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Life</item>
+		<item>Phys Sciences</item>
+	</Course-attributes>
+	<ABET-outcomes>
+	(a) An ability to apply knowledge of computing and mathematics appropriate to
+	the discipline.
+	(b) An ability to analyze a problem, and identify and define the computing
+	requirements appropriate to its solution.
+	(c) An ability to design, implement, and evaluate a computer-based system,
+	process, component, or program to meet desired needs.
+	(i) An ability to use current techniques, skills, and tools necessary for computing
+	practice.
+	(j) An ability to apply mathematical foundations, algorithmic principles, and
+	computer science theory in the modeling and design of computer-based systems
+	in a way that demonstrates comprehension of the tradeoffs involved in design
+	choices.
+	(k) An ability to apply design and development principles in the construction of
+	software systems of varying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	1). To understand and apply method and appropriate technology to the study of
+	natural sciences.
+	2). To recognize scientific and quantitative methods and the differences between
+	these approaches and other methods of inquiry and to communicate findings, analyses,
+	and interpretation both orally and in writing.
+	3). To identify and recognize the differences among competing scientific theories.
+	4). To demonstrate knowledge of the major issues and problems facing modern
+	science, including issues that touch upon ethics, values, and public policies.
+	5). To demonstrate knowledge of the interdependence of science and technology and
+	their influence on, and contribution to, modern culture.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Chemistry</Divide>
+	<Department>Chemistry Department</Department>
+	<Prefix>CHEM</Prefix>
+	<Number>1302</Number>
+	<Name>General Chemistry II</Name>
+	<Description>
+		Fundamentals of atomic structure, electronic structure and periodic table, nomenclature, the stoichiometry reactions, gas laws, thermochemistry, chemical bonding, and structure and geometry of molecules.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-1314</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-1414</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-1342</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-1343</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-1388</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-2412</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-2413</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item/>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Life</item>
+		<item>Phys Sciences</item>
+	</Course-attributes>
+	<ABET-outcomes>
+(a) An ability to apply knowledge of computing and mathematics appropriate to the discipline.
+(b) An ability to analyze a problem, and identify and define the computing requirements appropriate 
+to its solution.
+(c) An ability to design, implement, and evaluate a computer-based system, process, component, or 
+program to meet desired needs.
+(i) An ability to use current techniques, skills, and tools necessary for computing practice.
+(j) An ability to apply mathematical foundations, algorithmic principles, and computer science theory 
+in the modeling and design of computer-based systems in a way that demonstrates comprehension of the 
+tradeoffs involved in design choices.
+(k) An ability to apply design and development principles in the construction of 
+software systems of varying complexity.
+</ABET-outcomes>
+	<Learning-outcomes>
+	1). To understand and apply methods and appropriate technology to the study of 
+	natural and physical sciences.
+	2). To recognize scientific and quantitative methods and the differences between 
+	these approaches and other methods of inquiry and to communicate findings, 
+	analyses and interpretation both orally and in writing.
+	3). To identify and recognize the differences among competing scientific theories.
+	4). To demonstrate knowledge of the major issues and problems facing modern 
+	science, including issues that touch upon ethics, values, and public policies.
+	5). To demonstrate knowledge of the interdependence of science and technology 
+	and their influence on, and contribution to, modern culture.
+</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>1101</Number>
+	<Name>Intro to Computer Engineering</Name>
+	<Description>
+		This course is an introduction to computer engineering concepts and vision, the history of computer systems, societal and ethical issues, binary values and number systems, analog and digital data representation, gates and circuits, Boolean algebra and circuit simplification, basic computer architecture, low-level, high-level programming languages and pseudo code, and communications skills. 
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item/>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Course Fee - Computer Engr</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Science Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1170</Number>
+	<Name>Engineer Comp Sci I Lab</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level
+		object oriented programming language applying the principles taught in the CSCI 1370 lecture course.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>CSCI 1370 or CSCI 1378</item>
+          </Co-requisite>
+	<Legacy-number>COSC-1336</Legacy-number>
+	<Cross-listed>CSCI-1170 (A student may receive credit in only one course)</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course fee - Computer Science</item>
+		<item>CS Instruction Fee - LU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>1370</Number>
+	<Name>Engineering Computer Science I</Name>
+	<Description>
+		An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized. Societal and social issues related to computer science/engineering will be introduced. 
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-1314</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>CMPE-1101</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>CMPE-1170</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>CSCI 1370</Cross-listed>
+	<Restrictions1>
+               <item/>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technology Free - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+    <Category>Computer Engineering Core</Category>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1378</Number>
+    <Name>Engineering Comp Sci I HON</Name>
+    <Description>
+        An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized.. Societal and social issues related to computer science/engineering will be introduced.
+    </Description>
+    	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+      <item>Grade of 'C' or better in MATH 1314 or placement in a higher level Math course</item>
+      <item>CSCI-1101</item>
+      <item>Admission to the honors program</item>
+    </Prerequisite>
+    <Co-requisite>
+               <item>CSCI-1178</item>
+          </Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>CMPE 1378</Cross-listed>
+	  <Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	  <Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	  <Course-attributes>
+		    <item>CS Instruction Fee -LU</item>
+    </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2120</Number>
+	<Name>Electric Circuits I Lab</Name>
+	<Description>
+		This course covers fundamental circuit measurement techniques and reinforces concepts from ELEE 2305, Electrical Circuits I. Topics include basic instrumentation; measurement of voltage, current, resistance, power, frequency and phase; analysis of experimental data; and reporting of technical results. 
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-2320</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item/>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-2105</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item/>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2130</Number>
+	<Name>Digital Systems Engineering I Lab</Name>
+	<Description>
+		Basics of digital logic and hardware combinational circuits, flip-flops, resistors, sequential circuits and state machines. Cross listed with ELEE 2130.
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-2330</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item/>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-2130</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2320</Number>
+	<Name>Electric Circuits I</Name>
+	<Description>
+		This course covers fundamentals of electrical circuits, including basic definitions, Kirchhoff's laws, nodal and loop analysis, superposition, Thevenin and Norton equivalents, time-varying circuits, simple transient response, sinusoidal steady-state analysis using phasors and power in sinusoidal steady-state circuits. 
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-2314</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>PHYS-2426</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-2305</Cross-listed>
+	<Restrictions1>
+               <item/>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technology Free - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2330</Number>
+	<Name>Digital Systems Engineering I</Name>
+	<Description>
+		Boolean algebra; analysis and synthesis of combinational and sequential switching network; applications to computer design. Credit or registration in MATH 1460 is recommended but not required.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item/>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-2330</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE LU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+<Divide>Computer Engineering Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2380</Number>
+<Name>Computer Science II</Name>
+<Description> A second programming course includes problem solving by structured design; provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+<item>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378 or consent of instructor</item>
+ </Prerequisite>
+<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+<Legacy-number>COSC-2336</Legacy-number>
+<Cross-listed>CMPE-2380</Cross-listed>
+	<Restrictions1>
+  <item>dnu-MED in Educational Admin</item>
+  <item>MPA in Public Administration</item>
+  <item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+	<Restrictions2>
+  <item>English Language Institute</item>
+	</Restrictions2>
+<Course-attributes>
+	<item>Degree Elective</item>
+	<item>CS Instruction Fee - LU</item>
+</Course-attributes>
+</Course>
+     <Course>
+  <Divide>Computer Engineering Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3333</Number>
+  <Name>Algorithms and Data Structures</Name>
+  <Description>
+    This course is a continuation of data structures topics covered in CSCI 2380. Content includes theoretical topics in
+    algorithmic efficiency and complexity, along with abstract data types, including graphs, networks, trees, and priority
+    queues. Search topics, including hashing, trees, external search trees (B-trees), and sorting algorithms including
+    external sorting are introduced and compared. Computational complexity topics include the class P and NP, NP-completeness
+    and reducibility, NP-completeness proofs, and NP-complete problems.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+   <Prerequisite>
+               <item>CSCI/CMPE 2380 or CSCI/CMPE 2388</item>
+          </Prerequisite>
+   <Co-requisite>
+               <item>Credit/registration for MATH 2346, CSCI 3310, or MATH 2305</item>
+          </Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes>
+    <item>Degree Elective</item>
+    <item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+   <Divide>Computer Engineering Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3334</Number>
+  <Name>Systems Programming</Name>
+  <Description>
+    This course covers the design and implementation of system software. It investigates the relationship between software
+    design and machine architecture. Topics may include assemblers, macro-processors, compilers, loaders, debugging environments,
+    program development and archival tools, command language interpreters (shells), file systems, I/O support, processes, threads,
+    and inter-process communication.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI/CMPE 2380</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>CSCI/CMPE 2333, ELEE 3435, or CMPE 3437</item>
+          </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes>
+	   <item>Degree Elective</item>
+	    <item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+  <Divide>Computer Engineering Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3340</Number>
+  <Name>Software Engineering</Name>
+  <Description>
+    A formal approach to the state of the art techniques in software design and development. Emphasis will
+    be on Project Planning Requirements, Specification, and System Desing and includes object design, testing,
+    and implementation. Provides the student with the opportunity to work on large projects in a group situation.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>3.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-2388 or CSCI-2830</item>
+    <item>CMPE-2380 or CMPE-2388</item>
+    <item>3 Advance Hours in CSCI</item>
+  </Prerequisite>
+  <Co-requisite>
+    <item>CMPE-3340</item>
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>CMPE-3340</Cross-listed>
+  <Restrictions1>
+	  <item>dnu-MED in Educational Admin</item>
+	  <item>MPA in Public Administration</item>
+	  <item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+  <Restrictions2>
+	<item>English Language Institute</item>
+  </Restrictions2>
+  <Course-attributes>
+    <item>Degree Elective</item>
+    <item>Course fee - Computer Science</item>
+    <item>CS Instruction Fee – LU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4301</Number>
+	<Name>Digital Image Processing</Name>
+	<Description>
+		The course presents fundamental concepts and applications of digital image processing. Topics include basic
+		color, image perception and transformation, image enhancement and compression, and image analysis, and computer vision.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333 or CMPE 3333 with a minimum grade of D</item>
+	</Prerequisite>
+		<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+		<Legacy-number>None</Legacy-number>
+	<Cross-listed>
+	<item>CMPE-4301 (A student may receive credit in only one course)</item>
+	</Cross-listed>
+	<Restrictions1>
+		<item>dnu-MED in Educational Admin</item>
+		<item>MPA in Public Administration</item>
+		<item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item>
+	</Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4303</Number>
+	<Name>Computer Vision</Name>
+	<Description>
+		This course covers the fundamental and advanced ideas of developing computerized procedures to extract
+		numeric and symbolic information from images.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+		<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+               <item>None</item>
+          </Course-attributes>
+</Course>
+     <Course>
+<Divide>Computer Engineering Technical Elective</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4327</Number>
+<Name>Compiler Construction</Name>
+<Description>
+Syntax analysis and semantic processing for a block-structured language. Compilation vs. interpretation;
+lexical analysis based on finite automata; syntax-directed translation; symbol tables; run-time storage allocation;
+error detection and recovery; code generation and optimization. Students are required to write a compiler.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+               <item>CSCI-3334/CMPE-3334</item>
+          </Prerequisite>
+<Co-requisite>
+               <item>CMPE-4327</item>
+          </Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+<Restrictions1>
+  <item>dnu-MED in Educational Admin</item>
+  <item>MPA in Public Administration</item>
+  <item>Bus. Admin -Accelerated online</item>
+ </Restrictions1>
+<Restrictions2>
+  <item>English Language Institute</item>
+</Restrictions2>
+<Course-attributes>
+               <item>Degree Elective</item>
+               <item>CS Instruction Fee - HU</item>
+          </Course-attributes>
+</Course>
+     <Course>
+  <Category>Computer Engineering Core</Category>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4334</Number>
+  <Name>Operating Systems</Name>
+  <Description>
+  This course provides a study of the basic concepts of operating systems: process management, memory management, file systems, resource
+  allocation, and protection.
+  </Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    <item>CSCI-3333</item>
+    <item>CMPE-3333</item>
+  </Prerequisite>
+  <Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes>
+    <item>Degree Elective</item>
+    <item>CS Instruction Fee - HU </item>
+  </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4335</Number>
+	<Name>Computer Architecture</Name>
+	<Description>
+  A study of the operational units and their interconnections of a modern computer as well as the theory behind the design of the
+		instruction set, control unit, registers, memory hierarchy and addressing modes, bus structures, input/output, and
+		storage units. Similarities between CISC and RISC architectures and related issues such as instruction level parallelism
+		and superscalar processors are discussed.
+	</Description>
+        <Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>None</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+		<item>None</item>
+	</Restrictions1>
+	<Restrictions2>
+		<item>None</item>
+	</Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4336</Number>
+	<Name>Parallel and Distributed Comp</Name>
+	<Description>
+	Presents principles and practices of parallel and distributed computing. Topics include parallel and distributed computation models and architectures; design, analysis and implementation of parallel algorithms; and methods of parallel and distributed programming.
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4335</item>
+		<item>CMPE-4335</item>
+		<item>CMPE-4380</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4336</Cross-listed>
+	<Restrictions1>
+		<item>dnu-MED in Educational Admin</item>
+		<item>MPA in Public Administration</item>
+		<item>Bus. Admin -Accelerated online</item>
+	</Restrictions1>
+	<Restrictions2>
+		<item>English Language Institute</item>
+	</Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4341</Number>
+	<Name>Topics in Computer Science</Name>
+	<Description>
+	Topics or problems in computer science; subject matter changes from semester to semester. May be repeated for credit as topic varies.
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>Consent of instructor</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>COSC-4380</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Exempt from 3peat processing</item>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>
+     <Course>
+  <Divide>Computer Engineering Technical Elective</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4350</Number>
+  <Name>Artificial Intelligence</Name>
+  <Description>
+  Study of intelligent machines and machine learning. Includes problem solving and heuristic search, natural language understanding,
+    game playing, database and expert systems. Artificial Intelligence projects will be implemented using an AI language such as LISP,
+    Prolog, C++ or Ada.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+               <item>CSCI-3333/CMPE-3333</item>
+          </Prerequisite>
+  <Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+  <Legacy-number>COSC-4350</Legacy-number>
+  <Cross-listed>CMPE-4350</Cross-listed>
+  <Restrictions1>
+               <item>Senior or Junior standing</item>
+          </Restrictions1>
+  <Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes>
+      <item>Degree Elective</item>
+      <item>CS Instruction Fee - HU</item>
+ </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4363</Number>
+	<Name>Adv Databases</Name>
+	<Description>
+		This course will cover a number of advanced topics in modern data intensive systems. Topics may include
+		non-relational databases (nosql), spatial databases and data warehousing.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4333</item>
+		<item>Consent of Instructor</item>
+	</Prerequisite>
+  <Co-requisite>
+    <item>None</item>
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+  <Course-attributes>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+  </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI-4345</item>
+		<item>CMPE-4345</item>
+	</Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+               <item>None</item>
+          </Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4366</Number>
+	<Name>Image Processing</Name>
+	<Description>
+		This course provides an introduction to image processing topics and design of image processing software. It covers methods for computer analysis of images, and processing of images including image formation, spatial resolution, preprocessing techniques, image filtering, image enhancement and image segmentation methods.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-1170</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>CMPE-1370</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-4366</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4367</Number>
+	<Name>Fiber Optic Communications</Name>
+	<Description>
+		Introduction to optics, photonics, and optoelectronics; fiber optic devices; and communication systems. Topics include ray optics, electromagnetic optics, resonator optics, dielectric waveguides and filters, semiconductor and laser light sources and detectors, modulators, amplifiers, connectors and optical fiber communication systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>2.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-3322</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item/>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>CSCI-4367</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4371</Number>
+	<Name>Senior Design I Software</Name>
+	<Description>
+		Apply the knowledge and skills gained in previous courses to synthesize a solution to a significant and realistic problem, integrating software and hardware design. Participate in team project activities including problem formulation and proposal, project analysis, software and hardware requirements specification, project planning and software and hardware design. Software design documentation and oral presentation are an integral part of the course. Can receive credit for only one of CSCI 4390, CMPE 4371 and CMPE 4373.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>6.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>Consent of instructor</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>CMPE-3340</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item/>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4372</Number>
+	<Name>Senior Design II Software</Name>
+	<Description>
+		Continuation of CMPE 4371. Team project activities include software and hardware design reviews, implementation, quality assurance, software and hardware testing, integration, project documentation, presentations and demonstration. Also covers social and ethical implications of the computer engineering profession. Cannot receive credit for both CMPE 4372 and CMPE 4374.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>6.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite>
+               <item>Consent of instructor</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>CMPE-4371</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item/>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4375</Number>
+	<Name>Introduction to VLSI Design</Name>
+	<Description>
+		This course provides an introduction to the area of CMOS VLSI design and design of VLSI circuits, including CMOS logic circuits, integrated circuit layout and design tools and overview of integrated circuit fabrication.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-2330</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>CMPE-4303</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>ELEE-4375</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4378</Number>
+	<Name>Signal Integrity and Electric Compatibility</Name>
+	<Description>
+		Distortion of digital signals analyzed via lumped element and transmission line models, power distribution in electronic systems, printed circuit layout guidelines, basic electromagnetic principles as applied to shielding and grounding, EMI regulations.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-3322</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>PHYS-2425</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item/>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technology Fee - CMPE U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4381</Number>
+	<Name>Interactive Systems and User Interface Design</Name>
+	<Description>
+		Presents principles and practice of information communication between user and system. The course examines
+		results of past research, as well as evolving trends in interface design and implementation.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>COSC-4332</Legacy-number>
+	<Cross-listed>CMPE-4381</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+	<item>Degree elective</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4382</Number>
+	<Name>Computer Visualization</Name>
+	<Description>
+		Focuses on design and implementation of computer graphics systems to provide visual representation of
+		large data sets. Presents current theory and practice of computer visualization systems and advanced
+		display techniques.
+	</Description>
+	<Credit-hours>3.000</Credit-hours>
+	<Lecture-hours>3.000</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+	<item>Degree elective</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Computer Science Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1101</Number>
+	<Name>Introduction to Computer Science</Name>
+	<Description>
+		This course presents an introduction to the breadth of the field of computer
+		science. Topics include an introduction to computer science as a career, overviews of
+		various computer science areas and topics, and foundations of computational problem
+		solving.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lab</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Degree Elective, Course fee - Comp Sci, CS Instruction Fee - LU</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics appropriate to
+		the program's student outcomes and to the discipline.
+		(b) An ability to analyze a problem, and identify and define the computing
+		requirements appropriate to its solution.
+		(c) An Ability to design, implement, and evaluate a computer-based system, process,
+		component, or program to meet desired needs.
+		(g) An ability to analyze the local and global impact of computing on individuals,
+		organizations, and society.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Explain the reasons for using different formats to represent numerical data.
+		2. Explain how negative integers are stored in twos-complement representation.
+		3. Describe Boolean Operations, gates, and flip-flops.
+		4. Describe numeric data representation and number bases, and convert numbers
+			between bases. Convert numerical data from one format to another.
+		5. Understand binary logic circuits and Boolean algebra. Prove properties using truth
+			tables.
+		6. Discuss how fixed-length number representations affect accuracy and precision.
+		7. Describe the internal representation of nonnumeric data.
+		8. Design, implement, test, and debug simple programs for Lego Mindstorms robots.
+		9. Use of control structures for programs (selection, repetition).
+		10. Discuss the importance of algorithms in the problem-solving process.
+		11. Understand the difference between an algorithm and a computer program.
+		12. Identify the necessary properties of good algorithms.
+		13. Understand algorithms for repetition, selection, input/output, assignment, and
+			modules.
+		14. Explain the organization of the classical von Neumann machine and its major
+			functional units.
+		15. Explain how an instruction is executed in a classical von Neumann machine.
+		16. Explain the objectives and functions of modern operating systems.
+		17. Understand the fundamental ideas of selected operating system functions, such as
+			memory management.
+		18. Explain basic file types and operations.
+		19. Understand terminology of directory trees.
+		20. Understand fundamental ideas of disk scheduling.
+		21. Explain the characteristics that distinguish the database approach from
+			programming with data files.
+		22. Cite the basic goals, functions, and social impact of database systems.
+		23. Discuss the evolution of early networks and the Internet.
+		24. Understand the fundamentals of network protocols and the Domain Name
+			System.
+		25.List the contributions of several pioneers in the computing field.
+		26. Identify significant continuing trends in the history of the computing field.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Other</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1105</Number>
+	<Name>Digital Tech in Modern World</Name>
+	<Description>
+		The course will consider the power and limitations of modern day technology, what technology can and cannot do, and
+		personal responsibility related to digital technology. The course emphasizes active learning to enhance critical thinking,
+		critical analysis of information gained from technical sources, and life-long learning competencies. Students use digital
+		technology to support and enhance communication, using current productivity technologies and exploring emerging
+		technologies.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>None</Restrictions1>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	</ABET-outcomes>
+	<Learning-outcomes>
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Computer Science Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1170</Number>
+	<Name>Engineer Comp Sci I Lab</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level
+		object oriented programming language applying the principles taught in the CSCI 1370 lecture course.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>CSCI 1370 or CSCI 1378</Co-requisite>
+	<Legacy-number>COSC-1336</Legacy-number>
+	<Cross-listed>CSCI-1170 (A student may receive credit in only one course)</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+		Course fee - Computer Science,
+		CS Instruction Fee - LU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Be proficient with the programming environment and understand the basic aspects of program translation.
+		2. Analyze a programming problem and develop a solution algorithm.
+		3 .Use the syntax and semantics of a higher-level language to implement their solutions to programming problems, including the correct use of:
+			Variables and assignment to variables,
+			Primitive types such as integer, character, and floating-point variable types,
+			Commonly-used built-in reference types, e.g., single-dimensional arrays,strings,
+			Declaration of constants and variables,
+			Assignment, logical, and arithmetic operators,
+			Local and global variables,
+			Selection control structures (e.g., if, nested if, switch),
+			Iterative control structures (e.g., for, while),
+			Functions (user-defined and predefined),
+			Parameter passing to functions (by value and by reference),
+			Arrays and other structures (such as records).
+		4. Document their solutions.
+		5. Use functions and parameter passing involving both primitive types and reference types.
+		6. Apply problem-solving strategies to design a solution to a problem similar to ones seen before.
+		7. Design simple ADTs to solve a problem similar to one seen before.
+		8. Apply testing and debugging strategies, including black-box and white-box testing, test drivers, stubs, and test suites, to identify software faults.
+		9. Formulate complex arithmetic expressions involving operators of differing precedence and associativity; understand the order of evaluation of subexpressions.
+		10. Formulate complex logical expressions involving multiple and/or/not combinations.
+		11. Implement nested if statements.
+		12. Demonstrate proficiency in the use of logic and arithmetic operators and their precedence.
+		13. Use simple I/O to read/write character and numeric data to/from files and console.
+		14. Use simple sorting and searching algorithms.
+		15. Use standard documentation to determine the use of an unfamiliar class or method.
+		16. Use teamwork roles and methods in the classroom.
+		17. Discuss and debate ethics in computing.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Computer Science Core HON</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>1178</Number>
+	<Name>Engineer Comp Sci I Lab HON</Name>
+	<Description>
+		The course includes hands-on instruction and laboratory exercises in developing programs written in a high-level
+		object oriented programming language applying the principles taught in the CSCI 1378 lecture course. Equivalence course: CSCI 1170.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>CSCI 1378 (Honors)</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+		Computer Science,
+		CS Instruction Fee - LU
+	</Course-attributes>
+	<ABET-outcomes>
+	</ABET-outcomes>
+	<Learning-outcomes>
+	</Learning-outcomes>
+</Course>
+     <Course>
+    <Category>General Core Integrative HON</Category>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1378</Number>
+    <Name>Engineering Comp Sci I HON</Name>
+    <Description>
+        An introduction to computer science and computer engineering. The fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of procedural and object-oriented programming will be emphasized.. Societal and social issues related to computer science/engineering will be introduced.
+    </Description>
+    	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+      Grade of C or better in MATH 1314 or placement in a higher level Math course,
+      CSCI-1101,
+      Admission to the honors program
+    </Prerequisite>
+    <Co-requisite>CSCI-1178</Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>CMPE 1378</Cross-listed>
+	  <Restrictions>None</Restrictions>
+	  <Course-attributes>
+		    CS Instruction Fee -LU
+    </Course-attributes>
+    <ABET-outcomes>
+  	</ABET-outcomes>
+  	<Learning-outcomes>
+  	</Learning-outcomes>
+</Course>
+     <Course>
+    <Divide>Other</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1380</Number>
+    <Name>Computer Science I</Name>
+    <Description>
+        An introduction to computer science and computer programming is given, in which the fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of structured object-oriented programming will be emphasized. For degree programs requiring a three hour course in computer science. Two hours will fulfill Computer Literacy Core requirement.
+    </Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>Concurrent enrollment or credit for MATH 1314 or higher level mathematics course.</Prerequisite>
+    <Co-requisite>None</Co-requisite>
+    <Legacy-number>COSC-1336</Legacy-number>
+    <Cross-listed>None</Cross-listed>
+	<Restrictions1>None</Restrictions1>
+    <Course-attributes>
+	    Core Int/Exp Lrng-090,
+	    Degree Elective,
+	    CS Instruction Fee - LU
+    </Course-attributes>
+    <ABET-outcomes>
+  	</ABET-outcomes>
+  	<Learning-outcomes>
+  	</Learning-outcomes>
+</Course>
+     <Course>
+    <Divide>Other HON</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>1387</Number>
+    <Name>Computer Science I HON</Name>
+    <Description>
+        An introduction to computer science and computer programming is given, in which the fundamentals of a high-level programming language will be introduced. Methods of problem solving, techniques of algorithmic development and concepts of structured object-oriented programming will be emphasized.
+    </Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+      Concurrent enrollment or credit for MATH 1314 or higher level mathematics course.
+    </Prerequisite>
+    <Co-requisite>
+      None
+    </Co-requisite>
+    <Legacy-number>None</Legacy-number>
+    <Cross-listed>None</Cross-listed>
+	  <Restrictions>
+      None
+    </Restrictions>
+    <Course-attributes>
+	    Degree Elective,
+	    CS Instruction Fee - LU
+    </Course-attributes>
+    <ABET-outcomes>
+  	</ABET-outcomes>
+  	<Learning-outcomes>
+  	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Computer Science Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>2333</Number>
+	<Name>Computer Org and Assembly Lang</Name>
+	<Description>
+		An introduction to computer organization, use of assembly language programming, basic instruction sets, arithmetic and logical operations, addressing modes and macro definition. Several computer programming projects are included.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+  	<item>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378</item>
+	</Prerequisite>
+  <Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>COSC-2325</Legacy-number>
+	<Cross-listed>CMPE-2333</Cross-listed>
+	<Restrictions>
+  	dnu-MED in Educational Admin,
+  	MPA in Public Administration,
+  	Bus. Admin -Accelerated online.
+	</Restrictions>
+	<Course-attributes>
+	  Degree Elective,
+		CS Instruction Fee - LU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Describe the progression of computer architecture from vacuum tubes to VLSI.
+	  2. Demonstrate an understanding of the basic building blocks and their role in the historical development of computer architecture.
+		3 .Explain how interrupts are used to implement I/O control and data transfers.
+		4. Identify various types of buses in a computer system.
+		5. Explain the reasons for using different formats to represent numerical data.
+		6. Explain how negative integers are stored in sign-magnitude and twos-compliment representation.
+		7. Convert numerical data from one format to another.
+		8. Discuss how fixed-length number representations affect accuracy and precision.
+		9. Describe the internal representation of nonnumeric data.
+		10. Describe the internal representation of characters, strings, records, and arrays.
+		11. Explain the organization of the classical von Neumann machine and its major functional units.
+		12. Explain how an instruction is executed in a classical von Neumann machine.
+		13. Write assembly language programs that use basic computation and simple I/O, standard conditional structures, basic iterative structures, and the definition of functions.
+		14. Demonstrate how fundamental high-level programming constructs are implemented at the assembly-language level.
+		15. Explain how subroutine calls are handled at the assembly level.
+		16. Explain the basic concepts of interrupts and I/O operations.
+		17. Choose appropriate conditional and iteration constructs for a given programming task.
+		18. Describe the mechanics of parameter passing.
+	</Learning-outcomes>
+</Course>
+     <Course>
+  <Divide>Computer Science Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2344</Number>
+<Name>Programming in a UNIX/Linux Envr</Name>
+<Description>The course presents the UNIX file system, the commonly used utilities, editors, shell programming and scripting. It includes instruction in software development in the UNIX/Linux environment. In addition, a brief overview of the internal components of the operating system will be covered.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378 or consent of instructor
+  </Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+	<Restrictions>
+  		dnu-MED in Educational Admin,
+  		MPA in Public Administration,
+  		Bus. Admin -Accelerated online
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+	  CS Instruction Fee - LU
+</Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+  component, or program to meet desired needs.
+  (d) An ability to function effectively on teams to accomplish a common goal.
+  (i) An ability to use current techniques, skills, and tools necesary for computing
+  practice.
+</ABET-outcomes>
+<Learning-outcomes>
+	1. Understand the objectives and functions of Unix/Linux operating systems
+	2. Understand how operating systems have evolved over time from primitive batch systems to sophisticated multi-user systems
+	3. Understand Unix/Linux file system, file processing, and file security
+	4. Use basic and advance Unix commands
+	5. Use Unix/Linux utilities
+	6. Use basic editors, such as vi or emacs, on Unix/Linux environment
+	7. Program with shell script languages
+	8. Develop Unix/Linux applications in C/C++
+</Learning-outcomes>
+
+
+</Course>
+     <Course>
+<Divide>Computer Science Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2380</Number>
+<Name>Computer Science II</Name>
+<Description> A second programming course includes problem solving by structured design; provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  CSCI-1370/CMPE-1370 or CSCI-1378/CMPE-1378 or consent of instructor
+ </Prerequisite>
+<Co-requisite>None</Co-requisite>
+<Legacy-number>COSC-2336</Legacy-number>
+<Cross-listed>CMPE-2380</Cross-listed>
+	<Restrictions>
+  dnu-MED in Educational Admin,
+  MPA in Public Administration,
+  Bus. Admin -Accelerated online,
+  May not be enrolled in English Language Institute
+	</Restrictions>
+<Course-attributes>
+	Degree Elective
+	CS Instruction Fee - LU
+</Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+  component, or program to meet desired needs.
+  (i) An ability to use current techniques, skills, and tools necesary for computing
+  practice.
+  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+  science theory in the modeling and design of computer-based systems in a way that demonstrates
+  comprehension of the tradeoffs involved in design choices.
+  (k) An ability to apply design and development principles in the construction of
+  software systems of varifying complexity.
+</ABET-outcomes>
+<Learning-outcomes>
+	1. To gain the understanding of principles of Object Oriented Programming: classes, methods, composition, inheritance, overloading, templates, virtual methods and polymorphism.
+	2. To practice more about pointers, dynamic memory management.
+	3. To know the concept of recursion.
+	4. To be able to continue the development of problem solving skills in a context that emphasizes a structured, top-down approach.
+	5. To demonstrate the application of software engineering principles in designing, coding and testing large programs.
+	6. To understand essential data structures such as linked lists, stacks, and queues, and the specification of each of above structures as an abstract data type (ADT).
+	7. To explore a systematic approach to the study of algorithms that focuses first on the understanding of the algorithm and then on analyzing the algorithm from a time/space perspective. In particular searching, sorting, and recursive algorithms are covered in the course.
+	8. To learn how to evaluate the time and space tradeoffs in the design and implementation of ADT's.
+	9. To be aware of the importance of object-oriented methods in developing software, particularly in the design and implementation of ADT's.
+</Learning-outcomes>
+
+</Course>
+     <Course>
+<Divide>Computer Science Core HON</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>2388</Number>
+<Name>Computer Science II HON</Name>
+<Description>
+A second programming course includes problem solving by structured design. Provides an introduction to elementary data structures, including linked lists, stacks, queues, trees and graphs, and advanced programming techniques, including recursion, sorting and searching.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>
+  Undergraduate level CSCI 1378, CSCI 1370, or CMPE 1370 with a minimum grade of D
+</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>CMPE 2388</Cross-listed>
+	<Restrictions>
+  		dnu-MED in Educational Admin,
+  		MPA in Public Administration,
+  		Bus. Admin -Accelerated online.
+	</Restrictions>
+		<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee -LU
+</Course-attributes>
+<ABET-outcomes/>
+<Learning-outcomes>
+</Learning-outcomes>
+</Course>
+     <Course>
+<Category>Technical Electives</Category>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3300</Number>
+<Name>Internship in Computer Science</Name>
+<Description>
+This course is designed to give students an opportunity to gain practical experience in the computer science career field by
+	working with a participating employing firm or organization. The student will be supervised by a faculty member
+	acting as a liaison between the University and the employing organization to ensure compliance with specific
+	learning and experience requirements. The employment can be either paid or unpaid, and normally would include
+	practical experience spread over one academic term or summer. May be repeated once. A maximum of three hours of
+	credit from CSCI 3300 can be used toward the computer science major.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Practicum</Schedule-type>
+<Prerequisite>
+	Junior standing,
+	Minimum 12 hours of Computer Science (CSCI) completed and approved by both the department and employer
+		providing the practicum/internship experience.
+</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>COSC-4386</Legacy-number>
+<Cross-listed>CMPE-3300</Cross-listed>
+	<Restrictions>
+  dnu-MED in Educational Admin,
+  MPA in Public Administration,
+  Bus. Admin -Accelerated online.
+	</Restrictions>
+<Course-attributes>
+	Exempt from 3peat processing,
+	Degree Elective,
+	CS Instruction Fee - HU
+</Course-attributes>
+<ABET-outcomes>
+	(a) An ability to apply knowledge of computing and mathematics
+	appropriate to the discipline. &#13;
+	(b) An ability to analyze a problem, and identify and define the
+	computing requirements appropriate to its solution. &#13;
+	(c) An ability to design, implement, and evaluate a computer-based
+	system, process, component, or program to meet desired needs. &#13;
+	(i) An ability to use current techniques, skills, and tools necessary
+	for computing practice. &#13;
+	(j) An ability to apply mathematical foundations, algorithmic principles,
+	and computer Science theory in the modeling and design of computer-based systems
+	in a way that demonstrates comprehension of the tradeoffs involved in design choices. &#13;
+	(k) An ability to apply design and development principles in the construction
+	of software systems of varying complexity. &#13;
+</ABET-outcomes>
+<Learning-outcomes>
+		1. Student should know chemical building blocks in life.
+		2. Student should be able to identify cellular structures and
+		connect structures with their roles on living systems.
+		3. Students should be able to connect energy production with energy uses.
+		4. Student should be able to connect cell division with growth and reproduction.
+		5. Students should be able to analysis genetic relatedness based on pattern of inheritance.
+		6. Students should be able to connect the role of DNA in inheritance with phenotype.
+		7. Students should be able to value how evolution provides a framework to study organisms.
+</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>3310</Number>
+	<Name>Discrete Data Structures</Name>
+	<Description>
+	An introduction to some of the more important concepts, techniques, and structures of discrete mathematics. It provides a
+		bridge between computer science and mathematics. Topics include functions and relations, sets, countability,
+		groups, graphs, propositional and predicate calculus, and permutations and combinations. Students will be expected
+		to develop simple proofs for problems drawn primarily from computer science and applied mathematics.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Undergraduate level MATH 2413 or MATH 1460 Minimum Grade of C,
+		Undergraduate level CSCI 1370/CMPE 1370 or CSCI 1378/CMPE 1378 with a Minimum Grade of D
+	</Prerequisite>
+ 	<Co-requisite>None</Co-requisite>
+	<Legacy-number>COSC 2310</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+		<Restrictions>
+	  		dnu-MED in Educational Admin,
+	  		MPA in Public Administration,
+	  		Bus. Admin -Accelerated online.
+		</Restrictions>
+	<Course-attributes>None</Course-attributes>
+</Course>
+     <?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+     <Course>
+   <Divide>Computer Science Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3334</Number>
+  <Name>Systems Programming</Name>
+  <Description>
+    This course covers the design and implementation of system software. It investigates the relationship between software
+    design and machine architecture. Topics may include assemblers, macro-processors, compilers, loaders, debugging environments,
+    program development and archival tools, command language interpreters (shells), file systems, I/O support, processes, threads,
+    and inter-process communication.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI/CMPE 2380</Prerequisite>
+  <Co-requisite>CSCI/CMPE 2333, ELEE 3435, or CMPE 3437</Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+	   Degree Elective, CS Instruction Fee - HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Describe systems programs
+  	2. Describe the evolution of systems programs
+  	3. Read a line of input and separate it
+  	4. Describe the functions of an assembler
+  	5. Describe the functions of a linking loader
+  	6. Describe the functions of a compiler
+  	7. Understand and Run programs in the Linux environment
+  </Learning-outcomes>
+
+</Course>
+     <Course>
+  <Divide>Computer Science Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3336</Number>
+  <Name>Organization of Program Lang</Name>
+  <Description>
+    This course describes the fundamental concepts of programming languages by discussing the design of the various language
+    constructs, examining the design choices for these constructs, critically comparing design alternatives and discussing
+    implementation techniques. The underlying theory and formal modes of describing the syntax and semantics including finite
+    automata and regular expressions, context-free grammars, context-sensitive languages and the Chomsky Hierarchy are included.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI 2380/CSCI 2388 or CMPE 2380/CMPE 2388</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+	Degree Elective,
+	CS Instruction Fee - HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (f) An ability to communicate effectively with a range of audiences.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Upon successful completion of this course, students will be enable to evaluate the inherent strengths
+  	and weaknesses of a programming language and the best ways to exploit a given language.
+  </Learning-outcomes>
+</Course>
+     <Course>
+  <Divide>Computer Science Core</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3340</Number>
+  <Name>Software Engineering</Name>
+  <Description>
+    A formal approach to the state of the art techniques in software design and development. Emphasis will
+    be on Project Planning Requirements, Specification, and System Desing and includes object design, testing,
+    and implementation. Provides the student with the opportunity to work on large projects in a group situation.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>3.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-2388 or CSCI-2830,
+    CMPE-2380 or CMPE-2388,
+    3 Advance Hours in CSCI
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3340
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>CMPE-3340</Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin,
+	  MPA in Public Administration,
+	  Bus. Admin -Accelerated online
+	</Restrictions>
+  <Course-attributes>
+    Degree Elective,
+    Course fee - Computer Science,
+    CS Instruction Fee – LU
+  </Course-attributes>
+  <ABET-outcomes>
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (g) An ability to analyze the local and global impact of computing on individuals,
+    organizations, and society.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+    1. Understand the principles of software engineering.
+    2. Understand and be fluent in the use of software engineering terminology and nomenclature.
+    3. Be capable of intelligently communicating with most members in a software development organization (management, analysts, architects, developers, ...)
+    4. Be able to create and use planning, requirements analysis, domain analysis and design artifacts.
+    5. Be able to document all phases of the software development processes.
+  </Learning-outcomes>
+
+
+</Course>
+     <Course>
+  <Divide>Technical Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3341</Number>
+  <Name>Software Engineering II</Name>
+  <Description>
+    The course will cover the analysis of requirements and software architecture with a major
+    emphasis on object design, implementation, testing and validation, maintenance and software engineering. Methods for evaluating software for correctness, and reliability, system testing
+    techniques, testing tools and limitations of testing, Advance Software Engineering topics such
+    as Design Patterns, Aspect Oriented Engineering, Interactive Design Methods, and Formal
+    Specification and included. Students will work on large group projects.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-3340 or CMPE-3340
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3341
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    CMPE-3341
+  </Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin, MPA in Public Administration, Bus. Admin -Accelerated online, May not be enrolled in English Language Institute
+	</Restrictions>
+  <Course-attributes>Degree Elective,CS Instruction Fee - HU </Course-attributes>
+  <ABET-outcomes>
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (g) An ability to analyze the local and global impact of computing on individuals,
+    organizations, and society.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for compuing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	 1. Software validation and verification:
+  		Distinguish between program validation and verification,
+  		Distinguish between functional and structural testing,
+  		Distinguish between the different types and levels of testing (unit, integration, systems, and acceptance) for medium-size software products).
+     2. Understand the following test strategies:
+  		Graph coverage,
+  		Logic coverage,
+  		Input-Space Coverage,
+  		Syntax-Base Coverage,
+  	3. Risks and liabilities of computer-based systems:
+  		Explain the limitations of testing as a means to ensure correctness,
+  		Describe the differences between correctness, reliability, and safety,
+  		Discuss the potential for hidden problems in reuse of existing components
+  </Learning-outcomes>
+</Course>
+     <Course>
+  <Divide>Technical Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>3342</Number>
+  <Name>Internet Programming</Name>
+  <Description>
+    Introduction to web application programming. Covers the fundamentals of developing
+    applications for web browsers, within the dominant HTTP-based client/server model.
+    A wide range of technologies and development methodologies are covered, including database
+    and server architectures, serer-side frameworks, client-side languages/libraries, remote
+    invocation models and web application security. Specific topics in web development change
+    rapidly, but some examples include SQL, HTML, TLS, PHP, Java EE (servllets, JSP, etc),
+    ASP.NET.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-2380/CSCI-2388 or CMPE-2380/CMPE-2388,
+    CSCI-3327 or CSCI-3328
+  </Prerequisite>
+  <Co-requisite>
+    CMPE-3341
+  </Co-requisite>
+  <Legacy-number>COSC-4346</Legacy-number>
+  <Cross-listed>
+    CMPE-3342
+  </Cross-listed>
+  <Restrictions>
+    dnu-MED in Educational Admin,
+    MPA in Public Administration ,
+    Bus. Admin -Accelerated online,
+    May not be enrolled in English Language Institute
+  </Restrictions>
+  <Course-attributes>Degree Elective, CS Instruction Fee – HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+    1. Understand how web technologies interact, from the browser to the backend servers.
+    2. Gain familiarity with numerous languages and standard protocols.
+    3. Learn database design basics and SQL access.
+    4. Implement dynamic content web pages using two- and three-tier architectures.
+    5. Become familiar with the range of browser application clients
+    6. Gain practical experience in a selected set of Web technologies.
+    7. Learn how to keep pace with the rapidly changing landscape of web application developmen
+    8. Implement a web application with database content and a dynamic client.
+  </Learning-outcomes>
+
+
+</Course>
+     <Course>
+<Divide>Technical Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3350</Number>
+<Name>Numerical Methods</Name>
+<Description>
+This course studies the numerical solutions to various problems occurring in engineering, science and mathematics. These problems include finding solutions to nonlinear equations, solutions to linear and nonlinear systems of equations, interpolation of data, approximation of functions, numerical integration and solutions to differential equations. It also studies the influence of data representation and computer architecture on the choice and development of algorithms.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    MATH 2413 or MATH 2487,
+    CSCI 1380/CSCI 1387 or CSCI 1370/CSCI 1378 or CMPE 1370/CMPE 1378
+  </Prerequisite>
+  <Co-requisite>None</Co-requisite>
+  <Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Understand the influence of data representation and computer architecture on the choice and development of algorithms.
+  	2. Locate the roots of equations by using the bisection method, the secant method, and the Newton’s metho
+  	3. Do polynomial interpolation, write Matlab programs to solve simple interpolation problems.
+  	4. Estimate derivatives and Richardson extrapolation by using the first- and the second- derivative formul
+  	5. Write Matlab programs to numerical approximate the definite integrals by using the basic algorithms including Trapezoid Rule, an Adaptive Simpson’s Scheme, and the Gaussian Quadrature Formulas.
+  	6. Solve the systems of linear equations by using the Gaussian elimination method and the Gaussian elimination with scaled partial pivoting method, and some iterative methods.
+  	7. Understand the concept of approximating functions. Be able to approximate the functions by using the spline functions from the first degree splines to the cubic splines.
+    8. Solve the initial value problems of ordinary differential equations by using the Taylor series methods and the Runge-Kutta methods.
+  </Learning-outcomes>
+
+</Course>
+     <Course>
+<Divide>Technical Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>3370 </Number>
+<Name>Intro Game Develop</Name>
+<Description>
+This is a project based course in which programmers and designers collaborate to create a video game. The course investigates theory and practice of developing computer games from a variety of perspectives.
+</Description>
+<Credit-hours>3.000 Credit hours</Credit-hours>
+<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+ <Prerequisite>
+  CSCI-3333/CMPE-3333, CSCI-3326/CMPE 3326 or CSCI-3327/CMPE 3327 or CSCI-3328/CMPE-3328 or consent of instructor
+ </Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+  component, or program to meet desired needs.
+  (d) An ability to function effectively on teams to accomplish a common goal.
+  (i) An ability to use current techniques, skills, and tools necesary for computing
+  practice.
+  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+  science theory in the modeling and design of computer-based systems in a way that demonstrates
+  comprehension of the tradeoffs involved in design choices.
+  (k) An ability to apply design and development principles in the construction of
+  software systems of varifying complexity.
+</ABET-outcomes>
+<Learning-outcomes>
+</Learning-outcomes>
+
+</Course>
+     <Course>
+<Divide>Technical Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4185 </Number>
+<Name>Research Seminar</Name>
+<Description>
+Students will have the opportunity to conduct faculty-sponsored research in the area of mutual interest resulting in oral and written presentation of their work to other students and faculty. May be repeated up to 6 credit hours. Up to three credit hours can be used to meet CSCI degree requirements.
+</Description>
+<Credit-hours>1.000 Credit Hours</Credit-hours>
+<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Independent Study</Schedule-type>
+  <Prerequisite>Consent of instructor</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+   <Legacy-number>None</Legacy-number>
+  <Cross-listed>CMPE 4185</Cross-listed>
+  <Restrictions>None</Restrictions>
+	  <Course-attributes>Exempt from 3peat processing, CS Instruction Fee - HU</Course-attributes>
+    <ABET-outcomes>
+      (a) An ability to apply knowledge of computing and mathematics appropriate to
+      the program's student outcomes and to the discipline.
+      (b) An ability to analyze a problem, and identify and define the computing
+      requirements appropriate to its solution.
+      (c) An Ability to design, implement, and evaluate a computer-based system, process,
+      component, or program to meet desired needs.
+      (i) An ability to use current techniques, skills, and tools necesary for computing
+      practice.
+      (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+      science theory in the modeling and design of computer-based systems in a way that demonstrates
+      comprehension of the tradeoffs involved in design choices.
+      (k) An ability to apply design and development principles in the construction of
+      software systems of varifying complexity.
+    </ABET-outcomes>
+    <Learning-outcomes>
+    	1. Engage in faculty research. Learn to review existing literature and contribute to an ongoing faculty project.
+    </Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4301</Number>
+	<Name>Digital Image Processing</Name>
+	<Description>
+		The course presents fundamental concepts and applications of digital image processing. Topics include basic
+		color, image perception and transformation, image enhancement and compression, and image analysis, and computer vision.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Undergraduate level CSCI 3333 or CMPE 3333 with a minimum grade of D
+	</Prerequisite>
+		<Co-requisite>None</Co-requisite>
+		<Legacy-number>None</Legacy-number>
+	<Cross-listed>
+	CMPE-4301 (A student may receive credit in only one course)
+	</Cross-listed>
+	<Restrictions>
+		dnu-MED in Educational Admin,
+	  MPA in Public Administration,
+		Bus. Admin -Accelerated online,
+		Not enrolled in Eng. Lang. Institue
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective, CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (i) An ability to use current techniques, skills, and tols necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Explain different image modalities and image acquisition techniques.
+		2. Understand different ways of image representation in the time and frequency domains.
+		3. Explain different ways of image representation in the time and frequency domains.
+		4. Implement different Image processing algorithms in a structured language such as Java
+		5. Explain concepts of image enhancements and image transformations.
+		6. Explain concept of image coding (compression/decompression).
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4302</Number>
+	<Name>Multimedia Systems</Name>
+	<Description>
+		This course presents the broad field of multimedia systems. Topics include the digital interactive
+		multimedia, creation of multimedia, and various issues involving technology, design and effectiveness of multimedia
+		applications. Students will have the opportunity to learn programming techniques for integrating video, sound, animation
+		and graphics for multimedia systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite> Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor.
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>dnu-MED in Educational Admin, MPA in Public Administration, Bus. Admin -Accelerated online, and not in English Language Institute level
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective, CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4303</Number>
+	<Name>Computer Vision</Name>
+	<Description>
+		This course covers the fundamental and advanced ideas of developing computerized procedures to extract
+		numeric and symbolic information from images.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Undergraduate level CSCI 3333/CMPE 3333 with a minimum grade of D or consent of instructor
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4310</Number>
+	<Name>Design and Analysis of Algorithm</Name>
+	<Description>The course presents elements of the design and analysis of computer algorithms. Topics include in-depth study of algorithms' design strategies such as dynamic programming, divide-and-conquer and greedy methods; algorithms for graph problems, geometric problems and other selected problems; and computational complexity.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>CSCI-3333 or consent of instructor</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>CS Instruction Fee - HU, Degree Elective</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Understand some important methods in developing algorithms.
+		2. Understand how to analyze the computational time of algorithms.
+		3. Build solid skills for designing efficient algorithms.
+		4. Use approximate way in algorithm design.
+		5. Think algorithm from randomized point of view.
+		6. Develop the skills to determine the hardness of a computational problem.
+	</Learning-outcomes>
+
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4318</Number>
+	<Name>Cyber Security</Name>
+	<Description>This course explores cyber security fundamentals, standards of good practice, and basic theory in depth. Topics will include privacy, confidentiality, integrity, and encryption. Key areas include network attacks and defenses, operating systems flaws, malware, social engineering and digital rights management.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>CSCI-2344,SCI-3333/CMPE-3333</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>CS Instruction Fee - HU</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based systemprocess,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Understand the basic theory and concepts of cyber security and privacy including policies, models, and mechanisms
+		2. Understand ethics, legal issues, and human factors associated with cyber security and forensic
+		3. Understand security vulnerabilities and be able to describe threats and risks directed at computer hardware and software and recognize and categorize network vulnerabilities and attacks
+		4. Be able to explain best practices in giving access to systems and networks and implement proper authentication techniques.
+		5. Be familiar with cryptographic techniques, asymmetric key algorithms, and create certificates.
+	  6. Describe the requirements for a cyber forensic investigation and demonstrate an understanding of tools, techniques and procedures
+		7. Be conversant in current security-related issues in the fields of cyber security and cyber forensics.
+	</Learning-outcomes>
+
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4319</Number>
+	<Name>Digital Forensics</Name>
+	<Description>This course explores the science, technology, procedures and laws of acquiring and analyzing evidence from digital media and computing devices. Current forensic tools will be surveyed. Topics include volatile and nonvolatile data analysis, network based evidence collection, forensic analysis techniques, web, email, and registry activity reconstruction and study of available tools.</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>CSCI-2344, CSCI-2380/CMPE-2380</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	 b(b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	</ABET-outcomes>
+	<Learning-outcomes/>
+
+</Course>
+     <Course>
+  <Divide>Technical Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4321</Number>
+  <Name>E-Commerce</Name>
+  <Description>
+  This course covers e-commerce implementation including e-commerce security and prevention,
+  e-commerce scalable architecture design, Internet infrastructure, web server administration,
+  e-payment, mobile commerce systems, and business to business systems.
+  </Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI-3333/CMPE-3333</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (d) An ability to function effectively on teams to accomplish a common goal.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (g) An ability to analyze the local and global impact of computing on individuals,
+    organizations, and society.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+  </ABET-outcomes>
+  <Learning-outcomes/>
+
+</Course>
+     <Course>
+<Divide>Computer Science Core</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4325</Number>
+<Name>Automata, Formal Lang, and Comp</Name>
+<Description>
+The course presents formal computation models. Topics include finite state machine,
+pushdown state machine, Turing machine, halting problem, definition and properties of
+formal grammars and their languages as well as theory of computability and complexity
+including the complexity of optimization and approximation problems.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>CSCI-3333/CMPE-3333 or CSCI-3336</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+<Restrictions>
+  dnu-MED in Educational Admin,
+  MPA in Public Administration Bus.,
+  Admin -Accelerated online.
+</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (h) Recognition of the need for and an ability to engage in continuing professional
+  development
+  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+  science theory in the modeling and design of computer-based systems in a way that demonstrates
+  comprehension of the tradeoffs involved in design choices.
+</ABET-outcomes>
+<Learning-outcomes>
+	1. Understand the concepts of computability under various computation models.
+	2. Understand the concepts of uncomputability.
+	3. Understand the efficient computation based on computational complexity.
+	4. Understand language definition and computability
+</Learning-outcomes>
+</Course>
+     <Course>
+<Divide>Technical Electives</Divide>
+<Department>Computer Science</Department>
+<Prefix>CSCI</Prefix>
+<Number>4327</Number>
+<Name>Compiler Construction</Name>
+<Description>
+Syntax analysis and semantic processing for a block-structured language. Compilation vs. interpretation;
+lexical analysis based on finite automata; syntax-directed translation; symbol tables; run-time storage allocation;
+error detection and recovery; code generation and optimization. Students are required to write a compiler.
+</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+<Level>Undergraduate</Level>
+<Schedule-type>Lecture</Schedule-type>
+<Prerequisite>CSCI-3334/CMPE-3334</Prerequisite>
+<Co-requisite>CMPE-4327</Co-requisite>
+<Legacy-number>None</Legacy-number>
+<Cross-listed>None</Cross-listed>
+<Co-requisite>None</Co-requisite>
+<Restrictions>
+dnu-MED in Educational Admin,
+MPA in Public Administration Bus.,
+Admin -Accelerated online.
+</Restrictions>
+<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+<ABET-outcomes>
+  (a) An ability to apply knowledge of computing and mathematics appropriate to
+  the program's student outcomes and to the discipline.
+  (b) An ability to analyze a problem, and identify and define the computing
+  requirements appropriate to its solution.
+  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+  component, or program to meet desired needs.
+  (i) An ability to use current techniques, skills, and tools necesary for computing
+  practice.
+  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+  science theory in the modeling and design of computer-based systems in a way that demonstrates
+  comprehension of the tradeoffs involved in design choices.
+  (k) An ability to apply design and development principles in the construction of 
+  software systems of varifying complexity.
+</ABET-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Databases</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4333</Number>
+	<Name>Database Design and Implement</Name>
+	<Description>
+   Study of logical (hierarchical, network, relational) and physical (sequential, indexed, relative)
+   organization of databases. Database management systems and their features, querying databases,
+   distributed databases, and data compression.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-3334,
+		CMPE-3333
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>None</Restrictions1>
+	<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to aply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  1. Understanding of database technology.
+	  2. Understand databases, DBMS’s, transactions, OLAP, and OLTP.
+	  3. Know the history and key players in the modern database world.
+	  4. Understand common database models, including relational, object, object-relational, hierarchical, network, etc.
+	  5. Understanding of the relational data model.
+	  6. Understand main concepts of the relational model: relations/tables, tuples/rows, attributes/columns, database and relation schemas.
+	  7. Understand constraints: integrity, key, foreign-key, syntactic, semantic, and reactive.
+	  8. Have a basic understanding of data management (schema creation, data population, querying, administrative activities) using a relational database.
+	  9. Proficiency with conceptual modeling of databases using Entity-Relationship (ER) Diagrams.
+	  10. Understand the E-R approach.
+	  11. Understand entities and entity types, relationships and relationship types.
+	  12. Understand entity type hierarchies, participation constraints, and part-of relationships.
+	  13. Model enterprise data with ER Diagrams.
+	  14. Translate ER Diagrams into relational database schemas.
+	  15. Familiarity with database design and normalization theory.
+	  16. Understand the gap between ER Diagram generated schemas and a “good” database.
+	  17. Understand the problems with set-valued attributes, data redundancy, and various data anomalies.
+	  18. Understand basics of the relational normalization theory: decompositions, functional dependencies, and normal forms.
+	  19. Proficiency with relational algebra and Structured Query Language (SQL).
+	  20. Understand relational algebra and construct queries using it
+	  21. Understand SQL and construct queries using it.
+
+	</Learning-outcomes>
+
+
+</Course>
+     <Course>
+  <Category>Databases</Category>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4334</Number>
+  <Name>Operating Systems</Name>
+  <Description>
+  This course provides a study of the basic concepts of operating systems: process management, memory management, file systems, resource
+  allocation, and protection.
+  </Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+    CSCI-3333 or
+    CMPE-3333
+  </Prerequisite>
+  <Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+    Degree Elective,
+    CS Instruction Fee - HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (h) Recognition of the need for and an ability to engage in continuing professional
+    development
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+      1. Explain the organization of the classical von Neumann machine and its major functional units.
+      2. Describe the principles of memory management.
+      3. Explain how interrupts, are used to implement I/O control and data transfers.
+      4. Describe the functions of a contemporary operating system with respect to convenience, efficiency, and the ability to evolve.
+      5. Discuss networked, client-server, distributed operating systems and how they differ from single user operating systems.
+      6. Compare and contrast the various ways of structuring an operating system such as object-oriented, modular, micro-kernel, and layered.
+      7. Describe the need for concurrency within the framework of an operating systems.
+      8. Discuss the utility of data structures, such as stacks and queues, in managing concurrency.
+      9. Explain conditions that lead to deadlock.
+      10. Discuss the types of processor scheduling such as short-term, medium-term, long-term, and I/O.
+      11. Describe the difference between processes and threads.
+      12. Compare and contrast static and dynamic approaches to real-time scheduling.
+      13. Discuss the need for preemption and deadline shceduling.
+      14. Explain memory hierarchy and cost-performance tradeoffs.
+      15. Explain the concept of virtual memory and how it is realized in hardware and software.
+      16. Summarize the principles of virtual memory as applied to caching, paging, and segmentation.
+      17. Evaluate the tradeoffs in terms of memory size (main memory, cache memory, auxiliary memory) and processor speed.
+      18 Defend the different ways of allocating memory to tasks, citing the relative merits of each.
+      19 Describe the reason for and use of cache memory.
+      20 Compare and contrast paging and segmentation techniques.
+      21 Discuss the concept of thrashing, both in terms of the reasons it occurs and the techniques used to recognize and manage the problem.
+      22 Analyze the various memory portioning techniques including overlays, swapping, and placement and replacement policies.
+  </Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Databases</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4335</Number>
+	<Name>Computer Architecture</Name>
+	<Description>
+  A study of the operational units and their interconnections of a modern computer as well as the theory behind the design of the
+		instruction set, control unit, registers, memory hierarchy and addressing modes, bus structures, input/output, and
+		storage units. Similarities between CISC and RISC architectures and related issues such as instruction level parallelism
+		and superscalar processors are discussed.
+	</Description>
+        <Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		None
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+		None
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+
+	<Learning-outcomes>
+	    Describe the progression of computer architecture from vacuum tubes to VLSI.
+	    Demonstrate an understanding of the basic building blocks and their role in the historical development of computer architecture.
+	    Describe the machine level representation of data.
+	    Demonstrate an understanding of the assembly level machine organization.
+	    Explain the organization of the classical von Neumann machine and its major functional units.
+	    Explain the basic concepts of interrupts and I/O operations.
+	    Describe the memory system organization and architecture.
+	    Demonstrate an understanding of how the various components are connected and how they communicate with each other.
+	    Describe the functional organization of computer (datapaths, signals, pipelining).
+	   Describe multiprocessing and alternative architecture.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4336</Number>
+	<Name>Parallel and Distributed Comp</Name>
+	<Description>
+	Presents principles and practices of parallel and distributed computing. Topics include parallel and distributed computation models and architectures; design, analysis and implementation of parallel algorithms; and methods of parallel and distributed programming.
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-4335,
+		CMPE-4335,
+		CMPE-4380
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4336</Cross-listed>
+	<Restrictions>
+		dnu-MED in Educational Admin,
+		MPA in Public Administration,
+		Bus. Admin -Accelerated online
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective.
+		CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes/>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4341</Number>
+	<Name>Topics in Computer Science</Name>
+	<Description>
+	Topics or problems in computer science; subject matter changes from semester to semester. May be repeated for credit as topic varies.
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>Consent of instructor</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>COSC-4380</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+		Exempt from 3peat processing.
+		Degree Elective.
+		CS Instruction Fee - HU
+	</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics appropriate to
+		the program's student outcomes and to the discipline.
+		(b) An ability to analyze a problem, and identify and define the computing
+		requirements appropriate to its solution.
+		(c) An Ability to design, implement, and evaluate a computer-based system, process,
+		component, or program to meet desired needs.
+		(h) Recognition of the need for and an ability to engage in continuing professional
+		development
+		(i) An ability to use current techniques, skills, and tools necesary for computing
+		practice
+		(j) An ability to apply mathematical foundations, algorithmic principles, and computer
+		science theory in the modeling and design of computer-based systems in a way that demonstrates
+		comprehension of the tradeoffs involved in design choices.
+		(k) An ability to apply design and development principles in the construction of
+		software systems of varifying complexity.
+	</ABET-outcomes>
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4343</Number>
+	<Name>Data Mining</Name>
+	<Description>
+		This course gives the fundamentals of applying artificial intelligence techniques for analysis, learning and prediction of information using data extracted from databases. Topics include data mining system architecture and data processing, pattern recognition, attribute relevance analysis, class discrimination, rule association, correlation analysis, classification, prediction, cluster analysis and query languages.
+	</Description>
+	<Credit-hours>1.000 Credit Hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>CSCI-4333</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>COSC-4343</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+		dnu-MED in Educational Admin,
+		MPA in Public Administration,
+		Bus. Admin -Accelerated online,
+		May not be English Language Institute level
+	</Restrictions>
+	<Course-attributes>
+		Degree Elective,
+		CS Instruction Fee - HU,
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify andefine the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes/>
+
+</Course>
+     <Course>
+  <Divide>Technical Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4344</Number>
+  <Name>Bioinformatics</Name>
+  <Description>
+    This course will provide and introduction to the rapidly evolving field of bioinformatics with the overarching goal of understanding how computer science plays an integral part both in application and algorithmic aspects.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI-3333 or CMPE 3333 or consent of instructor</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+  <Legacy-number>COSC-4381</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+  <Restrictions>Senior or Junior standing</Restrictions>
+  <Course-attributes>
+    Degree Elective,
+    CS Instruction Fee - HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes/>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-4345,
+		CMPE-4345
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computin
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (h) Recognition of the need for and an ability to engage in continuing professional
+	  development
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  1 Demonstrate understanding of the fundamental concepts of data communications
+	  2 Understand signals and signal encoding methods to communications and data transmission modes.
+	  3 Describe, compare and contrast the five (TCP/IP) or seven layers (OSI) models of networking and their functionalities
+	  4 Explain an implement application layer protocols in a high level language such as C/C++ or Java.
+	  5 Explain the basic concepts of reliable transport.
+	  6 Explain the basic concepts of the network, link and physical layers and be able to configure routers,
+	    switches, hubs and repeaters.
+	  7 Design and build a network application including client-server and peer-to-peer.
+	  8 Setup networking specific software such as Routing tables, DNS, Mail servers, DHCP, and wireless
+	    network
+	  9 Describe emerging technologies in the net-centric computing area and assess their current capabilities,
+	    limitations, and near-term potential
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+  <Divide>Technical Electives</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4350</Number>
+  <Name>Artificial Intelligence</Name>
+  <Description>
+  Study of intelligent machines and machine learning. Includes problem solving and heuristic search, natural language understanding,
+    game playing, database and expert systems. Artificial Intelligence projects will be implemented using an AI language such as LISP,
+    Prolog, C++ or Ada.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>CSCI-3333/CMPE-3333</Prerequisite>
+  <Co-requisite>None</Co-requisite>
+  <Legacy-number>COSC-4350</Legacy-number>
+  <Cross-listed>CMPE-4350</Cross-listed>
+  <Restrictions>Senior or Junior standing</Restrictions>
+  <Course-attributes>
+      Degree Elective,
+      CS Instruction Fee - HU
+ </Course-attributes>
+ <ABET-outcomes>
+   (a) An ability to apply knowledge of computing and mathematics appropriate to
+   the program's student outcomes and to the discipline.
+   (b) An ability to analyze a problem, and identify and define the computing
+   requirements appropriate to its solution.
+   (c) An Ability to design, implement, and evaluate a computer-based system, process,
+   component, or program to meet desired needs.
+   (d) An ability to function effectively on teams to accomplish a common goal.
+   (e) An understanding of professional, ethical, legal, security and social issues
+   and responsibilities.
+   (f) An ability to communicate effectively with a range of audiences.
+   (g) An ability to analyze the local and global impact of computing on individuals,
+   organizations, and society.
+   (i) An ability to use current techniques, skills, and tools necesary for computing
+   practice
+   (k) An ability to apply design and development principles in the construction of
+   software systems of varifying complexity.
+ </ABET-outcomes>
+ <Learning-outcomes>
+     <item>Introduction
+         <item2>Evaluate AI techniques and synthesize solutions to practical examples.</item2>
+         <item2>Develop a range of typical applications using artificial intelligence methods.</item2>
+         <item2>Demonstrate problem-solving skills.</item2>
+     </item>
+     <item>History and philosophy of artificial intelligence
+         <item2>Define weak and strong AI and provide some arguments for and against each hypothesis.</item2>
+         <item2>Discuss accomplishments of artificial intelligence research in historical context.</item2>
+         <item2>Discuss the concept of rationality.</item2>
+     </item>
+     <item>Problem solving in artificial intelligence
+         <item2>Explain classical search algorithms, including breadth-first, depth-first, A*, and heuristic search.</item2>
+         <item2>Implement classical search algorithms.</item2>
+         <item2>Discuss local search algorithms and their applications to finding goals and in optimization problems.</item2>
+     </item>
+     <item>Knowledge and reasoning
+         <item2>Understand key concepts related to Knowledge representation.</item2>
+     </item>
+     <item>Uncertain Knowledge and reasoning
+         <item2>Discuss the influence of uncertainty on decision-making.</item2>
+         <item2>Understand and apply the terminology and notation of basic probability.</item2>
+         <item2>Understand and apply Bayes' rule.</item2>
+         <item2>Solve simple probability problems.</item2>
+     </item>
+     <item>Machine Learning
+         <item2>Define supervised and unsupervised learning.</item2>
+         <item2>Discuss learning decision trees.</item2>
+         <item2>Understand the principles of neural networks.</item2>
+         <item2>Understand statistical learning methods, including Naive Bayes.</item2>
+         <item2>Understand reinforcement learning methods and selected algorithms.</item2>
+         <item2>Discuss the applications of machine learning to domains such as game playing.</item2>
+         <item2>Implement selected machine learning algorithms.</item2>
+     </item>
+     <item>Evolutionary computation
+         <item2>Discuss the key elements of evolutionary computation methods.</item2>
+         <item2>Compare and contrast different evolutionary methods, such as genetic algorithms and digital evolution.</item2>
+     </item>
+ </Learning-outcomes>
+
+
+
+</Course>
+     <Course>
+    <Divide>Technical Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4352</Number>
+    <Name>Machine Learning</Name>
+    <Description>This course provides an introduction to machine learning, data mining, and statistical pattern recognition. Topics include: supervised learning, unsupervised learning, reinforcement learning and best practices in machine learning.</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+        CSCI-3333 or
+        CMPE-3333,
+        Consent of instructor
+    </Prerequisite>
+     <Co-requisite>
+         None
+     </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>None</Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes/>
+
+</Course>
+     <Course>
+    <Divide>Technical Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4355</Number>
+    <Name>Expert Systems</Name>
+    <Description>This course covers the theoretical and practical principles of modern expert systems.</Description>
+    <Credit-hours>3.000 Credit hours</Credit-hours>
+    <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+    <Lab-hours>0.000 Lab hours</Lab-hours>
+    <Level>Undergraduate</Level>
+    <Schedule-type>Lecture</Schedule-type>
+    <Prerequisite>
+        CSCI-3333 or
+        CMPE-3333 or
+        Consent of instructor or
+    </Prerequisite>
+     <Co-requisite>
+         None
+     </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+ 	<Restrictions>None</Restrictions>
+  <Course-attributes>None</Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  </Learning-outcomes>
+
+</Course>
+     <Course>
+    <Divide>Technical Electives</Divide>
+    <Department>Computer Science</Department>
+    <Prefix>CSCI</Prefix>
+    <Number>4360</Number>
+    <Name>Comp Graphics and Interactive Systems</Name>
+    <Description>
+		Presents fundamental concepts of computer graphics. Topics include display hardware, transformations, geometric
+	    modeling, shading two- and three-dimensional display algorithms and graphics software systems.
+	</Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite>
+		CSCI-3333 or
+		CMPE-3333,
+		Consent of instructor
+	</Prerequisite>
+  <Co-requisite>
+    None
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+  <Restrictions>
+	  dnu-MED in Educational Admin,
+	  MPA in Public Administration,
+	  Bus. Admin -Accelerated online,
+    Can not be in the English Institute level
+	</Restrictions>
+  <Course-attributes>
+	  Degree Elective,
+	  CS Instruction Fee - HU
+  </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+      1. Compare and contrast sample and geometry based graphics.
+      2 Define and explain the role of models in geometry based graphics.
+      3 Describe the most widely used color representation systems and techniques.
+      4 Understand how OpenGL provides a software interface to graphics hardware.
+      5 Be able to utilize an event-driven software architecture.
+      6 List and illustrate elements needed to specify parameters to the synthetic camera model.
+      7 Describe how geometry and illumination/shading are tradeoffs from photorealistic images for interactivity.
+      8 Describe Z-buffer algorithm.
+      9 Distinguish between local and global models of illumination, providing examples of specific techniques.
+      10 Give high level recursive algorithm for ray tracing.
+      11 Describe hardware architecture of current graphics processing units
+      12 Write moderately complex OpenGL programs that include manipulation of camera, shading, objects, and lighting, as well as use GLUT for interaction
+  </Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4363</Number>
+	<Name>Adv Databases</Name>
+	<Description>
+		This course will cover a number of advanced topics in modern data intensive systems. Topics may include
+		non-relational databases (nosql), spatial databases and data warehousing.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-4333, Consent of Instructor
+	</Prerequisite>
+  <Co-requisite>
+    None
+  </Co-requisite>
+  <Legacy-number>None</Legacy-number>
+  <Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+  <Course-attributes>
+		Degree Elective, CS Instruction Fee - HU
+  </Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes/>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4365</Number>
+	<Name>Computer and Network Security</Name>
+	<Description>
+		This course examines the internetworking architecture and routing, design and implementation issues related to secure and reliable networks, cryptography, firewalls, digital signatures, worms, viruses, logic bombs and spyware. Equivalent course: CMPE 4363. A student may receive credit only in one course.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-4345
+		CMPE-4345
+	</Prerequisite>
+	<Co-requisite>None</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-sed system, process,
+	  component, or program to meet desired needs.
+	  (d) An ability to function effectively on teams to accomplish a common goal.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (g) An ability to analyze the local and global impact of computing on individuals,
+	  organizations, and society.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer 
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	</ABET-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4370</Number>
+	<Name>Adv Game Development</Name>
+	<Description>
+		This course in advanced game development covers core techniques in 3D game development. Students explore industry-standard engines and middleware, and develop independent engine components using low-level technologies. Topics include: real-time 3D pipelines, collision detection and response, animation, particle effects, scripting and networking.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-3370,
+		Consent of Instructorm
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathemaics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (i) An ability to use current techniques, skills, and tools necesary for coputing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of 
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4381</Number>
+	<Name>Interactive Systems and User Interface Design</Name>
+	<Description>
+		Presents principles and practice of information communication between user and system. The course examines
+		results of past research, as well as evolving trends in interface design and implementation.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI 3333 or
+		CMPE 3333,
+		Consent of the instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>COSC-4332</Legacy-number>
+	<Cross-listed>CMPE-4381</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Degree elective,
+	CS Instruction Fee - G
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (i) An ability to use current techniques, skills, and tools necesary for computin
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	    1. The scope of issues affecting human-computer interaction.
+	    2 The importance of the user interface.
+	    3 The impact of good and bad user interfaces.
+	    4. The diversity of users and tasks (applications) and their impact on the design of user interfaces.
+	    5. The limits of knowledge of individuals developing HCI systems.
+	    6. The need to work with others, skilled in diverse areas such as software engineering, human factors, technical communication, statistics, graphic design, etc.
+	    7. Cost/benefit trade-offs in human-computer interaction design.
+	    8. Different system development lifecycles including those particularly applicable to human computer interaction systems, e.g., iterative design, implementation, evaluation, and prototyping.
+	    9. How human computer interaction concerns can be incorporated into systems developement lifecycles.
+	    10. The need to evaluate system usablility.
+	    11. The existence of design, implementation, and evaluation tools for developers with diverse needs and technical expertise.
+	    12. The information sources available on human computer interaction.
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4382</Number>
+	<Name>Computer Visualization</Name>
+	<Description>
+		Focuses on design and implementation of computer graphics systems to provide visual representation of
+		large data sets. Presents current theory and practice of computer visualization systems and advanced
+		display techniques.
+	</Description>
+	<Credit-hours>3.000</Credit-hours>
+	<Lecture-hours>3.000</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI 3333 or
+		CMPE 3333,
+		Consent of the instructor.
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Degree elective,
+	CS Instruction Fee - G
+	</Course-attributes>
+	<ABET-outcomes>
+	  (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.
+	  (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.
+	  (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.
+	  (e) An understanding of professional, ethical, legal, security and social issues
+	  and responsibilities.
+	  (f) An ability to communicate effectively with a range of audiences.
+	  (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.
+	  (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.
+	  (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.
+	</ABET-outcomes>
+	<Learning-outcomes>
+	    1. Discuss the statement "visualization is not new, computer visualization is."
+	    2 Distinguish between sensory and arbitrary symbols.
+	    3 Describe advanatages in visualization in using sensory symbols for some tasks.
+	    4 Distinguish between sensation and perception.
+	    5 Define chromatic aberration and its implications for visualization.
+	    6 Define luminance, brightness, and lightness
+	    7 Give the mathematic function that relates light intensity to brightness.
+	    8 Describe the "RGB cube", CIE, and HSV specifications of color.
+	    9 Present Ware's searchlight model of attention and describe how for visual attention eye movements play a role, how "large" the searchlight is, and how attention is attracted.
+	    10 Describe the iconic buffer, it's capacity, how it processes information, and how its characteristics important for computer visualization.
+	    and give examples of the seven laws of Gestalt perception presented in Ware.
+	    11 Describe for animation how Michot's experiments of perception of causality be used in effective information display.
+	    12 Provide examples of at least three illusions and draw upon Gestalt laws to explain them
+	    13 Discuss this statement "If two dimensional display of information is good, then three dimensional display of information must be better", indicating why it may or may not be true, and, then, only under certain circumstances for certain data sets.
+	    14 Describe the relative importance of the several depth cues.
+	    15 Describe basic elements of computer based steroscopic display, and provide examples
+	    16 Design and implement effective visualizations.
+	</Learning-outcomes>
+</Course>
+     <Course>
+	<Divide>Technical Electives</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4383</Number>
+	<Name>Bioinformatics Imaging</Name>
+	<Description>
+		This course provides an introduction to the physical and computational principles of medical imaging systems.
+		Topics covered include fundamentals of x-ray radiography, x-ray computed tomography, ultrasound imaging and
+		magnetic resonance imaging. Current techniques for visualization, segmentation, and analysis of medical image
+		data will be discussed.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Credit hours</Lecture-hours>
+	<Lab-hours>0.000 Credit hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI 3333 or
+		CMPE 3333 or
+		Consent of the instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>COSC-4382</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>None</Course-attributes>
+	<ABET-outcomes>
+	  <item> (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.</item>
+	  <item> (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.</item>
+	  <item> (c) An Ability to design, implement, and evaluate a computer-based system, process,
+	  component, or program to meet desired needs.</item>
+	  <item> (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.</item>
+	  <item> (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.</item>
+	  <item> (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.</item>
+	</ABET-outcomes>
+	<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6180</Number>
+	<Name>Problems in Computer Science</Name>
+	<Description>
+		An area of computer science is examined under the direction of a faculty member.
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Independent Study</Schedule-type>
+	<Prerequisite>
+	Consent of instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Exempt from 3peat processing,
+	Exempt/Waive 6 drop process,
+	CS Instruction Fee - G
+	</Course-attributes>
+	<ABET-outcomes/>
+	<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6302</Number>
+	<Name>Foundations of Software</Name>
+	<Description>
+		Focusing on a high level object oriented language (e.g., Java, C++), provides foundational study of algorithms, data structures, and programming systems in the context of information technology systems.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Knowledge of a high level programming language and consent of instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Exempt from 3peat processing,
+	Exempt/Waive 6 drop process,
+	CS Instruction Fee - G
+	</Course-attributes>
+	<ABET-outcomes/>
+	<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6303</Number>
+	<Name>Principles Info Tech Sys</Name>
+	<Description>
+		An introduction to information technology and computer systems. Specific topics provide an overview of databases, knowledge-based systems, e-commerce, software engineering, software tools, programming, and Internet.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		Knowledge of a high level programming language
+		Consent of instructor
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+		<Course-attributes>
+		Exempt from 3peat processing,
+		Exempt/Waive 6 drop process,
+		S Instruction Fee - G
+		</Course-attributes>
+		<ABET-outcomes/>
+		<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Graduate</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>6305</Number>
+	<Name>Found Algs Data Structs</Name>
+	<Description>
+		In-depth analysis of computing algorithms and data structures for implementation in the context of software engineering design using structured programming languages.
+	</Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Masters</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		CSCI-6302,
+		CSCI-6382
+	</Prerequisite>
+	<Co-requisite>
+		None
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+	Exempt from 3peat processing,
+	Exempt/Waive 6 drop process,
+	CS Instruction Fee - G
+	</Course-attributes>
+	<ABET-outcomes/>
+	<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Engineering</Department>
+	<Prefix>ELEE</Prefix>
+	<Number>3340</Number>
+	<Name>Probability and Statistics for Electrical Engineers</Name>
+	<Description>
+    Probability, random variables, distribution and density functions, statistical estimators,
+  correlation, regression techniques, system response to random inputs.
+  </Description>
+	<Credit-hours>3.000 Credit hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+  ELEE-2321 or CMPE-2322
+  </Prerequisite>
+	<Co-requisite>CMPE-3342</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>CS Instruction Fee - HU, Degree Elective</Course-attributes>
+	<ABET-outcomes/>
+	<Learning-outcomes/>
+</Course>
+     <Course>
+	<Divide>Mathematics</Divide>
+	<Department>Science Math and Statistical Science Department</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2346</Number>
+	<Name>Math for EE and CE</Name>
+	<Description>
+		This course covers the essentials of matrix theory, graph theory, numerical methods, and introduction to proofs needed for majors in Electrical and Computer Engineering. Topics include Gauss-Jordan elimination, matrix algebra, determinants, graphs, trees, root finding algorithms, numerical differentiation, numerical integration, numerical matrix methods, propositional and predicate logic, and formal logic proofs.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>CMPE-1380</item>
+          </Prerequisite>
+	<Prerequisite>
+               <item>MATH-2413</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item/>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Math</item>
+		<item>Degree Elective</item>
+		<item>Technology Fee - CSE - Math U</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Mathematics</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2413</Number>
+	<Name>Calculus I</Name>
+	<Description>
+    Topics include limits, the derivative and its applications, antiderivatives, definite
+integrals, and the derivatives and integrals of transcendental functions.
+  </Description>
+	<Credit-hours>4.000 Credit hours</Credit-hours>
+	<Lecture-hours>4.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-1450 or ACCUPLACER</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Course-attributes>
+               <item>CS Instruction Fee - HU</item>
+               <item>Degree Elective</item>
+          </Course-attributes>
+	<ABET-outcomes>
+	    <item> (a) An ability to apply knowledge of computing and mathematics appropriate to the discipline.</item>
+	    <item> (j) An ability to apply mathematical foundations, algorithmic principles, and computer science
+	    theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of
+	    the tradeoffs involved in design choices.</item>
+	</ABET-outcomes>
+	<Learning-outcomes>
+		<item>Understand limits and be able to evaluate them numerically, graphically, and symbolically</item>
+		<item>Understand derivatives and be able to evaluate them numerically, graphically, and symbolically</item>
+		<item>Understand definite and indefinite integrals and be able to evaluate them numerically, graphically, and symbolically</item>
+		<item>Use the ideas of limits, derivatives, and integrals to solve applied problems. In
+	particular, you will become skilled in using these ideas to solve related rate
+	problems, optimization problems, curve sketching problems, and area problems
+	and in identifying and modeling the physical situations in which these ideas are
+	useful.</item>
+	  <item>Use graphing calculators and/or computer programs to evaluate limits,
+	derivatives, and integrals.</item>
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Mathematics</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2414</Number>
+	<Name>Calculus II</Name>
+	<Description>
+    Topics include derivatives and integrals of transcendental functions, methods of
+integration, parameterized curves, integration in polar coordinates, and infinite
+sequences and series.
+  </Description>
+	<Credit-hours>4.000 Credit hours</Credit-hours>
+	<Lecture-hours>4.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>MATH-1460 or appropriate high school background and placement scores</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+               <item>None</item>
+          </Restrictions>
+	<Course-attributes>
+               <item>CS Instruction Fee - HU</item>
+               <item>Degree Elective</item>
+          </Course-attributes>
+	<ABET-outcomes>
+	    <item> (a) An ability to apply knowledge of computing and mathematics appropriate to the discipline.</item>
+	    <item> (j) An ability to apply mathematical foundations, algorithmic principles, and computer science
+	    theory in the modeling and design of computer-based systems in a way that demonstrates comprehension of
+	    the tradeoffs involved in design choices.</item>
+	</ABET-outcomes>
+	<Learning-outcomes>
+		<item>Correctly apply the standard methods of integration, including substitution,
+	integration by parts, trigonometric identities, trigonometric substitution, and
+	partial fraction decomposition</item>
+	  <item>Approximate definite integrals using the Riemann sums, trapezoid rule, Simpson's
+	rule, and series techniques</item>
+	  <item>Properly define and evaluate improper integrals and apply the Comparison Test to
+	determine whether they converge or diverge</item>
+	  <item>Apply integration to compute areas, volumes, work, average values of functions,
+	arc lengths, surface areas, hydrostatic pressures and forces, centers of mass, and
+	moments.
+	</item>
+	  <item>Define curves parametrically and in polar coordinates, and perform the standard
+	calculus computations on parametric and polar curves, such as derivatives,
+	integrals, areas, arc lengths, and surface areas.</item>
+	  <item>Understand the concepts of sequence, series, limits of sequences and series,
+	convergence and divergence of sequences and series, and absolute and conditional
+	convergence of series</item>
+	  <item>Compute power, Taylor, and Maclaurin polynomials and series for a function, and
+	apply these ideas to problems in mathematics, science, and engineering</item>
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Mathematics_Core</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2415</Number>
+	<Name>Calculus 3</Name>
+	<Description>
+    Still needed...
+	</Description>
+	<Credit-hours>1.000 Credit hours</Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite>None</Prerequisite>
+	<Co-requisite>CSCI 1378 (Honors)</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>None</Restrictions>
+	<Course-attributes>
+		Computer Science,
+		CS Instruction Fee - LU
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Mathematics and Engineering</Divide>
+	<Department>Mathematics</Department>
+	<Prefix>MATH</Prefix>
+	<Number>3331</Number>
+	<Name>Applied Statistics</Name>
+	<Description>
+    This course concerns itself with probabilistic models, regression analysis,
+    nonparametric statistics, and the basics of experimental design. Computer laboratory
+    experience will be an important part of the course.
+  </Description>
+	<Credit-hours>4.000 Credit hours</Credit-hours>
+	<Lecture-hours>4.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>Junior Standing</item>
+  <item>MATH-1340 or MATH-1341</item>
+  </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions>
+               <item>None</item>
+          </Restrictions>
+
+	<Course-attributes>
+               <item>CS Instruction Fee - HU</item>
+               <item>Degree Elective</item>
+          </Course-attributes>
+	<ABET-outcomes>
+	  <item> (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.</item>
+	  <item> (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.</item>
+	  <item> (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.</item>
+	  <item> (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.</item>
+	  <item> (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.</item>
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  <item>Have the basic ideas regarding what is the difference between a population and a
+	sample. be able to identify which is a representative sample and which is not</item>
+	  <item>Be able to understand the difference between Statistics and Probability</item>
+	  <item>Be able to represent given data through tables or pictures</item>
+	  <item>Have the basic ideas of central tendencies and dispersions and will be able to use
+	calculators to calculate them</item>
+	  <item>Be able to get some heuristic ideas while looking at univariate and bivariate data
+	and should be able to draw conclusions on the required parameters</item>
+	  <item>Be able to calculate probabilities, moments etc. for various probability
+	distributions (discrete or continuous).</item>
+	  <item>Be able draw inferences related to studies involving one, two or more than two
+	population means</item>
+	  <item>Be able to draw inferences related to population variances</item>
+	  <item>Be able to construct ANOVA tables and should have some basic ideas in
+	experimental design</item>
+	  <item>Have some basic ideas of correlation and linear regression</item>
+	</Learning-outcomes>
+
+</Course>
+     <Course>
+	<Divide>Philosophy</Divide>
+	<Department>Philosophy Department</Department>
+	<Prefix>PHIL</Prefix>
+	<Number>2326</Number>
+	<Name>Professional Ethics: Engineering</Name>
+	<Description>
+		This course will address the application of moral theories, ethical principles, and professional codes to ethical dilemmas faced by business professionals, employers, and employees. Topics covered may include, but are not limited to, whistleblowing, integrity, honesty, liability, and the impact of theories like moral relativism and psychological egoism on the application of ethical theory.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+               <item>None</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Lang</item>
+		<item>Phil and Cltr-040</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Physics</Divide>
+	<Department>Physics Department</Department>
+	<Prefix>PHYS</Prefix>
+	<Number>2425</Number>
+	<Name>Physics for Science and Engineering I</Name>
+	<Description>
+		At the calculus-based level, this course introduces the student to the principles of mechanics, fluids, heat, waves and sound for majors in physics and engineering. The course includes three laboratory hours per week for reinforcing, through experiment, the concepts taught in the lecture.
+	</Description>
+	<Credit-hours>4.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Lab</Schedule-type>
+	<Prerequisite>
+               <item>MATH-2413</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>MATH-2414</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Life</item>
+		<item>Phys Sciences</item>
+	</Course-attributes>
+</Course>
+     <Course>
+	<Divide>Physics</Divide>
+	<Department>Physics Department</Department>
+	<Prefix>PHYS</Prefix>
+	<Number>2426</Number>
+	<Name>Physics for Science and Engineering II</Name>
+	<Description>
+		A continuation of PHYS 2425 covering the principles of electricity, magnetism, electromagnetic wave phenomena, and optics. The course includes three laboratory hours a week to emphasize course concepts.
+	</Description>
+	<Credit-hours>4.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>1.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Lab</Schedule-type>
+	<Prerequisite>
+               <item>PHYS-2425</item>
+          </Prerequisite>
+	<Co-requisite>
+               <item>None</item>
+          </Co-requisite>
+	<Legacy-number/>
+	<Cross-listed/>
+	<Restrictions1>
+               <item>None</item>
+          </Restrictions1>
+	<Restrictions2>
+               <item>None</item>
+          </Restrictions2>
+	<Course-attributes>
+		<item>Core Life</item>
+		<item>Phys Sciences</item>
+	</Course-attributes>
+</Course>
+</POS>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>2120</Number>
+	<Name>Electric Circuits I Lab</Name>
+	<Description>
+		This course covers fundamental circuit measurement techniques and reinforces concepts from ELEE 2305, Electrical Circuits I. Topics include basic instrumentation; measurement of voltage, current, resistance, power, frequency and phase; analysis of experimental data; and reporting of technical results. 
+	</Description>
+	<Credit-hours>1.000 Credit hours </Credit-hours>
+	<Lecture-hours>0.000 Lecture hours</Lecture-hours>
+	<Lab-hours>3.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Laboratory</Schedule-type>
+	<Prerequisite><item>CMPE-2320</item></Prerequisite>
+	<Prerequisite><item></item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-2105</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item></item>
+	</Course-attributes>
+</Course>

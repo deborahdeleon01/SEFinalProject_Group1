@@ -2,6 +2,9 @@ package Main;
 
 import LogInMVC.LogInController;
 import LogInMVC.LogInView;
+import htmlconverter.PDFConverter;
+import htmlconverter.XML2HTML;
+import htmlconverter.XMLMerger;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -41,6 +44,13 @@ public class LoginScreenGUI extends Application {
         primaryLogIn.setTitle("VaqPack -- Computer Science Program of Study");
         primaryLogIn.setScene(scene);
         primaryLogIn.show();
+        //      Converts entire directory and outputs each file into another (input directory, input xsl file, output directory)
+        XML2HTML.convertDirectory2Html("XML", "STYLES/course.xsl", "HTML/");
+        
+//      Creating POS... Merge files together
+        XMLMerger.mergeFilesFromDirectory("XML", "POS",  "STYLES/CSCI-POS.xml");
+        XML2HTML.convert2Html("CSCI-POS.xml", "STYLES/CSCI-POS.xsl", "TEMP/output.html");
+        PDFConverter.testConvert2Pdf();
 
     }
 }

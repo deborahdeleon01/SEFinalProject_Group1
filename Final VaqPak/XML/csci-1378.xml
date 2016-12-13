@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?><Course>
-    <Category>General_Core_Integrative_HON</Category>
+<Course>
+    <Category>General Core Integrative HON</Category>
     <Department>Computer Science</Department>
     <Prefix>CSCI</Prefix>
     <Number>1378</Number>
@@ -25,4 +25,8 @@
 	  <Course-attributes>
 		    CS Instruction Fee -LU
     </Course-attributes>
+    <ABET-outcomes>
+  	</ABET-outcomes>
+  	<Learning-outcomes>
+  	</Learning-outcomes>
 </Course>

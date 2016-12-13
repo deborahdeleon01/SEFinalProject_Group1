@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
+
 <Course>
-	<Divide>Other</Divide>
+	<Divide>Computer Science Core</Divide>
 	<Department>Computer Science</Department>
 	<Prefix>CSCI</Prefix>
 	<Number>1101</Number>
@@ -23,4 +23,49 @@
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>Degree Elective, Course fee - Comp Sci, CS Instruction Fee - LU</Course-attributes>
+	<ABET-outcomes>
+		(a) An ability to apply knowledge of computing and mathematics appropriate to
+		the program's student outcomes and to the discipline.
+		(b) An ability to analyze a problem, and identify and define the computing
+		requirements appropriate to its solution.
+		(c) An Ability to design, implement, and evaluate a computer-based system, process,
+		component, or program to meet desired needs.
+		(g) An ability to analyze the local and global impact of computing on individuals,
+		organizations, and society.
+	</ABET-outcomes>
+	<Learning-outcomes>
+		1. Explain the reasons for using different formats to represent numerical data.
+		2. Explain how negative integers are stored in twos-complement representation.
+		3. Describe Boolean Operations, gates, and flip-flops.
+		4. Describe numeric data representation and number bases, and convert numbers
+			between bases. Convert numerical data from one format to another.
+		5. Understand binary logic circuits and Boolean algebra. Prove properties using truth
+			tables.
+		6. Discuss how fixed-length number representations affect accuracy and precision.
+		7. Describe the internal representation of nonnumeric data.
+		8. Design, implement, test, and debug simple programs for Lego Mindstorms robots.
+		9. Use of control structures for programs (selection, repetition).
+		10. Discuss the importance of algorithms in the problem-solving process.
+		11. Understand the difference between an algorithm and a computer program.
+		12. Identify the necessary properties of good algorithms.
+		13. Understand algorithms for repetition, selection, input/output, assignment, and
+			modules.
+		14. Explain the organization of the classical von Neumann machine and its major
+			functional units.
+		15. Explain how an instruction is executed in a classical von Neumann machine.
+		16. Explain the objectives and functions of modern operating systems.
+		17. Understand the fundamental ideas of selected operating system functions, such as
+			memory management.
+		18. Explain basic file types and operations.
+		19. Understand terminology of directory trees.
+		20. Understand fundamental ideas of disk scheduling.
+		21. Explain the characteristics that distinguish the database approach from
+			programming with data files.
+		22. Cite the basic goals, functions, and social impact of database systems.
+		23. Discuss the evolution of early networks and the Internet.
+		24. Understand the fundamentals of network protocols and the Domain Name
+			System.
+		25.List the contributions of several pioneers in the computing field.
+		26. Identify significant continuing trends in the history of the computing field.
+	</Learning-outcomes>
 </Course>

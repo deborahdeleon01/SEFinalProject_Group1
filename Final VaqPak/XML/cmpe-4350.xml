@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+  <Divide>Computer Engineering Technical Elective</Divide>
+  <Department>Computer Science</Department>
+  <Prefix>CSCI</Prefix>
+  <Number>4350</Number>
+  <Name>Artificial Intelligence</Name>
+  <Description>
+  Study of intelligent machines and machine learning. Includes problem solving and heuristic search, natural language understanding,
+    game playing, database and expert systems. Artificial Intelligence projects will be implemented using an AI language such as LISP,
+    Prolog, C++ or Ada.
+  </Description>
+  <Credit-hours>3.000 Credit hours</Credit-hours>
+  <Lecture-hours>3.000 Lecture hours</Lecture-hours>
+  <Lab-hours>0.000 Lab hours</Lab-hours>
+  <Level>Undergraduate</Level>
+  <Schedule-type>Lecture</Schedule-type>
+  <Prerequisite><item>CSCI-3333/CMPE-3333</item></Prerequisite>
+  <Co-requisite><item>None</item></Co-requisite>
+  <Legacy-number>COSC-4350</Legacy-number>
+  <Cross-listed>CMPE-4350</Cross-listed>
+  <Restrictions1><item>Senior or Junior standing</item></Restrictions1>
+  <Restrictions2><item>None</item></Restrictions2>
+  <Course-attributes>
+      <item>Degree Elective</item>
+      <item>CS Instruction Fee - HU</item>
+ </Course-attributes>
+</Course>

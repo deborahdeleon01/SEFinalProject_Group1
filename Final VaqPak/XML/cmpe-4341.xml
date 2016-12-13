@@ -1,0 +1,26 @@
+<Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4341</Number>
+	<Name>Topics in Computer Science</Name>
+	<Description>
+	Topics or problems in computer science; subject matter changes from semester to semester. May be repeated for credit as topic varies.
+	</Description>
+	<Credit-hours>3.000 Credit Hours</Credit-hours>
+	<Lecture-hours>3.000 Lecture Hours</Lecture-hours>
+	<Lab-hours>0.000 Lecture hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>Consent of instructor</item></Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number>COSC-4380</Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Exempt from 3peat processing</item>
+		<item>Degree Elective</item>
+		<item>CS Instruction Fee - HU</item>
+	</Course-attributes>
+</Course>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Senior Design</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4371</Number>
+	<Name>Senior Design I Software</Name>
+	<Description>
+		Apply the knowledge and skills gained in previous courses to synthesize a solution to a significant and realistic problem, integrating software and hardware design. Participate in team project activities including problem formulation and proposal, project analysis, software and hardware requirements specification, project planning and software and hardware design. Software design documentation and oral presentation are an integral part of the course. Can receive credit for only one of CSCI 4390, CMPE 4371 and CMPE 4373.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>1.000 Lecture hours</Lecture-hours>
+	<Lab-hours>6.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture, Laboratory</Schedule-type>
+	<Prerequisite><item>Consent of instructor</item></Prerequisite>
+	<Prerequisite><item>CMPE-3340</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>None</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE</item>
+		<item></item>
+	</Course-attributes>
+</Course>

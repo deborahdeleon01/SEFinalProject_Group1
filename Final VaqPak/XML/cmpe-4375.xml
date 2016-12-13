@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Core</Divide>
+	<Department>Computer Engineering Department</Department>
+	<Prefix>CMPE</Prefix>
+	<Number>4375</Number>
+	<Name>Introduction to VLSI Design</Name>
+	<Description>
+		This course provides an introduction to the area of CMOS VLSI design and design of VLSI circuits, including CMOS logic circuits, integrated circuit layout and design tools and overview of integrated circuit fabrication.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>CMPE-2330</item></Prerequisite>
+	<Prerequisite><item>CMPE-4303</item></Prerequisite>
+	<Co-requisite><item></item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed>ELEE-4375</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Degree Elective</item>
+		<item>Course Fee - CMPE HU</item>
+		<item>Technolog Fee - CMPE U</item>
+	</Course-attributes>
+</Course>

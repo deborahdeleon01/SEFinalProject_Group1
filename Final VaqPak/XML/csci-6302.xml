@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
-
 <Course>
 	<Divide>Graduate</Divide>
 	<Department>Computer Science</Department>
@@ -29,4 +27,6 @@
 	Exempt/Waive 6 drop process,
 	CS Instruction Fee - G
 	</Course-attributes>
+	<ABET-outcomes></ABET-outcomes>
+	<Learning-outcomes></Learning-outcomes>
 </Course>

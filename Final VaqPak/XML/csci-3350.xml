@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
-<Divide>Technical_Electives</Divide>
+<Divide>Technical Electives</Divide>
 <Department>Computer Science</Department>
 <Prefix>CSCI</Prefix>
 <Number>3350</Number>
@@ -23,4 +22,28 @@ This course studies the numerical solutions to various problems occurring in eng
 	<Cross-listed>None</Cross-listed>
 	<Restrictions>None</Restrictions>
 	<Course-attributes>Degree Elective, CS Instruction Fee - HU</Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+  </ABET-outcomes>
+  <Learning-outcomes>
+  	1. Understand the influence of data representation and computer architecture on the choice and development of algorithms.
+  	2. Locate the roots of equations by using the bisection method, the secant method, and the Newton’s metho
+  	3. Do polynomial interpolation, write Matlab programs to solve simple interpolation problems.
+  	4. Estimate derivatives and Richardson extrapolation by using the first- and the second- derivative formul
+  	5. Write Matlab programs to numerical approximate the definite integrals by using the basic algorithms including Trapezoid Rule, an Adaptive Simpson’s Scheme, and the Gaussian Quadrature Formulas.
+  	6. Solve the systems of linear equations by using the Gaussian elimination method and the Gaussian elimination with scaled partial pivoting method, and some iterative methods.
+  	7. Understand the concept of approximating functions. Be able to approximate the functions by using the spline functions from the first degree splines to the cubic splines.
+    8. Solve the initial value problems of ordinary differential equations by using the Taylor series methods and the Runge-Kutta methods.
+  </Learning-outcomes>
+
 </Course>

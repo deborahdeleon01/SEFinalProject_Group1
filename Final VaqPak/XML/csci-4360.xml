@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
-
-
 <Course>
-    <Divide>Technical_Electives</Divide>
+    <Divide>Technical Electives</Divide>
     <Department>Computer Science</Department>
     <Prefix>CSCI</Prefix>
     <Number>4360</Number>
@@ -37,4 +34,37 @@
 	  Degree Elective,
 	  CS Instruction Fee - HU
   </Course-attributes>
+  <ABET-outcomes>
+    (a) An ability to apply knowledge of computing and mathematics appropriate to
+    the program's student outcomes and to the discipline.
+    (b) An ability to analyze a problem, and identify and define the computing
+    requirements appropriate to its solution.
+    (c) An Ability to design, implement, and evaluate a computer-based system, process,
+    component, or program to meet desired needs.
+    (e) An understanding of professional, ethical, legal, security and social issues
+    and responsibilities.
+    (f) An ability to communicate effectively with a range of audiences.
+    (i) An ability to use current techniques, skills, and tools necesary for computing
+    practice.
+    (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+    science theory in the modeling and design of computer-based systems in a way that demonstrates
+    comprehension of the tradeoffs involved in design choices.
+    (k) An ability to apply design and development principles in the construction of
+    software systems of varifying complexity.
+  </ABET-outcomes>
+  <Learning-outcomes>
+      1. Compare and contrast sample and geometry based graphics.
+      2 Define and explain the role of models in geometry based graphics.
+      3 Describe the most widely used color representation systems and techniques.
+      4 Understand how OpenGL provides a software interface to graphics hardware.
+      5 Be able to utilize an event-driven software architecture.
+      6 List and illustrate elements needed to specify parameters to the synthetic camera model.
+      7 Describe how geometry and illumination/shading are tradeoffs from photorealistic images for interactivity.
+      8 Describe Z-buffer algorithm.
+      9 Distinguish between local and global models of illumination, providing examples of specific techniques.
+      10 Give high level recursive algorithm for ray tracing.
+      11 Describe hardware architecture of current graphics processing units
+      12 Write moderately complex OpenGL programs that include manipulation of camera, shading, objects, and lighting, as well as use GLUT for interaction
+  </Learning-outcomes>
+
 </Course>

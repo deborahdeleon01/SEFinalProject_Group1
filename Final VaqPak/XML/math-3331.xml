@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../styles/Course.xsl"?>
 <Course>
 	<Divide>Mathematics and Engineering</Divide>
 	<Department>Mathematics</Department>
@@ -22,7 +21,39 @@
 	<Co-requisite><item>None</item></Co-requisite>
 	<Legacy-number>None</Legacy-number>
 	<Cross-listed>None</Cross-listed>
-	<Restrictions1><item>None</item></Restrictions1>
-	<Restrictions2><item>None</item></Restrictions2>
+	<Restrictions><item>None</item></Restrictions>
+
 	<Course-attributes><item>CS Instruction Fee - HU</item><item>Degree Elective</item></Course-attributes>
+	<ABET-outcomes>
+	  <item> (a) An ability to apply knowledge of computing and mathematics appropriate to
+	  the program's student outcomes and to the discipline.</item>
+	  <item> (b) An ability to analyze a problem, and identify and define the computing
+	  requirements appropriate to its solution.</item>
+	  <item> (i) An ability to use current techniques, skills, and tools necesary for computing
+	  practice.</item>
+	  <item> (j) An ability to apply mathematical foundations, algorithmic principles, and computer
+	  science theory in the modeling and design of computer-based systems in a way that demonstrates
+	  comprehension of the tradeoffs involved in design choices.</item>
+	  <item> (k) An ability to apply design and development principles in the construction of
+	  software systems of varifying complexity.</item>
+	</ABET-outcomes>
+	<Learning-outcomes>
+	  <item>Have the basic ideas regarding what is the difference between a population and a
+	sample. be able to identify which is a representative sample and which is not</item>
+	  <item>Be able to understand the difference between Statistics and Probability</item>
+	  <item>Be able to represent given data through tables or pictures</item>
+	  <item>Have the basic ideas of central tendencies and dispersions and will be able to use
+	calculators to calculate them</item>
+	  <item>Be able to get some heuristic ideas while looking at univariate and bivariate data
+	and should be able to draw conclusions on the required parameters</item>
+	  <item>Be able to calculate probabilities, moments etc. for various probability
+	distributions (discrete or continuous).</item>
+	  <item>Be able draw inferences related to studies involving one, two or more than two
+	population means</item>
+	  <item>Be able to draw inferences related to population variances</item>
+	  <item>Be able to construct ANOVA tables and should have some basic ideas in
+	experimental design</item>
+	  <item>Have some basic ideas of correlation and linear regression</item>
+	</Learning-outcomes>
+
 </Course>

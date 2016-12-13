@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Computer Engineering Technical Elective</Divide>
+	<Department>Computer Science</Department>
+	<Prefix>CSCI</Prefix>
+	<Number>4382</Number>
+	<Name>Computer Visualization</Name>
+	<Description>
+		Focuses on design and implementation of computer graphics systems to provide visual representation of
+		large data sets. Presents current theory and practice of computer visualization systems and advanced
+		display techniques.
+	</Description>
+	<Credit-hours>3.000</Credit-hours>
+	<Lecture-hours>3.000</Lecture-hours>
+	<Lab-hours>0.000</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite>
+		<item>CSCI 3333</item>
+		<item>CMPE 3333</item>
+		<item>Consent of the instructor.</item>
+	</Prerequisite>
+	<Co-requisite>
+		<item>None</item>
+	</Co-requisite>
+	<Legacy-number>None</Legacy-number>
+	<Cross-listed>CMPE-4382</Cross-listed>
+	<Restrictions1><item>None</item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+	<item>Degree elective</item>
+	<item>CS Instruction Fee - G</item>
+	</Course-attributes>
+</Course>

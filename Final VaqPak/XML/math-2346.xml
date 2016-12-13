@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Course>
+	<Divide>Mathematics</Divide>
+	<Department>Science Math and Statistical Science Department</Department>
+	<Prefix>MATH</Prefix>
+	<Number>2346</Number>
+	<Name>Math for EE and CE</Name>
+	<Description>
+		This course covers the essentials of matrix theory, graph theory, numerical methods, and introduction to proofs needed for majors in Electrical and Computer Engineering. Topics include Gauss-Jordan elimination, matrix algebra, determinants, graphs, trees, root finding algorithms, numerical differentiation, numerical integration, numerical matrix methods, propositional and predicate logic, and formal logic proofs.
+	</Description>
+	<Credit-hours>3.000 Credit hours </Credit-hours>
+	<Lecture-hours>3.000 Lecture hours</Lecture-hours>
+	<Lab-hours>0.000 Lab hours</Lab-hours>
+	<Level>Undergraduate</Level>
+	<Schedule-type>Lecture</Schedule-type>
+	<Prerequisite><item>CMPE-1380</item></Prerequisite>
+	<Prerequisite><item>MATH-2413</item></Prerequisite>
+	<Co-requisite><item>None</item></Co-requisite>
+	<Legacy-number></Legacy-number>
+	<Cross-listed></Cross-listed>
+	<Restrictions1><item></item></Restrictions1>
+	<Restrictions2><item>None</item></Restrictions2>
+	<Course-attributes>
+		<item>Core Math</item>
+		<item>Degree Elective</item>
+		<item>Technology Fee - CSE - Math U</item>
+	</Course-attributes>
+</Course>
