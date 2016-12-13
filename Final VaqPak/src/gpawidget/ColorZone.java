@@ -16,12 +16,20 @@ public class ColorZone {
     private double[] values = null;
     private int[] valuesDegrees = null;
 
+    /**
+     * 
+     * @param mycolors
+     * @param myvalues 
+     */
     public ColorZone(Color[] mycolors, double[] myvalues) {
         colors = mycolors;
         values = myvalues;
-
     }
-
+    
+    /**
+     * 
+     * @return calcDegrees
+     */
     public int[] calcDegrees() {
         double sum = 0;
         int[] degrees = null;

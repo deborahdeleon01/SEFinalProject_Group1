@@ -14,7 +14,7 @@ import XMLGEN.FormView;
 import email.EmailController;
 import email.EmailModel;
 import email.EmailView;
-//import gpawidget.GPAWidget;
+import gpawidget.GPAWidget;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Group;
@@ -30,7 +30,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    //GPAWidget gpaWidget = new GPAWidget(600, 600, 0, 4, 0, 0.2);
+    GPAWidget gpaWidget = new GPAWidget(600, 600, 0, 4, 0, 0.2);
     InformationTab info = new InformationTab();
     Stage kstage = new Stage();
     Stage POSstage = new Stage();
@@ -190,12 +190,18 @@ public class Main extends Application {
      */
     private Tab tabC() {
         Tab tabC = new Tab();
-        tabC.setText("Reporting");
+        tabC.setText("GPA Calculator");
         //Add GPA Widget in TabC
         StackPane tabC_stack = new StackPane();
         tabC_stack.setAlignment(Pos.CENTER);
-        //tabC_stack.getChildren().add(gpaWidget.getPane());
-        tabC.setContent(tabC_stack);
+        tabC_stack.getChildren().add(gpaWidget.getPane());
+        
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setContent(tabC_stack);
+        scrollPane.setFitToHeight(true);
+        scrollPane.setFitToWidth(true);
+        
+        tabC.setContent(scrollPane);
         return tabC;
     }
     

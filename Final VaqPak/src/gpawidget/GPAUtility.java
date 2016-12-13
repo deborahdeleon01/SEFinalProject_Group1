@@ -13,12 +13,16 @@ import java.util.ArrayList;
  * @author MQ0162246
  */
 public class GPAUtility {
-
+    
+    /**
+     * 
+     * @param myCourses
+     * @return calcGPA
+     */
     public static double calcGPA(ArrayList<Course> myCourses) {
         int hours;
         int totalHours = 0;
         double gpa = 0.0;
-        
         
         for (int i = 0; i < myCourses.size(); i++) {
             String grade = Character.toString(myCourses.get(i).getGrade()).toUpperCase();
@@ -49,9 +53,9 @@ public class GPAUtility {
                 hours = (int) myCourses.get(i).getHours();
                 totalHours += hours;
                 gpa += 4.00 * hours;
-            }
-            
+            }   
         }
+        
         gpa /= totalHours;
         System.out.println("Your GPA is: " + gpa);
 
