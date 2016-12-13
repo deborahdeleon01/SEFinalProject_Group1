@@ -39,7 +39,7 @@ public class EmailController {
                     System.out.println("\n\n\n\n\n==========Current dir:" + current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.txt\n\n\n\n\n");
                 
                     //Variables
-                    String attachment = current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.txt";
+                    String attachment = current + "\\VacPac\\pdf\\EmailAttachment\\CombinedPDFFiles.pdf";
 
                     String email = getEmail();
                     String password = getPassword();
