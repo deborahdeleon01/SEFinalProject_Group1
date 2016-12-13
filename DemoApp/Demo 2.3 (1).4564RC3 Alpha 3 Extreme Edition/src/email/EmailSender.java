@@ -29,16 +29,40 @@ import javax.mail.internet.MimeMultipart;
  * @author Jose_Balle
  */
 public class EmailSender {
-    // Constructors
+    
+    /**
+     * 
+     */
     EmailSender() {
+        
+    }
+    
+    /**
+     * 
+     * @param fromEmail
+     * @param username
+     * @param password
+     * @param toEmail
+     * @param subject
+     * @param textMessage
+     * @param attachment
+     * @param output 
+     */
+     EmailSender(String fromEmail, String username, String password, String toEmail, String subject, String textMessage, String attachment, Label output) {
 
     }
-
-    EmailSender(String fromEmail, String username, String password, String toEmail, String subject, String textMessage, String attachment, Label output) {
-
-    }
-
-    public static void EmailSender(String email, String password, String toEmail, String subject, String message, String attachment) {
+    
+    /**
+     * 
+     * @param email
+     * @param password
+     * @param toEmail
+     * @param subject
+     * @param message
+     * @param attachment
+     * @param output 
+     */
+    public static void EmailSender(String email, String password, String toEmail, String subject, String message, String attachment, Label output) {
         try {
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.office365.com");
@@ -80,9 +104,11 @@ public class EmailSender {
             transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
 
             transport.send(emailMessage);
+            
         } 
         catch (MessagingException ex) {
             Logger.getLogger(EmailSender.class.getName()).log(Level.SEVERE, null, ex);
+            output.setText("Email Sent!");
         }
     }
 }
