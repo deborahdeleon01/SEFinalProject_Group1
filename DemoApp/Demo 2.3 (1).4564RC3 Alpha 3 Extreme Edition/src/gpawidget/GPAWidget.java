@@ -5,15 +5,18 @@
  */
 package gpawidget;
 
-import javafx.collections.ObservableList;
+import database.Course;
+import database.User;
 import javafx.event.ActionEvent;
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -22,352 +25,193 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
 import javafx.scene.transform.Rotate;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 
 /**
+ *
  * @author MQ0162246
  */
 public class GPAWidget {
 
-    final int fields = 4;
-    public int index = 0;
     GPAMeter meter;
+    
+    Course course = new Course();
+    User user = new User();
+    TextField[] gradeFields = null;
     BorderPane pane = new BorderPane();
-//    ComboBox coursesComboBox;
-    ComboBox cb1;
-    ComboBox cb2;
-    ComboBox cb3;
-    ComboBox cb4;
-    TextField[] gradeFields = new TextField[fields];
-    TextField[] hourFields = new TextField[fields];
-    //    Label[] hourFields = new Label[fields];
-    ObservableList<String> options;
 
-    FileInputStream file;
-    DocumentBuilderFactory builderFactory;
-    DocumentBuilder builder;
-    Document xmlDocument;
-    XPath xPath;
-    Path currentPath3 = Paths.get("");
-    String path03 = currentPath3.toAbsolutePath().toString();
-
-    public GPAWidget(double width, double height, double v1, double v2, double v3, double delta) {
+    public GPAWidget(double width, double height, double v1, double v2, double v3, double delta) 
+    {
         meter = new GPAMeter(width, height, v1, v2, v3, delta);
 
         // Create the Border pane
         Text topText = new Text();
         topText.setWrappingWidth(800);
-        topText.setFont(Font.font("Verdana", FontPosture.ITALIC, 30));
+        topText.setFont(Font.font("Arial", 40));
         topText.setFill(Color.RED);
 
-        topText.setText("Calculate GPA");
+        topText.setText("GPA Widget");
         topText.setTextAlignment(TextAlignment.CENTER);
-
-        VBox panevbox = new VBox();
-        panevbox.setAlignment(Pos.CENTER);
-        panevbox.setAlignment(Pos.TOP_CENTER);
-        panevbox.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-        panevbox.setSpacing(10);
-
         pane.setTop(topText);
 
         //
         meter.setMeterRotationAngleinDegrees(0);
         Rotate r = new Rotate(meter.getMeterRotationAngleinDegrees(), 300, 300);
         meter.getTransforms().addAll(r);
+        
+        VBox stack = new VBox();
+        stack.setAlignment(Pos.CENTER);
+        stack.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
+        stack.setSpacing(10);
+        
+        stack.getChildren().addAll(meter, getSemesterPane());
+        
+        pane.setCenter(stack);
 
-        panevbox.getChildren().addAll(meter, getSemesterPane());
-        pane.setCenter(panevbox);
 
         BorderPane.setAlignment(topText, Pos.CENTER);
         BorderPane.setAlignment(meter, Pos.CENTER);
     }
 
     private VBox getSemesterPane() {
-
         VBox vpane = new VBox();
         vpane.setAlignment(Pos.CENTER);
         vpane.setAlignment(Pos.TOP_CENTER);
         vpane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
         vpane.setSpacing(10);
+        
+                  //testing courses
+        user.addPastCourse(new Course("csci","2501","class5",1,'c',3));
+        user.addPastCourse(new Course("csci","2601","class6",1,'c',4));
+        user.addPastCourse(new Course("csci","2701","class7",1,'f',3));
+        user.addPastCourse(new Course("csci","2801","class8",1,'d',4));
 
-        HBox hbox = new HBox();
-        hbox.setAlignment(Pos.CENTER);
-        hbox.setAlignment(Pos.TOP_CENTER);
-        hbox.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-        hbox.setSpacing(10);
+        // Place nodes in the pane
+        Button btAdd1  = new Button("Calculate Old GPA");
+        
+
+        
+        btAdd1.setOnAction((ActionEvent event) -> {
+            try {
+                
+                user.getPastCourses();
+                //should clear current semester fields
+
+            } catch (Exception e) {
+            }
+            meter.paintMeter(GPAUtility.calcGPA(user.getPastCourses()));
+        });
 
         // Place nodes in the pane
         Label currentSemesterLabel = new Label("Current Semester Courses");
         currentSemesterLabel.setStyle("-fx-text-fill:black;-fx-font-size: 20px;-fx-font-weight: bold;");
         vpane.getChildren().add(currentSemesterLabel);
-        VBox vbox = new VBox();
+        
+        //testing courses
+        user.addCurrentCourse(new Course("csci","1101","class1",1,'a',3));
+        user.addCurrentCourse(new Course("csci","1301","class2",1,'c',4));
+        user.addCurrentCourse(new Course("csci","1401","class3",1,'a',3));
+        user.addCurrentCourse(new Course("csci","1501","class4",1,'c',4));
 
-        VBox cboxes = new VBox();
-        cboxes.setAlignment(Pos.CENTER);
-        cboxes.setAlignment(Pos.TOP_CENTER);
-        cboxes.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-        cboxes.setSpacing(27);
+        //get current semester courses
+        try {
+            
+            user.getCurrentCourses();
 
-        cb1 = coursesComboBox();
-        cb2 = coursesComboBox();
-        cb3 = coursesComboBox();
-        cb4 = coursesComboBox();
-        cboxes.getChildren().addAll(cb1, cb2, cb3, cb4);
+        } catch (Exception e) {
+        }
 
-        for (int i = 0; i < gradeFields.length; i++) {
+        gradeFields = null;
+        try {
+            gradeFields = new TextField[user.getCurrentCourses().size()];
 
-            HBox hbox1 = new HBox();
-            hbox1.setAlignment(Pos.CENTER);
-            hbox1.setAlignment(Pos.TOP_CENTER);
-            hbox1.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-            hbox1.setSpacing(10);
+        } catch (Exception e) {
+        }
 
+        for (int i = 0; i < user.getCurrentCourses().size(); i++) {
+            
+            HBox hbox = new HBox();
+            hbox.setAlignment(Pos.CENTER);
+            hbox.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
+            hbox.setSpacing(10);
+            
+            Label currentCourseLabel = new Label();
+            currentCourseLabel.setStyle("-fx-text-fill:red;-fx-font-size: 16px;-fx-font-weight: bold;");
+            currentCourseLabel.setText(user.getCurrentCourses().get(i).getCourseName());
+            
+            Separator separator1 = new Separator();
+            separator1.setOrientation(Orientation.HORIZONTAL);
+            separator1.setMaxWidth(200);
+
+            
             gradeFields[i] = new TextField();
-            gradeFields[i].setPromptText("Grade");
-            gradeFields[i].setPrefWidth(65);
-            hourFields[i] = new TextField();
-//        hourFields[i] = new Label();
-//            ComboBox cb = coursesComboBox();
-            hourFields[i].setPromptText("Hours");
-            hourFields[i].setPrefWidth(65);
-
-//            hbox1.getChildren().addAll(cb, gradeFields[i], hourFields[i]);
-            hbox1.getChildren().addAll(gradeFields[i], hourFields[i]);
-            vbox.getChildren().add(hbox1);
+            gradeFields[i].setPromptText("ENTER GRADE");
+            gradeFields[i].setPrefWidth(150);
+            
+            hbox.getChildren().addAll(currentCourseLabel,gradeFields[i]);
+            
+            vpane.getChildren().addAll(hbox,separator1);
         }
 
-        hbox.getChildren().addAll(cboxes, vbox);
+        Button btAdd2 = new Button("Calculate New GPA");
 
-        vpane.getChildren().addAll(hbox);
-
-        Button btAdd = new Button("Update Meter");
-        Button clear = new Button("Clear");
-        
-        clear.setOnAction((ActionEvent event) -> {
-          for (int i = 0; i < gradeFields.length; i++) {
-              gradeFields[i].clear();
-              hourFields[i].clear();
-          }
-          
-          cb1.valueProperty().set("Choose a Course");
-          cb2.valueProperty().set("Choose a Course");
-          cb3.valueProperty().set("Choose a Course");
-          cb4.valueProperty().set("Choose a Course");
-          
-          meter.setCurrentValue(0);
-          
-        }
-        
-        );
-        
-        btAdd.setOnAction((ActionEvent event) -> {
-
-            int hours;
-            int totalHours = 0;
-            double gpa = 0.0;
-
+        btAdd2.setOnAction((ActionEvent event) -> {
             for (int i = 0; i < gradeFields.length; i++) {
-
-                if (isValidGrade(gradeFields[i].getText())) {
-
-                    if (gradeFields[i].getText().toUpperCase().equals("A")) {
-                        hours = Integer.parseInt(hourFields[i].getText());
-                        totalHours += hours;
-                        gpa += 4.00 * hours;
-                    } else if (gradeFields[i].getText().toUpperCase().equals("B")) {
-                        hours = Integer.parseInt(hourFields[i].getText());
-                        totalHours += hours;
-                        gpa += 3.00 * hours;
-                    } else if (gradeFields[i].getText().toUpperCase().equals("C")) {
-                        hours = Integer.parseInt(hourFields[i].getText());
-                        totalHours += hours;
-                        gpa += 2.00 * hours;
-                    } else if (gradeFields[i].getText().toUpperCase().equals("D")) {
-                        hours = Integer.parseInt(hourFields[i].getText());
-                        totalHours += hours;
-                        gpa += 1.00 * hours;
-                    } else if (gradeFields[i].getText().toUpperCase().equals("F")) {
-                        hours = Integer.parseInt(hourFields[i].getText());
-                        totalHours += hours;
-                    }
+                System.out.println("for course: " + user.getCurrentCourses().get(i).getCourseName());
+                if(isValidGrade(gradeFields[i].getText().trim()))
+                {
+                    
+                  user.getCurrentCourses().get(i).setGrade(gradeFields[i].getText().charAt(0));
                 }
+                else
+                {
+                    System.out.println("Invalid grade was entered!");
+                }
+                System.out.println("grade is : " + user.getCurrentCourses().get(i).getGrade());
             }
-
-            gpa = gpa / totalHours;
-            System.out.println("Your GPA from the Transcript/Semester  is: " + gpa);
-
+            
+            // pass semester with grades & courses to grade calculator!
+            
+            double transcript_gpa = GPAUtility.calcGPA(user.getPastCourses());
+            double total_gpa = GPAUtility.calcGPA(user.getPastCourses(), user.getCurrentCourses());
+            
+            //double gpa = GPAUtility.calcGPA(transcript.getMyCourses(), semester.getMyCourses());
+            
             // update the meter!
-            meter.paintMeter(gpa);
+            meter.paintMeter(transcript_gpa,total_gpa);
         });
         
         HBox buttons = new HBox();
         buttons.setAlignment(Pos.CENTER);
-        buttons.setAlignment(Pos.TOP_CENTER);
-        buttons.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
         buttons.setSpacing(10);
-            
-        buttons.getChildren().addAll(btAdd,clear);
+        buttons.getChildren().addAll(btAdd1,btAdd2);
 
-        vpane.getChildren().add(buttons);
+        vpane.getChildren().addAll(buttons);
         return vpane;
     }
-
-    private boolean isValidGrade(String grade) {
-        if (grade == null) {
-            return false;
-        }
-        if (grade.toUpperCase().equals("A")
-                || grade.toUpperCase().equals("B")
-                || grade.toUpperCase().equals("C")
-                || grade.toUpperCase().equals("D")
-                || grade.toUpperCase().equals("F")) {
+    
+    private boolean isValidGrade(String grade)
+    {
+        if (grade==null)
+                return false;
+        if(
+                grade.toUpperCase().equals("A") ||
+                grade.toUpperCase().equals("B") ||
+                grade.toUpperCase().equals("C") ||
+                grade.toUpperCase().equals("D") ||
+                grade.toUpperCase().equals("F")
+          )
             return true;
-        } else {
+        else
             return false;
-        }
 
     }
 
-    private ComboBox coursesComboBox() {
-
-        ComboBox coursesComboBox = new ComboBox();
-
-        cb1 = new ComboBox();
-        cb2 = new ComboBox();
-        cb3 = new ComboBox();
-        cb4 = new ComboBox();
-
-        coursesComboBox.setValue("Choose a Course");
-        cb1.setValue("Choose a Course");
-        cb2.setValue("Choose a Course");
-        cb3.setValue("Choose a Course");
-        cb4.setValue("Choose a Course");
-
-        String path3 = path03;
-
-        try {
-
-            file = new FileInputStream(new File(path3 + "/POS_XML.xml"));
-            builderFactory = DocumentBuilderFactory.newInstance();
-            builder = builderFactory.newDocumentBuilder();
-            xmlDocument = builder.parse(file);
-            xPath = XPathFactory.newInstance().newXPath();
-
-            String expression1 = "/POS/Course/Prefix";
-            String expression2 = "/POS/Course/Number";
-            String expression3 = "/POS/Course/Name";
-            String expression4 = "/POS/Course/Credit-hours";
-
-            NodeList nodeList1 = (NodeList) xPath.compile(expression1).evaluate(xmlDocument, XPathConstants.NODESET);
-            NodeList nodeList2 = (NodeList) xPath.compile(expression2).evaluate(xmlDocument, XPathConstants.NODESET);
-            NodeList nodeList3 = (NodeList) xPath.compile(expression3).evaluate(xmlDocument, XPathConstants.NODESET);
-            NodeList nodeList4 = (NodeList) xPath.compile(expression4).evaluate(xmlDocument, XPathConstants.NODESET);
-
-            for (int i = 0; i < nodeList1.getLength(); i++) {
-
-                String prfx = nodeList1.item(i).getFirstChild().getNodeValue();
-                String num = nodeList2.item(i).getFirstChild().getNodeValue();
-                String name = nodeList3.item(i).getFirstChild().getNodeValue();
-                String ch = nodeList4.item(i).getFirstChild().getNodeValue();
-                
-                char c[] = ch.toCharArray();
-                String hrs = Character.toString(c[0]);
-
-                String exp = prfx + " " + num + " " + name;
-
-                coursesComboBox.getItems().addAll(exp);
-                cb1.getItems().addAll(exp);
-                cb2.getItems().addAll(exp);
-                cb3.getItems().addAll(exp);
-                cb4.getItems().addAll(exp);
-
-                coursesComboBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-
-                        String selected = newvalue;
-
-                        if (exp == selected) {
-                            hourFields[3].setText(hrs);
-                        }
-                    }
-                });
-
-                cb1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-
-                        String selected = newvalue;
-
-                        if (exp == selected) {
-                            hourFields[0].setText(hrs);
-                        }
-                    }
-                });
-
-                cb2.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-
-                        String selected = newvalue;
-
-                        if (exp == selected) {
-                            hourFields[1].setText(hrs);
-                        }
-                    }
-                });
-
-                cb3.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-
-                        String selected = newvalue;
-
-                        if (exp == selected) {
-                            hourFields[2].setText(hrs);
-                        }
-                    }
-                });
-
-                cb4.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-                    public void changed(ObservableValue<? extends String> ov, final String oldvalue, final String newvalue) {
-
-                        String selected = newvalue;
-
-                        if (exp == selected) {
-                            hourFields[3].setText(hrs);
-                        }
-                    }
-                });
-            }
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (XPathExpressionException e) {
-            e.printStackTrace();
-        }
-
-        return coursesComboBox;
+    private HBox getHBox(String cc) {
+        HBox hBox = new HBox(15);
+        hBox.setPadding(new Insets(15, 15, 15, 15));
+        hBox.setStyle("-fx-background-color:" + cc);
+        hBox.getChildren().add(new Text("Pane is empty .."));
+        return hBox;
     }
 
     /**
