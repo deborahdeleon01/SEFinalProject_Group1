@@ -13,7 +13,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
 /**
- * @author Jose_Balle
+ * @author Jose H. Ballesteros
  */
 public class EmailView extends GridPane {
     private Text scenetitle = new Text("UTRGV Email");

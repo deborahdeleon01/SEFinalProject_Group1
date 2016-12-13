@@ -9,7 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
 /**
- * @author Jose_Balle
+ * @author Jose H. Ballesteros
  */
 public class EmailController {
     EmailModel emailModel;

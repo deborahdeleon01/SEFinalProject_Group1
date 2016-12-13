@@ -63,7 +63,7 @@
 
 .button {
     -fx-text-fill: whitesmoke;
-    -fx-border-color: #E14A18; //Jesus
+    -fx-border-color: #E14A18; /*Jesus*/
     -fx-border-radius: 5;
     -fx-padding: 5 5 5 5;
     -fx-font: 16px Arial;
@@ -78,6 +78,6 @@
     -fx-background-opacity: 0.5;
     -fx-font: 16px Arial;
     -fx-font-smoothing-type: lcd;
-    -fx-base: #E14A18; //Jesus
+    -fx-base: #E14A18; /*Jesus*/
     -fx-background: rgb(229, 227, 223);
 }

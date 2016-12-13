@@ -6,7 +6,7 @@
 package email;
 
 /**
- * @author Jose_Balle
+ * @author Jose H. Ballesteros
  */
 public class EmailModel {
     private String email;
