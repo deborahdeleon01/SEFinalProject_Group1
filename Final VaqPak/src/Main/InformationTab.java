@@ -283,6 +283,7 @@ public class InformationTab extends Application {
         hbox.setPadding(new Insets(20, 20, 20, 0));
         hbox.setAlignment(Pos.CENTER_LEFT);
 
+        /*Jesus Starts here*/
         String id = String.valueOf(user.getId());
         Text pftitle = new Text("User Information");
         ImageView profile = new ImageView();
@@ -300,6 +301,7 @@ public class InformationTab extends Application {
         pftitle.setStyle("-fx-font: 20 arial; -fx-font-weight: bold;");
 
         hbox.getChildren().addAll(pftitle, profile, name, position, email, ID);
+        /*Jesus ends here*/
       
         return hbox;
     }

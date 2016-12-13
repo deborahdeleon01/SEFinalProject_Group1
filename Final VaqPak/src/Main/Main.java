@@ -39,9 +39,11 @@ public class Main extends Application {
     EmailModel model = new EmailModel("@utrgv.edu", "", "", "VacPak POS Email", "Dear Student, ");
     EmailController emailController = new EmailController(model, root);
     Stage FormXMLstage = new Stage();
+    //Jesus starts here
     File directoryPDF = new File("./VacPac/pdf/");
     File directoryHTML = new File("./VacPac/html");
     FormView fView;
+    //Jesus ends here
     
     /**
      * 
@@ -61,9 +63,10 @@ public class Main extends Application {
     }
     
     /**
-     * 
+     * Author Jesus
      * @param file delete
-     * @throws IOException 
+     * @throws IOException
+     * Jesus starts here
      */
     public static void delete(File file)
         throws IOException {
@@ -99,6 +102,7 @@ public class Main extends Application {
             file.delete();
             System.out.println("File is deleted : " + file.getAbsolutePath());
         }
+        /*Jesus ends here*/
     }
     
     /**
@@ -129,6 +133,8 @@ public class Main extends Application {
         root.getChildren().add(mainPane);
         primaryStage.setMaximized(true);
         primaryStage.setScene(scene);
+
+        /*Jesus Starts here*/
         primaryStage.setOnCloseRequest((event) -> {
 
             //make sure directory exists
@@ -148,6 +154,7 @@ public class Main extends Application {
                 }
             }
         });
+        /*Jesus ends here*/
         primaryStage.show();
     }
     

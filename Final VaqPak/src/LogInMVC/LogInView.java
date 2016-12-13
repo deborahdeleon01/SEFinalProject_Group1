@@ -33,9 +33,6 @@ public class LogInView extends GridPane {
     Text LogInTitle = new Text("Welcome to Vaq-Paq \n"
             + "Login to continue.");
     
-    /**
-     * LoginView Set Pane
-     */
     public LogInView() {
         database.DirectoryStructure.createDirectoriesIfNotExists();
         this.ConfirmPasswordLocal = new PasswordField();
@@ -331,4 +328,6 @@ public class LogInView extends GridPane {
     public void setLogInTitle(Text LogInTitle) {
         this.LogInTitle = LogInTitle;
     }
+
+    /*Jesus ends here*/
 }
